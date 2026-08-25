@@ -1,9 +1,9 @@
 """Independent exact verification for the 3 by 3 permanent Chow rank.
 
-No perm4 project helper is imported.  All matrix ranks are computed over the
-prime field F_p.  A rank r over F_p proves that the corresponding integer
-matrix has an r by r minor not divisible by p.  Upper bounds used below come
-from the explicit prolongation bases described in the accompanying report.
+The program is self-contained. All matrix ranks are computed over the prime
+field F_p. A rank r over F_p proves that the corresponding integer matrix has
+an r by r minor not divisible by p. Upper bounds used below come from the
+explicit prolongation bases described in the accompanying report.
 """
 
 from __future__ import annotations

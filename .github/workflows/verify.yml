@@ -1,4 +1,4 @@
-name: exact-proof-replay
+name: independent-proof-replays
 
 on:
   push:
@@ -11,15 +11,26 @@ permissions:
   contents: read
 
 jobs:
-  verify:
+  perm3:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-      - name: Install exact-replay dependency
-        run: python -m pip install -r certificates/requirements-replay.txt
-      - name: Replay exact proof certificates
-        run: python -B certificates/verify_all.py
+      - name: Replay perm3 certificate
+        run: python -B perm3/certificates/verify_all.py
+
+  perm4:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install perm4 replay dependency
+        run: python -m pip install -r perm4/certificates/requirements-replay.txt
+      - name: Replay perm4 certificates
+        run: python -B perm4/certificates/verify_all.py

@@ -1,4 +1,4 @@
-"""Replay every exact certificate used by the public perm3/perm4 manuscript."""
+"""Replay the exact certificate accompanying the perm3 manuscript."""
 
 from __future__ import annotations
 
@@ -11,29 +11,22 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 
 
-def run(*arguments: str) -> str:
+def main() -> None:
     completed = subprocess.run(
-        [sys.executable, *arguments],
+        [sys.executable, "perm3_exact_verification.py"],
         cwd=ROOT,
         check=True,
         capture_output=True,
         text=True,
     )
     print(completed.stdout, end="")
-    return completed.stdout
-
-
-def main() -> None:
-    actual = json.loads(run("perm3_exact_verification.py"))
+    actual = json.loads(completed.stdout)
     expected = json.loads(
         (ROOT / "perm3_exact_verification_v11.json").read_text(encoding="utf-8")
     )
     if actual != expected:
         raise AssertionError("perm3 exact output does not match the frozen certificate")
-
-    run("perm4_rank8_independent_audit.py")
-    run("perm4_rank8_verify_all.py")
-    print("PERM34_ACTIVE_PROOF_REPLAY_PASS")
+    print("PERM3_ACTIVE_PROOF_REPLAY_PASS")
 
 
 if __name__ == "__main__":
