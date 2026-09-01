@@ -1,0 +1,625 @@
+{
+  "status": "PASS_EXACT_QQ_DIAGNOSTIC_FOUND_MISSING_WM_BRANCH",
+  "evidence_class": "exact characteristic-zero signed-graph diagnostic",
+  "logical_scope": "All 3003 coordinate ten-planes inside q(Sym^2 L0) are checked. This does not prove the global degeneration or exclude the WM branch.",
+  "engine_sha256": "5EAD4B3EDD531C4032E0B189183CA70A0FB834DF7FA52431439C10FCEF5DE28F",
+  "ambient_cells": [
+    0,
+    1,
+    2,
+    3,
+    5
+  ],
+  "quotient_universe": [
+    [
+      "S",
+      0,
+      0
+    ],
+    [
+      "R",
+      0,
+      0,
+      1
+    ],
+    [
+      "R",
+      0,
+      0,
+      2
+    ],
+    [
+      "R",
+      0,
+      0,
+      3
+    ],
+    [
+      "C",
+      0,
+      1,
+      0
+    ],
+    [
+      "S",
+      0,
+      1
+    ],
+    [
+      "R",
+      0,
+      1,
+      2
+    ],
+    [
+      "R",
+      0,
+      1,
+      3
+    ],
+    [
+      "X",
+      0,
+      1,
+      0,
+      1
+    ],
+    [
+      "S",
+      0,
+      2
+    ],
+    [
+      "R",
+      0,
+      2,
+      3
+    ],
+    [
+      "X",
+      0,
+      1,
+      0,
+      2
+    ],
+    [
+      "S",
+      0,
+      3
+    ],
+    [
+      "X",
+      0,
+      1,
+      0,
+      3
+    ],
+    [
+      "S",
+      1,
+      0
+    ]
+  ],
+  "coordinate_ten_planes_checked": 3003,
+  "local_weight_block_size_histogram": {
+    "1": 115,
+    "2": 82,
+    "3": 23,
+    "4": 3,
+    "5": 3
+  },
+  "p_histogram": {
+    "13": 30,
+    "14": 57,
+    "15": 67,
+    "16": 175,
+    "17": 300,
+    "18": 315,
+    "19": 283,
+    "20": 283,
+    "21": 372,
+    "22": 321,
+    "23": 255,
+    "24": 194,
+    "25": 126,
+    "26": 73,
+    "27": 31,
+    "28": 21,
+    "29": 12,
+    "30": 22,
+    "31": 21,
+    "32": 13,
+    "33": 16,
+    "34": 12,
+    "36": 4
+  },
+  "maximum_p_exact_QQ": 36,
+  "p_at_least_36_count": 4,
+  "p_at_least_36_records": [
+    {
+      "p_exact_QQ": 36,
+      "positions": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10
+      ],
+      "descriptors": [
+        [
+          "S",
+          0,
+          0
+        ],
+        [
+          "R",
+          0,
+          0,
+          1
+        ],
+        [
+          "R",
+          0,
+          0,
+          2
+        ],
+        [
+          "R",
+          0,
+          0,
+          3
+        ],
+        [
+          "C",
+          0,
+          1,
+          0
+        ],
+        [
+          "S",
+          0,
+          1
+        ],
+        [
+          "R",
+          0,
+          1,
+          2
+        ],
+        [
+          "R",
+          0,
+          1,
+          3
+        ],
+        [
+          "S",
+          0,
+          2
+        ],
+        [
+          "R",
+          0,
+          2,
+          3
+        ]
+      ]
+    },
+    {
+      "p_exact_QQ": 36,
+      "positions": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        10,
+        12
+      ],
+      "descriptors": [
+        [
+          "S",
+          0,
+          0
+        ],
+        [
+          "R",
+          0,
+          0,
+          1
+        ],
+        [
+          "R",
+          0,
+          0,
+          2
+        ],
+        [
+          "R",
+          0,
+          0,
+          3
+        ],
+        [
+          "C",
+          0,
+          1,
+          0
+        ],
+        [
+          "S",
+          0,
+          1
+        ],
+        [
+          "R",
+          0,
+          1,
+          2
+        ],
+        [
+          "R",
+          0,
+          1,
+          3
+        ],
+        [
+          "R",
+          0,
+          2,
+          3
+        ],
+        [
+          "S",
+          0,
+          3
+        ]
+      ]
+    },
+    {
+      "p_exact_QQ": 36,
+      "positions": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10,
+        12
+      ],
+      "descriptors": [
+        [
+          "S",
+          0,
+          0
+        ],
+        [
+          "R",
+          0,
+          0,
+          1
+        ],
+        [
+          "R",
+          0,
+          0,
+          2
+        ],
+        [
+          "R",
+          0,
+          0,
+          3
+        ],
+        [
+          "C",
+          0,
+          1,
+          0
+        ],
+        [
+          "R",
+          0,
+          1,
+          2
+        ],
+        [
+          "R",
+          0,
+          1,
+          3
+        ],
+        [
+          "S",
+          0,
+          2
+        ],
+        [
+          "R",
+          0,
+          2,
+          3
+        ],
+        [
+          "S",
+          0,
+          3
+        ]
+      ]
+    },
+    {
+      "p_exact_QQ": 36,
+      "positions": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        9,
+        10,
+        12
+      ],
+      "descriptors": [
+        [
+          "S",
+          0,
+          0
+        ],
+        [
+          "R",
+          0,
+          0,
+          1
+        ],
+        [
+          "R",
+          0,
+          0,
+          2
+        ],
+        [
+          "R",
+          0,
+          0,
+          3
+        ],
+        [
+          "S",
+          0,
+          1
+        ],
+        [
+          "R",
+          0,
+          1,
+          2
+        ],
+        [
+          "R",
+          0,
+          1,
+          3
+        ],
+        [
+          "S",
+          0,
+          2
+        ],
+        [
+          "R",
+          0,
+          2,
+          3
+        ],
+        [
+          "S",
+          0,
+          3
+        ]
+      ]
+    }
+  ],
+  "paper_length_two_plane": {
+    "p_exact_QQ": 36,
+    "descriptors": [
+      [
+        "S",
+        0,
+        0
+      ],
+      [
+        "S",
+        0,
+        1
+      ],
+      [
+        "S",
+        0,
+        2
+      ],
+      [
+        "R",
+        0,
+        0,
+        1
+      ],
+      [
+        "R",
+        0,
+        0,
+        2
+      ],
+      [
+        "R",
+        0,
+        0,
+        3
+      ],
+      [
+        "R",
+        0,
+        1,
+        2
+      ],
+      [
+        "R",
+        0,
+        1,
+        3
+      ],
+      [
+        "R",
+        0,
+        2,
+        3
+      ],
+      [
+        "C",
+        0,
+        1,
+        0
+      ]
+    ]
+  },
+  "missing_common_envelope_plane_WM": {
+    "definition": "q(Sym^2 <x_00,x_01,x_02,x_03>)",
+    "p_exact_QQ": 36,
+    "descriptors": [
+      [
+        "S",
+        0,
+        0
+      ],
+      [
+        "R",
+        0,
+        0,
+        1
+      ],
+      [
+        "R",
+        0,
+        0,
+        2
+      ],
+      [
+        "R",
+        0,
+        0,
+        3
+      ],
+      [
+        "S",
+        0,
+        1
+      ],
+      [
+        "R",
+        0,
+        1,
+        2
+      ],
+      [
+        "R",
+        0,
+        1,
+        3
+      ],
+      [
+        "S",
+        0,
+        2
+      ],
+      [
+        "R",
+        0,
+        2,
+        3
+      ],
+      [
+        "S",
+        0,
+        3
+      ]
+    ],
+    "contained_in_all_four_candidate_L_envelopes": true
+  },
+  "four_candidate_extra_cells": [
+    5,
+    6,
+    10,
+    11
+  ],
+  "intersection_of_four_candidate_envelopes": [
+    [
+      "S",
+      0,
+      0
+    ],
+    [
+      "R",
+      0,
+      0,
+      1
+    ],
+    [
+      "R",
+      0,
+      0,
+      2
+    ],
+    [
+      "R",
+      0,
+      0,
+      3
+    ],
+    [
+      "S",
+      0,
+      1
+    ],
+    [
+      "R",
+      0,
+      1,
+      2
+    ],
+    [
+      "R",
+      0,
+      1,
+      3
+    ],
+    [
+      "S",
+      0,
+      2
+    ],
+    [
+      "R",
+      0,
+      2,
+      3
+    ],
+    [
+      "S",
+      0,
+      3
+    ]
+  ],
+  "conclusion": "The length-two W0 fibre is not the only p=36 coordinate endpoint. WM is the common ten-dimensional intersection of all four candidate five-plane envelopes, so it requires a separate relative rigidity proof."
+}

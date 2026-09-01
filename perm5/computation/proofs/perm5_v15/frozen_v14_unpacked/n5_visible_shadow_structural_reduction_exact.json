@@ -1,0 +1,1037 @@
+{
+  "status": "PASS_EXACT_INTEGER_VISIBLE_SHADOW_STRUCTURAL_REDUCTION_AUDIT",
+  "evidence_role": "exact diagnostic for the written six-edge parent formula and closed structural bounds; the 49 values are not an active proof dependency",
+  "alpha_sequences": {
+    "3": [
+      0,
+      3,
+      3,
+      4,
+      6,
+      6
+    ],
+    "4": [
+      0,
+      0,
+      1,
+      3,
+      6,
+      6
+    ],
+    "5": [
+      0,
+      1,
+      3,
+      5,
+      7,
+      8
+    ],
+    "10": [
+      0,
+      0,
+      0,
+      1,
+      4,
+      10
+    ]
+  },
+  "family_records": [
+    {
+      "profile": [
+        10,
+        10,
+        0,
+        0
+      ],
+      "shadow_size": 50,
+      "ferrers_plane_values": [
+        {
+          "plane_partition": [
+            5,
+            0,
+            0,
+            0,
+            0
+          ],
+          "killed": 20,
+          "visible": 30
+        },
+        {
+          "plane_partition": [
+            4,
+            1,
+            0,
+            0,
+            0
+          ],
+          "killed": 8,
+          "visible": 42
+        },
+        {
+          "plane_partition": [
+            3,
+            2,
+            0,
+            0,
+            0
+          ],
+          "killed": 2,
+          "visible": 48
+        },
+        {
+          "plane_partition": [
+            3,
+            1,
+            1,
+            0,
+            0
+          ],
+          "killed": 2,
+          "visible": 48
+        },
+        {
+          "plane_partition": [
+            2,
+            2,
+            1,
+            0,
+            0
+          ],
+          "killed": 0,
+          "visible": 50
+        },
+        {
+          "plane_partition": [
+            2,
+            1,
+            1,
+            1,
+            0
+          ],
+          "killed": 0,
+          "visible": 50
+        },
+        {
+          "plane_partition": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "killed": 0,
+          "visible": 50
+        }
+      ],
+      "maximum_killed_over_all_five_planes": 20,
+      "minimum_visible_over_all_five_planes": 30,
+      "global_maximizer_count": 2,
+      "global_maximizer_examples": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        [
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      ],
+      "parent_mask_size_histogram": {
+        "3": 40,
+        "6": 10
+      }
+    },
+    {
+      "profile": [
+        10,
+        4,
+        4,
+        2
+      ],
+      "shadow_size": 48,
+      "ferrers_plane_values": [
+        {
+          "plane_partition": [
+            5,
+            0,
+            0,
+            0,
+            0
+          ],
+          "killed": 7,
+          "visible": 41
+        },
+        {
+          "plane_partition": [
+            4,
+            1,
+            0,
+            0,
+            0
+          ],
+          "killed": 8,
+          "visible": 40
+        },
+        {
+          "plane_partition": [
+            3,
+            2,
+            0,
+            0,
+            0
+          ],
+          "killed": 5,
+          "visible": 43
+        },
+        {
+          "plane_partition": [
+            3,
+            1,
+            1,
+            0,
+            0
+          ],
+          "killed": 5,
+          "visible": 43
+        },
+        {
+          "plane_partition": [
+            2,
+            2,
+            1,
+            0,
+            0
+          ],
+          "killed": 2,
+          "visible": 46
+        },
+        {
+          "plane_partition": [
+            2,
+            1,
+            1,
+            1,
+            0
+          ],
+          "killed": 2,
+          "visible": 46
+        },
+        {
+          "plane_partition": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "killed": 0,
+          "visible": 48
+        }
+      ],
+      "maximum_killed_over_all_five_planes": 8,
+      "minimum_visible_over_all_five_planes": 40,
+      "global_maximizer_count": 4,
+      "global_maximizer_examples": [
+        [
+          0,
+          1,
+          2,
+          3,
+          5
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          6
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          10
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          11
+        ]
+      ],
+      "parent_mask_size_histogram": {
+        "2": 2,
+        "3": 21,
+        "4": 12,
+        "5": 13
+      }
+    },
+    {
+      "profile": [
+        10,
+        4,
+        3,
+        3
+      ],
+      "shadow_size": 48,
+      "ferrers_plane_values": [
+        {
+          "plane_partition": [
+            5,
+            0,
+            0,
+            0,
+            0
+          ],
+          "killed": 4,
+          "visible": 44
+        },
+        {
+          "plane_partition": [
+            4,
+            1,
+            0,
+            0,
+            0
+          ],
+          "killed": 7,
+          "visible": 41
+        },
+        {
+          "plane_partition": [
+            3,
+            2,
+            0,
+            0,
+            0
+          ],
+          "killed": 4,
+          "visible": 44
+        },
+        {
+          "plane_partition": [
+            3,
+            1,
+            1,
+            0,
+            0
+          ],
+          "killed": 6,
+          "visible": 42
+        },
+        {
+          "plane_partition": [
+            2,
+            2,
+            1,
+            0,
+            0
+          ],
+          "killed": 5,
+          "visible": 43
+        },
+        {
+          "plane_partition": [
+            2,
+            1,
+            1,
+            1,
+            0
+          ],
+          "killed": 4,
+          "visible": 44
+        },
+        {
+          "plane_partition": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "killed": 3,
+          "visible": 45
+        }
+      ],
+      "maximum_killed_over_all_five_planes": 7,
+      "minimum_visible_over_all_five_planes": 41,
+      "global_maximizer_count": 4,
+      "global_maximizer_examples": [
+        [
+          0,
+          1,
+          2,
+          3,
+          5
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          10
+        ],
+        [
+          0,
+          5,
+          6,
+          7,
+          8
+        ],
+        [
+          5,
+          6,
+          7,
+          8,
+          10
+        ]
+      ],
+      "parent_mask_size_histogram": {
+        "2": 3,
+        "3": 18,
+        "4": 15,
+        "5": 12
+      }
+    },
+    {
+      "profile": [
+        9,
+        4,
+        4,
+        3
+      ],
+      "shadow_size": 48,
+      "ferrers_plane_values": [
+        {
+          "plane_partition": [
+            5,
+            0,
+            0,
+            0,
+            0
+          ],
+          "killed": 4,
+          "visible": 44
+        },
+        {
+          "plane_partition": [
+            4,
+            1,
+            0,
+            0,
+            0
+          ],
+          "killed": 7,
+          "visible": 41
+        },
+        {
+          "plane_partition": [
+            3,
+            2,
+            0,
+            0,
+            0
+          ],
+          "killed": 6,
+          "visible": 42
+        },
+        {
+          "plane_partition": [
+            3,
+            1,
+            1,
+            0,
+            0
+          ],
+          "killed": 6,
+          "visible": 42
+        },
+        {
+          "plane_partition": [
+            2,
+            2,
+            1,
+            0,
+            0
+          ],
+          "killed": 6,
+          "visible": 42
+        },
+        {
+          "plane_partition": [
+            2,
+            1,
+            1,
+            1,
+            0
+          ],
+          "killed": 5,
+          "visible": 43
+        },
+        {
+          "plane_partition": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "killed": 0,
+          "visible": 48
+        }
+      ],
+      "maximum_killed_over_all_five_planes": 7,
+      "minimum_visible_over_all_five_planes": 41,
+      "global_maximizer_count": 2,
+      "global_maximizer_examples": [
+        [
+          0,
+          1,
+          2,
+          3,
+          5
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          10
+        ]
+      ],
+      "parent_mask_size_histogram": {
+        "2": 6,
+        "3": 13,
+        "4": 16,
+        "5": 13
+      }
+    },
+    {
+      "profile": [
+        8,
+        4,
+        4,
+        4
+      ],
+      "shadow_size": 48,
+      "ferrers_plane_values": [
+        {
+          "plane_partition": [
+            5,
+            0,
+            0,
+            0,
+            0
+          ],
+          "killed": 4,
+          "visible": 44
+        },
+        {
+          "plane_partition": [
+            4,
+            1,
+            0,
+            0,
+            0
+          ],
+          "killed": 5,
+          "visible": 43
+        },
+        {
+          "plane_partition": [
+            3,
+            2,
+            0,
+            0,
+            0
+          ],
+          "killed": 6,
+          "visible": 42
+        },
+        {
+          "plane_partition": [
+            3,
+            1,
+            1,
+            0,
+            0
+          ],
+          "killed": 5,
+          "visible": 43
+        },
+        {
+          "plane_partition": [
+            2,
+            2,
+            1,
+            0,
+            0
+          ],
+          "killed": 6,
+          "visible": 42
+        },
+        {
+          "plane_partition": [
+            2,
+            1,
+            1,
+            1,
+            0
+          ],
+          "killed": 4,
+          "visible": 44
+        },
+        {
+          "plane_partition": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "killed": 3,
+          "visible": 45
+        }
+      ],
+      "maximum_killed_over_all_five_planes": 6,
+      "minimum_visible_over_all_five_planes": 42,
+      "global_maximizer_count": 18,
+      "global_maximizer_examples": [
+        [
+          0,
+          1,
+          2,
+          5,
+          6
+        ],
+        [
+          0,
+          1,
+          2,
+          5,
+          7
+        ],
+        [
+          0,
+          1,
+          2,
+          10,
+          11
+        ],
+        [
+          0,
+          1,
+          2,
+          10,
+          12
+        ],
+        [
+          0,
+          1,
+          5,
+          6,
+          7
+        ],
+        [
+          0,
+          1,
+          5,
+          6,
+          10
+        ],
+        [
+          0,
+          1,
+          5,
+          10,
+          11
+        ],
+        [
+          0,
+          1,
+          10,
+          11,
+          12
+        ]
+      ],
+      "parent_mask_size_histogram": {
+        "1": 3,
+        "2": 6,
+        "3": 3,
+        "4": 24,
+        "5": 12
+      }
+    },
+    {
+      "profile": [
+        7,
+        5,
+        4,
+        4
+      ],
+      "shadow_size": 49,
+      "ferrers_plane_values": [
+        {
+          "plane_partition": [
+            5,
+            0,
+            0,
+            0,
+            0
+          ],
+          "killed": 5,
+          "visible": 44
+        },
+        {
+          "plane_partition": [
+            4,
+            1,
+            0,
+            0,
+            0
+          ],
+          "killed": 6,
+          "visible": 43
+        },
+        {
+          "plane_partition": [
+            3,
+            2,
+            0,
+            0,
+            0
+          ],
+          "killed": 9,
+          "visible": 40
+        },
+        {
+          "plane_partition": [
+            3,
+            1,
+            1,
+            0,
+            0
+          ],
+          "killed": 6,
+          "visible": 43
+        },
+        {
+          "plane_partition": [
+            2,
+            2,
+            1,
+            0,
+            0
+          ],
+          "killed": 7,
+          "visible": 42
+        },
+        {
+          "plane_partition": [
+            2,
+            1,
+            1,
+            1,
+            0
+          ],
+          "killed": 4,
+          "visible": 45
+        },
+        {
+          "plane_partition": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "killed": 2,
+          "visible": 47
+        }
+      ],
+      "maximum_killed_over_all_five_planes": 9,
+      "minimum_visible_over_all_five_planes": 40,
+      "global_maximizer_count": 2,
+      "global_maximizer_examples": [
+        [
+          0,
+          1,
+          2,
+          5,
+          6
+        ],
+        [
+          0,
+          1,
+          5,
+          6,
+          7
+        ]
+      ],
+      "parent_mask_size_histogram": {
+        "1": 4,
+        "2": 7,
+        "3": 2,
+        "4": 25,
+        "5": 10,
+        "6": 1
+      }
+    },
+    {
+      "profile": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "shadow_size": 48,
+      "ferrers_plane_values": [
+        {
+          "plane_partition": [
+            5,
+            0,
+            0,
+            0,
+            0
+          ],
+          "killed": 0,
+          "visible": 48
+        },
+        {
+          "plane_partition": [
+            4,
+            1,
+            0,
+            0,
+            0
+          ],
+          "killed": 1,
+          "visible": 47
+        },
+        {
+          "plane_partition": [
+            3,
+            2,
+            0,
+            0,
+            0
+          ],
+          "killed": 3,
+          "visible": 45
+        },
+        {
+          "plane_partition": [
+            3,
+            1,
+            1,
+            0,
+            0
+          ],
+          "killed": 3,
+          "visible": 45
+        },
+        {
+          "plane_partition": [
+            2,
+            2,
+            1,
+            0,
+            0
+          ],
+          "killed": 5,
+          "visible": 43
+        },
+        {
+          "plane_partition": [
+            2,
+            1,
+            1,
+            1,
+            0
+          ],
+          "killed": 6,
+          "visible": 42
+        },
+        {
+          "plane_partition": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "killed": 6,
+          "visible": 42
+        }
+      ],
+      "maximum_killed_over_all_five_planes": 6,
+      "minimum_visible_over_all_five_planes": 42,
+      "global_maximizer_count": 42,
+      "global_maximizer_examples": [
+        [
+          0,
+          1,
+          5,
+          10,
+          15
+        ],
+        [
+          0,
+          1,
+          6,
+          11,
+          16
+        ],
+        [
+          0,
+          2,
+          5,
+          10,
+          15
+        ],
+        [
+          0,
+          3,
+          5,
+          10,
+          15
+        ],
+        [
+          0,
+          4,
+          5,
+          10,
+          15
+        ],
+        [
+          0,
+          5,
+          6,
+          10,
+          15
+        ],
+        [
+          0,
+          5,
+          7,
+          10,
+          15
+        ],
+        [
+          0,
+          5,
+          8,
+          10,
+          15
+        ]
+      ],
+      "parent_mask_size_histogram": {
+        "2": 12,
+        "4": 30,
+        "6": 6
+      }
+    }
+  ],
+  "diagnostic_visible_table": [
+    [
+      30,
+      42,
+      48,
+      48,
+      50,
+      50,
+      50
+    ],
+    [
+      41,
+      40,
+      43,
+      43,
+      46,
+      46,
+      48
+    ],
+    [
+      44,
+      41,
+      44,
+      42,
+      43,
+      44,
+      45
+    ],
+    [
+      44,
+      41,
+      42,
+      42,
+      42,
+      43,
+      48
+    ],
+    [
+      44,
+      43,
+      42,
+      43,
+      42,
+      44,
+      45
+    ],
+    [
+      44,
+      43,
+      40,
+      43,
+      42,
+      45,
+      47
+    ],
+    [
+      48,
+      47,
+      45,
+      45,
+      43,
+      42,
+      42
+    ]
+  ],
+  "ferrers_survivors": [
+    [
+      0,
+      0
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      5,
+      2
+    ]
+  ],
+  "summary": {
+    "family_profiles": 7,
+    "plane_partitions": 7,
+    "diagnostic_pair_values_checked": 49,
+    "five_planes_checked_per_family": 53130,
+    "shifted_survivor_count": 3,
+    "active_49_value_table_required": false,
+    "non_survivor_uniform_visible_lower_bounds": [
+      41,
+      41,
+      42,
+      42
+    ]
+  },
+  "script_sha256_before_output": "8E8C5BD638AB30E986F78EB20821B6BE3518AFA9BAE0AF731B97B55FC7974232"
+}

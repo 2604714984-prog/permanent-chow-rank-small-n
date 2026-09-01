@@ -1,5 +1,8 @@
 __pycache__/
 *.py[cod]
+**/.venv/
+**/.venv-win/
+*/paper/*.log
 */paper/source/*.aux
 */paper/source/*.fdb_latexmk
 */paper/source/*.fls

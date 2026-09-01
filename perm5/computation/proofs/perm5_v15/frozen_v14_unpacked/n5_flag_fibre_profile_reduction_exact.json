@@ -1,0 +1,4316 @@
+{
+  "status": "PASS_EXACT_INTEGER_FIBRE_PROFILE_REDUCTION_AUDIT",
+  "evidence_role": "exact diagnostic for a written Petersen fibre inequality; it does not by itself prove the remaining row-partition maxima",
+  "petersen_neighbourhood_profile": [
+    0,
+    3,
+    5,
+    6,
+    6,
+    8,
+    9,
+    9,
+    10,
+    10,
+    10
+  ],
+  "directions": {
+    "orbit1": [
+      {
+        "direction": "row:0<-1",
+        "family_variable_count": 2,
+        "plane_variable_count": 3,
+        "transfer_blocks": [
+          {
+            "low_fibre": 3,
+            "high_fibre": 6,
+            "width": 2
+          }
+        ],
+        "size_bound_count_vectors_at_most_50": [
+          {
+            "counts": [
+              0
+            ],
+            "bound": 48
+          },
+          {
+            "counts": [
+              1
+            ],
+            "bound": 48
+          },
+          {
+            "counts": [
+              2
+            ],
+            "bound": 48
+          }
+        ],
+        "size_bound_assignment_count": 4,
+        "union_bound_assignment_count": 4,
+        "exact_shadow_assignment_count": 4,
+        "full_flag_pass_count": 2,
+        "full_flag_pass_assignments": [
+          {
+            "family_assignment": 0,
+            "plane_assignment": 0
+          },
+          {
+            "family_assignment": 3,
+            "plane_assignment": 7
+          }
+        ],
+        "exact_shadow_assignment_supports": [
+          [],
+          [
+            0
+          ],
+          [
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "nonuniform_visible_minima": [
+          {
+            "family_assignment": 1,
+            "family_support": [
+              0
+            ],
+            "shadow_size": 48,
+            "minimum_compatible_visible_size": 41,
+            "minimizing_plane_assignments": [
+              0
+            ]
+          },
+          {
+            "family_assignment": 2,
+            "family_support": [
+              1
+            ],
+            "shadow_size": 48,
+            "minimum_compatible_visible_size": 41,
+            "minimizing_plane_assignments": [
+              7
+            ]
+          }
+        ]
+      },
+      {
+        "direction": "row:0<-2",
+        "family_variable_count": 2,
+        "plane_variable_count": 4,
+        "transfer_blocks": [
+          {
+            "low_fibre": 1,
+            "high_fibre": 6,
+            "width": 2
+          }
+        ],
+        "size_bound_count_vectors_at_most_50": [
+          {
+            "counts": [
+              0
+            ],
+            "bound": 48
+          },
+          {
+            "counts": [
+              1
+            ],
+            "bound": 48
+          },
+          {
+            "counts": [
+              2
+            ],
+            "bound": 48
+          }
+        ],
+        "size_bound_assignment_count": 4,
+        "union_bound_assignment_count": 4,
+        "exact_shadow_assignment_count": 4,
+        "full_flag_pass_count": 2,
+        "full_flag_pass_assignments": [
+          {
+            "family_assignment": 0,
+            "plane_assignment": 0
+          },
+          {
+            "family_assignment": 3,
+            "plane_assignment": 15
+          }
+        ],
+        "exact_shadow_assignment_supports": [
+          [],
+          [
+            0
+          ],
+          [
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "nonuniform_visible_minima": [
+          {
+            "family_assignment": 1,
+            "family_support": [
+              0
+            ],
+            "shadow_size": 48,
+            "minimum_compatible_visible_size": 41,
+            "minimizing_plane_assignments": [
+              0
+            ]
+          },
+          {
+            "family_assignment": 2,
+            "family_support": [
+              1
+            ],
+            "shadow_size": 48,
+            "minimum_compatible_visible_size": 41,
+            "minimizing_plane_assignments": [
+              15
+            ]
+          }
+        ]
+      },
+      {
+        "direction": "row:0<-3",
+        "family_variable_count": 8,
+        "plane_variable_count": 4,
+        "transfer_blocks": [
+          {
+            "low_fibre": 0,
+            "high_fibre": 6,
+            "width": 8
+          }
+        ],
+        "size_bound_count_vectors_at_most_50": [
+          {
+            "counts": [
+              0
+            ],
+            "bound": 48
+          },
+          {
+            "counts": [
+              1
+            ],
+            "bound": 48
+          },
+          {
+            "counts": [
+              2
+            ],
+            "bound": 48
+          },
+          {
+            "counts": [
+              3
+            ],
+            "bound": 49
+          },
+          {
+            "counts": [
+              5
+            ],
+            "bound": 49
+          },
+          {
+            "counts": [
+              6
+            ],
+            "bound": 48
+          },
+          {
+            "counts": [
+              7
+            ],
+            "bound": 48
+          },
+          {
+            "counts": [
+              8
+            ],
+            "bound": 48
+          }
+        ],
+        "size_bound_assignment_count": 186,
+        "union_bound_assignment_count": 8,
+        "exact_shadow_assignment_count": 8,
+        "full_flag_pass_count": 2,
+        "full_flag_pass_assignments": [
+          {
+            "family_assignment": 0,
+            "plane_assignment": 0
+          },
+          {
+            "family_assignment": 255,
+            "plane_assignment": 15
+          }
+        ],
+        "exact_shadow_assignment_supports": [
+          [],
+          [
+            1
+          ],
+          [
+            4
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            0,
+            2,
+            3,
+            5,
+            6,
+            7
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            5,
+            6,
+            7
+          ],
+          [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        ],
+        "nonuniform_visible_minima": [
+          {
+            "family_assignment": 2,
+            "family_support": [
+              1
+            ],
+            "shadow_size": 48,
+            "minimum_compatible_visible_size": 41,
+            "minimizing_plane_assignments": [
+              0
+            ]
+          },
+          {
+            "family_assignment": 16,
+            "family_support": [
+              4
+            ],
+            "shadow_size": 48,
+            "minimum_compatible_visible_size": 44,
+            "minimizing_plane_assignments": [
+              0
+            ]
+          },
+          {
+            "family_assignment": 18,
+            "family_support": [
+              1,
+              4
+            ],
+            "shadow_size": 48,
+            "minimum_compatible_visible_size": 44,
+            "minimizing_plane_assignments": [
+              0
+            ]
+          },
+          {
+            "family_assignment": 237,
+            "family_support": [
+              0,
+              2,
+              3,
+              5,
+              6,
+              7
+            ],
+            "shadow_size": 48,
+            "minimum_compatible_visible_size": 44,
+            "minimizing_plane_assignments": [
+              15
+            ]
+          },
+          {
+            "family_assignment": 239,
+            "family_support": [
+              0,
+              1,
+              2,
+              3,
+              5,
+              6,
+              7
+            ],
+            "shadow_size": 48,
+            "minimum_compatible_visible_size": 44,
+            "minimizing_plane_assignments": [
+              15
+            ]
+          },
+          {
+            "family_assignment": 253,
+            "family_support": [
+              0,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ],
+            "shadow_size": 48,
+            "minimum_compatible_visible_size": 41,
+            "minimizing_plane_assignments": [
+              15
+            ]
+          }
+        ]
+      },
+      {
+        "direction": "row:0<-4",
+        "family_variable_count": 18,
+        "plane_variable_count": 4,
+        "transfer_blocks": [
+          {
+            "low_fibre": 0,
+            "high_fibre": 7,
+            "width": 10
+          },
+          {
+            "low_fibre": 1,
+            "high_fibre": 8,
+            "width": 4
+          },
+          {
+            "low_fibre": 3,
+            "high_fibre": 9,
+            "width": 4
+          }
+        ],
+        "size_bound_count_vectors_at_most_50": [
+          {
+            "counts": [
+              0,
+              0,
+              0
+            ],
+            "bound": 48
+          },
+          {
+            "counts": [
+              10,
+              4,
+              4
+            ],
+            "bound": 48
+          }
+        ],
+        "size_bound_assignment_count": 2,
+        "union_bound_assignment_count": 2,
+        "exact_shadow_assignment_count": 2,
+        "full_flag_pass_count": 2,
+        "full_flag_pass_assignments": [
+          {
+            "family_assignment": 0,
+            "plane_assignment": 0
+          },
+          {
+            "family_assignment": 262143,
+            "plane_assignment": 15
+          }
+        ],
+        "exact_shadow_assignment_supports": [
+          [],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ]
+        ],
+        "nonuniform_visible_minima": []
+      },
+      {
+        "direction": "row:1<-2",
+        "family_variable_count": 0,
+        "plane_variable_count": 1,
+        "transfer_blocks": [],
+        "size_bound_count_vectors_at_most_50": [
+          {
+            "counts": [],
+            "bound": 48
+          }
+        ],
+        "size_bound_assignment_count": 1,
+        "union_bound_assignment_count": 1,
+        "exact_shadow_assignment_count": 1,
+        "full_flag_pass_count": 2,
+        "full_flag_pass_assignments": [
+          {
+            "family_assignment": 0,
+            "plane_assignment": 0
+          },
+          {
+            "family_assignment": 0,
+            "plane_assignment": 1
+          }
+        ],
+        "exact_shadow_assignment_supports": [
+          []
+        ],
+        "nonuniform_visible_minima": []
+      },
+      {
+        "direction": "row:1<-3",
+        "family_variable_count": 6,
+        "plane_variable_count": 1,
+        "transfer_blocks": [
+          {
+            "low_fibre": 0,
+            "high_fibre": 3,
+            "width": 6
+          }
+        ],
+        "size_bound_count_vectors_at_most_50": [
+          {
+            "counts": [
+              0
+            ],
+            "bound": 48
+          },
+          {
+            "counts": [
+              6
+            ],
+            "bound": 48
+          }
+        ],
+        "size_bound_assignment_count": 2,
+        "union_bound_assignment_count": 2,
+        "exact_shadow_assignment_count": 2,
+        "full_flag_pass_count": 2,
+        "full_flag_pass_assignments": [
+          {
+            "family_assignment": 0,
+            "plane_assignment": 0
+          },
+          {
+            "family_assignment": 63,
+            "plane_assignment": 1
+          }
+        ],
+        "exact_shadow_assignment_supports": [
+          [],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ],
+        "nonuniform_visible_minima": []
+      },
+      {
+        "direction": "row:1<-4",
+        "family_variable_count": 16,
+        "plane_variable_count": 1,
+        "transfer_blocks": [
+          {
+            "low_fibre": 0,
+            "high_fibre": 4,
+            "width": 10
+          },
+          {
+            "low_fibre": 1,
+            "high_fibre": 5,
+            "width": 4
+          },
+          {
+            "low_fibre": 6,
+            "high_fibre": 9,
+            "width": 2
+          }
+        ],
+        "size_bound_count_vectors_at_most_50": [
+          {
+            "counts": [
+              0,
+              0,
+              0
+            ],
+            "bound": 48
+          },
+          {
+            "counts": [
+              10,
+              4,
+              2
+            ],
+            "bound": 48
+          }
+        ],
+        "size_bound_assignment_count": 2,
+        "union_bound_assignment_count": 2,
+        "exact_shadow_assignment_count": 2,
+        "full_flag_pass_count": 2,
+        "full_flag_pass_assignments": [
+          {
+            "family_assignment": 0,
+            "plane_assignment": 0
+          },
+          {
+            "family_assignment": 65535,
+            "plane_assignment": 1
+          }
+        ],
+        "exact_shadow_assignment_supports": [
+          [],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ]
+        ],
+        "nonuniform_visible_minima": []
+      },
+      {
+        "direction": "row:2<-3",
+        "family_variable_count": 6,
+        "plane_variable_count": 0,
+        "transfer_blocks": [
+          {
+            "low_fibre": 0,
+            "high_fibre": 1,
+            "width": 6
+          }
+        ],
+        "size_bound_count_vectors_at_most_50": [
+          {
+            "counts": [
+              0
+            ],
+            "bound": 48
+          },
+          {
+            "counts": [
+              6
+            ],
+            "bound": 48
+          }
+        ],
+        "size_bound_assignment_count": 2,
+        "union_bound_assignment_count": 2,
+        "exact_shadow_assignment_count": 2,
+        "full_flag_pass_count": 2,
+        "full_flag_pass_assignments": [
+          {
+            "family_assignment": 0,
+            "plane_assignment": 0
+          },
+          {
+            "family_assignment": 63,
+            "plane_assignment": 0
+          }
+        ],
+        "exact_shadow_assignment_supports": [
+          [],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ],
+        "nonuniform_visible_minima": []
+      },
+      {
+        "direction": "row:2<-4",
+        "family_variable_count": 16,
+        "plane_variable_count": 0,
+        "transfer_blocks": [
+          {
+            "low_fibre": 0,
+            "high_fibre": 2,
+            "width": 10
+          },
+          {
+            "low_fibre": 3,
+            "high_fibre": 5,
+            "width": 4
+          },
+          {
+            "low_fibre": 6,
+            "high_fibre": 8,
+            "width": 2
+          }
+        ],
+        "size_bound_count_vectors_at_most_50": [
+          {
+            "counts": [
+              0,
+              0,
+              0
+            ],
+            "bound": 48
+          },
+          {
+            "counts": [
+              10,
+              4,
+              2
+            ],
+            "bound": 48
+          }
+        ],
+        "size_bound_assignment_count": 2,
+        "union_bound_assignment_count": 2,
+        "exact_shadow_assignment_count": 2,
+        "full_flag_pass_count": 2,
+        "full_flag_pass_assignments": [
+          {
+            "family_assignment": 0,
+            "plane_assignment": 0
+          },
+          {
+            "family_assignment": 65535,
+            "plane_assignment": 0
+          }
+        ],
+        "exact_shadow_assignment_supports": [
+          [],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ]
+        ],
+        "nonuniform_visible_minima": []
+      },
+      {
+        "direction": "row:3<-4",
+        "family_variable_count": 10,
+        "plane_variable_count": 0,
+        "transfer_blocks": [
+          {
+            "low_fibre": 1,
+            "high_fibre": 2,
+            "width": 4
+          },
+          {
+            "low_fibre": 3,
+            "high_fibre": 4,
+            "width": 4
+          },
+          {
+            "low_fibre": 6,
+            "high_fibre": 7,
+            "width": 2
+          }
+        ],
+        "size_bound_count_vectors_at_most_50": [
+          {
+            "counts": [
+              0,
+              0,
+              0
+            ],
+            "bound": 48
+          },
+          {
+            "counts": [
+              4,
+              4,
+              2
+            ],
+            "bound": 48
+          }
+        ],
+        "size_bound_assignment_count": 2,
+        "union_bound_assignment_count": 2,
+        "exact_shadow_assignment_count": 2,
+        "full_flag_pass_count": 2,
+        "full_flag_pass_assignments": [
+          {
+            "family_assignment": 0,
+            "plane_assignment": 0
+          },
+          {
+            "family_assignment": 1023,
+            "plane_assignment": 0
+          }
+        ],
+        "exact_shadow_assignment_supports": [
+          [],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        ],
+        "nonuniform_visible_minima": []
+      },
+      {
+        "direction": "column:0<-1",
+        "family_variable_count": 0,
+        "plane_variable_count": 1,
+        "transfer_blocks": [],
+        "size_bound_count_vectors_at_most_50": [
+          {
+            "counts": [],
+            "bound": 48
+          }
+        ],
+        "size_bound_assignment_count": 1,
+        "union_bound_assignment_count": 1,
+        "exact_shadow_assignment_count": 1,
+        "full_flag_pass_count": 2,
+        "full_flag_pass_assignments": [
+          {
+            "family_assignment": 0,
+            "plane_assignment": 0
+          },
+          {
+            "family_assignment": 0,
+            "plane_assignment": 1
+          }
+        ],
+        "exact_shadow_assignment_supports": [
+          []
+        ],
+        "nonuniform_visible_minima": []
+      },
+      {
+        "direction": "column:0<-2",
+        "family_variable_count": 1,
+        "plane_variable_count": 1,
+        "transfer_blocks": [
+          {
+            "low_fibre": 1,
+            "high_fibre": 6,
+            "width": 1
+          }
+        ],
+        "size_bound_count_vectors_at_most_50": [
+          {
+            "counts": [
+              0
+            ],
+            "bound": 48
+          },
+          {
+            "counts": [
+              1
+            ],
+            "bound": 48
+          }
+        ],
+        "size_bound_assignment_count": 2,
+        "union_bound_assignment_count": 2,
+        "exact_shadow_assignment_count": 2,
+        "full_flag_pass_count": 2,
+        "full_flag_pass_assignments": [
+          {
+            "family_assignment": 0,
+            "plane_assignment": 0
+          },
+          {
+            "family_assignment": 1,
+            "plane_assignment": 1
+          }
+        ],
+        "exact_shadow_assignment_supports": [
+          [],
+          [
+            0
+          ]
+        ],
+        "nonuniform_visible_minima": []
+      },
+      {
+        "direction": "column:0<-3",
+        "family_variable_count": 1,
+        "plane_variable_count": 1,
+        "transfer_blocks": [
+          {
+            "low_fibre": 0,
+            "high_fibre": 6,
+            "width": 1
+          }
+        ],
+        "size_bound_count_vectors_at_most_50": [
+          {
+            "counts": [
+              0
+            ],
+            "bound": 48
+          },
+          {
+            "counts": [
+              1
+            ],
+            "bound": 48
+          }
+        ],
+        "size_bound_assignment_count": 2,
+        "union_bound_assignment_count": 2,
+        "exact_shadow_assignment_count": 2,
+        "full_flag_pass_count": 2,
+        "full_flag_pass_assignments": [
+          {
+            "family_assignment": 0,
+            "plane_assignment": 0
+          },
+          {
+            "family_assignment": 1,
+            "plane_assignment": 1
+          }
+        ],
+        "exact_shadow_assignment_supports": [
+          [],
+          [
+            0
+          ]
+        ],
+        "nonuniform_visible_minima": []
+      },
+      {
+        "direction": "column:0<-4",
+        "family_variable_count": 8,
+        "plane_variable_count": 2,
+        "transfer_blocks": [
+          {
+            "low_fibre": 0,
+            "high_fibre": 7,
+            "width": 3
+          },
+          {
+            "low_fibre": 1,
+            "high_fibre": 8,
+            "width": 3
+          },
+          {
+            "low_fibre": 3,
+            "high_fibre": 9,
+            "width": 2
+          }
+        ],
+        "size_bound_count_vectors_at_most_50": [
+          {
+            "counts": [
+              0,
+              0,
+              0
+            ],
+            "bound": 48
+          },
+          {
+            "counts": [
+              3,
+              3,
+              2
+            ],
+            "bound": 48
+          }
+        ],
+        "size_bound_assignment_count": 2,
+        "union_bound_assignment_count": 2,
+        "exact_shadow_assignment_count": 2,
+        "full_flag_pass_count": 2,
+        "full_flag_pass_assignments": [
+          {
+            "family_assignment": 0,
+            "plane_assignment": 0
+          },
+          {
+            "family_assignment": 255,
+            "plane_assignment": 3
+          }
+        ],
+        "exact_shadow_assignment_supports": [
+          [],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        ],
+        "nonuniform_visible_minima": []
+      },
+      {
+        "direction": "column:1<-2",
+        "family_variable_count": 1,
+        "plane_variable_count": 0,
+        "transfer_blocks": [
+          {
+            "low_fibre": 1,
+            "high_fibre": 3,
+            "width": 1
+          }
+        ],
+        "size_bound_count_vectors_at_most_50": [
+          {
+            "counts": [
+              0
+            ],
+            "bound": 48
+          },
+          {
+            "counts": [
+              1
+            ],
+            "bound": 48
+          }
+        ],
+        "size_bound_assignment_count": 2,
+        "union_bound_assignment_count": 2,
+        "exact_shadow_assignment_count": 2,
+        "full_flag_pass_count": 2,
+        "full_flag_pass_assignments": [
+          {
+            "family_assignment": 0,
+            "plane_assignment": 0
+          },
+          {
+            "family_assignment": 1,
+            "plane_assignment": 0
+          }
+        ],
+        "exact_shadow_assignment_supports": [
+          [],
+          [
+            0
+          ]
+        ],
+        "nonuniform_visible_minima": []
+      },
+      {
+        "direction": "column:1<-3",
+        "family_variable_count": 1,
+        "plane_variable_count": 0,
+        "transfer_blocks": [
+          {
+            "low_fibre": 0,
+            "high_fibre": 3,
+            "width": 1
+          }
+        ],
+        "size_bound_count_vectors_at_most_50": [
+          {
+            "counts": [
+              0
+            ],
+            "bound": 48
+          },
+          {
+            "counts": [
+              1
+            ],
+            "bound": 48
+          }
+        ],
+        "size_bound_assignment_count": 2,
+        "union_bound_assignment_count": 2,
+        "exact_shadow_assignment_count": 2,
+        "full_flag_pass_count": 2,
+        "full_flag_pass_assignments": [
+          {
+            "family_assignment": 0,
+            "plane_assignment": 0
+          },
+          {
+            "family_assignment": 1,
+            "plane_assignment": 0
+          }
+        ],
+        "exact_shadow_assignment_supports": [
+          [],
+          [
+            0
+          ]
+        ],
+        "nonuniform_visible_minima": []
+      },
+      {
+        "direction": "column:1<-4",
+        "family_variable_count": 8,
+        "plane_variable_count": 1,
+        "transfer_blocks": [
+          {
+            "low_fibre": 0,
+            "high_fibre": 4,
+            "width": 3
+          },
+          {
+            "low_fibre": 1,
+            "high_fibre": 5,
+            "width": 3
+          },
+          {
+            "low_fibre": 6,
+            "high_fibre": 9,
+            "width": 2
+          }
+        ],
+        "size_bound_count_vectors_at_most_50": [
+          {
+            "counts": [
+              0,
+              0,
+              0
+            ],
+            "bound": 48
+          },
+          {
+            "counts": [
+              3,
+              3,
+              2
+            ],
+            "bound": 48
+          }
+        ],
+        "size_bound_assignment_count": 2,
+        "union_bound_assignment_count": 2,
+        "exact_shadow_assignment_count": 2,
+        "full_flag_pass_count": 2,
+        "full_flag_pass_assignments": [
+          {
+            "family_assignment": 0,
+            "plane_assignment": 0
+          },
+          {
+            "family_assignment": 255,
+            "plane_assignment": 1
+          }
+        ],
+        "exact_shadow_assignment_supports": [
+          [],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        ],
+        "nonuniform_visible_minima": []
+      },
+      {
+        "direction": "column:2<-3",
+        "family_variable_count": 0,
+        "plane_variable_count": 0,
+        "transfer_blocks": [],
+        "size_bound_count_vectors_at_most_50": [
+          {
+            "counts": [],
+            "bound": 48
+          }
+        ],
+        "size_bound_assignment_count": 1,
+        "union_bound_assignment_count": 1,
+        "exact_shadow_assignment_count": 1,
+        "full_flag_pass_count": 1,
+        "full_flag_pass_assignments": [
+          {
+            "family_assignment": 0,
+            "plane_assignment": 0
+          }
+        ],
+        "exact_shadow_assignment_supports": [
+          []
+        ],
+        "nonuniform_visible_minima": []
+      },
+      {
+        "direction": "column:2<-4",
+        "family_variable_count": 7,
+        "plane_variable_count": 1,
+        "transfer_blocks": [
+          {
+            "low_fibre": 0,
+            "high_fibre": 2,
+            "width": 3
+          },
+          {
+            "low_fibre": 3,
+            "high_fibre": 5,
+            "width": 2
+          },
+          {
+            "low_fibre": 6,
+            "high_fibre": 8,
+            "width": 2
+          }
+        ],
+        "size_bound_count_vectors_at_most_50": [
+          {
+            "counts": [
+              0,
+              0,
+              0
+            ],
+            "bound": 48
+          },
+          {
+            "counts": [
+              3,
+              2,
+              2
+            ],
+            "bound": 48
+          }
+        ],
+        "size_bound_assignment_count": 2,
+        "union_bound_assignment_count": 2,
+        "exact_shadow_assignment_count": 2,
+        "full_flag_pass_count": 2,
+        "full_flag_pass_assignments": [
+          {
+            "family_assignment": 0,
+            "plane_assignment": 0
+          },
+          {
+            "family_assignment": 127,
+            "plane_assignment": 1
+          }
+        ],
+        "exact_shadow_assignment_supports": [
+          [],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        ],
+        "nonuniform_visible_minima": []
+      },
+      {
+        "direction": "column:3<-2",
+        "family_variable_count": 0,
+        "plane_variable_count": 0,
+        "transfer_blocks": [],
+        "size_bound_count_vectors_at_most_50": [
+          {
+            "counts": [],
+            "bound": 48
+          }
+        ],
+        "size_bound_assignment_count": 1,
+        "union_bound_assignment_count": 1,
+        "exact_shadow_assignment_count": 1,
+        "full_flag_pass_count": 1,
+        "full_flag_pass_assignments": [
+          {
+            "family_assignment": 0,
+            "plane_assignment": 0
+          }
+        ],
+        "exact_shadow_assignment_supports": [
+          []
+        ],
+        "nonuniform_visible_minima": []
+      },
+      {
+        "direction": "column:3<-4",
+        "family_variable_count": 7,
+        "plane_variable_count": 1,
+        "transfer_blocks": [
+          {
+            "low_fibre": 1,
+            "high_fibre": 2,
+            "width": 3
+          },
+          {
+            "low_fibre": 3,
+            "high_fibre": 4,
+            "width": 2
+          },
+          {
+            "low_fibre": 6,
+            "high_fibre": 7,
+            "width": 2
+          }
+        ],
+        "size_bound_count_vectors_at_most_50": [
+          {
+            "counts": [
+              0,
+              0,
+              0
+            ],
+            "bound": 48
+          },
+          {
+            "counts": [
+              3,
+              2,
+              2
+            ],
+            "bound": 48
+          }
+        ],
+        "size_bound_assignment_count": 2,
+        "union_bound_assignment_count": 2,
+        "exact_shadow_assignment_count": 2,
+        "full_flag_pass_count": 2,
+        "full_flag_pass_assignments": [
+          {
+            "family_assignment": 0,
+            "plane_assignment": 0
+          },
+          {
+            "family_assignment": 127,
+            "plane_assignment": 1
+          }
+        ],
+        "exact_shadow_assignment_supports": [
+          [],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        ],
+        "nonuniform_visible_minima": []
+      }
+    ],
+    "orbit13": [
+      {
+        "direction": "row:0<-1",
+        "family_variable_count": 0,
+        "plane_variable_count": 1,
+        "transfer_blocks": [],
+        "size_bound_count_vectors_at_most_50": [
+          {
+            "counts": [],
+            "bound": 49
+          }
+        ],
+        "size_bound_assignment_count": 1,
+        "union_bound_assignment_count": 1,
+        "exact_shadow_assignment_count": 1,
+        "full_flag_pass_count": 2,
+        "full_flag_pass_assignments": [
+          {
+            "family_assignment": 0,
+            "plane_assignment": 0
+          },
+          {
+            "family_assignment": 0,
+            "plane_assignment": 1
+          }
+        ],
+        "exact_shadow_assignment_supports": [
+          []
+        ],
+        "nonuniform_visible_minima": []
+      },
+      {
+        "direction": "row:0<-2",
+        "family_variable_count": 1,
+        "plane_variable_count": 3,
+        "transfer_blocks": [
+          {
+            "low_fibre": 1,
+            "high_fibre": 6,
+            "width": 1
+          }
+        ],
+        "size_bound_count_vectors_at_most_50": [
+          {
+            "counts": [
+              0
+            ],
+            "bound": 49
+          },
+          {
+            "counts": [
+              1
+            ],
+            "bound": 49
+          }
+        ],
+        "size_bound_assignment_count": 2,
+        "union_bound_assignment_count": 2,
+        "exact_shadow_assignment_count": 2,
+        "full_flag_pass_count": 2,
+        "full_flag_pass_assignments": [
+          {
+            "family_assignment": 0,
+            "plane_assignment": 0
+          },
+          {
+            "family_assignment": 1,
+            "plane_assignment": 7
+          }
+        ],
+        "exact_shadow_assignment_supports": [
+          [],
+          [
+            0
+          ]
+        ],
+        "nonuniform_visible_minima": []
+      },
+      {
+        "direction": "row:0<-3",
+        "family_variable_count": 3,
+        "plane_variable_count": 3,
+        "transfer_blocks": [
+          {
+            "low_fibre": 0,
+            "high_fibre": 6,
+            "width": 3
+          }
+        ],
+        "size_bound_count_vectors_at_most_50": [
+          {
+            "counts": [
+              0
+            ],
+            "bound": 49
+          },
+          {
+            "counts": [
+              3
+            ],
+            "bound": 49
+          }
+        ],
+        "size_bound_assignment_count": 2,
+        "union_bound_assignment_count": 2,
+        "exact_shadow_assignment_count": 2,
+        "full_flag_pass_count": 2,
+        "full_flag_pass_assignments": [
+          {
+            "family_assignment": 0,
+            "plane_assignment": 0
+          },
+          {
+            "family_assignment": 7,
+            "plane_assignment": 7
+          }
+        ],
+        "exact_shadow_assignment_supports": [
+          [],
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "nonuniform_visible_minima": []
+      },
+      {
+        "direction": "row:0<-4",
+        "family_variable_count": 16,
+        "plane_variable_count": 3,
+        "transfer_blocks": [
+          {
+            "low_fibre": 0,
+            "high_fibre": 7,
+            "width": 7
+          },
+          {
+            "low_fibre": 1,
+            "high_fibre": 8,
+            "width": 5
+          },
+          {
+            "low_fibre": 3,
+            "high_fibre": 9,
+            "width": 4
+          }
+        ],
+        "size_bound_count_vectors_at_most_50": [
+          {
+            "counts": [
+              0,
+              0,
+              0
+            ],
+            "bound": 49
+          },
+          {
+            "counts": [
+              7,
+              5,
+              4
+            ],
+            "bound": 49
+          }
+        ],
+        "size_bound_assignment_count": 2,
+        "union_bound_assignment_count": 2,
+        "exact_shadow_assignment_count": 2,
+        "full_flag_pass_count": 2,
+        "full_flag_pass_assignments": [
+          {
+            "family_assignment": 0,
+            "plane_assignment": 0
+          },
+          {
+            "family_assignment": 65535,
+            "plane_assignment": 7
+          }
+        ],
+        "exact_shadow_assignment_supports": [
+          [],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ]
+        ],
+        "nonuniform_visible_minima": []
+      },
+      {
+        "direction": "row:1<-2",
+        "family_variable_count": 1,
+        "plane_variable_count": 2,
+        "transfer_blocks": [
+          {
+            "low_fibre": 1,
+            "high_fibre": 3,
+            "width": 1
+          }
+        ],
+        "size_bound_count_vectors_at_most_50": [
+          {
+            "counts": [
+              0
+            ],
+            "bound": 49
+          },
+          {
+            "counts": [
+              1
+            ],
+            "bound": 49
+          }
+        ],
+        "size_bound_assignment_count": 2,
+        "union_bound_assignment_count": 2,
+        "exact_shadow_assignment_count": 2,
+        "full_flag_pass_count": 2,
+        "full_flag_pass_assignments": [
+          {
+            "family_assignment": 0,
+            "plane_assignment": 0
+          },
+          {
+            "family_assignment": 1,
+            "plane_assignment": 3
+          }
+        ],
+        "exact_shadow_assignment_supports": [
+          [],
+          [
+            0
+          ]
+        ],
+        "nonuniform_visible_minima": []
+      },
+      {
+        "direction": "row:1<-3",
+        "family_variable_count": 3,
+        "plane_variable_count": 2,
+        "transfer_blocks": [
+          {
+            "low_fibre": 0,
+            "high_fibre": 3,
+            "width": 3
+          }
+        ],
+        "size_bound_count_vectors_at_most_50": [
+          {
+            "counts": [
+              0
+            ],
+            "bound": 49
+          },
+          {
+            "counts": [
+              3
+            ],
+            "bound": 49
+          }
+        ],
+        "size_bound_assignment_count": 2,
+        "union_bound_assignment_count": 2,
+        "exact_shadow_assignment_count": 2,
+        "full_flag_pass_count": 2,
+        "full_flag_pass_assignments": [
+          {
+            "family_assignment": 0,
+            "plane_assignment": 0
+          },
+          {
+            "family_assignment": 7,
+            "plane_assignment": 3
+          }
+        ],
+        "exact_shadow_assignment_supports": [
+          [],
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "nonuniform_visible_minima": []
+      },
+      {
+        "direction": "row:1<-4",
+        "family_variable_count": 16,
+        "plane_variable_count": 2,
+        "transfer_blocks": [
+          {
+            "low_fibre": 0,
+            "high_fibre": 4,
+            "width": 7
+          },
+          {
+            "low_fibre": 1,
+            "high_fibre": 5,
+            "width": 5
+          },
+          {
+            "low_fibre": 6,
+            "high_fibre": 9,
+            "width": 4
+          }
+        ],
+        "size_bound_count_vectors_at_most_50": [
+          {
+            "counts": [
+              0,
+              0,
+              0
+            ],
+            "bound": 49
+          },
+          {
+            "counts": [
+              7,
+              5,
+              4
+            ],
+            "bound": 49
+          }
+        ],
+        "size_bound_assignment_count": 2,
+        "union_bound_assignment_count": 2,
+        "exact_shadow_assignment_count": 2,
+        "full_flag_pass_count": 2,
+        "full_flag_pass_assignments": [
+          {
+            "family_assignment": 0,
+            "plane_assignment": 0
+          },
+          {
+            "family_assignment": 65535,
+            "plane_assignment": 3
+          }
+        ],
+        "exact_shadow_assignment_supports": [
+          [],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ]
+        ],
+        "nonuniform_visible_minima": []
+      },
+      {
+        "direction": "row:2<-3",
+        "family_variable_count": 2,
+        "plane_variable_count": 0,
+        "transfer_blocks": [
+          {
+            "low_fibre": 0,
+            "high_fibre": 1,
+            "width": 2
+          }
+        ],
+        "size_bound_count_vectors_at_most_50": [
+          {
+            "counts": [
+              0
+            ],
+            "bound": 49
+          },
+          {
+            "counts": [
+              2
+            ],
+            "bound": 49
+          }
+        ],
+        "size_bound_assignment_count": 2,
+        "union_bound_assignment_count": 2,
+        "exact_shadow_assignment_count": 2,
+        "full_flag_pass_count": 2,
+        "full_flag_pass_assignments": [
+          {
+            "family_assignment": 0,
+            "plane_assignment": 0
+          },
+          {
+            "family_assignment": 3,
+            "plane_assignment": 0
+          }
+        ],
+        "exact_shadow_assignment_supports": [
+          [],
+          [
+            0,
+            1
+          ]
+        ],
+        "nonuniform_visible_minima": []
+      },
+      {
+        "direction": "row:2<-4",
+        "family_variable_count": 15,
+        "plane_variable_count": 0,
+        "transfer_blocks": [
+          {
+            "low_fibre": 0,
+            "high_fibre": 2,
+            "width": 7
+          },
+          {
+            "low_fibre": 3,
+            "high_fibre": 5,
+            "width": 4
+          },
+          {
+            "low_fibre": 6,
+            "high_fibre": 8,
+            "width": 4
+          }
+        ],
+        "size_bound_count_vectors_at_most_50": [
+          {
+            "counts": [
+              0,
+              0,
+              0
+            ],
+            "bound": 49
+          },
+          {
+            "counts": [
+              7,
+              4,
+              4
+            ],
+            "bound": 49
+          }
+        ],
+        "size_bound_assignment_count": 2,
+        "union_bound_assignment_count": 2,
+        "exact_shadow_assignment_count": 2,
+        "full_flag_pass_count": 2,
+        "full_flag_pass_assignments": [
+          {
+            "family_assignment": 0,
+            "plane_assignment": 0
+          },
+          {
+            "family_assignment": 32767,
+            "plane_assignment": 0
+          }
+        ],
+        "exact_shadow_assignment_supports": [
+          [],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
+          ]
+        ],
+        "nonuniform_visible_minima": []
+      },
+      {
+        "direction": "row:3<-4",
+        "family_variable_count": 13,
+        "plane_variable_count": 0,
+        "transfer_blocks": [
+          {
+            "low_fibre": 1,
+            "high_fibre": 2,
+            "width": 5
+          },
+          {
+            "low_fibre": 3,
+            "high_fibre": 4,
+            "width": 4
+          },
+          {
+            "low_fibre": 6,
+            "high_fibre": 7,
+            "width": 4
+          }
+        ],
+        "size_bound_count_vectors_at_most_50": [
+          {
+            "counts": [
+              0,
+              0,
+              0
+            ],
+            "bound": 49
+          },
+          {
+            "counts": [
+              5,
+              4,
+              4
+            ],
+            "bound": 49
+          }
+        ],
+        "size_bound_assignment_count": 2,
+        "union_bound_assignment_count": 2,
+        "exact_shadow_assignment_count": 2,
+        "full_flag_pass_count": 2,
+        "full_flag_pass_assignments": [
+          {
+            "family_assignment": 0,
+            "plane_assignment": 0
+          },
+          {
+            "family_assignment": 8191,
+            "plane_assignment": 0
+          }
+        ],
+        "exact_shadow_assignment_supports": [
+          [],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ]
+        ],
+        "nonuniform_visible_minima": []
+      },
+      {
+        "direction": "column:0<-1",
+        "family_variable_count": 0,
+        "plane_variable_count": 0,
+        "transfer_blocks": [],
+        "size_bound_count_vectors_at_most_50": [
+          {
+            "counts": [],
+            "bound": 49
+          }
+        ],
+        "size_bound_assignment_count": 1,
+        "union_bound_assignment_count": 1,
+        "exact_shadow_assignment_count": 1,
+        "full_flag_pass_count": 1,
+        "full_flag_pass_assignments": [
+          {
+            "family_assignment": 0,
+            "plane_assignment": 0
+          }
+        ],
+        "exact_shadow_assignment_supports": [
+          []
+        ],
+        "nonuniform_visible_minima": []
+      },
+      {
+        "direction": "column:0<-2",
+        "family_variable_count": 1,
+        "plane_variable_count": 1,
+        "transfer_blocks": [
+          {
+            "low_fibre": 2,
+            "high_fibre": 7,
+            "width": 1
+          }
+        ],
+        "size_bound_count_vectors_at_most_50": [
+          {
+            "counts": [
+              0
+            ],
+            "bound": 49
+          },
+          {
+            "counts": [
+              1
+            ],
+            "bound": 49
+          }
+        ],
+        "size_bound_assignment_count": 2,
+        "union_bound_assignment_count": 2,
+        "exact_shadow_assignment_count": 2,
+        "full_flag_pass_count": 2,
+        "full_flag_pass_assignments": [
+          {
+            "family_assignment": 0,
+            "plane_assignment": 0
+          },
+          {
+            "family_assignment": 1,
+            "plane_assignment": 1
+          }
+        ],
+        "exact_shadow_assignment_supports": [
+          [],
+          [
+            0
+          ]
+        ],
+        "nonuniform_visible_minima": []
+      },
+      {
+        "direction": "column:0<-3",
+        "family_variable_count": 3,
+        "plane_variable_count": 2,
+        "transfer_blocks": [
+          {
+            "low_fibre": 2,
+            "high_fibre": 8,
+            "width": 2
+          },
+          {
+            "low_fibre": 4,
+            "high_fibre": 9,
+            "width": 1
+          }
+        ],
+        "size_bound_count_vectors_at_most_50": [
+          {
+            "counts": [
+              0,
+              0
+            ],
+            "bound": 49
+          },
+          {
+            "counts": [
+              1,
+              0
+            ],
+            "bound": 48
+          },
+          {
+            "counts": [
+              1,
+              1
+            ],
+            "bound": 48
+          },
+          {
+            "counts": [
+              2,
+              1
+            ],
+            "bound": 49
+          }
+        ],
+        "size_bound_assignment_count": 6,
+        "union_bound_assignment_count": 4,
+        "exact_shadow_assignment_count": 4,
+        "full_flag_pass_count": 2,
+        "full_flag_pass_assignments": [
+          {
+            "family_assignment": 0,
+            "plane_assignment": 0
+          },
+          {
+            "family_assignment": 7,
+            "plane_assignment": 3
+          }
+        ],
+        "exact_shadow_assignment_supports": [
+          [],
+          [
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "nonuniform_visible_minima": [
+          {
+            "family_assignment": 2,
+            "family_support": [
+              1
+            ],
+            "shadow_size": 50,
+            "minimum_compatible_visible_size": 43,
+            "minimizing_plane_assignments": [
+              0
+            ]
+          },
+          {
+            "family_assignment": 5,
+            "family_support": [
+              0,
+              2
+            ],
+            "shadow_size": 50,
+            "minimum_compatible_visible_size": 43,
+            "minimizing_plane_assignments": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "direction": "column:0<-4",
+        "family_variable_count": 11,
+        "plane_variable_count": 2,
+        "transfer_blocks": [
+          {
+            "low_fibre": 0,
+            "high_fibre": 7,
+            "width": 3
+          },
+          {
+            "low_fibre": 1,
+            "high_fibre": 8,
+            "width": 4
+          },
+          {
+            "low_fibre": 3,
+            "high_fibre": 9,
+            "width": 4
+          }
+        ],
+        "size_bound_count_vectors_at_most_50": [
+          {
+            "counts": [
+              0,
+              0,
+              0
+            ],
+            "bound": 49
+          },
+          {
+            "counts": [
+              3,
+              4,
+              4
+            ],
+            "bound": 49
+          }
+        ],
+        "size_bound_assignment_count": 2,
+        "union_bound_assignment_count": 2,
+        "exact_shadow_assignment_count": 2,
+        "full_flag_pass_count": 2,
+        "full_flag_pass_assignments": [
+          {
+            "family_assignment": 0,
+            "plane_assignment": 0
+          },
+          {
+            "family_assignment": 2047,
+            "plane_assignment": 3
+          }
+        ],
+        "exact_shadow_assignment_supports": [
+          [],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ]
+        ],
+        "nonuniform_visible_minima": []
+      },
+      {
+        "direction": "column:1<-0",
+        "family_variable_count": 0,
+        "plane_variable_count": 0,
+        "transfer_blocks": [],
+        "size_bound_count_vectors_at_most_50": [
+          {
+            "counts": [],
+            "bound": 49
+          }
+        ],
+        "size_bound_assignment_count": 1,
+        "union_bound_assignment_count": 1,
+        "exact_shadow_assignment_count": 1,
+        "full_flag_pass_count": 1,
+        "full_flag_pass_assignments": [
+          {
+            "family_assignment": 0,
+            "plane_assignment": 0
+          }
+        ],
+        "exact_shadow_assignment_supports": [
+          []
+        ],
+        "nonuniform_visible_minima": []
+      },
+      {
+        "direction": "column:1<-2",
+        "family_variable_count": 1,
+        "plane_variable_count": 1,
+        "transfer_blocks": [
+          {
+            "low_fibre": 2,
+            "high_fibre": 4,
+            "width": 1
+          }
+        ],
+        "size_bound_count_vectors_at_most_50": [
+          {
+            "counts": [
+              0
+            ],
+            "bound": 49
+          },
+          {
+            "counts": [
+              1
+            ],
+            "bound": 49
+          }
+        ],
+        "size_bound_assignment_count": 2,
+        "union_bound_assignment_count": 2,
+        "exact_shadow_assignment_count": 2,
+        "full_flag_pass_count": 2,
+        "full_flag_pass_assignments": [
+          {
+            "family_assignment": 0,
+            "plane_assignment": 0
+          },
+          {
+            "family_assignment": 1,
+            "plane_assignment": 1
+          }
+        ],
+        "exact_shadow_assignment_supports": [
+          [],
+          [
+            0
+          ]
+        ],
+        "nonuniform_visible_minima": []
+      },
+      {
+        "direction": "column:1<-3",
+        "family_variable_count": 3,
+        "plane_variable_count": 2,
+        "transfer_blocks": [
+          {
+            "low_fibre": 2,
+            "high_fibre": 5,
+            "width": 2
+          },
+          {
+            "low_fibre": 7,
+            "high_fibre": 9,
+            "width": 1
+          }
+        ],
+        "size_bound_count_vectors_at_most_50": [
+          {
+            "counts": [
+              0,
+              0
+            ],
+            "bound": 49
+          },
+          {
+            "counts": [
+              1,
+              0
+            ],
+            "bound": 48
+          },
+          {
+            "counts": [
+              1,
+              1
+            ],
+            "bound": 48
+          },
+          {
+            "counts": [
+              2,
+              1
+            ],
+            "bound": 49
+          }
+        ],
+        "size_bound_assignment_count": 6,
+        "union_bound_assignment_count": 4,
+        "exact_shadow_assignment_count": 4,
+        "full_flag_pass_count": 2,
+        "full_flag_pass_assignments": [
+          {
+            "family_assignment": 0,
+            "plane_assignment": 0
+          },
+          {
+            "family_assignment": 7,
+            "plane_assignment": 3
+          }
+        ],
+        "exact_shadow_assignment_supports": [
+          [],
+          [
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "nonuniform_visible_minima": [
+          {
+            "family_assignment": 2,
+            "family_support": [
+              1
+            ],
+            "shadow_size": 50,
+            "minimum_compatible_visible_size": 43,
+            "minimizing_plane_assignments": [
+              0
+            ]
+          },
+          {
+            "family_assignment": 5,
+            "family_support": [
+              0,
+              2
+            ],
+            "shadow_size": 50,
+            "minimum_compatible_visible_size": 43,
+            "minimizing_plane_assignments": [
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "direction": "column:1<-4",
+        "family_variable_count": 11,
+        "plane_variable_count": 2,
+        "transfer_blocks": [
+          {
+            "low_fibre": 0,
+            "high_fibre": 4,
+            "width": 3
+          },
+          {
+            "low_fibre": 1,
+            "high_fibre": 5,
+            "width": 4
+          },
+          {
+            "low_fibre": 6,
+            "high_fibre": 9,
+            "width": 4
+          }
+        ],
+        "size_bound_count_vectors_at_most_50": [
+          {
+            "counts": [
+              0,
+              0,
+              0
+            ],
+            "bound": 49
+          },
+          {
+            "counts": [
+              3,
+              4,
+              4
+            ],
+            "bound": 49
+          }
+        ],
+        "size_bound_assignment_count": 2,
+        "union_bound_assignment_count": 2,
+        "exact_shadow_assignment_count": 2,
+        "full_flag_pass_count": 2,
+        "full_flag_pass_assignments": [
+          {
+            "family_assignment": 0,
+            "plane_assignment": 0
+          },
+          {
+            "family_assignment": 2047,
+            "plane_assignment": 3
+          }
+        ],
+        "exact_shadow_assignment_supports": [
+          [],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ]
+        ],
+        "nonuniform_visible_minima": []
+      },
+      {
+        "direction": "column:2<-3",
+        "family_variable_count": 2,
+        "plane_variable_count": 1,
+        "transfer_blocks": [
+          {
+            "low_fibre": 4,
+            "high_fibre": 5,
+            "width": 1
+          },
+          {
+            "low_fibre": 7,
+            "high_fibre": 8,
+            "width": 1
+          }
+        ],
+        "size_bound_count_vectors_at_most_50": [
+          {
+            "counts": [
+              0,
+              0
+            ],
+            "bound": 49
+          },
+          {
+            "counts": [
+              1,
+              1
+            ],
+            "bound": 49
+          }
+        ],
+        "size_bound_assignment_count": 2,
+        "union_bound_assignment_count": 2,
+        "exact_shadow_assignment_count": 2,
+        "full_flag_pass_count": 2,
+        "full_flag_pass_assignments": [
+          {
+            "family_assignment": 0,
+            "plane_assignment": 0
+          },
+          {
+            "family_assignment": 3,
+            "plane_assignment": 1
+          }
+        ],
+        "exact_shadow_assignment_supports": [
+          [],
+          [
+            0,
+            1
+          ]
+        ],
+        "nonuniform_visible_minima": []
+      },
+      {
+        "direction": "column:2<-4",
+        "family_variable_count": 10,
+        "plane_variable_count": 1,
+        "transfer_blocks": [
+          {
+            "low_fibre": 0,
+            "high_fibre": 2,
+            "width": 2
+          },
+          {
+            "low_fibre": 3,
+            "high_fibre": 5,
+            "width": 4
+          },
+          {
+            "low_fibre": 6,
+            "high_fibre": 8,
+            "width": 4
+          }
+        ],
+        "size_bound_count_vectors_at_most_50": [
+          {
+            "counts": [
+              0,
+              0,
+              0
+            ],
+            "bound": 49
+          },
+          {
+            "counts": [
+              2,
+              4,
+              4
+            ],
+            "bound": 49
+          }
+        ],
+        "size_bound_assignment_count": 2,
+        "union_bound_assignment_count": 2,
+        "exact_shadow_assignment_count": 2,
+        "full_flag_pass_count": 2,
+        "full_flag_pass_assignments": [
+          {
+            "family_assignment": 0,
+            "plane_assignment": 0
+          },
+          {
+            "family_assignment": 1023,
+            "plane_assignment": 1
+          }
+        ],
+        "exact_shadow_assignment_supports": [
+          [],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        ],
+        "nonuniform_visible_minima": []
+      },
+      {
+        "direction": "column:3<-4",
+        "family_variable_count": 8,
+        "plane_variable_count": 0,
+        "transfer_blocks": [
+          {
+            "low_fibre": 1,
+            "high_fibre": 2,
+            "width": 2
+          },
+          {
+            "low_fibre": 3,
+            "high_fibre": 4,
+            "width": 3
+          },
+          {
+            "low_fibre": 6,
+            "high_fibre": 7,
+            "width": 3
+          }
+        ],
+        "size_bound_count_vectors_at_most_50": [
+          {
+            "counts": [
+              0,
+              0,
+              0
+            ],
+            "bound": 49
+          },
+          {
+            "counts": [
+              2,
+              3,
+              3
+            ],
+            "bound": 49
+          }
+        ],
+        "size_bound_assignment_count": 2,
+        "union_bound_assignment_count": 2,
+        "exact_shadow_assignment_count": 2,
+        "full_flag_pass_count": 2,
+        "full_flag_pass_assignments": [
+          {
+            "family_assignment": 0,
+            "plane_assignment": 0
+          },
+          {
+            "family_assignment": 255,
+            "plane_assignment": 0
+          }
+        ],
+        "exact_shadow_assignment_supports": [
+          [],
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        ],
+        "nonuniform_visible_minima": []
+      }
+    ]
+  },
+  "global_five_plane_extremizers": {
+    "orbit1": {
+      "shadow_size": 48,
+      "good_plane_count": 4,
+      "good_planes": [
+        {
+          "cells": [
+            0,
+            1,
+            2,
+            3,
+            5
+          ],
+          "visible": 40
+        },
+        {
+          "cells": [
+            0,
+            1,
+            2,
+            3,
+            6
+          ],
+          "visible": 40
+        },
+        {
+          "cells": [
+            0,
+            1,
+            2,
+            3,
+            10
+          ],
+          "visible": 40
+        },
+        {
+          "cells": [
+            0,
+            1,
+            2,
+            3,
+            11
+          ],
+          "visible": 40
+        }
+      ],
+      "row_partition_maxima": [
+        {
+          "partition": [
+            5,
+            0,
+            0,
+            0,
+            0
+          ],
+          "maximum_invisible": 7,
+          "count": 1,
+          "example": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "partition": [
+            4,
+            1,
+            0,
+            0,
+            0
+          ],
+          "maximum_invisible": 8,
+          "count": 4,
+          "example": [
+            0,
+            1,
+            2,
+            3,
+            5
+          ]
+        },
+        {
+          "partition": [
+            3,
+            2,
+            0,
+            0,
+            0
+          ],
+          "maximum_invisible": 5,
+          "count": 4,
+          "example": [
+            0,
+            1,
+            2,
+            5,
+            6
+          ]
+        },
+        {
+          "partition": [
+            3,
+            1,
+            1,
+            0,
+            0
+          ],
+          "maximum_invisible": 5,
+          "count": 10,
+          "example": [
+            0,
+            1,
+            2,
+            5,
+            10
+          ]
+        },
+        {
+          "partition": [
+            2,
+            2,
+            1,
+            0,
+            0
+          ],
+          "maximum_invisible": 2,
+          "count": 632,
+          "example": [
+            0,
+            1,
+            5,
+            6,
+            10
+          ]
+        },
+        {
+          "partition": [
+            2,
+            1,
+            1,
+            1,
+            0
+          ],
+          "maximum_invisible": 2,
+          "count": 540,
+          "example": [
+            0,
+            1,
+            5,
+            10,
+            15
+          ]
+        },
+        {
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "maximum_invisible": 0,
+          "count": 3125,
+          "example": [
+            0,
+            5,
+            10,
+            15,
+            20
+          ]
+        }
+      ]
+    },
+    "orbit13": {
+      "shadow_size": 49,
+      "good_plane_count": 2,
+      "good_planes": [
+        {
+          "cells": [
+            0,
+            1,
+            2,
+            5,
+            6
+          ],
+          "visible": 40
+        },
+        {
+          "cells": [
+            0,
+            1,
+            5,
+            6,
+            7
+          ],
+          "visible": 40
+        }
+      ],
+      "row_partition_maxima": [
+        {
+          "partition": [
+            5,
+            0,
+            0,
+            0,
+            0
+          ],
+          "maximum_invisible": 5,
+          "count": 2,
+          "example": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "partition": [
+            4,
+            1,
+            0,
+            0,
+            0
+          ],
+          "maximum_invisible": 6,
+          "count": 8,
+          "example": [
+            0,
+            1,
+            2,
+            3,
+            5
+          ]
+        },
+        {
+          "partition": [
+            3,
+            2,
+            0,
+            0,
+            0
+          ],
+          "maximum_invisible": 9,
+          "count": 2,
+          "example": [
+            0,
+            1,
+            2,
+            5,
+            6
+          ]
+        },
+        {
+          "partition": [
+            3,
+            1,
+            1,
+            0,
+            0
+          ],
+          "maximum_invisible": 6,
+          "count": 60,
+          "example": [
+            0,
+            1,
+            2,
+            5,
+            10
+          ]
+        },
+        {
+          "partition": [
+            2,
+            2,
+            1,
+            0,
+            0
+          ],
+          "maximum_invisible": 7,
+          "count": 15,
+          "example": [
+            0,
+            1,
+            5,
+            6,
+            10
+          ]
+        },
+        {
+          "partition": [
+            2,
+            1,
+            1,
+            1,
+            0
+          ],
+          "maximum_invisible": 4,
+          "count": 300,
+          "example": [
+            0,
+            1,
+            5,
+            10,
+            15
+          ]
+        },
+        {
+          "partition": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "maximum_invisible": 2,
+          "count": 500,
+          "example": [
+            0,
+            5,
+            10,
+            15,
+            20
+          ]
+        }
+      ]
+    }
+  },
+  "ordered_two_row_maxima": {
+    "orbit1_4_plus_1": {
+      "matrix": [
+        [
+          null,
+          8,
+          8,
+          6,
+          6
+        ],
+        [
+          4,
+          null,
+          4,
+          4,
+          4
+        ],
+        [
+          4,
+          4,
+          null,
+          4,
+          4
+        ],
+        [
+          0,
+          0,
+          0,
+          null,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          null
+        ]
+      ],
+      "records": [
+        {
+          "long_row": 0,
+          "short_row": 1,
+          "maximum_invisible": 8,
+          "maximizer_count": 2,
+          "maximizer_examples": [
+            [
+              0,
+              1,
+              2,
+              3,
+              5
+            ],
+            [
+              0,
+              1,
+              2,
+              3,
+              6
+            ]
+          ]
+        },
+        {
+          "long_row": 0,
+          "short_row": 2,
+          "maximum_invisible": 8,
+          "maximizer_count": 2,
+          "maximizer_examples": [
+            [
+              0,
+              1,
+              2,
+              3,
+              10
+            ],
+            [
+              0,
+              1,
+              2,
+              3,
+              11
+            ]
+          ]
+        },
+        {
+          "long_row": 0,
+          "short_row": 3,
+          "maximum_invisible": 6,
+          "maximizer_count": 5,
+          "maximizer_examples": [
+            [
+              0,
+              1,
+              2,
+              3,
+              15
+            ],
+            [
+              0,
+              1,
+              2,
+              3,
+              16
+            ],
+            [
+              0,
+              1,
+              2,
+              3,
+              17
+            ],
+            [
+              0,
+              1,
+              2,
+              3,
+              18
+            ]
+          ]
+        },
+        {
+          "long_row": 0,
+          "short_row": 4,
+          "maximum_invisible": 6,
+          "maximizer_count": 5,
+          "maximizer_examples": [
+            [
+              0,
+              1,
+              2,
+              3,
+              20
+            ],
+            [
+              0,
+              1,
+              2,
+              3,
+              21
+            ],
+            [
+              0,
+              1,
+              2,
+              3,
+              22
+            ],
+            [
+              0,
+              1,
+              2,
+              3,
+              23
+            ]
+          ]
+        },
+        {
+          "long_row": 1,
+          "short_row": 0,
+          "maximum_invisible": 4,
+          "maximizer_count": 5,
+          "maximizer_examples": [
+            [
+              5,
+              6,
+              7,
+              8,
+              0
+            ],
+            [
+              5,
+              6,
+              7,
+              8,
+              1
+            ],
+            [
+              5,
+              6,
+              7,
+              8,
+              2
+            ],
+            [
+              5,
+              6,
+              7,
+              8,
+              3
+            ]
+          ]
+        },
+        {
+          "long_row": 1,
+          "short_row": 2,
+          "maximum_invisible": 4,
+          "maximizer_count": 5,
+          "maximizer_examples": [
+            [
+              5,
+              6,
+              7,
+              8,
+              10
+            ],
+            [
+              5,
+              6,
+              7,
+              8,
+              11
+            ],
+            [
+              5,
+              6,
+              7,
+              8,
+              12
+            ],
+            [
+              5,
+              6,
+              7,
+              8,
+              13
+            ]
+          ]
+        },
+        {
+          "long_row": 1,
+          "short_row": 3,
+          "maximum_invisible": 4,
+          "maximizer_count": 5,
+          "maximizer_examples": [
+            [
+              5,
+              6,
+              7,
+              8,
+              15
+            ],
+            [
+              5,
+              6,
+              7,
+              8,
+              16
+            ],
+            [
+              5,
+              6,
+              7,
+              8,
+              17
+            ],
+            [
+              5,
+              6,
+              7,
+              8,
+              18
+            ]
+          ]
+        },
+        {
+          "long_row": 1,
+          "short_row": 4,
+          "maximum_invisible": 4,
+          "maximizer_count": 5,
+          "maximizer_examples": [
+            [
+              5,
+              6,
+              7,
+              8,
+              20
+            ],
+            [
+              5,
+              6,
+              7,
+              8,
+              21
+            ],
+            [
+              5,
+              6,
+              7,
+              8,
+              22
+            ],
+            [
+              5,
+              6,
+              7,
+              8,
+              23
+            ]
+          ]
+        },
+        {
+          "long_row": 2,
+          "short_row": 0,
+          "maximum_invisible": 4,
+          "maximizer_count": 5,
+          "maximizer_examples": [
+            [
+              10,
+              11,
+              12,
+              13,
+              0
+            ],
+            [
+              10,
+              11,
+              12,
+              13,
+              1
+            ],
+            [
+              10,
+              11,
+              12,
+              13,
+              2
+            ],
+            [
+              10,
+              11,
+              12,
+              13,
+              3
+            ]
+          ]
+        },
+        {
+          "long_row": 2,
+          "short_row": 1,
+          "maximum_invisible": 4,
+          "maximizer_count": 5,
+          "maximizer_examples": [
+            [
+              10,
+              11,
+              12,
+              13,
+              5
+            ],
+            [
+              10,
+              11,
+              12,
+              13,
+              6
+            ],
+            [
+              10,
+              11,
+              12,
+              13,
+              7
+            ],
+            [
+              10,
+              11,
+              12,
+              13,
+              8
+            ]
+          ]
+        },
+        {
+          "long_row": 2,
+          "short_row": 3,
+          "maximum_invisible": 4,
+          "maximizer_count": 5,
+          "maximizer_examples": [
+            [
+              10,
+              11,
+              12,
+              13,
+              15
+            ],
+            [
+              10,
+              11,
+              12,
+              13,
+              16
+            ],
+            [
+              10,
+              11,
+              12,
+              13,
+              17
+            ],
+            [
+              10,
+              11,
+              12,
+              13,
+              18
+            ]
+          ]
+        },
+        {
+          "long_row": 2,
+          "short_row": 4,
+          "maximum_invisible": 4,
+          "maximizer_count": 5,
+          "maximizer_examples": [
+            [
+              10,
+              11,
+              12,
+              13,
+              20
+            ],
+            [
+              10,
+              11,
+              12,
+              13,
+              21
+            ],
+            [
+              10,
+              11,
+              12,
+              13,
+              22
+            ],
+            [
+              10,
+              11,
+              12,
+              13,
+              23
+            ]
+          ]
+        },
+        {
+          "long_row": 3,
+          "short_row": 0,
+          "maximum_invisible": 0,
+          "maximizer_count": 25,
+          "maximizer_examples": [
+            [
+              15,
+              16,
+              17,
+              18,
+              0
+            ],
+            [
+              15,
+              16,
+              17,
+              18,
+              1
+            ],
+            [
+              15,
+              16,
+              17,
+              18,
+              2
+            ],
+            [
+              15,
+              16,
+              17,
+              18,
+              3
+            ]
+          ]
+        },
+        {
+          "long_row": 3,
+          "short_row": 1,
+          "maximum_invisible": 0,
+          "maximizer_count": 25,
+          "maximizer_examples": [
+            [
+              15,
+              16,
+              17,
+              18,
+              5
+            ],
+            [
+              15,
+              16,
+              17,
+              18,
+              6
+            ],
+            [
+              15,
+              16,
+              17,
+              18,
+              7
+            ],
+            [
+              15,
+              16,
+              17,
+              18,
+              8
+            ]
+          ]
+        },
+        {
+          "long_row": 3,
+          "short_row": 2,
+          "maximum_invisible": 0,
+          "maximizer_count": 25,
+          "maximizer_examples": [
+            [
+              15,
+              16,
+              17,
+              18,
+              10
+            ],
+            [
+              15,
+              16,
+              17,
+              18,
+              11
+            ],
+            [
+              15,
+              16,
+              17,
+              18,
+              12
+            ],
+            [
+              15,
+              16,
+              17,
+              18,
+              13
+            ]
+          ]
+        },
+        {
+          "long_row": 3,
+          "short_row": 4,
+          "maximum_invisible": 0,
+          "maximizer_count": 25,
+          "maximizer_examples": [
+            [
+              15,
+              16,
+              17,
+              18,
+              20
+            ],
+            [
+              15,
+              16,
+              17,
+              18,
+              21
+            ],
+            [
+              15,
+              16,
+              17,
+              18,
+              22
+            ],
+            [
+              15,
+              16,
+              17,
+              18,
+              23
+            ]
+          ]
+        },
+        {
+          "long_row": 4,
+          "short_row": 0,
+          "maximum_invisible": 0,
+          "maximizer_count": 25,
+          "maximizer_examples": [
+            [
+              20,
+              21,
+              22,
+              23,
+              0
+            ],
+            [
+              20,
+              21,
+              22,
+              23,
+              1
+            ],
+            [
+              20,
+              21,
+              22,
+              23,
+              2
+            ],
+            [
+              20,
+              21,
+              22,
+              23,
+              3
+            ]
+          ]
+        },
+        {
+          "long_row": 4,
+          "short_row": 1,
+          "maximum_invisible": 0,
+          "maximizer_count": 25,
+          "maximizer_examples": [
+            [
+              20,
+              21,
+              22,
+              23,
+              5
+            ],
+            [
+              20,
+              21,
+              22,
+              23,
+              6
+            ],
+            [
+              20,
+              21,
+              22,
+              23,
+              7
+            ],
+            [
+              20,
+              21,
+              22,
+              23,
+              8
+            ]
+          ]
+        },
+        {
+          "long_row": 4,
+          "short_row": 2,
+          "maximum_invisible": 0,
+          "maximizer_count": 25,
+          "maximizer_examples": [
+            [
+              20,
+              21,
+              22,
+              23,
+              10
+            ],
+            [
+              20,
+              21,
+              22,
+              23,
+              11
+            ],
+            [
+              20,
+              21,
+              22,
+              23,
+              12
+            ],
+            [
+              20,
+              21,
+              22,
+              23,
+              13
+            ]
+          ]
+        },
+        {
+          "long_row": 4,
+          "short_row": 3,
+          "maximum_invisible": 0,
+          "maximizer_count": 25,
+          "maximizer_examples": [
+            [
+              20,
+              21,
+              22,
+              23,
+              15
+            ],
+            [
+              20,
+              21,
+              22,
+              23,
+              16
+            ],
+            [
+              20,
+              21,
+              22,
+              23,
+              17
+            ],
+            [
+              20,
+              21,
+              22,
+              23,
+              18
+            ]
+          ]
+        }
+      ]
+    },
+    "orbit13_3_plus_2": {
+      "matrix": [
+        [
+          null,
+          9,
+          7,
+          6,
+          5
+        ],
+        [
+          9,
+          null,
+          7,
+          6,
+          5
+        ],
+        [
+          5,
+          5,
+          null,
+          4,
+          1
+        ],
+        [
+          4,
+          4,
+          2,
+          null,
+          0
+        ],
+        [
+          3,
+          3,
+          1,
+          0,
+          null
+        ]
+      ],
+      "records": [
+        {
+          "long_row": 0,
+          "short_row": 1,
+          "maximum_invisible": 9,
+          "maximizer_count": 1,
+          "maximizer_examples": [
+            [
+              0,
+              1,
+              2,
+              5,
+              6
+            ]
+          ]
+        },
+        {
+          "long_row": 0,
+          "short_row": 2,
+          "maximum_invisible": 7,
+          "maximizer_count": 1,
+          "maximizer_examples": [
+            [
+              0,
+              1,
+              2,
+              10,
+              11
+            ]
+          ]
+        },
+        {
+          "long_row": 0,
+          "short_row": 3,
+          "maximum_invisible": 6,
+          "maximizer_count": 3,
+          "maximizer_examples": [
+            [
+              0,
+              1,
+              2,
+              15,
+              16
+            ],
+            [
+              0,
+              1,
+              2,
+              15,
+              17
+            ],
+            [
+              0,
+              1,
+              2,
+              16,
+              17
+            ]
+          ]
+        },
+        {
+          "long_row": 0,
+          "short_row": 4,
+          "maximum_invisible": 5,
+          "maximizer_count": 10,
+          "maximizer_examples": [
+            [
+              0,
+              1,
+              2,
+              20,
+              21
+            ],
+            [
+              0,
+              1,
+              2,
+              20,
+              22
+            ],
+            [
+              0,
+              1,
+              2,
+              20,
+              23
+            ],
+            [
+              0,
+              1,
+              2,
+              20,
+              24
+            ]
+          ]
+        },
+        {
+          "long_row": 1,
+          "short_row": 0,
+          "maximum_invisible": 9,
+          "maximizer_count": 1,
+          "maximizer_examples": [
+            [
+              5,
+              6,
+              7,
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "long_row": 1,
+          "short_row": 2,
+          "maximum_invisible": 7,
+          "maximizer_count": 1,
+          "maximizer_examples": [
+            [
+              5,
+              6,
+              7,
+              10,
+              11
+            ]
+          ]
+        },
+        {
+          "long_row": 1,
+          "short_row": 3,
+          "maximum_invisible": 6,
+          "maximizer_count": 3,
+          "maximizer_examples": [
+            [
+              5,
+              6,
+              7,
+              15,
+              16
+            ],
+            [
+              5,
+              6,
+              7,
+              15,
+              17
+            ],
+            [
+              5,
+              6,
+              7,
+              16,
+              17
+            ]
+          ]
+        },
+        {
+          "long_row": 1,
+          "short_row": 4,
+          "maximum_invisible": 5,
+          "maximizer_count": 10,
+          "maximizer_examples": [
+            [
+              5,
+              6,
+              7,
+              20,
+              21
+            ],
+            [
+              5,
+              6,
+              7,
+              20,
+              22
+            ],
+            [
+              5,
+              6,
+              7,
+              20,
+              23
+            ],
+            [
+              5,
+              6,
+              7,
+              20,
+              24
+            ]
+          ]
+        },
+        {
+          "long_row": 2,
+          "short_row": 0,
+          "maximum_invisible": 5,
+          "maximizer_count": 3,
+          "maximizer_examples": [
+            [
+              10,
+              11,
+              12,
+              0,
+              1
+            ],
+            [
+              10,
+              11,
+              13,
+              0,
+              1
+            ],
+            [
+              10,
+              11,
+              14,
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "long_row": 2,
+          "short_row": 1,
+          "maximum_invisible": 5,
+          "maximizer_count": 3,
+          "maximizer_examples": [
+            [
+              10,
+              11,
+              12,
+              5,
+              6
+            ],
+            [
+              10,
+              11,
+              13,
+              5,
+              6
+            ],
+            [
+              10,
+              11,
+              14,
+              5,
+              6
+            ]
+          ]
+        },
+        {
+          "long_row": 2,
+          "short_row": 3,
+          "maximum_invisible": 4,
+          "maximizer_count": 1,
+          "maximizer_examples": [
+            [
+              10,
+              11,
+              12,
+              15,
+              16
+            ]
+          ]
+        },
+        {
+          "long_row": 2,
+          "short_row": 4,
+          "maximum_invisible": 1,
+          "maximizer_count": 30,
+          "maximizer_examples": [
+            [
+              10,
+              11,
+              12,
+              20,
+              21
+            ],
+            [
+              10,
+              11,
+              12,
+              20,
+              22
+            ],
+            [
+              10,
+              11,
+              12,
+              20,
+              23
+            ],
+            [
+              10,
+              11,
+              12,
+              20,
+              24
+            ]
+          ]
+        },
+        {
+          "long_row": 3,
+          "short_row": 0,
+          "maximum_invisible": 4,
+          "maximizer_count": 3,
+          "maximizer_examples": [
+            [
+              15,
+              16,
+              17,
+              0,
+              1
+            ],
+            [
+              15,
+              16,
+              18,
+              0,
+              1
+            ],
+            [
+              15,
+              16,
+              19,
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "long_row": 3,
+          "short_row": 1,
+          "maximum_invisible": 4,
+          "maximizer_count": 3,
+          "maximizer_examples": [
+            [
+              15,
+              16,
+              17,
+              5,
+              6
+            ],
+            [
+              15,
+              16,
+              18,
+              5,
+              6
+            ],
+            [
+              15,
+              16,
+              19,
+              5,
+              6
+            ]
+          ]
+        },
+        {
+          "long_row": 3,
+          "short_row": 2,
+          "maximum_invisible": 2,
+          "maximizer_count": 9,
+          "maximizer_examples": [
+            [
+              15,
+              16,
+              17,
+              10,
+              11
+            ],
+            [
+              15,
+              16,
+              17,
+              10,
+              12
+            ],
+            [
+              15,
+              16,
+              17,
+              11,
+              12
+            ],
+            [
+              15,
+              16,
+              18,
+              10,
+              11
+            ]
+          ]
+        },
+        {
+          "long_row": 3,
+          "short_row": 4,
+          "maximum_invisible": 0,
+          "maximizer_count": 100,
+          "maximizer_examples": [
+            [
+              15,
+              16,
+              17,
+              20,
+              21
+            ],
+            [
+              15,
+              16,
+              17,
+              20,
+              22
+            ],
+            [
+              15,
+              16,
+              17,
+              20,
+              23
+            ],
+            [
+              15,
+              16,
+              17,
+              20,
+              24
+            ]
+          ]
+        },
+        {
+          "long_row": 4,
+          "short_row": 0,
+          "maximum_invisible": 3,
+          "maximizer_count": 10,
+          "maximizer_examples": [
+            [
+              20,
+              21,
+              22,
+              0,
+              1
+            ],
+            [
+              20,
+              21,
+              23,
+              0,
+              1
+            ],
+            [
+              20,
+              21,
+              24,
+              0,
+              1
+            ],
+            [
+              20,
+              22,
+              23,
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "long_row": 4,
+          "short_row": 1,
+          "maximum_invisible": 3,
+          "maximizer_count": 10,
+          "maximizer_examples": [
+            [
+              20,
+              21,
+              22,
+              5,
+              6
+            ],
+            [
+              20,
+              21,
+              23,
+              5,
+              6
+            ],
+            [
+              20,
+              21,
+              24,
+              5,
+              6
+            ],
+            [
+              20,
+              22,
+              23,
+              5,
+              6
+            ]
+          ]
+        },
+        {
+          "long_row": 4,
+          "short_row": 2,
+          "maximum_invisible": 1,
+          "maximizer_count": 10,
+          "maximizer_examples": [
+            [
+              20,
+              21,
+              22,
+              10,
+              11
+            ],
+            [
+              20,
+              21,
+              23,
+              10,
+              11
+            ],
+            [
+              20,
+              21,
+              24,
+              10,
+              11
+            ],
+            [
+              20,
+              22,
+              23,
+              10,
+              11
+            ]
+          ]
+        },
+        {
+          "long_row": 4,
+          "short_row": 3,
+          "maximum_invisible": 0,
+          "maximizer_count": 100,
+          "maximizer_examples": [
+            [
+              20,
+              21,
+              22,
+              15,
+              16
+            ],
+            [
+              20,
+              21,
+              22,
+              15,
+              17
+            ],
+            [
+              20,
+              21,
+              22,
+              15,
+              18
+            ],
+            [
+              20,
+              21,
+              22,
+              15,
+              19
+            ]
+          ]
+        }
+      ]
+    }
+  },
+  "summary": {
+    "old_visible_witness_edges": 250,
+    "valid_direction_records": 42,
+    "family_exceptional_directions": 5,
+    "family_exceptional_nonuniform_states": 14,
+    "minimum_visible_over_all_exceptional_compatible_flags": 41,
+    "orbit1_global_good_planes": 4,
+    "orbit13_global_good_planes": 2
+  },
+  "script_sha256_before_output": "13786E17E9343CFCADFE117178EAC76F26AFE3EE5F3F9A6A5F84406B26F6607E"
+}

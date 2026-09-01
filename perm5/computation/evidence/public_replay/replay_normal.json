@@ -1,0 +1,420 @@
+{
+  "active_perm5_script_count": 28,
+  "active_perm5_scripts": [
+    {
+      "command": [
+        "python",
+        "-B",
+        "proofs/perm5_v15/frozen_v14_unpacked/perm5_one_intersection_flag_standalone_exact.py"
+      ],
+      "duration_seconds": 2.134892,
+      "last_stdout_line": "PERM5_ONE_INTERSECTION_FLAG_STANDALONE_PASS",
+      "script": "perm5_one_intersection_flag_standalone_exact.py",
+      "stderr": "",
+      "stdout_sha256": "8F5620E029D21460F44F62925574BE70C2AE7928B16E5C72FAEE9EC66A0B1998"
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "proofs/perm5_v15/frozen_v14_unpacked/perm5_fixed_six_pure_universe_audit.py"
+      ],
+      "duration_seconds": 0.063037,
+      "last_stdout_line": "sha256 AC068BED8090D1896DEDBB97964770B202EDEB251A3D73BFE4ED5266742C4B18",
+      "script": "perm5_fixed_six_pure_universe_audit.py",
+      "stderr": "",
+      "stdout_sha256": "1F79FF904074301883C40DC28A592711B05FCDB85F4988EEDF0550715BF6D881"
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "proofs/perm5_v15/frozen_v14_unpacked/perm5_s19d9_pure_count_audit.py"
+      ],
+      "duration_seconds": 0.712016,
+      "last_stdout_line": "}",
+      "script": "perm5_s19d9_pure_count_audit.py",
+      "stderr": "",
+      "stdout_sha256": "69329A80D2BD0F1BE5E4C36C4C25AFEE899CABD200C7C6FCC7562C33BCB6DC16"
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "proofs/perm5_v15/frozen_v14_unpacked/perm5_p9_nocrossing_exact.py"
+      ],
+      "duration_seconds": 10.880314,
+      "last_stdout_line": "STATUS = PASS",
+      "script": "perm5_p9_nocrossing_exact.py",
+      "stderr": "",
+      "stdout_sha256": "BE7357B0196864A48165306A295FE9B774CBD277AE6C747C050FD215855731EF"
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "proofs/perm5_v15/frozen_v14_unpacked/perm5_nocrossing_compression_diagnostic.py"
+      ],
+      "duration_seconds": 1.014045,
+      "last_stdout_line": "STATUS=EXACT_INTEGER_DIAGNOSTIC_PASS",
+      "script": "perm5_nocrossing_compression_diagnostic.py",
+      "stderr": "",
+      "stdout_sha256": "CCEBB544037B84190108A358A375A0EAE861C7A6930587BB4661ADB3435D3C51"
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "proofs/perm5_v15/frozen_v14_unpacked/perm5_crossing_integer_tables_exact.py"
+      ],
+      "duration_seconds": 0.333681,
+      "last_stdout_line": "}",
+      "script": "perm5_crossing_integer_tables_exact.py",
+      "stderr": "",
+      "stdout_sha256": "4D3134C49ECF6CF3F1158FAA42C53228988313604F0D6FC2CCC41F95870538AD"
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "proofs/perm5_v15/frozen_v14_unpacked/perm5_crossing_marginal_density_audit.py"
+      ],
+      "duration_seconds": 0.058346,
+      "last_stdout_line": "}",
+      "script": "perm5_crossing_marginal_density_audit.py",
+      "stderr": "",
+      "stdout_sha256": "E0CFEB7246E2F46F71BD64B0D4B31A95FD933BCD157824455BB085ECBB2853E6"
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "proofs/perm5_v15/frozen_v14_unpacked/perm5_coordinate_prolongation_hypergraph.py"
+      ],
+      "duration_seconds": 0.45463,
+      "last_stdout_line": "}",
+      "script": "perm5_coordinate_prolongation_hypergraph.py",
+      "stderr": "",
+      "stdout_sha256": "D8AFC65CC0506CDCC19ADBE7C1EF1114E121D6FB710F0B1F7A56C99B45C70C92"
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "proofs/perm5_v15/frozen_v14_unpacked/perm5_p11_global_graph_bound_exact.py"
+      ],
+      "duration_seconds": 0.482111,
+      "last_stdout_line": "STATUS=PASS",
+      "script": "perm5_p11_global_graph_bound_exact.py",
+      "stderr": "",
+      "stdout_sha256": "9DD28669358DBAAEAEC638D3C00E0DCDF98831F2A724584034963EDFFCD51426"
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "proofs/perm5_v15/frozen_v14_unpacked/perm5_p12_global_graph_bound_exact.py"
+      ],
+      "duration_seconds": 0.425417,
+      "last_stdout_line": "}",
+      "script": "perm5_p12_global_graph_bound_exact.py",
+      "stderr": "",
+      "stdout_sha256": "6717F4F54B9306232512BF8DADE33C7538917776547CB601881A75D429A2E860"
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "proofs/perm5_v15/frozen_v14_unpacked/perm5_shifted_profile_layer_defect_audit.py"
+      ],
+      "duration_seconds": 0.109197,
+      "last_stdout_line": "}",
+      "script": "perm5_shifted_profile_layer_defect_audit.py",
+      "stderr": "",
+      "stdout_sha256": "A2F4029E3DD48DA6FAC9CB3B90FB0984F44837A17D970E52BC52A52270A04DDA"
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "proofs/perm5_v15/frozen_v14_unpacked/perm5_visible_shadow_structural_reduction_audit.py"
+      ],
+      "duration_seconds": 0.732571,
+      "last_stdout_line": "}",
+      "script": "perm5_visible_shadow_structural_reduction_audit.py",
+      "stderr": "",
+      "stdout_sha256": "782FE63281F48FAE5EEDE0ECFD9126E6561056C8161B2551EDA0DFA19C053E30"
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "proofs/perm5_v15/frozen_v14_unpacked/perm5_shifted_terminal_stability_gap_verify.py"
+      ],
+      "duration_seconds": 0.08774,
+      "last_stdout_line": "}",
+      "script": "perm5_shifted_terminal_stability_gap_verify.py",
+      "stderr": "",
+      "stdout_sha256": "1FC60486F7256ADE9E4D3F8C4A6E9CAE99E6963FC5D7AC041916C835B5362F30"
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "proofs/perm5_v15/frozen_v14_unpacked/perm5_flag_shifted_stability_verify.py"
+      ],
+      "duration_seconds": 35.393366,
+      "last_stdout_line": "}",
+      "script": "perm5_flag_shifted_stability_verify.py",
+      "stderr": "",
+      "stdout_sha256": "6C7338245546627A9FCA2E6002DC6F449221195CED39244F647500B3ED35C1A8"
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "proofs/perm5_v15/frozen_v14_unpacked/perm5_inverse_shift_layer_orbit_reduction_audit.py"
+      ],
+      "duration_seconds": 0.1854,
+      "last_stdout_line": "}",
+      "script": "perm5_inverse_shift_layer_orbit_reduction_audit.py",
+      "stderr": "",
+      "stdout_sha256": "B0C5C80B42E0E26D98A0A848B99256F926DE82B2CE06551063BA61C06C680A39"
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "proofs/perm5_v15/frozen_v14_unpacked/perm5_exceptional_visible_parent_reduction_audit.py"
+      ],
+      "duration_seconds": 0.071188,
+      "last_stdout_line": "}",
+      "script": "perm5_exceptional_visible_parent_reduction_audit.py",
+      "stderr": "",
+      "stdout_sha256": "C704EF6D00949129877BFEA86AD5D1B4972655F55EAAD7FCD985EFC444FA8DD0"
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "proofs/perm5_v15/frozen_v14_unpacked/perm5_flag_fibre_profile_reduction_audit.py"
+      ],
+      "duration_seconds": 2.280682,
+      "last_stdout_line": "}",
+      "script": "perm5_flag_fibre_profile_reduction_audit.py",
+      "stderr": "",
+      "stdout_sha256": "8CEE0585642F8218242B0CE328447FA9E2E7D5F89197BC3E3BD6FD21F4F0D9D3"
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "proofs/perm5_v15/frozen_v14_unpacked/perm5_orbit0_inverse_shift_petersen_audit.py"
+      ],
+      "duration_seconds": 7.979506,
+      "last_stdout_line": "}",
+      "script": "perm5_orbit0_inverse_shift_petersen_audit.py",
+      "stderr": "",
+      "stdout_sha256": "FAFD8756B5798070EDF632B01EC3839243F13BAC585AE199038EAE696AD8B924"
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "proofs/perm5_v15/frozen_v14_unpacked/perm5_orbit13_four_row_QQ_audit.py"
+      ],
+      "duration_seconds": 0.843692,
+      "last_stdout_line": "}",
+      "script": "perm5_orbit13_four_row_QQ_audit.py",
+      "stderr": "",
+      "stdout_sha256": "C9D2C1B7E34D6178DCEF19298E6C070D89B9D4C713593312145D1D5E8BF114A7"
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "proofs/perm5_v15/frozen_v14_unpacked/perm5_orbit13_structural36_audit.py"
+      ],
+      "duration_seconds": 0.984821,
+      "last_stdout_line": "}",
+      "script": "perm5_orbit13_structural36_audit.py",
+      "stderr": "",
+      "stdout_sha256": "0B6CBE7A4C2019D5F9A088AF53F7E35D14BF56BA085E30EE098C4160D21FCB64"
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "proofs/perm5_v15/frozen_v14_unpacked/perm5_fixed_five_shadow_s20_le50_annihilator_classify_exact.py"
+      ],
+      "duration_seconds": 6.966768,
+      "last_stdout_line": "}",
+      "script": "perm5_fixed_five_shadow_s20_le50_annihilator_classify_exact.py",
+      "stderr": "",
+      "stdout_sha256": "C99A3C50BF4F5CBB7248B5E33A689F98F22D4445A7BCAC4C484F9B4F61FD6BD4"
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "proofs/perm5_v15/frozen_v14_unpacked/perm5_s20_orbit1_fixed_flag_P3_graph_exact.py"
+      ],
+      "duration_seconds": 0.08771,
+      "last_stdout_line": "}",
+      "script": "perm5_s20_orbit1_fixed_flag_P3_graph_exact.py",
+      "stderr": "",
+      "stdout_sha256": "B49FEBE95C0A77038F63A951FF4C0C497B483A11C1DD615638BF519A678348E4"
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "proofs/perm5_v15/frozen_v14_unpacked/perm5_orbit1_length2_standalone_exact.py"
+      ],
+      "duration_seconds": 0.391143,
+      "last_stdout_line": "}",
+      "script": "perm5_orbit1_length2_standalone_exact.py",
+      "stderr": "",
+      "stdout_sha256": "F80E0E23F90EE00AB9C6F944FD5E0D3F4C099605B6E684FB78108959518213E8"
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "proofs/perm5_v15/frozen_v14_unpacked/perm5_orbit1_terminal_pure_formula_audit.py"
+      ],
+      "duration_seconds": 1.967541,
+      "last_stdout_line": "maximum_count=4",
+      "script": "perm5_orbit1_terminal_pure_formula_audit.py",
+      "stderr": "",
+      "stdout_sha256": "3BCCD0823BC6950841074CC0380F10E529051EE29D30B0179E5DB62BF969D181"
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "proofs/perm5_v15/frozen_v14_unpacked/perm5_orbit1_missing_WM_exact.py"
+      ],
+      "duration_seconds": 0.252561,
+      "last_stdout_line": "common_four_envelope_dimension=10",
+      "script": "perm5_orbit1_missing_WM_exact.py",
+      "stderr": "",
+      "stdout_sha256": "BD7DC2600C8AAB79440C16535F0B7DEFA6012C26C4B578E84062DB2A47427B52"
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "proofs/perm5_v15/frozen_v14_unpacked/perm5_orbit1_WM_same_row_valuative_small_lemmas_QQ_exact.py"
+      ],
+      "duration_seconds": 0.171131,
+      "last_stdout_line": "distinct_endpoint_maxima=1,3,6,6,10",
+      "script": "perm5_orbit1_WM_same_row_valuative_small_lemmas_QQ_exact.py",
+      "stderr": "",
+      "stdout_sha256": "888CCE373BDD28704B3AD36F9349159895197BCCDEF858921FAAE0D4F176FC68"
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "proofs/perm5_v15/frozen_v14_unpacked/perm5_s20_orbit0_fullflag_tangent_graph_exact.py"
+      ],
+      "duration_seconds": 0.097161,
+      "last_stdout_line": "sha256 23F3FC08D1218518783C03D860018C1772D7DD0CEECCAB648E516AAF23DD4F5A",
+      "script": "perm5_s20_orbit0_fullflag_tangent_graph_exact.py",
+      "stderr": "",
+      "stdout_sha256": "9754D3A9FE0CA4155FADB298F75F342BBE3E8175BA2F481B5F7B1DC41A09B707"
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "proofs/perm5_v15/frozen_v14_unpacked/perm5_orbit0_fourier_rigidity_verify.py"
+      ],
+      "duration_seconds": 2.204464,
+      "last_stdout_line": "output n5_orbit0_fourier_rigidity_verify_exact.json",
+      "script": "perm5_orbit0_fourier_rigidity_verify.py",
+      "stderr": "",
+      "stdout_sha256": "2E1E27FFC803D5571BDAFE019DF7B6961D0A417411002679BB4A35E5FCFFD6E7"
+    }
+  ],
+  "asset_verifier": {
+    "command": [
+      "python",
+      "-B",
+      "evidence/small_n/v14_repaired/verify_assets.py"
+    ],
+    "duration_seconds": 0.674931,
+    "last_stdout_line": "PASS_V14_REPAIRED_RELEASE_ASSETS files=2 zip_entries=110 replay=False",
+    "stderr": "",
+    "stdout_sha256": "8ACA92E55641D73189A9BD495C42256D981ECD666C29659612C8839C5CF5DE27"
+  },
+  "bytecode_files_created": 0,
+  "claim_type": "full author-side exact replay; not independent human peer review",
+  "duration_seconds": 86.613601,
+  "frozen_zip": "evidence\\small_n\\v14_repaired\\perm345_reviewer_submission_v14_repaired_20260812.zip",
+  "frozen_zip_sha256": "CE8F639C532B754B4E0A8EEC959D97E461426C9F9402B923D6A13056F46DFF33",
+  "independent_audit_count": 3,
+  "independent_audits": [
+    {
+      "command": [
+        "python",
+        "-B",
+        "scripts/perm5_glynn_upper_bound_independent.py",
+        "--output",
+        "<temporary>/perm5_glynn_upper_bound_independent.json"
+      ],
+      "duration_seconds": 0.093711,
+      "last_stdout_line": "PERM5_GLYNN_UPPER_BOUND_INDEPENDENT_PASS",
+      "output_sha256": "24EFF38C6C8273BD76A9F2D67F0AE7E50EA193BB0715BE3918AEC457DB644B2B",
+      "script": "scripts\\perm5_glynn_upper_bound_independent.py",
+      "script_sha256": "B7D8F552F87A64C1B50466E4A023AEAEF272C80E00CF0B5B1726F16BBFA70612",
+      "stderr": "",
+      "stdout_sha256": "A6D3556344B0EC094427241EB45DE9D25EC37DED72AA114738611E3CDEA0F806"
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "scripts/perm5_one_intersection_independent_multifield.py",
+        "--output",
+        "<temporary>/perm5_one_intersection_independent_multifield.json"
+      ],
+      "duration_seconds": 7.569601,
+      "last_stdout_line": "PERM5_ONE_INTERSECTION_INDEPENDENT_MULTIFIELD_PASS",
+      "output_sha256": "A803FC987F8ABEE9AA8A53E6A82513B7DE34D9331C6136E85D25ABF3368097C0",
+      "script": "scripts\\perm5_one_intersection_independent_multifield.py",
+      "script_sha256": "913A5B7F1AF41969FCA1B8670FE2CEF9F414E23EDB9C797FB9E6D8C581B7D995",
+      "stderr": "",
+      "stdout_sha256": "3D0D321B69A029CCF790638739DB69A04ADC511049672FD36E3FC918E7657211"
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "scripts/perm5_d11_d12_parent_table_independent.py",
+        "--output",
+        "<temporary>/perm5_d11_d12_parent_table_independent.json"
+      ],
+      "duration_seconds": 0.658666,
+      "last_stdout_line": "PERM5_D11_D12_PARENT_TABLE_INDEPENDENT_PASS",
+      "output_sha256": "6D611A28175C8753FA8DE93F73C6D87290FC4F7AD2399F07A603500A1D540CD4",
+      "script": "scripts\\perm5_d11_d12_parent_table_independent.py",
+      "script_sha256": "1499114DA0835410E9FECE02468516BE83B9FB2DB24E7BD56FF9DB103399945C",
+      "stderr": "",
+      "stdout_sha256": "4F18339FC4047E41A9CFC8B27DA4B09F4C92321D375F248DD84C99033DCEBD9E"
+    }
+  ],
+  "mode": "normal",
+  "post_replay_unpacked_manifest": {
+    "files_verified": 109,
+    "manifest_sha256": "DBEFD1586B6C592CDBA62956747F52D11823F7558ABCC288D0534B74FBE170CF",
+    "status": "PASS"
+  },
+  "pre_replay_unpacked_manifest": {
+    "files_verified": 109,
+    "manifest_sha256": "DBEFD1586B6C592CDBA62956747F52D11823F7558ABCC288D0534B74FBE170CF",
+    "status": "PASS"
+  },
+  "status": "PASS"
+}

@@ -1,0 +1,6 @@
+*.pdf -text
+*.zip -text
+
+# These two historical trees are byte-bound by their frozen manifests.
+perm5/computation/evidence/small_n/v14_repaired/** -text
+perm5/computation/proofs/perm5_v15/frozen_v14_unpacked/** -text

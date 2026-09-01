@@ -1,0 +1,1968 @@
+{
+  "status": "PASS_EXACT_INTEGER_LAYER_DEFECT_REDUCTION_AUDIT",
+  "evidence_role": "exact diagnostic for a written layer-defect identity; the final 1405-profile traversal is not an active proof dependency",
+  "one_dimensional_ideal_count": 16,
+  "neighbourhood_profile": [
+    0,
+    3,
+    5,
+    6,
+    6,
+    8,
+    9,
+    9,
+    10,
+    10,
+    10
+  ],
+  "increments": [
+    3,
+    2,
+    1,
+    0,
+    2,
+    1,
+    0,
+    1,
+    0,
+    0
+  ],
+  "new_shadow_coefficients": [
+    3,
+    2,
+    1,
+    0,
+    2,
+    1,
+    0,
+    1,
+    0,
+    0
+  ],
+  "noncanonical_ideal_records": [
+    {
+      "vertices": [
+        0,
+        1,
+        2
+      ],
+      "size": 3,
+      "shadow_size": 7,
+      "defect": 1
+    },
+    {
+      "vertices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "size": 4,
+      "shadow_size": 8,
+      "defect": 2
+    },
+    {
+      "vertices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "size": 5,
+      "shadow_size": 9,
+      "defect": 1
+    },
+    {
+      "vertices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "size": 6,
+      "shadow_size": 10,
+      "defect": 1
+    },
+    {
+      "vertices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "size": 7,
+      "shadow_size": 10,
+      "defect": 1
+    }
+  ],
+  "low_partition_records": [
+    {
+      "partition": [
+        10,
+        10,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "conjugate_layer_sizes": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "ferrers_shadow": 50,
+      "available_slack_to_50": 0,
+      "compatible_ideal_chain_count": 1,
+      "minimum_noncanonical_defect": null,
+      "chain_records": [
+        {
+          "defect": 0,
+          "bound": 50,
+          "canonical": true,
+          "profile": [
+            10,
+            10,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "partition": [
+        10,
+        4,
+        4,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "conjugate_layer_sizes": [
+        4,
+        4,
+        3,
+        3,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "ferrers_shadow": 48,
+      "available_slack_to_50": 2,
+      "compatible_ideal_chain_count": 3,
+      "minimum_noncanonical_defect": 10,
+      "chain_records": [
+        {
+          "defect": 11,
+          "bound": 59,
+          "canonical": false,
+          "profile": [
+            10,
+            4,
+            4,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "defect": 10,
+          "bound": 58,
+          "canonical": false,
+          "profile": [
+            10,
+            4,
+            2,
+            4,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "defect": 0,
+          "bound": 48,
+          "canonical": true,
+          "profile": [
+            10,
+            4,
+            0,
+            4,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "partition": [
+        10,
+        4,
+        3,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "conjugate_layer_sizes": [
+        4,
+        4,
+        4,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "ferrers_shadow": 48,
+      "available_slack_to_50": 2,
+      "compatible_ideal_chain_count": 2,
+      "minimum_noncanonical_defect": 12,
+      "chain_records": [
+        {
+          "defect": 12,
+          "bound": 60,
+          "canonical": false,
+          "profile": [
+            10,
+            4,
+            3,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "defect": 0,
+          "bound": 48,
+          "canonical": true,
+          "profile": [
+            10,
+            4,
+            0,
+            3,
+            0,
+            0,
+            3,
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "partition": [
+        9,
+        4,
+        4,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "conjugate_layer_sizes": [
+        4,
+        4,
+        4,
+        3,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "ferrers_shadow": 48,
+      "available_slack_to_50": 2,
+      "compatible_ideal_chain_count": 3,
+      "minimum_noncanonical_defect": 12,
+      "chain_records": [
+        {
+          "defect": 12,
+          "bound": 60,
+          "canonical": false,
+          "profile": [
+            9,
+            4,
+            4,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "defect": 12,
+          "bound": 60,
+          "canonical": false,
+          "profile": [
+            9,
+            4,
+            3,
+            4,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "defect": 0,
+          "bound": 48,
+          "canonical": true,
+          "profile": [
+            9,
+            4,
+            0,
+            4,
+            0,
+            0,
+            3,
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "partition": [
+        8,
+        4,
+        4,
+        4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "conjugate_layer_sizes": [
+        4,
+        4,
+        4,
+        4,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "ferrers_shadow": 48,
+      "available_slack_to_50": 2,
+      "compatible_ideal_chain_count": 2,
+      "minimum_noncanonical_defect": 12,
+      "chain_records": [
+        {
+          "defect": 12,
+          "bound": 60,
+          "canonical": false,
+          "profile": [
+            8,
+            4,
+            4,
+            4,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "defect": 0,
+          "bound": 48,
+          "canonical": true,
+          "profile": [
+            8,
+            4,
+            0,
+            4,
+            0,
+            0,
+            4,
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "partition": [
+        7,
+        5,
+        4,
+        4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "conjugate_layer_sizes": [
+        4,
+        4,
+        4,
+        4,
+        2,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "ferrers_shadow": 49,
+      "available_slack_to_50": 1,
+      "compatible_ideal_chain_count": 2,
+      "minimum_noncanonical_defect": 12,
+      "chain_records": [
+        {
+          "defect": 12,
+          "bound": 61,
+          "canonical": false,
+          "profile": [
+            7,
+            5,
+            4,
+            4,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "defect": 0,
+          "bound": 49,
+          "canonical": true,
+          "profile": [
+            7,
+            5,
+            0,
+            4,
+            0,
+            0,
+            4,
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "partition": [
+        5,
+        5,
+        5,
+        5,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "conjugate_layer_sizes": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "ferrers_shadow": 48,
+      "available_slack_to_50": 2,
+      "compatible_ideal_chain_count": 2,
+      "minimum_noncanonical_defect": 16,
+      "chain_records": [
+        {
+          "defect": 16,
+          "bound": 64,
+          "canonical": false,
+          "profile": [
+            5,
+            5,
+            5,
+            5,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "defect": 0,
+          "bound": 48,
+          "canonical": true,
+          "profile": [
+            5,
+            5,
+            0,
+            5,
+            0,
+            0,
+            5,
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "partition": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "conjugate_layer_sizes": [
+        5,
+        5,
+        5,
+        5,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "ferrers_shadow": 48,
+      "available_slack_to_50": 2,
+      "compatible_ideal_chain_count": 2,
+      "minimum_noncanonical_defect": 6,
+      "chain_records": [
+        {
+          "defect": 6,
+          "bound": 54,
+          "canonical": false,
+          "profile": [
+            4,
+            4,
+            4,
+            4,
+            4,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "defect": 0,
+          "bound": 48,
+          "canonical": true,
+          "profile": [
+            4,
+            4,
+            4,
+            4,
+            0,
+            0,
+            4,
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "partition": [
+        4,
+        4,
+        4,
+        4,
+        2,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "conjugate_layer_sizes": [
+        7,
+        5,
+        4,
+        4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "ferrers_shadow": 49,
+      "available_slack_to_50": 1,
+      "compatible_ideal_chain_count": 6,
+      "minimum_noncanonical_defect": 2,
+      "chain_records": [
+        {
+          "defect": 7,
+          "bound": 56,
+          "canonical": false,
+          "profile": [
+            4,
+            4,
+            4,
+            4,
+            2,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "defect": 5,
+          "bound": 54,
+          "canonical": false,
+          "profile": [
+            4,
+            4,
+            4,
+            4,
+            1,
+            1,
+            2,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "defect": 3,
+          "bound": 52,
+          "canonical": false,
+          "profile": [
+            4,
+            4,
+            2,
+            4,
+            1,
+            1,
+            4,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "defect": 4,
+          "bound": 53,
+          "canonical": false,
+          "profile": [
+            4,
+            4,
+            4,
+            4,
+            2,
+            0,
+            1,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "defect": 2,
+          "bound": 51,
+          "canonical": false,
+          "profile": [
+            4,
+            4,
+            4,
+            4,
+            1,
+            0,
+            2,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "defect": 0,
+          "bound": 49,
+          "canonical": true,
+          "profile": [
+            4,
+            4,
+            2,
+            4,
+            1,
+            0,
+            4,
+            1,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "partition": [
+        4,
+        4,
+        4,
+        4,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "conjugate_layer_sizes": [
+        8,
+        4,
+        4,
+        4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "ferrers_shadow": 48,
+      "available_slack_to_50": 2,
+      "compatible_ideal_chain_count": 2,
+      "minimum_noncanonical_defect": 6,
+      "chain_records": [
+        {
+          "defect": 6,
+          "bound": 54,
+          "canonical": false,
+          "profile": [
+            4,
+            4,
+            4,
+            4,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "defect": 0,
+          "bound": 48,
+          "canonical": true,
+          "profile": [
+            4,
+            4,
+            1,
+            4,
+            1,
+            1,
+            4,
+            1,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "partition": [
+        4,
+        4,
+        4,
+        3,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "conjugate_layer_sizes": [
+        9,
+        4,
+        4,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "ferrers_shadow": 48,
+      "available_slack_to_50": 2,
+      "compatible_ideal_chain_count": 3,
+      "minimum_noncanonical_defect": 6,
+      "chain_records": [
+        {
+          "defect": 6,
+          "bound": 54,
+          "canonical": false,
+          "profile": [
+            4,
+            4,
+            4,
+            3,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "defect": 6,
+          "bound": 54,
+          "canonical": false,
+          "profile": [
+            4,
+            4,
+            3,
+            4,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "defect": 0,
+          "bound": 48,
+          "canonical": true,
+          "profile": [
+            4,
+            4,
+            1,
+            4,
+            1,
+            1,
+            3,
+            1,
+            1,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "partition": [
+        4,
+        4,
+        4,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "conjugate_layer_sizes": [
+        10,
+        4,
+        3,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "ferrers_shadow": 48,
+      "available_slack_to_50": 2,
+      "compatible_ideal_chain_count": 3,
+      "minimum_noncanonical_defect": 4,
+      "chain_records": [
+        {
+          "defect": 5,
+          "bound": 53,
+          "canonical": false,
+          "profile": [
+            4,
+            4,
+            4,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "defect": 4,
+          "bound": 52,
+          "canonical": false,
+          "profile": [
+            4,
+            4,
+            2,
+            4,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "defect": 0,
+          "bound": 48,
+          "canonical": true,
+          "profile": [
+            4,
+            4,
+            1,
+            4,
+            1,
+            1,
+            2,
+            1,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "partition": [
+        4,
+        4,
+        3,
+        3,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "conjugate_layer_sizes": [
+        10,
+        4,
+        4,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "ferrers_shadow": 48,
+      "available_slack_to_50": 2,
+      "compatible_ideal_chain_count": 2,
+      "minimum_noncanonical_defect": 6,
+      "chain_records": [
+        {
+          "defect": 6,
+          "bound": 54,
+          "canonical": false,
+          "profile": [
+            4,
+            4,
+            3,
+            3,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "defect": 0,
+          "bound": 48,
+          "canonical": true,
+          "profile": [
+            4,
+            4,
+            1,
+            3,
+            1,
+            1,
+            3,
+            1,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "partition": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "conjugate_layer_sizes": [
+        10,
+        10,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "ferrers_shadow": 50,
+      "available_slack_to_50": 0,
+      "compatible_ideal_chain_count": 1,
+      "minimum_noncanonical_defect": null,
+      "chain_records": [
+        {
+          "defect": 0,
+          "bound": 50,
+          "canonical": true,
+          "profile": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ]
+        }
+      ]
+    }
+  ],
+  "primary_fibre_chain_records": [
+    {
+      "partition": [
+        10,
+        10,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "ferrers_shadow": 50,
+      "available_slack_to_50": 0,
+      "compatible_fibre_chain_count": 1,
+      "minimum_noncanonical_fibre_defect": null,
+      "chain_records": [
+        {
+          "defect": 0,
+          "shadow_size": 50,
+          "canonical": true,
+          "fibres": [
+            [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9
+            ],
+            [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "partition": [
+        10,
+        4,
+        4,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "ferrers_shadow": 48,
+      "available_slack_to_50": 2,
+      "compatible_fibre_chain_count": 2,
+      "minimum_noncanonical_fibre_defect": 6,
+      "chain_records": [
+        {
+          "defect": 6,
+          "shadow_size": 54,
+          "canonical": false,
+          "fibres": [
+            [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "defect": 0,
+          "shadow_size": 48,
+          "canonical": true,
+          "fibres": [
+            [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9
+            ],
+            [
+              0,
+              1,
+              3,
+              6
+            ],
+            [
+              0,
+              1,
+              3,
+              6
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "partition": [
+        10,
+        4,
+        3,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "ferrers_shadow": 48,
+      "available_slack_to_50": 2,
+      "compatible_fibre_chain_count": 3,
+      "minimum_noncanonical_fibre_defect": 4,
+      "chain_records": [
+        {
+          "defect": 5,
+          "shadow_size": 53,
+          "canonical": false,
+          "fibres": [
+            [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        },
+        {
+          "defect": 4,
+          "shadow_size": 52,
+          "canonical": false,
+          "fibres": [
+            [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              1,
+              3
+            ]
+          ]
+        },
+        {
+          "defect": 0,
+          "shadow_size": 48,
+          "canonical": true,
+          "fibres": [
+            [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9
+            ],
+            [
+              0,
+              1,
+              3,
+              6
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              1,
+              3
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "partition": [
+        9,
+        4,
+        4,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "ferrers_shadow": 48,
+      "available_slack_to_50": 2,
+      "compatible_fibre_chain_count": 3,
+      "minimum_noncanonical_fibre_defect": 6,
+      "chain_records": [
+        {
+          "defect": 6,
+          "shadow_size": 54,
+          "canonical": false,
+          "fibres": [
+            [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2
+            ]
+          ]
+        },
+        {
+          "defect": 6,
+          "shadow_size": 54,
+          "canonical": false,
+          "fibres": [
+            [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              3
+            ]
+          ]
+        },
+        {
+          "defect": 0,
+          "shadow_size": 48,
+          "canonical": true,
+          "fibres": [
+            [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ],
+            [
+              0,
+              1,
+              3,
+              6
+            ],
+            [
+              0,
+              1,
+              3,
+              6
+            ],
+            [
+              0,
+              1,
+              3
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "partition": [
+        8,
+        4,
+        4,
+        4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "ferrers_shadow": 48,
+      "available_slack_to_50": 2,
+      "compatible_fibre_chain_count": 2,
+      "minimum_noncanonical_fibre_defect": 6,
+      "chain_records": [
+        {
+          "defect": 6,
+          "shadow_size": 54,
+          "canonical": false,
+          "fibres": [
+            [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ]
+          ]
+        },
+        {
+          "defect": 0,
+          "shadow_size": 48,
+          "canonical": true,
+          "fibres": [
+            [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ],
+            [
+              0,
+              1,
+              3,
+              6
+            ],
+            [
+              0,
+              1,
+              3,
+              6
+            ],
+            [
+              0,
+              1,
+              3,
+              6
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "partition": [
+        7,
+        5,
+        4,
+        4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "ferrers_shadow": 49,
+      "available_slack_to_50": 1,
+      "compatible_fibre_chain_count": 6,
+      "minimum_noncanonical_fibre_defect": 2,
+      "chain_records": [
+        {
+          "defect": 7,
+          "shadow_size": 56,
+          "canonical": false,
+          "fibres": [
+            [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ]
+          ]
+        },
+        {
+          "defect": 5,
+          "shadow_size": 54,
+          "canonical": false,
+          "fibres": [
+            [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            [
+              0,
+              1,
+              2,
+              3,
+              6
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ]
+          ]
+        },
+        {
+          "defect": 3,
+          "shadow_size": 52,
+          "canonical": false,
+          "fibres": [
+            [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            [
+              0,
+              1,
+              2,
+              3,
+              6
+            ],
+            [
+              0,
+              1,
+              3,
+              6
+            ],
+            [
+              0,
+              1,
+              3,
+              6
+            ]
+          ]
+        },
+        {
+          "defect": 4,
+          "shadow_size": 53,
+          "canonical": false,
+          "fibres": [
+            [
+              0,
+              1,
+              2,
+              3,
+              4,
+              6,
+              7
+            ],
+            [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ]
+          ]
+        },
+        {
+          "defect": 2,
+          "shadow_size": 51,
+          "canonical": false,
+          "fibres": [
+            [
+              0,
+              1,
+              2,
+              3,
+              4,
+              6,
+              7
+            ],
+            [
+              0,
+              1,
+              2,
+              3,
+              6
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ],
+            [
+              0,
+              1,
+              2,
+              3
+            ]
+          ]
+        },
+        {
+          "defect": 0,
+          "shadow_size": 49,
+          "canonical": true,
+          "fibres": [
+            [
+              0,
+              1,
+              2,
+              3,
+              4,
+              6,
+              7
+            ],
+            [
+              0,
+              1,
+              2,
+              3,
+              6
+            ],
+            [
+              0,
+              1,
+              3,
+              6
+            ],
+            [
+              0,
+              1,
+              3,
+              6
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "partition": [
+        5,
+        5,
+        5,
+        5,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "ferrers_shadow": 48,
+      "available_slack_to_50": 2,
+      "compatible_fibre_chain_count": 2,
+      "minimum_noncanonical_fibre_defect": 6,
+      "chain_records": [
+        {
+          "defect": 6,
+          "shadow_size": 54,
+          "canonical": false,
+          "fibres": [
+            [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            [
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          ]
+        },
+        {
+          "defect": 0,
+          "shadow_size": 48,
+          "canonical": true,
+          "fibres": [
+            [
+              0,
+              1,
+              2,
+              3,
+              6
+            ],
+            [
+              0,
+              1,
+              2,
+              3,
+              6
+            ],
+            [
+              0,
+              1,
+              2,
+              3,
+              6
+            ],
+            [
+              0,
+              1,
+              2,
+              3,
+              6
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "diagnostic": {
+    "order_reversing_profiles_checked": 1405,
+    "layer_defect_identities_checked": 1405,
+    "low_ferrers_partition_count": 14,
+    "low_profile_count": 14,
+    "noncanonical_low_profile_count": 0,
+    "defect_histogram": {
+      "0": 440,
+      "1": 61,
+      "2": 146,
+      "3": 182,
+      "4": 99,
+      "5": 123,
+      "6": 146,
+      "7": 76,
+      "8": 35,
+      "9": 43,
+      "10": 17,
+      "11": 13,
+      "12": 17,
+      "13": 2,
+      "14": 4,
+      "16": 1
+    }
+  },
+  "proof_dependency": {
+    "active_1405_profile_enumeration_required": false,
+    "active_ideal_data_rows": 16,
+    "active_low_partition_pairs": 7,
+    "maximum_chains_per_low_partition": 6,
+    "maximum_fibre_chains_per_primary_partition": 6
+  },
+  "script_sha256_before_output": "3685836E17A8CCC032AE223764F21A3B1D27158BD4A35E7223CA73A0C5E7E10E"
+}

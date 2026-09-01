@@ -1,0 +1,21 @@
+{
+  "baseline_permanent_catalecticant_rank": 10,
+  "evidence_role": "independent diagnostic; not used by the pure proof",
+  "field": "QQ",
+  "maximum_proper_shortening_nullity": 1,
+  "nine_chow_term_K1_upper_bound": 2205,
+  "omega_size": 16,
+  "predicted_R4_dimension_histogram": {
+    "5": 40,
+    "6": 560
+  },
+  "pure_global_K1_lower_bound": 2215,
+  "pure_universal_R4_upper_bound": 7,
+  "rank_four_six_subsets": 600,
+  "rm_le2_dimension": 11,
+  "rm_le3_dimension": 15,
+  "standard_point_rank_histogram": {
+    "9": 600
+  },
+  "status": "PASS_EXACT_QQ_FOURIER_RIGIDITY_DIAGNOSTIC"
+}

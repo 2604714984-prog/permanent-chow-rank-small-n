@@ -1,0 +1,540 @@
+{
+  "all_local_Q_kernels_equal_signed_graph_component_counts": true,
+  "by_crossing_count": {
+    "0": {
+      "max_crossing_increment": 0,
+      "max_p_core": 25,
+      "max_p_total": 25,
+      "subset_count": 11
+    },
+    "1": {
+      "max_crossing_increment": 4,
+      "max_p_core": 22,
+      "max_p_total": 25,
+      "subset_count": 165
+    },
+    "2": {
+      "max_crossing_increment": 8,
+      "max_p_core": 20,
+      "max_p_total": 26,
+      "subset_count": 495
+    },
+    "3": {
+      "max_crossing_increment": 12,
+      "max_p_core": 17,
+      "max_p_total": 25,
+      "subset_count": 330
+    }
+  },
+  "by_crossing_pattern": {
+    "X0101": {
+      "crossing_count": 1,
+      "max_crossing_increment": 4,
+      "max_p_core": 22,
+      "max_p_total": 25,
+      "subset_count": 55
+    },
+    "X0101+X0102": {
+      "crossing_count": 2,
+      "max_crossing_increment": 8,
+      "max_p_core": 20,
+      "max_p_total": 26,
+      "subset_count": 165
+    },
+    "X0101+X0102+X0112": {
+      "crossing_count": 3,
+      "max_crossing_increment": 12,
+      "max_p_core": 17,
+      "max_p_total": 25,
+      "subset_count": 330
+    },
+    "X0101+X0112": {
+      "crossing_count": 2,
+      "max_crossing_increment": 8,
+      "max_p_core": 20,
+      "max_p_total": 26,
+      "subset_count": 165
+    },
+    "X0102": {
+      "crossing_count": 1,
+      "max_crossing_increment": 3,
+      "max_p_core": 22,
+      "max_p_total": 25,
+      "subset_count": 55
+    },
+    "X0102+X0112": {
+      "crossing_count": 2,
+      "max_crossing_increment": 8,
+      "max_p_core": 20,
+      "max_p_total": 25,
+      "subset_count": 165
+    },
+    "X0112": {
+      "crossing_count": 1,
+      "max_crossing_increment": 3,
+      "max_p_core": 22,
+      "max_p_total": 25,
+      "subset_count": 55
+    },
+    "none": {
+      "crossing_count": 0,
+      "max_crossing_increment": 0,
+      "max_p_core": 25,
+      "max_p_total": 25,
+      "subset_count": 11
+    }
+  },
+  "field": "Q",
+  "fourteen_weight_universe": [
+    [
+      "S",
+      0,
+      0
+    ],
+    [
+      "S",
+      0,
+      1
+    ],
+    [
+      "S",
+      0,
+      2
+    ],
+    [
+      "S",
+      1,
+      0
+    ],
+    [
+      "S",
+      1,
+      1
+    ],
+    [
+      "R",
+      0,
+      0,
+      1
+    ],
+    [
+      "R",
+      0,
+      0,
+      2
+    ],
+    [
+      "R",
+      0,
+      1,
+      2
+    ],
+    [
+      "R",
+      1,
+      0,
+      1
+    ],
+    [
+      "C",
+      0,
+      1,
+      0
+    ],
+    [
+      "C",
+      0,
+      1,
+      1
+    ],
+    [
+      "X",
+      0,
+      1,
+      0,
+      1
+    ],
+    [
+      "X",
+      0,
+      1,
+      0,
+      2
+    ],
+    [
+      "X",
+      0,
+      1,
+      1,
+      2
+    ]
+  ],
+  "full_universe_p": 41,
+  "local_relevant_block_count": 238,
+  "local_relevant_size_histogram": {
+    "1": 155,
+    "2": 64,
+    "3": 11,
+    "4": 7,
+    "6": 1
+  },
+  "marginal_by_added_weight_type": [
+    {
+      "added_type": "S",
+      "max_delta": 6,
+      "max_p10": 22,
+      "p9_bin": "12-16",
+      "pair_count": 2354
+    },
+    {
+      "added_type": "R",
+      "max_delta": 9,
+      "max_p10": 25,
+      "p9_bin": "12-16",
+      "pair_count": 1947
+    },
+    {
+      "added_type": "C",
+      "max_delta": 5,
+      "max_p10": 21,
+      "p9_bin": "12-16",
+      "pair_count": 758
+    },
+    {
+      "added_type": "X",
+      "max_delta": 5,
+      "max_p10": 21,
+      "p9_bin": "12-16",
+      "pair_count": 1316
+    },
+    {
+      "added_type": "S",
+      "max_delta": 6,
+      "max_p10": 24,
+      "p9_bin": "17-18",
+      "pair_count": 830
+    },
+    {
+      "added_type": "R",
+      "max_delta": 8,
+      "max_p10": 26,
+      "p9_bin": "17-18",
+      "pair_count": 772
+    },
+    {
+      "added_type": "C",
+      "max_delta": 5,
+      "max_p10": 23,
+      "p9_bin": "17-18",
+      "pair_count": 468
+    },
+    {
+      "added_type": "X",
+      "max_delta": 5,
+      "max_p10": 23,
+      "p9_bin": "17-18",
+      "pair_count": 515
+    },
+    {
+      "added_type": "S",
+      "max_delta": 6,
+      "max_p10": 25,
+      "p9_bin": "19",
+      "pair_count": 191
+    },
+    {
+      "added_type": "R",
+      "max_delta": 7,
+      "max_p10": 26,
+      "p9_bin": "19",
+      "pair_count": 50
+    },
+    {
+      "added_type": "C",
+      "max_delta": 5,
+      "max_p10": 24,
+      "p9_bin": "19",
+      "pair_count": 88
+    },
+    {
+      "added_type": "X",
+      "max_delta": 5,
+      "max_p10": 24,
+      "p9_bin": "19",
+      "pair_count": 136
+    },
+    {
+      "added_type": "S",
+      "max_delta": 6,
+      "max_p10": 26,
+      "p9_bin": "20",
+      "pair_count": 108
+    },
+    {
+      "added_type": "R",
+      "max_delta": 3,
+      "max_p10": 23,
+      "p9_bin": "20",
+      "pair_count": 44
+    },
+    {
+      "added_type": "C",
+      "max_delta": 5,
+      "max_p10": 25,
+      "p9_bin": "20",
+      "pair_count": 68
+    },
+    {
+      "added_type": "X",
+      "max_delta": 4,
+      "max_p10": 24,
+      "p9_bin": "20",
+      "pair_count": 85
+    },
+    {
+      "added_type": "S",
+      "max_delta": 4,
+      "max_p10": 25,
+      "p9_bin": "21",
+      "pair_count": 52
+    },
+    {
+      "added_type": "R",
+      "max_delta": 4,
+      "max_p10": 25,
+      "p9_bin": "21",
+      "pair_count": 23
+    },
+    {
+      "added_type": "C",
+      "max_delta": 4,
+      "max_p10": 25,
+      "p9_bin": "21",
+      "pair_count": 28
+    },
+    {
+      "added_type": "X",
+      "max_delta": 4,
+      "max_p10": 25,
+      "p9_bin": "21",
+      "pair_count": 57
+    },
+    {
+      "added_type": "S",
+      "max_delta": 4,
+      "max_p10": 26,
+      "p9_bin": "22",
+      "pair_count": 40
+    },
+    {
+      "added_type": "R",
+      "max_delta": 3,
+      "max_p10": 25,
+      "p9_bin": "22",
+      "pair_count": 24
+    },
+    {
+      "added_type": "C",
+      "max_delta": 4,
+      "max_p10": 26,
+      "p9_bin": "22",
+      "pair_count": 20
+    },
+    {
+      "added_type": "X",
+      "max_delta": 4,
+      "max_p10": 26,
+      "p9_bin": "22",
+      "pair_count": 36
+    }
+  ],
+  "marginal_coarse_table": {
+    "12-16": {
+      "max_delta": 9,
+      "max_p10": 25,
+      "pair_count": 6375
+    },
+    "17-18": {
+      "max_delta": 8,
+      "max_p10": 26,
+      "pair_count": 2585
+    },
+    "19": {
+      "max_delta": 7,
+      "max_p10": 26,
+      "pair_count": 465
+    },
+    "20": {
+      "max_delta": 6,
+      "max_p10": 26,
+      "pair_count": 305
+    },
+    "21": {
+      "max_delta": 4,
+      "max_p10": 25,
+      "pair_count": 160
+    },
+    "22": {
+      "max_delta": 4,
+      "max_p10": 26,
+      "pair_count": 120
+    }
+  },
+  "max_p10": 26,
+  "p10_histogram": {
+    "17": 51,
+    "18": 152,
+    "19": 219,
+    "20": 212,
+    "21": 144,
+    "22": 98,
+    "23": 62,
+    "24": 38,
+    "25": 23,
+    "26": 2
+  },
+  "p10_maximizers": [
+    [
+      "S00",
+      "S01",
+      "S02",
+      "S10",
+      "R001",
+      "R002",
+      "R012",
+      "C010",
+      "X0101",
+      "X0102"
+    ],
+    [
+      "S00",
+      "S01",
+      "S02",
+      "S11",
+      "R001",
+      "R002",
+      "R012",
+      "C011",
+      "X0101",
+      "X0112"
+    ]
+  ],
+  "proof_dependency": false,
+  "script_sha256_before_output": "5EAD4B3EDD531C4032E0B189183CA70A0FB834DF7FA52431439C10FCEF5DE28F",
+  "status": "PASS_EXACT_RATIONAL_ORBIT13_FOUR_ROW_AUDIT",
+  "ten_line_hand_table": [
+    {
+      "crossing_count": 0,
+      "independent_sum_bound": 25,
+      "max_crossing_increment": 0,
+      "max_p_total": 25,
+      "p_core_range": [
+        0,
+        25
+      ],
+      "subset_count": 11
+    },
+    {
+      "crossing_count": 1,
+      "independent_sum_bound": 25,
+      "max_crossing_increment": 4,
+      "max_p_total": 25,
+      "p_core_range": [
+        0,
+        21
+      ],
+      "subset_count": 159
+    },
+    {
+      "crossing_count": 1,
+      "independent_sum_bound": 25,
+      "max_crossing_increment": 3,
+      "max_p_total": 25,
+      "p_core_range": [
+        22,
+        22
+      ],
+      "subset_count": 6
+    },
+    {
+      "crossing_count": 2,
+      "independent_sum_bound": 24,
+      "max_crossing_increment": 8,
+      "max_p_total": 24,
+      "p_core_range": [
+        0,
+        16
+      ],
+      "subset_count": 435
+    },
+    {
+      "crossing_count": 2,
+      "independent_sum_bound": 26,
+      "max_crossing_increment": 7,
+      "max_p_total": 26,
+      "p_core_range": [
+        17,
+        19
+      ],
+      "subset_count": 57
+    },
+    {
+      "crossing_count": 2,
+      "independent_sum_bound": 25,
+      "max_crossing_increment": 5,
+      "max_p_total": 25,
+      "p_core_range": [
+        20,
+        20
+      ],
+      "subset_count": 3
+    },
+    {
+      "crossing_count": 3,
+      "independent_sum_bound": 25,
+      "max_crossing_increment": 12,
+      "max_p_total": 23,
+      "p_core_range": [
+        0,
+        13
+      ],
+      "subset_count": 306
+    },
+    {
+      "crossing_count": 3,
+      "independent_sum_bound": 23,
+      "max_crossing_increment": 9,
+      "max_p_total": 23,
+      "p_core_range": [
+        14,
+        14
+      ],
+      "subset_count": 9
+    },
+    {
+      "crossing_count": 3,
+      "independent_sum_bound": 25,
+      "max_crossing_increment": 10,
+      "max_p_total": 25,
+      "p_core_range": [
+        15,
+        15
+      ],
+      "subset_count": 8
+    },
+    {
+      "crossing_count": 3,
+      "independent_sum_bound": 25,
+      "max_crossing_increment": 8,
+      "max_p_total": 25,
+      "p_core_range": [
+        16,
+        17
+      ],
+      "subset_count": 7
+    }
+  ],
+  "ten_subset_count": 1001,
+  "uses_finite_field": false,
+  "uses_floating_point": false
+}

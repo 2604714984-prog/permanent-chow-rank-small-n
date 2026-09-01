@@ -1,0 +1,121 @@
+{
+  "status": "PASS_STANDALONE_EXACT_QQ_ORBIT1_LENGTH_TWO",
+  "field": "QQ",
+  "project_imports": 0,
+  "quotient_relation": "q(x_ia*x_jb)=-q(x_ib*x_ja) for i!=j and a!=b",
+  "moving_line": "x10+B*x11+C*x20+D*x21",
+  "W0": [
+    "S_0_0",
+    "S_0_1",
+    "S_0_2",
+    "R_0_0_1",
+    "R_0_0_2",
+    "R_0_0_3",
+    "R_0_1_2",
+    "R_0_1_3",
+    "R_0_2_3",
+    "C_0_1_0"
+  ],
+  "sym2L_basis": [
+    "x00*x00",
+    "x00*x01",
+    "x00*x02",
+    "x00*x03",
+    "x01*x01",
+    "x01*x02",
+    "x01*x03",
+    "x02*x02",
+    "x02*x03",
+    "x03*x03",
+    "x00*y",
+    "x01*y",
+    "x02*y",
+    "x03*y",
+    "y^2"
+  ],
+  "origin_unit_pivots": [
+    "S_0_0",
+    "R_0_0_1",
+    "R_0_0_2",
+    "R_0_0_3",
+    "S_0_1",
+    "R_0_1_2",
+    "R_0_1_3",
+    "S_0_2",
+    "R_0_2_3",
+    "S_0_3",
+    "C_0_1_0",
+    "X_0_1_0_1",
+    "X_0_1_0_2",
+    "X_0_1_0_3",
+    "S_1_0"
+  ],
+  "moving_basis_quotient_expansions": {
+    "x00*y": {
+      "C_0_1_0": "1",
+      "X_0_1_0_1": "B",
+      "C_0_2_0": "C",
+      "X_0_2_0_1": "D"
+    },
+    "x01*y": {
+      "X_0_1_0_1": "-1",
+      "C_0_1_1": "B",
+      "X_0_2_0_1": "-C",
+      "C_0_2_1": "D"
+    },
+    "x02*y": {
+      "X_0_1_0_2": "-1",
+      "X_0_1_1_2": "-B",
+      "X_0_2_0_2": "-C",
+      "X_0_2_1_2": "-D"
+    },
+    "x03*y": {
+      "X_0_1_0_3": "-1",
+      "X_0_1_1_3": "-B",
+      "X_0_2_0_3": "-C",
+      "X_0_2_1_3": "-D"
+    },
+    "y^2": {
+      "S_1_0": "1",
+      "R_1_0_1": "2*B",
+      "C_1_2_0": "2*C",
+      "X_1_2_0_1": "-2*B*C + 2*D",
+      "S_1_1": "B**2",
+      "C_1_2_1": "2*B*D",
+      "S_2_0": "C**2",
+      "R_2_0_1": "2*C*D",
+      "S_2_1": "D**2"
+    }
+  },
+  "coefficient_equation_count": 33,
+  "full_lex_groebner_basis": [
+    "c0",
+    "c1",
+    "c2",
+    "c3",
+    "c4",
+    "c5",
+    "c6",
+    "c7",
+    "c8",
+    "c9",
+    "c10 - 1",
+    "-B + c11",
+    "c12",
+    "c13",
+    "c14",
+    "B**2",
+    "C",
+    "D"
+  ],
+  "elimination_ideal_in_QQ_B_C_D": [
+    "B^2",
+    "C",
+    "D"
+  ],
+  "fibre_ring": "QQ[B]/(B^2)",
+  "fibre_length": 2,
+  "manual_reverse_witness": "x00*y+B*x01*y modulo (B^2,C,D)",
+  "evidence_role": "standalone exact diagnostic for the coefficient comparison; the paper gives the same comparison as a pure proof",
+  "script_sha256_before_output": "7759D90B3A4C956D4ACB868FF7FE37DBA1E64A50E3E661923E826F83B20C1EE4"
+}
