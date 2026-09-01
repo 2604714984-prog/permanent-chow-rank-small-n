@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Independent finite-core audit for the ordinary Chow-rank-32 proof.
+"""Independent finite-core verification for the ordinary Chow-rank-32 proof.
 
 This program intentionally does not import the primary replay or read its
 frozen JSON.  It recomputes two load-bearing finite tables from their
@@ -23,7 +23,7 @@ K6_EDGES = tuple(combinations(VERTICES, 2))
 TRIPLES = tuple(combinations(VERTICES, 3))
 
 
-def audit_four_cycle_maxima() -> tuple[list[int], list[int]]:
+def verification_four_cycle_maxima() -> tuple[list[int], list[int]]:
     """Enumerate labelled edge subsets, without row-orbit reduction."""
 
     maxima: list[int] = []
@@ -63,7 +63,7 @@ def direct_symbol_rank(
     return surviving
 
 
-def audit_squarefree_symbol_table() -> tuple[list[list[int]], int]:
+def verification_squarefree_symbol_table() -> tuple[list[list[int]], int]:
     """Exhaust the 45,696 coordinate specializations from scratch."""
 
     table: list[list[int]] = []
@@ -98,8 +98,8 @@ def main() -> None:
         [0, 7, 10, 10, 15, 17, 19],
     ]
 
-    cycles, graph_counts = audit_four_cycle_maxima()
-    symbol, symbol_count = audit_squarefree_symbol_table()
+    cycles, graph_counts = verification_four_cycle_maxima()
+    symbol, symbol_count = verification_squarefree_symbol_table()
 
     if cycles != expected_cycles:
         raise SystemExit(f"FAIL: four-cycle maxima {cycles!r}")
@@ -110,7 +110,7 @@ def main() -> None:
     if symbol_count != 45_696:
         raise SystemExit(f"FAIL: symbol candidate count {symbol_count}")
 
-    print("PASS: independent n=6 finite-core audit")
+    print("PASS: independent n=6 finite-core verification")
     print(f"labelled bipartite graphs checked: {sum(graph_counts):,}")
     print(f"coordinate symbol cases checked: {symbol_count:,}")
 

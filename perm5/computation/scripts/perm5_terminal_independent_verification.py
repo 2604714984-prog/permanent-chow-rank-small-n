@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Definition-level independent audit of the final perm_5 orbit-0 endpoint.
+"""Definition-level independent verification of the final perm_5 orbit-0 endpoint.
 
 The script has two self-contained parts and imports no project code or frozen
 payload:
@@ -11,7 +11,7 @@ payload:
 2. It reconstructs the Boolean-Fourier shortening calculation over QQ and
    verifies the numerical endpoint 2,215 > 9*245 = 2,205.
 
-This is an audit of the finite endpoint.  The geometric reduction to orbit 0
+This is an verification of the finite endpoint.  The geometric reduction to orbit 0
 and the representation-theoretic passage from the tangent calculation to the
 local symbol are written in the paper.
 """
@@ -27,7 +27,7 @@ from itertools import combinations, permutations, product
 from pathlib import Path
 
 
-def tangent_graph_audit() -> dict[str, object]:
+def tangent_graph_verification() -> dict[str, object]:
     a3 = list(combinations(range(5), 3))
     a2 = list(combinations(range(5), 2))
     b3 = list(combinations(range(5), 3))
@@ -231,7 +231,7 @@ def right_nullspace_basis(columns: list[tuple[int, ...]]) -> list[list[Fraction]
     return basis
 
 
-def fourier_audit() -> dict[str, object]:
+def fourier_verification() -> dict[str, object]:
     omega = [(1,) + signs for signs in product((-1, 1), repeat=4)]
     subsets_le2 = [s for degree in range(3) for s in combinations(range(4), degree)]
     subsets_le3 = [s for degree in range(4) for s in combinations(range(4), degree)]
@@ -344,11 +344,11 @@ def main() -> int:
 
     payload = {
         "status": "PASS",
-        "claim_type": "independent definition-level audit of the orbit-0 terminal certificate",
+        "claim_type": "independent definition-level verification of the orbit-0 terminal certificate",
         "imports_project_code": False,
         "reads_frozen_payload": False,
-        "tangent_graph": tangent_graph_audit(),
-        "boolean_fourier": fourier_audit(),
+        "tangent_graph": tangent_graph_verification(),
+        "boolean_fourier": fourier_verification(),
         "strict_scope": (
             "The script verifies the finite orbit-0 tangent and Fourier endpoint.  The "
             "geometric reduction to the three terminal orbits and the local-to-global "

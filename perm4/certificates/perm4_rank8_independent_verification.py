@@ -1,4 +1,4 @@
-"""Independent reconstruction audit for the rank-8 certificate.
+"""Independent reconstruction verification for the rank-8 certificate.
 
 This file intentionally imports no project module.  It rebuilds:
 
@@ -333,7 +333,7 @@ def main() -> None:
     verify_prolongation_upper_bound()
     verify_chow_term_rank()
     verify_chart_minor()
-    print("INDEPENDENT_RANK8_AUDIT_PASS")
+    print("INDEPENDENT_RANK8_VERIFICATION_PASS")
 
 
 if __name__ == "__main__":

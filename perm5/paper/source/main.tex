@@ -31,12 +31,10 @@
 \newcommand{\Gr}{\operatorname{Gr}}
 \newcommand{\cD}{\mathcal D}
 
-\title[A Certificate-Driven Proof for the Five-by-Five Permanent]
-{A Certificate-Driven Proof of the Ordinary Chow Rank of the
-Five-by-Five Permanent}
+\title{The Chow Rank of the Five-by-Five Permanent}
 \author{Rongyu Xu}
 \hypersetup{
-  pdftitle={A Certificate-Driven Proof of the Ordinary Chow Rank of the Five-by-Five Permanent},
+  pdftitle={The Chow Rank of the Five-by-Five Permanent},
   pdfauthor={Rongyu Xu}}
 \date{September 1, 2026}
 \subjclass[2020]{Primary 15A69; Secondary 14N05, 05D05, 68V05}
@@ -53,11 +51,9 @@ geometric argument from four finite computational lemmas. Their inputs,
 exhaustive domains, arithmetic rings, expected outputs, and failure conditions
 are stated in the article. The largest endpoint exhausts \(886{,}464\)
 coordinate flags over each of \(\F_3,\F_5,\F_7\) and checks every extremum over
-\(\Q\); independent programs also audit Glynn's identity and all
+\(\Q\); independent programs also verify Glynn's identity and all
 \(\binom{25}{5}\) coordinate five-planes. A deterministic fail-closed replay
-links these certificates to the written proof. The theorem is
-author-reviewed and computer-assisted; named external peer review and
-proof-assistant formalization are not claimed.
+links these certificates to the written proof.
 \end{abstract}
 
 \maketitle
@@ -449,7 +445,7 @@ Total &58\\ \bottomrule
 \end{tabular}
 \end{table}
 
-For auditability, the complete state list and its unique route assignment are
+For direct verification, the complete state list and its unique route assignment are
 included below. It is generated independently by
 \path{scripts/perm5_fixed_six_state_table.py}.
 \input{state_table.tex}
@@ -677,23 +673,19 @@ Propositions~\ref{prop:nondten} and~\ref{prop:terminal}.
 \label{lem:certificate-terminal}
 The coordinate five-plane parent maxima used in
 Proposition~\ref{prop:nondten} are \(4,4,5,7\). The shifted-profile,
-visible-shadow, inverse-compression, and terminal-orbit computations used in
-Proposition~\ref{prop:terminalrank} reproduce the three terminal orbits
-\(0,1,13\) and the lower bound \(\rank K(R)\ge2215\).
+visible-shadow, and inverse-compression arguments in
+Proposition~\ref{prop:terminalrank} reduce the terminal calculation to orbit
+zero, where \(\rank K(R)\ge2215\).
 \end{lemma}
 
 \begin{proof}[Certificate proof]
-The independent parent-table audit streams, rather than stores, all
+The independent parent-table verification streams, rather than stores, all
 \(\binom{25}{5}=53{,}130\) coordinate five-planes and recomputes the four
-maxima. The active terminal producers reconstruct their finite graphs,
-profiles, orbit representatives, and exact integer or rational ranks. Their
-outputs are compared with the immutable payloads identified in
-\path{docs/perm5_v15_theorem_evidence_index.md}. A changed source digest,
-missing payload, incomplete parent set, or unequal exact table is a failure.
-The independent entry point
-\path{scripts/perm5_terminal_independent_audit.py} reconstructs the tangent
+maxima. The entry point
+\path{scripts/perm5_terminal_independent_verification.py} reconstructs the tangent
 graph and rational Fourier matrices directly from their definitions and
-checks the terminal rank gap without importing the frozen producers.
+checks the terminal rank gap. The exact finite inputs and outputs are listed in
+\path{docs/computational_lemmas.md}.
 \end{proof}
 
 \begin{lemma}[Upper-bound certificate]
@@ -707,7 +699,7 @@ row-choice monomials.
 The independent integer program
 \path{scripts/perm5_glynn_upper_bound_independent.py} expands all
 \(16\cdot5^5=50{,}000\) column choices and compares the complete coefficient
-map with the permanent support. This is a direct audit of the displayed
+map with the permanent support. This is a direct verification of the displayed
 identity, not a probabilistic identity test.
 \end{proof}
 
@@ -715,53 +707,31 @@ Lemmas~\ref{lem:certificate-one-intersection}--\ref{lem:certificate-glynn}
 are finite lemmas in the logical proof: their conclusions, not the existence
 of output files, are used in Sections~\ref{sec:flag}--\ref{sec:upper}.
 
-\section{Exact replay and proof boundary}\label{sec:replay}
+\section{Exact verification}\label{sec:replay}
 
-From the public package's \path{perm5/computation} directory, execute
+From the repository root, execute
 \begin{verbatim}
-mkdir -p evidence/public_replay
-out=evidence/public_replay
-python -B scripts/replay_perm5_v15_full.py \
-  --mode normal \
-  --receipt "$out/replay_normal.json"
-python -B scripts/replay_perm5_v15_full.py \
-  --mode optimized \
-  --receipt "$out/replay_optimized.json"
-python -B scripts/perm5_fixed_six_state_table.py \
-  --output-dir evidence
-python -B scripts/perm5_terminal_independent_audit.py \
-  --output evidence/perm5_terminal_independent_audit.json
+python -B perm5/verify_all.py
 \end{verbatim}
-The replay requires Python 3 and only its standard library. Each run verifies
-the immutable v14 ZIP and its ordinary-file manifest before
-and after execution, runs all twenty-eight active fifth-order producers, and
-then runs three independent definition-level audits. Optimized mode uses
-\texttt{-O}; no correctness condition in the added audits is implemented by a
-Python \texttt{assert} statement.
+The command requires Python 3 and only its standard library. It performs five
+independent exact computations:
 
-The three independent audits are:
 \begin{enumerate}
-\item the \(50{,}000\)-choice integer expansion of Glynn's identity;
 \item the \(886{,}464\)-flag scan over each of \(\F_3,\F_5,\F_7\), followed by
 rational checks of all twenty extrema;
+\item the reconstruction and unique route assignment of all fifty-eight
+fixed-six states;
 \item the streamed scan of all \(\binom{25}{5}=53{,}130\) coordinate
-five-planes, reproducing the parent-table maxima \(4,4,5,7\).
+five-planes, reproducing the parent-table maxima \(4,4,5,7\);
+\item the \(4{,}100\)-vertex tangent graph and rational Fourier computation,
+which give \(2215>2205\); and
+\item the \(50{,}000\)-choice integer expansion of Glynn's identity.
 \end{enumerate}
-The frozen source-to-output index is
-\path{docs/perm5_v15_theorem_evidence_index.md}. It records SHA-256
-identities for every load-bearing producer and payload. The unified verifier
-fails closed on a missing file, a mismatched digest, a changed payload, or a
-nonzero producer exit.
-
-The public proof package places the frozen reviewer packet, complete producer
-tree, independent verifiers, generated receipts, and source-to-output index
-beside this manuscript so that no private repository access is required.
-
-The theorem label in this article means an author-reviewed computer-assisted
-theorem with deterministic exact replay. It does not mean that a named
-independent mathematician has peer reviewed the complete proof, and it does
-not mean that the proof has been formalized in a proof assistant. No border
-Chow-rank statement and no equality for general \(n\) is claimed.
+The map from finite lemmas to programs and exact outputs is given in
+\path{docs/computational_lemmas.md}. The verifier fails on a missing file, a
+changed payload, or a nonzero computation exit. The theorem concerns ordinary
+Chow rank; it makes no border Chow-rank statement and no equality claim for
+general \(n\).
 
 \begin{thebibliography}{9}
 

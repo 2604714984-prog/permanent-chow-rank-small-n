@@ -20,7 +20,7 @@
     "strict_gap": 10,
     "uniform_R4_upper_bound": 7
   },
-  "claim_type": "independent definition-level audit of the orbit-0 terminal certificate",
+  "claim_type": "independent definition-level verification of the orbit-0 terminal certificate",
   "imports_project_code": false,
   "reads_frozen_payload": false,
   "status": "PASS",

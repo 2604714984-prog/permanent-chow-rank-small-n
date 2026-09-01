@@ -21,13 +21,13 @@ def load_module():
     return module
 
 
-AUDIT = load_module()
+VERIFICATION = load_module()
 
 
 class N6ExactOrdinaryChowRank32Test(unittest.TestCase):
     @classmethod
     def setUpClass(cls) -> None:
-        cls.payload = AUDIT.build_payload()
+        cls.payload = VERIFICATION.build_payload()
         cls.frozen = json.loads(FROZEN.read_text(encoding="utf-8"))
 
     def test_frozen_payload(self) -> None:
@@ -36,7 +36,7 @@ class N6ExactOrdinaryChowRank32Test(unittest.TestCase):
     def test_every_half_defect_row_dominates_ten_thirds(self) -> None:
         for encoded in self.payload["half_defect_rows"].values():
             row = tuple(Fraction(value) for value in encoded)
-            self.assertTrue(AUDIT.dominates_half_defect(row))
+            self.assertTrue(VERIFICATION.dominates_half_defect(row))
 
     def test_squarefree_symbol_table_is_derived_exactly(self) -> None:
         self.assertEqual(
@@ -49,12 +49,12 @@ class N6ExactOrdinaryChowRank32Test(unittest.TestCase):
             ],
         )
         self.assertEqual(
-            self.payload["squarefree_symbol_audit"]["candidate_count"], 45696
+            self.payload["squarefree_symbol_verification"]["candidate_count"], 45696
         )
 
     def test_small_permanent_intersection_coordinate_maxima(self) -> None:
         self.assertEqual(
-            self.payload["coordinate_intersection_audit"][
+            self.payload["coordinate_intersection_verification"][
                 "four_cycle_maxima_by_edge_count_0_to_6"
             ],
             [0, 0, 0, 0, 1, 1, 3],

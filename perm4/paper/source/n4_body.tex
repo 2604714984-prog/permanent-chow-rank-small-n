@@ -468,7 +468,7 @@ and \(\det S_0=-32768\), and checks simultaneous triangularization.\\
 \path{perm4_quadratic_extension_full_minor_replay.py}
 & Replays the full \(659\times659\) minor at several parameter points over
 two primes as a separate cross-check.\\
-\path{perm4_rank8_independent_audit.py}
+\path{perm4_rank8_independent_verification.py}
 & Rebuilds the ranks \(560\) and \(92\), the cubic prolongations, and the
 chart minor directly from the displayed bases without importing project
 modules.\\
@@ -496,7 +496,7 @@ sixteen and four explicit cubic prolongations. The identity
 
 From the \texttt{perm4/certificates} directory, run
 \begin{verbatim}
-python perm4_rank8_independent_audit.py
+python perm4_rank8_independent_verification.py
 python perm4_rank8_verify_all.py
 \end{verbatim}
 Both commands must exit successfully; the first prints

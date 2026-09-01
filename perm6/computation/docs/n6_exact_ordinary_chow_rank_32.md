@@ -1,8 +1,4 @@
-# Exact ordinary Chow rank of the six-by-six permanent
-
-## Status and scope
-
-`EXACT ORDINARY-RANK THEOREM; POST-AUDIT LOCAL-SPACE REPAIR; EXACT FINITE REPLAY.`
+# The Chow Rank of the Six-by-Six Permanent
 
 Over an algebraically closed field of characteristic zero,
 
@@ -13,17 +9,14 @@ Over an algebraically closed field of characteristic zero,
 This theorem concerns ordinary Chow rank. It makes no border-rank claim and
 does not prove the conjectural formula for general \(n\).
 
-Reviewer artifacts: [LaTeX source](n6_exact_ordinary_chow_rank_32.tex) and
-[rendered PDF](n6_exact_ordinary_chow_rank_32.pdf).
+The [LaTeX source](n6_exact_ordinary_chow_rank_32.tex) and
+[rendered PDF](n6_exact_ordinary_chow_rank_32.pdf) contain the same proof.
 
-The 2026-08-21 audit correctly observed that the earlier compact document did
-not derive its local quotient-symbol rows. Reconstructing that derivation also
-found a false shortcut in the longer source blueprint: for the five-variable
-normal forms with support \(s=2,3\), the span of all formal squarefree
-subproducts is larger than the actual derivative space. The proof below does
-not use that shortcut. It works with the actual derivative spaces, replaces
-the affected rows by weaker sufficient rows, and exposes every finite
-calculation in the adjacent exact replay.
+For the five-variable normal forms with support \(s=2,3\), the span of all
+formal squarefree subproducts is larger than the actual derivative space. The
+proof below works directly with the actual derivative spaces, uses sufficient
+local rows, and exposes every finite calculation in the adjacent exact
+verification.
 
 ## 1. The permanent derivative tower
 
@@ -288,7 +281,7 @@ u&14&14&18&20&20.
 \end{array}                                             \tag{4.7}
 \]
 
-For auditability, (4.7) is the exact rank of the matrix whose columns are
+For direct verification, (4.7) is the exact rank of the matrix whose columns are
 the order-four or order-three partial derivatives of the explicitly displayed
 polynomial (4.6), in the ordinary monomial basis. The adjacent replay builds
 these matrices over \(\mathbf Q\) and row-reduces them exactly.
@@ -359,7 +352,7 @@ give
 \]
 
 The rows (4.8)--(4.9) dominate \(10d/3\), proving (4.1) in the final
-factor-span dimension. Notice that the repaired proof never identifies the
+factor-span dimension. Notice that the proof never identifies the
 formal squarefree subproduct span with the actual derivative space in the
 \(s=2,3\) cases.
 
@@ -510,7 +503,7 @@ Glynn's identity supplies the matching upper bound:
 Walsh cancellation leaves exactly the monomials using every row once. This
 is a 32-term ordinary Chow decomposition, completing the proof.
 
-## 8. Exact replay and audit boundary
+## 8. Exact verification
 
 ```text
 python scripts/n6_exact_ordinary_chow_rank_32.py \

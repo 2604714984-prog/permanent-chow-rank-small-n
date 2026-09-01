@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Independent exact derivative audit for the five dependent-factor perm_6 normal forms.
+"""Independent exact derivative verification for the five dependent-factor perm_6 normal forms.
 
 The program intentionally imports no project module and reads no frozen JSON.
 It expands
@@ -156,7 +156,7 @@ def main() -> int:
 
     payload = {
         "status": "PASS",
-        "claim_type": "independent exact QQ derivative audit",
+        "claim_type": "independent exact QQ derivative verification",
         "imports_primary_module": False,
         "reads_frozen_json": False,
         "arithmetic": "fractions.Fraction; sparse exact Gaussian elimination",
