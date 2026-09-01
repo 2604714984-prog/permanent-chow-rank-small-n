@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""Generate and audit the 58-state fixed-six routing table for perm_5.
+"""Generate and verification the 58-state fixed-six routing table for perm_5.
 
-This is a deliberately small, definition-level audit.  It reconstructs the
+This is a deliberately small, definition-level verification.  It reconstructs the
 Petersen-product minimum-shadow table, generates the 58 integer states from the
 closed inequalities in the paper, assigns each state to exactly one written
 exclusion route, and emits JSON, CSV, and LaTeX tables.
@@ -216,7 +216,7 @@ def main() -> int:
     # Definition-level checks for the two transparent global subfamilies.
     d9_global = [row for row in states if row["route"] == "B" and row["d"] == 9]
     if len(d9_global) != 17 or not all(int(row["p_gap"]) > 0 for row in d9_global):
-        raise RuntimeError("d=9 p-gap audit failed")
+        raise RuntimeError("d=9 p-gap verification failed")
     s19_global = [
         row for row in states
         if row["route"] == "B" and row["s"] == 19 and row["d"] >= 10
@@ -231,7 +231,7 @@ def main() -> int:
     tex_path = args.output_dir / "perm5_fixed_six_state_table.tex"
     payload = {
         "status": "PASS",
-        "claim_type": "definition-level exact audit of the 58-state universe and route partition",
+        "claim_type": "definition-level exact verification of the 58-state universe and route partition",
         "petersen_product_minimum_shadows_0_to_23": list(shadows),
         "route_labels": ROUTE_LABELS,
         "route_counts": observed_counts,

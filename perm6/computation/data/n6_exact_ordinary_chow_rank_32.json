@@ -11,7 +11,7 @@
   "minimum_n": 32,
   "n31_gap": 10,
   "n32_gap": 0,
-  "coordinate_intersection_audit": {
+  "coordinate_intersection_verification": {
     "four_cycle_maxima_by_edge_count_0_to_6": [
       0,
       0,
@@ -133,7 +133,7 @@
       19
     ]
   ],
-  "squarefree_symbol_audit": {
+  "squarefree_symbol_verification": {
     "candidate_count": 45696,
     "witnesses": {
       "r0_d0": {

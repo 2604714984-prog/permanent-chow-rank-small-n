@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Independent exact audit of the finite parent table in the perm5 d=11,12 route.
+"""Independent exact verification of the finite parent table in the perm5 d=11,12 route.
 
 The program reconstructs the four coordinate cubic flags from three-subsets,
 differentiates them combinatorially, and streams all C(25,5) coordinate
@@ -113,7 +113,7 @@ def build_result() -> dict[str, object]:
     require_equal("parent table", maxima, EXPECTED)
     return {
         "status": "PASS",
-        "claim_type": "independent exact integer audit of finite parent table only",
+        "claim_type": "independent exact integer verification of finite parent table only",
         "imports_project_generator": False,
         "reads_frozen_result": False,
         "coordinate_five_planes_checked": checked,

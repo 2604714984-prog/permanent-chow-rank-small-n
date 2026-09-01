@@ -22,7 +22,7 @@
     ]
   ],
   "arithmetic": "fractions.Fraction; sparse exact Gaussian elimination",
-  "claim_type": "independent exact QQ derivative audit",
+  "claim_type": "independent exact QQ derivative verification",
   "imports_primary_module": false,
   "negative_regressions": {
     "T2_formal_pair_vs_actual_D2": [

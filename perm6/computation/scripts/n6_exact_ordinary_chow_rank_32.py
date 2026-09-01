@@ -513,7 +513,7 @@ def derive_span_five_half_defect_rows(
 
 def build_payload() -> dict[str, object]:
     low_rows, floors = low_span_rows()
-    squarefree_table, squarefree_audit = derive_squarefree_symbol_table()
+    squarefree_table, squarefree_verification = derive_squarefree_symbol_table()
     coordinate_intersections = derive_coordinate_intersection_bounds()
     span_five_profiles = derive_span_five_profiles()
     span_five_rows = derive_span_five_half_defect_rows(span_five_profiles)
@@ -571,9 +571,9 @@ def build_payload() -> dict[str, object]:
         "minimum_n": 32,
         "n31_gap": n31_gap,
         "n32_gap": n32_gap,
-        "coordinate_intersection_audit": coordinate_intersections,
+        "coordinate_intersection_verification": coordinate_intersections,
         "squarefree_symbol_table": squarefree_table,
-        "squarefree_symbol_audit": squarefree_audit,
+        "squarefree_symbol_verification": squarefree_verification,
         "span_five_normal_forms": span_five_profiles,
         "span_five_derived_half_defect_rows": {
             str(support): [encoded(value) for value in row]

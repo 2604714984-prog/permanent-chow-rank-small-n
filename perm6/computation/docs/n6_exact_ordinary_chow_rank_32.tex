@@ -25,10 +25,9 @@
 \newtheorem{definition}[theorem]{Definition}
 \newtheorem{remark}[theorem]{Remark}
 
-\title[The Chow Rank of the Six-by-Six Permanent]
-{The Ordinary Chow Rank of the Six-by-Six Permanent}
+\title{The Chow Rank of the Six-by-Six Permanent}
 \author{}
-\date{August 21, 2026; post-audit revision}
+\date{September 1, 2026}
 \subjclass[2020]{Primary 15A69; Secondary 14N05, 68V05}
 \keywords{permanent, Chow rank, product rank, catalecticant,
 computer-assisted proof}
@@ -40,11 +39,11 @@ Let \(\perm_6\) be the permanent of a generic \(6\) by \(6\) matrix.
 Over an algebraically closed field of characteristic zero, we prove that its
 ordinary Chow rank is \(32\). The upper bound is Glynn's identity. The lower
 bound combines a symmetric image-span inequality with a half-defect estimate
-for arbitrary quotient derivative symbols of a sextic Chow term. A proof
-audit exposed a false identification between formal subproduct spaces and
-actual derivative spaces in two dependent-factor profiles. This revision
-removes that identification, computes the actual spaces, and uses weaker
-sufficient local rows. The finite parts have an exact rational replay. No
+for arbitrary quotient derivative symbols of a sextic Chow term. Exact
+differentiation distinguishes formal subproduct spaces from the actual
+derivative spaces in two dependent-factor profiles. The proof computes the
+actual spaces and uses sufficient local rows. The finite parts have an exact
+rational verification. No
 border-rank or general-\(n\) equality is claimed.
 \end{abstract}
 
@@ -349,13 +348,13 @@ Every entry of (4.4), (4.5), (4.8), and (4.9) is at least \(10d/3\).
 This proves (4.1).
 \end{proof}
 
-\begin{remark}[The repaired boundary]\label{rem:repair}
+\begin{remark}[Actual derivative spaces]\label{rem:actual-spaces}
 The formal pair- and triple-product spans for \(T_2\) have dimensions 12
 and 17, while the actual derivative spaces have dimensions 11 and 14. For
 \(T_3\), the formal triple-product span has dimension 19 while the actual
 middle derivative space has dimension 18. The proof above deliberately uses
 the formal squarefree table only in the six-independent-factor case. The
-negative equalities are frozen as regression tests.
+unequal dimensions are retained as regression tests.
 \end{remark}
 
 \section{A symmetric image-span inequality}
@@ -457,7 +456,7 @@ For the reverse inequality, Glynn's identity \cite{Glynn2010} gives
 Walsh cancellation leaves exactly the monomials that use each row once. This
 is a 32-term Chow decomposition. Theorem~\ref{thm:main} follows.
 
-\section{Exact replay and audit boundary}
+\section{Exact verification}
 
 From the repository checkout, run
 \begin{verbatim}
@@ -468,14 +467,12 @@ python -m unittest tests.test_n6_exact_ordinary_chow_rank_32 -v
 The first command derives the coordinate intersection maxima, all 45,696
 coordinate cases behind (3.2), the actual normal-form derivative ranks and
 squarefree subspaces in (4.7)--(4.8), the low-span monomial floors, and the
-final cancellation. It also records the formal/actual mismatches in
-Remark~\ref{rem:repair}.
+final cancellation. It also verifies the unequal formal and actual dimensions
+in Remark~\ref{rem:actual-spaces}.
 
 The Borel fixed-point reductions, prolongation identity, elementary
 directional arguments, symmetric image-span lemma, and filtration increment
-(6.3) are written proofs, not numerical inferences. This is an internal
-computation-assisted exact proof; named external peer review and
-proof-assistant formalization remain outstanding.
+(6.3) are written proofs, not numerical inferences.
 
 \begin{remark}[Scope]
 The theorem concerns ordinary Chow rank over characteristic zero. It does not

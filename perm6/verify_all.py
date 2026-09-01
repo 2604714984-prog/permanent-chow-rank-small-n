@@ -27,8 +27,8 @@ def main() -> int:
         str(COMPUTATION / "data" / "n6_exact_ordinary_chow_rank_32.json"),
     )
     run("-m", "unittest", "tests.test_n6_exact_ordinary_chow_rank_32", "-v")
-    run(str(SCRIPTS / "n6_independent_finite_core_audit.py"))
-    with tempfile.TemporaryDirectory(prefix="perm6-public-audit-") as temporary:
+    run(str(SCRIPTS / "n6_independent_finite_core_verification.py"))
+    with tempfile.TemporaryDirectory(prefix="perm6_verification_") as temporary:
         output = Path(temporary) / "n6_dependent_normal_forms_independent.json"
         run(
             str(SCRIPTS / "n6_dependent_normal_forms_independent.py"),
@@ -40,8 +40,8 @@ def main() -> int:
             (EVIDENCE / output.name).read_text(encoding="utf-8")
         )
         if observed != expected:
-            raise RuntimeError("independent normal-form receipt mismatch")
-    print("PERM6_PUBLIC_VERIFY_PASS")
+            raise RuntimeError("independent normal-form data mismatch")
+    print("PERM6_VERIFY_PASS")
     return 0
 
 

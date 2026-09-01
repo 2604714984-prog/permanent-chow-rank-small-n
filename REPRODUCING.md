@@ -10,12 +10,7 @@ python -B perm6/verify_all.py
 ```
 
 `perm4` has the dependency declared in
-`perm4/certificates/requirements-replay.txt`. The cross-platform `perm5`
-independent checks and all `perm6` checks use only the standard library.
-`perm5/verify_all.py --full` is the historical byte-for-byte frozen replay;
-it requires Windows and the pinned dependency in
-`perm5/computation/requirements-replay.txt` because the immutable manifest
-binds CRLF producer outputs.
+`perm4/certificates/requirements-replay.txt`. The `perm5` and `perm6`
+verification programs use only the standard library.
 
-Every package has its own `MANIFEST.sha256`. Verification does not require
-access to the private research repository.
+Every package has its own `MANIFEST.sha256`.

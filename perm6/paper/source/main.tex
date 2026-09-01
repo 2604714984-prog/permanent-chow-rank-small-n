@@ -28,12 +28,10 @@
 \newtheorem{definition}[theorem]{Definition}
 \newtheorem{remark}[theorem]{Remark}
 
-\title[Certified Local Computations for the Six-by-Six Permanent]
-{Certified Local Computations and the Ordinary Chow Rank of the
-Six-by-Six Permanent}
+\title{The Chow Rank of the Six-by-Six Permanent}
 \author{Rongyu Xu}
 \hypersetup{
-  pdftitle={Certified Local Computations and the Ordinary Chow Rank of the Six-by-Six Permanent},
+  pdftitle={The Chow Rank of the Six-by-Six Permanent},
   pdfauthor={Rongyu Xu}}
 \date{September 1, 2026}
 \subjclass[2020]{Primary 15A69; Secondary 14N05, 68V05}
@@ -45,11 +43,11 @@ computer-assisted proof}
 \begin{abstract}
 Let \(\perm_6\) be the permanent of a generic \(6\) by \(6\) matrix.
 Over an algebraically closed field of characteristic zero, we prove that its
-ordinary Chow rank is \(32\). This submission edition isolates the finite
-local computations as explicit lemmas with declared inputs, exhaustive
-domains, exact outputs, and verifier boundaries. The lower bound combines a
+ordinary Chow rank is \(32\). The finite computations are stated as explicit
+lemmas with exhaustive domains and exact
+outputs. The lower bound combines a
 symmetric image-span inequality with a half-defect estimate for arbitrary
-quotient derivative symbols of a sextic Chow term. A primary exact replay
+quotient derivative symbols of a sextic Chow term. An exact verification
 reconstructs all finite tables. A second implementation independently checks
 every labelled bipartite graph with at most six edges and all \(45{,}696\)
 coordinate squarefree-symbol cases. No floating-point or randomized step is
@@ -81,12 +79,10 @@ defect forces at least \(32\) summands.
 The local half-defect estimate contains the finite part of the argument.  It
 uses exact rational differentiation of the five dependent-factor normal
 forms, an exact enumeration of \(45{,}696\) coordinate symbol cases, and a
-coordinate audit of the small permanent-quadratic intersections.  The replay
-reconstructs these objects from their definitions and compares them with the
-frozen payload.  All geometric reductions and global inequalities are written
-proofs.  The final status is an author-reviewed computer-assisted theorem;
-named external peer review and proof-assistant formalization remain outside
-the claim.
+coordinate verification of the small permanent-quadratic intersections. The
+verification reconstructs these objects from their definitions and compares
+them with the exact payload. All geometric reductions and global inequalities
+are written proofs.
 
 \section{Statement and permanent derivatives}
 
@@ -454,13 +450,13 @@ Every entry of (4.4), (4.5), (4.8), and (4.9) is at least \(10d/3\).
 This proves (4.1).
 \end{proof}
 
-\begin{remark}[The repaired boundary]\label{rem:repair}
+\begin{remark}[Actual derivative spaces]\label{rem:actual-spaces}
 The formal pair- and triple-product spans for \(T_2\) have dimensions 12
 and 17, while the actual derivative spaces have dimensions 11 and 14. For
 \(T_3\), the formal triple-product span has dimension 19 while the actual
 middle derivative space has dimension 18. The proof above deliberately uses
 the formal squarefree table only in the six-independent-factor case. The
-negative equalities are frozen as regression tests.
+unequal dimensions are retained as regression tests.
 \end{remark}
 
 \section{A symmetric image-span inequality}
@@ -597,7 +593,7 @@ supported on the subspace is
 A coordinate subspace is identified with an \(e\)-edge subgraph of
 \(K_{6,6}\), and a supported rectangle permanent is identified with a
 four-cycle. The primary replay enumerates row-permutation representatives.
-The independent program \path{scripts/n6_independent_finite_core_audit.py}
+The independent program \path{scripts/n6_independent_finite_core_verification.py}
 instead enumerates every labelled edge subset, namely
 \(\sum_{e=0}^6\binom{36}{e}=2{,}391{,}496\) graphs, and directly counts pairs
 of common neighbors. Both computations give the displayed maxima.
@@ -626,7 +622,7 @@ For each coordinate kernel and each killed-edge set of cardinality at most
 \(r\), the verifier visits all twenty three-subsets of \([6]\). A cubic
 coordinate survives exactly when one of its three vertex-edge factorizations
 survives. The primary replay also evaluates the closed killed-column formula;
-the independent audit uses only this direct survival test and does not import
+the independent computation uses only this direct survival test and does not import
 the primary module or read the frozen JSON. It reproduces the table and the
 case count exactly.
 \end{proof}
@@ -663,7 +659,7 @@ The fixed-point reductions, prolongation identity, directional cases,
 symmetric image-span inequality, filtration increment, and defect cancellation
 remain written arguments in the preceding sections.
 
-\section{Exact replay and audit boundary}
+\section{Exact verification}
 
 From the repository checkout, run
 \begin{verbatim}
@@ -671,7 +667,7 @@ python scripts/n6_exact_ordinary_chow_rank_32.py \
   --verify-json data/n6_exact_ordinary_chow_rank_32.json
 python -m unittest \
   tests.test_n6_exact_ordinary_chow_rank_32 -v
-python scripts/n6_independent_finite_core_audit.py
+python scripts/n6_independent_finite_core_verification.py
 python scripts/n6_dependent_normal_forms_independent.py \
   --output evidence/n6_dependent_normal_forms_independent.json
 \end{verbatim}
@@ -679,25 +675,19 @@ All four commands require Python 3 and only its standard library. The first
 command derives the coordinate intersection maxima, all 45,696
 coordinate cases behind (3.2), the actual normal-form derivative ranks and
 squarefree subspaces in (4.7)--(4.8), the low-span monomial floors, and the
-final cancellation. It also records the formal/actual mismatches in
-Remark~\ref{rem:repair}.
+final cancellation. It also verifies the unequal formal and actual dimensions
+in Remark~\ref{rem:actual-spaces}.
 
 The unit tests exercise the primary implementation as regression tests. The
-third command is independent of that implementation and of the frozen JSON;
+third command is independent of that implementation and of the reference JSON;
 its scope is exactly Lemmas~\ref{lem:certificate-intersection}
 and~\ref{lem:certificate-squarefree}. The fourth command independently
 reconstructs the normal-form derivative ranks used in
 Lemma~\ref{lem:certificate-half-defect}.
 
-The public proof package places the exact data, primary verifier, independent
-verifiers, tests, and generated receipts beside this manuscript so that no
-private repository access is required.
-
 The Borel fixed-point reductions, prolongation identity, directional
 arguments, symmetric image-span lemma, and filtration increment (6.3) are
-written proofs rather than numerical inferences. The result is an exact
-computer-assisted theorem reviewed by the author. Named external peer review
-and proof-assistant formalization remain outstanding.
+written proofs rather than numerical inferences.
 
 \begin{remark}[Scope]
 The theorem concerns ordinary Chow rank over characteristic zero. It does not

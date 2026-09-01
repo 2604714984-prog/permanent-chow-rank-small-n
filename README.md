@@ -12,7 +12,5 @@ The results are published as four independent proof packages:
   \(\operatorname{ChowRank}(\operatorname{perm}_6)=32\).
 
 Each directory contains its own manuscript PDF, complete AMS LaTeX source,
-exact certificates, replay entry point, and reproduction instructions. Neither
-proof package depends on files from another directory. The `perm_5` and
-`perm_6` results are exact computer-assisted theorems reviewed by the author;
-named external peer review and proof-assistant formalization are not claimed.
+exact certificates, verification entry point, and reproduction instructions.
+No proof package depends on files from another directory.

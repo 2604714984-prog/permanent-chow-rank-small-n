@@ -15,7 +15,7 @@ def run(script: str) -> None:
 
 
 def main() -> None:
-    run("perm4_rank8_independent_audit.py")
+    run("perm4_rank8_independent_verification.py")
     run("perm4_rank8_verify_all.py")
     print("PERM4_ACTIVE_PROOF_REPLAY_PASS")
 
