@@ -1,4 +1,4 @@
-# Exact Chow Ranks of Four Small Permanents
+# Chow Ranks of Small Permanents
 
 The results are published as four independent proof packages:
 

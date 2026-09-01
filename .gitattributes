@@ -2,5 +2,7 @@
 *.zip -text
 
 # Auditor-package manifests bind bytes, so checkout must never rewrite EOLs.
+perm3/** -text
+perm4/** -text
 perm5/** -text
 perm6/** -text
