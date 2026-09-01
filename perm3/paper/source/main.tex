@@ -1,0 +1,66 @@
+\documentclass[10pt,a4paper,reqno]{amsart}
+
+\usepackage[a4paper,margin=25mm]{geometry}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{booktabs,array,tabularx}
+\usepackage{enumitem,etoolbox,microtype}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xurl}
+\urlstyle{tt}
+\allowdisplaybreaks[2]
+\emergencystretch=3em
+\setlist{nosep}
+\AtBeginEnvironment{verbatim}{\footnotesize}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\C}{\mathbb C}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\F}{\mathbb F}
+\newcommand{\Sym}{\operatorname{Sym}}
+\newcommand{\rank}{\operatorname{rank}}
+\newcommand{\im}{\operatorname{im}}
+\newcommand{\coker}{\operatorname{coker}}
+\newcommand{\Span}{\operatorname{span}}
+\newcommand{\ChowRank}{\operatorname{ChowRank}}
+\newcommand{\perm}{\operatorname{perm}}
+\newcommand{\row}{\operatorname{row}}
+\newcommand{\id}{\operatorname{id}}
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}
+
+\title{The Chow Rank of the Three-by-Three Permanent}
+\author{}
+\date{September 1, 2026}
+\subjclass[2020]{Primary 15A69; Secondary 14N05, 68V05}
+\keywords{permanent, Chow rank, Koszul flattening}
+\hypersetup{pdftitle={The Chow Rank of the Three-by-Three Permanent}}
+
+\begin{document}
+\begin{abstract}
+We prove over every field of characteristic zero that
+\[
+  \ChowRank(\perm_3)=4.
+\]
+The lower bound follows from the kernel of the catalecticant--Koszul
+flattening, and the upper bound is Glynn's four-term decomposition. The
+argument is self-contained, and an independent exact reconstruction program
+is included with the paper.
+\end{abstract}
+\maketitle
+
+\section{The three-by-three permanent}
+\input{n3_body.tex}
+
+The lower bound above is proved over the complex numbers. Any decomposition
+over a characteristic-zero field remains a decomposition after scalar
+extension to the complex numbers, while Glynn's decomposition is defined over
+the prime field. The equality therefore holds over every field of
+characteristic zero.
+
+\end{document}

@@ -1,4 +1,4 @@
-# ChowRank(perm3) = 4
+# The Chow Rank of the Three-by-Three Permanent
 
 This directory is a self-contained characteristic-zero proof package for
 
@@ -6,9 +6,10 @@ This directory is a self-contained characteristic-zero proof package for
 \operatorname{ChowRank}(\operatorname{perm}_3)=4.
 \]
 
-- Manuscript: [`paper/perm3_chow_rank_4_proof_zh_ams.pdf`](paper/perm3_chow_rank_4_proof_zh_ams.pdf)
+- Manuscript: [`paper/perm3_chow_rank_4.pdf`](paper/perm3_chow_rank_4.pdf)
 - AMS LaTeX source: [`paper/source/`](paper/source/)
 - Exact certificate: [`certificates/`](certificates/)
+- File inventory: [`MANIFEST.sha256`](MANIFEST.sha256)
 
 Replay with:
 

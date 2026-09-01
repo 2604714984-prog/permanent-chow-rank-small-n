@@ -1,4 +1,4 @@
-# ChowRank(perm4) = 8
+# The Chow Rank of the Four-by-Four Permanent
 
 This directory is a self-contained characteristic-zero proof package for
 
@@ -6,9 +6,10 @@ This directory is a self-contained characteristic-zero proof package for
 \operatorname{ChowRank}(\operatorname{perm}_4)=8.
 \]
 
-- Manuscript: [`paper/perm4_chow_rank_8_proof_zh_ams.pdf`](paper/perm4_chow_rank_8_proof_zh_ams.pdf)
+- Manuscript: [`paper/perm4_chow_rank_8.pdf`](paper/perm4_chow_rank_8.pdf)
 - AMS LaTeX source: [`paper/source/`](paper/source/)
 - Exact certificates and independent replay: [`certificates/`](certificates/)
+- File inventory: [`MANIFEST.sha256`](MANIFEST.sha256)
 
 Replay with:
 
