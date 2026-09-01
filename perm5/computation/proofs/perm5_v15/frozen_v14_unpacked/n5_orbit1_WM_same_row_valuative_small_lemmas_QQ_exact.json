@@ -1,0 +1,187 @@
+{
+  "status": "PASS_EXACT_QQ_AND_INTEGER_DIAGNOSTIC",
+  "evidence_class": "exact characteristic-zero and exhaustive integer diagnostic",
+  "logical_scope": "Checks Lemmas 2.1 and 2.2 and the small rectangle maxima only; the pure proof does not depend on this file.",
+  "lemma_2_1": {
+    "unknowns": 25,
+    "rank_over_QQ": 24,
+    "kernel_dimension": 1,
+    "claimed_kernel": "QQ * I_5"
+  },
+  "lemma_2_2": {
+    "unknowns": 25,
+    "rank_over_QQ": 25,
+    "kernel_dimension": 0
+  },
+  "rectangle_maxima": {
+    "base_M": [
+      {
+        "added_cells": 0,
+        "maximum_rectangles": 0,
+        "maximizer_count": 1,
+        "unique_maximizer": []
+      },
+      {
+        "added_cells": 1,
+        "maximum_rectangles": 0,
+        "maximizer_count": 21,
+        "unique_maximizer": null
+      },
+      {
+        "added_cells": 2,
+        "maximum_rectangles": 1,
+        "maximizer_count": 24,
+        "unique_maximizer": null
+      },
+      {
+        "added_cells": 3,
+        "maximum_rectangles": 3,
+        "maximizer_count": 16,
+        "unique_maximizer": null
+      },
+      {
+        "added_cells": 4,
+        "maximum_rectangles": 6,
+        "maximizer_count": 4,
+        "unique_maximizer": null
+      },
+      {
+        "added_cells": 5,
+        "maximum_rectangles": 6,
+        "maximizer_count": 84,
+        "unique_maximizer": null
+      }
+    ],
+    "same_endpoint_base_M_plus_x10": [
+      {
+        "added_cells": 0,
+        "maximum_rectangles": 0,
+        "maximizer_count": 1,
+        "unique_maximizer": []
+      },
+      {
+        "added_cells": 1,
+        "maximum_rectangles": 1,
+        "maximizer_count": 3,
+        "unique_maximizer": null
+      },
+      {
+        "added_cells": 2,
+        "maximum_rectangles": 3,
+        "maximizer_count": 3,
+        "unique_maximizer": null
+      },
+      {
+        "added_cells": 3,
+        "maximum_rectangles": 6,
+        "maximizer_count": 1,
+        "unique_maximizer": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ]
+      },
+      {
+        "added_cells": 4,
+        "maximum_rectangles": 6,
+        "maximizer_count": 23,
+        "unique_maximizer": null
+      },
+      {
+        "added_cells": 5,
+        "maximum_rectangles": 10,
+        "maximizer_count": 1,
+        "unique_maximizer": [
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ]
+        ]
+      }
+    ],
+    "distinct_endpoint_base_M_plus_x10_x11": [
+      {
+        "added_cells": 0,
+        "maximum_rectangles": 1,
+        "maximizer_count": 1,
+        "unique_maximizer": []
+      },
+      {
+        "added_cells": 1,
+        "maximum_rectangles": 3,
+        "maximizer_count": 2,
+        "unique_maximizer": null
+      },
+      {
+        "added_cells": 2,
+        "maximum_rectangles": 6,
+        "maximizer_count": 1,
+        "unique_maximizer": [
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ]
+      },
+      {
+        "added_cells": 3,
+        "maximum_rectangles": 6,
+        "maximizer_count": 19,
+        "unique_maximizer": null
+      },
+      {
+        "added_cells": 4,
+        "maximum_rectangles": 10,
+        "maximizer_count": 1,
+        "unique_maximizer": [
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ]
+        ]
+      }
+    ]
+  },
+  "script_sha256_before_output_write": "EF192A6FEC5F66BCB34FE48416C1C34E5DDC10FD808721736C8FE20DDFA02A5E"
+}

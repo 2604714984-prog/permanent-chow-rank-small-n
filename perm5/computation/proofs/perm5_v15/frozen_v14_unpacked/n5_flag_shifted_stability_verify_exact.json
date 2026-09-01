@@ -1,0 +1,8883 @@
+{
+  "status": "PASS_EXACT_INTEGER_FLAG_SHIFTED_STABILITY_DIAGNOSTIC",
+  "proof_dependency": false,
+  "one_dimensional_ideal_count": 16,
+  "one_dimensional_ideals": [
+    {
+      "indices": [],
+      "size": 0,
+      "shadow_size": 0
+    },
+    {
+      "indices": [
+        0
+      ],
+      "size": 1,
+      "shadow_size": 3
+    },
+    {
+      "indices": [
+        0,
+        1
+      ],
+      "size": 2,
+      "shadow_size": 5
+    },
+    {
+      "indices": [
+        0,
+        1,
+        2
+      ],
+      "size": 3,
+      "shadow_size": 7
+    },
+    {
+      "indices": [
+        0,
+        1,
+        3
+      ],
+      "size": 3,
+      "shadow_size": 6
+    },
+    {
+      "indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "size": 4,
+      "shadow_size": 8
+    },
+    {
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "size": 5,
+      "shadow_size": 9
+    },
+    {
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "size": 6,
+      "shadow_size": 10
+    },
+    {
+      "indices": [
+        0,
+        1,
+        3,
+        6
+      ],
+      "size": 4,
+      "shadow_size": 6
+    },
+    {
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        6
+      ],
+      "size": 5,
+      "shadow_size": 8
+    },
+    {
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6
+      ],
+      "size": 6,
+      "shadow_size": 9
+    },
+    {
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "size": 7,
+      "shadow_size": 10
+    },
+    {
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        7
+      ],
+      "size": 7,
+      "shadow_size": 9
+    },
+    {
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "size": 8,
+      "shadow_size": 10
+    },
+    {
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "size": 9,
+      "shadow_size": 10
+    },
+    {
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "size": 10,
+      "shadow_size": 10
+    }
+  ],
+  "nested_profile": [
+    0,
+    3,
+    5,
+    6,
+    6,
+    8,
+    9,
+    9,
+    10,
+    10,
+    10
+  ],
+  "area_20_partition_count": 433,
+  "minimum_shadow_when_both_sides_at_least_five": 51,
+  "low_shadow_partition_count": 14,
+  "low_shadow_partitions": [
+    {
+      "partition": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "shadow": 50
+    },
+    {
+      "partition": [
+        4,
+        4,
+        3,
+        3,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "shadow": 48
+    },
+    {
+      "partition": [
+        4,
+        4,
+        4,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "shadow": 48
+    },
+    {
+      "partition": [
+        4,
+        4,
+        4,
+        3,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "shadow": 48
+    },
+    {
+      "partition": [
+        4,
+        4,
+        4,
+        4,
+        1,
+        1,
+        1,
+        1
+      ],
+      "shadow": 48
+    },
+    {
+      "partition": [
+        4,
+        4,
+        4,
+        4,
+        2,
+        1,
+        1
+      ],
+      "shadow": 49
+    },
+    {
+      "partition": [
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "shadow": 48
+    },
+    {
+      "partition": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "shadow": 48
+    },
+    {
+      "partition": [
+        7,
+        5,
+        4,
+        4
+      ],
+      "shadow": 49
+    },
+    {
+      "partition": [
+        8,
+        4,
+        4,
+        4
+      ],
+      "shadow": 48
+    },
+    {
+      "partition": [
+        9,
+        4,
+        4,
+        3
+      ],
+      "shadow": 48
+    },
+    {
+      "partition": [
+        10,
+        4,
+        3,
+        3
+      ],
+      "shadow": 48
+    },
+    {
+      "partition": [
+        10,
+        4,
+        4,
+        2
+      ],
+      "shadow": 48
+    },
+    {
+      "partition": [
+        10,
+        10
+      ],
+      "shadow": 50
+    }
+  ],
+  "visible_table": [
+    [
+      30,
+      42,
+      48,
+      48,
+      50,
+      50,
+      50
+    ],
+    [
+      41,
+      40,
+      43,
+      43,
+      46,
+      46,
+      48
+    ],
+    [
+      44,
+      41,
+      44,
+      42,
+      43,
+      44,
+      45
+    ],
+    [
+      44,
+      41,
+      42,
+      42,
+      42,
+      43,
+      48
+    ],
+    [
+      44,
+      43,
+      42,
+      43,
+      42,
+      44,
+      45
+    ],
+    [
+      44,
+      43,
+      40,
+      43,
+      42,
+      45,
+      47
+    ],
+    [
+      48,
+      47,
+      45,
+      45,
+      43,
+      42,
+      42
+    ]
+  ],
+  "inverse_valid_direction_counts": {
+    "orbit0": 31,
+    "orbit1": 21,
+    "orbit13": 21
+  },
+  "inverse_records": {
+    "orbit0": [
+      {
+        "direction": "row:0<-1",
+        "family_variables": 0,
+        "plane_variables": 5,
+        "family_movable_pairs": [],
+        "plane_movable_pairs": [
+          [
+            0,
+            5
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            2,
+            7
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            4,
+            9
+          ]
+        ],
+        "local_witness_components": [],
+        "local_witness_spanning_forest": [],
+        "full_shadow_witness_components": [],
+        "full_shadow_witness_spanning_forest": [],
+        "visible_pass_count": 2,
+        "full_flag_pass_count": 2
+      },
+      {
+        "direction": "row:0<-2",
+        "family_variables": 10,
+        "plane_variables": 5,
+        "family_movable_pairs": [
+          [
+            10,
+            60
+          ],
+          [
+            11,
+            61
+          ],
+          [
+            12,
+            62
+          ],
+          [
+            13,
+            63
+          ],
+          [
+            14,
+            64
+          ],
+          [
+            15,
+            65
+          ],
+          [
+            16,
+            66
+          ],
+          [
+            17,
+            67
+          ],
+          [
+            18,
+            68
+          ],
+          [
+            19,
+            69
+          ]
+        ],
+        "plane_movable_pairs": [
+          [
+            0,
+            10
+          ],
+          [
+            1,
+            11
+          ],
+          [
+            2,
+            12
+          ],
+          [
+            3,
+            13
+          ],
+          [
+            4,
+            14
+          ]
+        ],
+        "local_witness_components": [],
+        "local_witness_spanning_forest": [],
+        "full_shadow_witness_components": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        ],
+        "full_shadow_witness_spanning_forest": [
+          {
+            "left_variable": 0,
+            "right_variable": 1,
+            "witness_child_position": 70,
+            "witness_child": [
+              [
+                2,
+                3
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 2,
+            "witness_child_position": 70,
+            "witness_child": [
+              [
+                2,
+                3
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 3,
+            "witness_child_position": 71,
+            "witness_child": [
+              [
+                2,
+                3
+              ],
+              [
+                0,
+                2
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 4,
+            "witness_child_position": 71,
+            "witness_child": [
+              [
+                2,
+                3
+              ],
+              [
+                0,
+                2
+              ]
+            ]
+          },
+          {
+            "left_variable": 1,
+            "right_variable": 5,
+            "witness_child_position": 72,
+            "witness_child": [
+              [
+                2,
+                3
+              ],
+              [
+                0,
+                3
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 6,
+            "witness_child_position": 74,
+            "witness_child": [
+              [
+                2,
+                3
+              ],
+              [
+                1,
+                2
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 7,
+            "witness_child_position": 74,
+            "witness_child": [
+              [
+                2,
+                3
+              ],
+              [
+                1,
+                2
+              ]
+            ]
+          },
+          {
+            "left_variable": 1,
+            "right_variable": 8,
+            "witness_child_position": 75,
+            "witness_child": [
+              [
+                2,
+                3
+              ],
+              [
+                1,
+                3
+              ]
+            ]
+          },
+          {
+            "left_variable": 3,
+            "right_variable": 9,
+            "witness_child_position": 77,
+            "witness_child": [
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                3
+              ]
+            ]
+          }
+        ],
+        "visible_pass_count": 2,
+        "full_flag_pass_count": 2
+      },
+      {
+        "direction": "row:0<-3",
+        "family_variables": 10,
+        "plane_variables": 5,
+        "family_movable_pairs": [
+          [
+            0,
+            60
+          ],
+          [
+            1,
+            61
+          ],
+          [
+            2,
+            62
+          ],
+          [
+            3,
+            63
+          ],
+          [
+            4,
+            64
+          ],
+          [
+            5,
+            65
+          ],
+          [
+            6,
+            66
+          ],
+          [
+            7,
+            67
+          ],
+          [
+            8,
+            68
+          ],
+          [
+            9,
+            69
+          ]
+        ],
+        "plane_movable_pairs": [
+          [
+            0,
+            15
+          ],
+          [
+            1,
+            16
+          ],
+          [
+            2,
+            17
+          ],
+          [
+            3,
+            18
+          ],
+          [
+            4,
+            19
+          ]
+        ],
+        "local_witness_components": [],
+        "local_witness_spanning_forest": [],
+        "full_shadow_witness_components": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        ],
+        "full_shadow_witness_spanning_forest": [
+          {
+            "left_variable": 0,
+            "right_variable": 1,
+            "witness_child_position": 70,
+            "witness_child": [
+              [
+                2,
+                3
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 2,
+            "witness_child_position": 70,
+            "witness_child": [
+              [
+                2,
+                3
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 3,
+            "witness_child_position": 71,
+            "witness_child": [
+              [
+                2,
+                3
+              ],
+              [
+                0,
+                2
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 4,
+            "witness_child_position": 71,
+            "witness_child": [
+              [
+                2,
+                3
+              ],
+              [
+                0,
+                2
+              ]
+            ]
+          },
+          {
+            "left_variable": 1,
+            "right_variable": 5,
+            "witness_child_position": 72,
+            "witness_child": [
+              [
+                2,
+                3
+              ],
+              [
+                0,
+                3
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 6,
+            "witness_child_position": 74,
+            "witness_child": [
+              [
+                2,
+                3
+              ],
+              [
+                1,
+                2
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 7,
+            "witness_child_position": 74,
+            "witness_child": [
+              [
+                2,
+                3
+              ],
+              [
+                1,
+                2
+              ]
+            ]
+          },
+          {
+            "left_variable": 1,
+            "right_variable": 8,
+            "witness_child_position": 75,
+            "witness_child": [
+              [
+                2,
+                3
+              ],
+              [
+                1,
+                3
+              ]
+            ]
+          },
+          {
+            "left_variable": 3,
+            "right_variable": 9,
+            "witness_child_position": 77,
+            "witness_child": [
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                3
+              ]
+            ]
+          }
+        ],
+        "visible_pass_count": 2,
+        "full_flag_pass_count": 2
+      },
+      {
+        "direction": "row:0<-4",
+        "family_variables": 20,
+        "plane_variables": 5,
+        "family_movable_pairs": [
+          [
+            0,
+            70
+          ],
+          [
+            1,
+            71
+          ],
+          [
+            2,
+            72
+          ],
+          [
+            3,
+            73
+          ],
+          [
+            4,
+            74
+          ],
+          [
+            5,
+            75
+          ],
+          [
+            6,
+            76
+          ],
+          [
+            7,
+            77
+          ],
+          [
+            8,
+            78
+          ],
+          [
+            9,
+            79
+          ],
+          [
+            10,
+            80
+          ],
+          [
+            11,
+            81
+          ],
+          [
+            12,
+            82
+          ],
+          [
+            13,
+            83
+          ],
+          [
+            14,
+            84
+          ],
+          [
+            15,
+            85
+          ],
+          [
+            16,
+            86
+          ],
+          [
+            17,
+            87
+          ],
+          [
+            18,
+            88
+          ],
+          [
+            19,
+            89
+          ]
+        ],
+        "plane_movable_pairs": [
+          [
+            0,
+            20
+          ],
+          [
+            1,
+            21
+          ],
+          [
+            2,
+            22
+          ],
+          [
+            3,
+            23
+          ],
+          [
+            4,
+            24
+          ]
+        ],
+        "local_witness_components": [],
+        "local_witness_spanning_forest": [],
+        "full_shadow_witness_components": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ]
+        ],
+        "full_shadow_witness_spanning_forest": [
+          {
+            "left_variable": 0,
+            "right_variable": 1,
+            "witness_child_position": 60,
+            "witness_child": [
+              [
+                1,
+                4
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 2,
+            "witness_child_position": 60,
+            "witness_child": [
+              [
+                1,
+                4
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 10,
+            "witness_child_position": 60,
+            "witness_child": [
+              [
+                1,
+                4
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 11,
+            "witness_child_position": 60,
+            "witness_child": [
+              [
+                1,
+                4
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 12,
+            "witness_child_position": 60,
+            "witness_child": [
+              [
+                1,
+                4
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 3,
+            "witness_child_position": 61,
+            "witness_child": [
+              [
+                1,
+                4
+              ],
+              [
+                0,
+                2
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 4,
+            "witness_child_position": 61,
+            "witness_child": [
+              [
+                1,
+                4
+              ],
+              [
+                0,
+                2
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 13,
+            "witness_child_position": 61,
+            "witness_child": [
+              [
+                1,
+                4
+              ],
+              [
+                0,
+                2
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 14,
+            "witness_child_position": 61,
+            "witness_child": [
+              [
+                1,
+                4
+              ],
+              [
+                0,
+                2
+              ]
+            ]
+          },
+          {
+            "left_variable": 1,
+            "right_variable": 5,
+            "witness_child_position": 62,
+            "witness_child": [
+              [
+                1,
+                4
+              ],
+              [
+                0,
+                3
+              ]
+            ]
+          },
+          {
+            "left_variable": 1,
+            "right_variable": 15,
+            "witness_child_position": 62,
+            "witness_child": [
+              [
+                1,
+                4
+              ],
+              [
+                0,
+                3
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 6,
+            "witness_child_position": 64,
+            "witness_child": [
+              [
+                1,
+                4
+              ],
+              [
+                1,
+                2
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 7,
+            "witness_child_position": 64,
+            "witness_child": [
+              [
+                1,
+                4
+              ],
+              [
+                1,
+                2
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 16,
+            "witness_child_position": 64,
+            "witness_child": [
+              [
+                1,
+                4
+              ],
+              [
+                1,
+                2
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 17,
+            "witness_child_position": 64,
+            "witness_child": [
+              [
+                1,
+                4
+              ],
+              [
+                1,
+                2
+              ]
+            ]
+          },
+          {
+            "left_variable": 1,
+            "right_variable": 8,
+            "witness_child_position": 65,
+            "witness_child": [
+              [
+                1,
+                4
+              ],
+              [
+                1,
+                3
+              ]
+            ]
+          },
+          {
+            "left_variable": 1,
+            "right_variable": 18,
+            "witness_child_position": 65,
+            "witness_child": [
+              [
+                1,
+                4
+              ],
+              [
+                1,
+                3
+              ]
+            ]
+          },
+          {
+            "left_variable": 3,
+            "right_variable": 9,
+            "witness_child_position": 67,
+            "witness_child": [
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                3
+              ]
+            ]
+          },
+          {
+            "left_variable": 3,
+            "right_variable": 19,
+            "witness_child_position": 67,
+            "witness_child": [
+              [
+                1,
+                4
+              ],
+              [
+                2,
+                3
+              ]
+            ]
+          }
+        ],
+        "visible_pass_count": 2,
+        "full_flag_pass_count": 2
+      },
+      {
+        "direction": "row:1<-2",
+        "family_variables": 10,
+        "plane_variables": 0,
+        "family_movable_pairs": [
+          [
+            10,
+            30
+          ],
+          [
+            11,
+            31
+          ],
+          [
+            12,
+            32
+          ],
+          [
+            13,
+            33
+          ],
+          [
+            14,
+            34
+          ],
+          [
+            15,
+            35
+          ],
+          [
+            16,
+            36
+          ],
+          [
+            17,
+            37
+          ],
+          [
+            18,
+            38
+          ],
+          [
+            19,
+            39
+          ]
+        ],
+        "plane_movable_pairs": [],
+        "local_witness_components": [],
+        "local_witness_spanning_forest": [],
+        "full_shadow_witness_components": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        ],
+        "full_shadow_witness_spanning_forest": [
+          {
+            "left_variable": 0,
+            "right_variable": 1,
+            "witness_child_position": 70,
+            "witness_child": [
+              [
+                2,
+                3
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 2,
+            "witness_child_position": 70,
+            "witness_child": [
+              [
+                2,
+                3
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 3,
+            "witness_child_position": 71,
+            "witness_child": [
+              [
+                2,
+                3
+              ],
+              [
+                0,
+                2
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 4,
+            "witness_child_position": 71,
+            "witness_child": [
+              [
+                2,
+                3
+              ],
+              [
+                0,
+                2
+              ]
+            ]
+          },
+          {
+            "left_variable": 1,
+            "right_variable": 5,
+            "witness_child_position": 72,
+            "witness_child": [
+              [
+                2,
+                3
+              ],
+              [
+                0,
+                3
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 6,
+            "witness_child_position": 74,
+            "witness_child": [
+              [
+                2,
+                3
+              ],
+              [
+                1,
+                2
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 7,
+            "witness_child_position": 74,
+            "witness_child": [
+              [
+                2,
+                3
+              ],
+              [
+                1,
+                2
+              ]
+            ]
+          },
+          {
+            "left_variable": 1,
+            "right_variable": 8,
+            "witness_child_position": 75,
+            "witness_child": [
+              [
+                2,
+                3
+              ],
+              [
+                1,
+                3
+              ]
+            ]
+          },
+          {
+            "left_variable": 3,
+            "right_variable": 9,
+            "witness_child_position": 77,
+            "witness_child": [
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                3
+              ]
+            ]
+          }
+        ],
+        "visible_pass_count": 2,
+        "full_flag_pass_count": 2
+      },
+      {
+        "direction": "row:1<-3",
+        "family_variables": 10,
+        "plane_variables": 0,
+        "family_movable_pairs": [
+          [
+            0,
+            30
+          ],
+          [
+            1,
+            31
+          ],
+          [
+            2,
+            32
+          ],
+          [
+            3,
+            33
+          ],
+          [
+            4,
+            34
+          ],
+          [
+            5,
+            35
+          ],
+          [
+            6,
+            36
+          ],
+          [
+            7,
+            37
+          ],
+          [
+            8,
+            38
+          ],
+          [
+            9,
+            39
+          ]
+        ],
+        "plane_movable_pairs": [],
+        "local_witness_components": [],
+        "local_witness_spanning_forest": [],
+        "full_shadow_witness_components": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        ],
+        "full_shadow_witness_spanning_forest": [
+          {
+            "left_variable": 0,
+            "right_variable": 1,
+            "witness_child_position": 70,
+            "witness_child": [
+              [
+                2,
+                3
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 2,
+            "witness_child_position": 70,
+            "witness_child": [
+              [
+                2,
+                3
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 3,
+            "witness_child_position": 71,
+            "witness_child": [
+              [
+                2,
+                3
+              ],
+              [
+                0,
+                2
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 4,
+            "witness_child_position": 71,
+            "witness_child": [
+              [
+                2,
+                3
+              ],
+              [
+                0,
+                2
+              ]
+            ]
+          },
+          {
+            "left_variable": 1,
+            "right_variable": 5,
+            "witness_child_position": 72,
+            "witness_child": [
+              [
+                2,
+                3
+              ],
+              [
+                0,
+                3
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 6,
+            "witness_child_position": 74,
+            "witness_child": [
+              [
+                2,
+                3
+              ],
+              [
+                1,
+                2
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 7,
+            "witness_child_position": 74,
+            "witness_child": [
+              [
+                2,
+                3
+              ],
+              [
+                1,
+                2
+              ]
+            ]
+          },
+          {
+            "left_variable": 1,
+            "right_variable": 8,
+            "witness_child_position": 75,
+            "witness_child": [
+              [
+                2,
+                3
+              ],
+              [
+                1,
+                3
+              ]
+            ]
+          },
+          {
+            "left_variable": 3,
+            "right_variable": 9,
+            "witness_child_position": 77,
+            "witness_child": [
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                3
+              ]
+            ]
+          }
+        ],
+        "visible_pass_count": 2,
+        "full_flag_pass_count": 2
+      },
+      {
+        "direction": "row:1<-4",
+        "family_variables": 20,
+        "plane_variables": 0,
+        "family_movable_pairs": [
+          [
+            0,
+            40
+          ],
+          [
+            1,
+            41
+          ],
+          [
+            2,
+            42
+          ],
+          [
+            3,
+            43
+          ],
+          [
+            4,
+            44
+          ],
+          [
+            5,
+            45
+          ],
+          [
+            6,
+            46
+          ],
+          [
+            7,
+            47
+          ],
+          [
+            8,
+            48
+          ],
+          [
+            9,
+            49
+          ],
+          [
+            10,
+            50
+          ],
+          [
+            11,
+            51
+          ],
+          [
+            12,
+            52
+          ],
+          [
+            13,
+            53
+          ],
+          [
+            14,
+            54
+          ],
+          [
+            15,
+            55
+          ],
+          [
+            16,
+            56
+          ],
+          [
+            17,
+            57
+          ],
+          [
+            18,
+            58
+          ],
+          [
+            19,
+            59
+          ]
+        ],
+        "plane_movable_pairs": [],
+        "local_witness_components": [],
+        "local_witness_spanning_forest": [],
+        "full_shadow_witness_components": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ]
+        ],
+        "full_shadow_witness_spanning_forest": [
+          {
+            "left_variable": 0,
+            "right_variable": 1,
+            "witness_child_position": 30,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 2,
+            "witness_child_position": 30,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 10,
+            "witness_child_position": 30,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 11,
+            "witness_child_position": 30,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 12,
+            "witness_child_position": 30,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 3,
+            "witness_child_position": 31,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                0,
+                2
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 4,
+            "witness_child_position": 31,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                0,
+                2
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 13,
+            "witness_child_position": 31,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                0,
+                2
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 14,
+            "witness_child_position": 31,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                0,
+                2
+              ]
+            ]
+          },
+          {
+            "left_variable": 1,
+            "right_variable": 5,
+            "witness_child_position": 32,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                0,
+                3
+              ]
+            ]
+          },
+          {
+            "left_variable": 1,
+            "right_variable": 15,
+            "witness_child_position": 32,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                0,
+                3
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 6,
+            "witness_child_position": 34,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                1,
+                2
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 7,
+            "witness_child_position": 34,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                1,
+                2
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 16,
+            "witness_child_position": 34,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                1,
+                2
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 17,
+            "witness_child_position": 34,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                1,
+                2
+              ]
+            ]
+          },
+          {
+            "left_variable": 1,
+            "right_variable": 8,
+            "witness_child_position": 35,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                1,
+                3
+              ]
+            ]
+          },
+          {
+            "left_variable": 1,
+            "right_variable": 18,
+            "witness_child_position": 35,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                1,
+                3
+              ]
+            ]
+          },
+          {
+            "left_variable": 3,
+            "right_variable": 9,
+            "witness_child_position": 37,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                2,
+                3
+              ]
+            ]
+          },
+          {
+            "left_variable": 3,
+            "right_variable": 19,
+            "witness_child_position": 37,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                2,
+                3
+              ]
+            ]
+          }
+        ],
+        "visible_pass_count": 2,
+        "full_flag_pass_count": 2
+      },
+      {
+        "direction": "row:2<-3",
+        "family_variables": 0,
+        "plane_variables": 0,
+        "family_movable_pairs": [],
+        "plane_movable_pairs": [],
+        "local_witness_components": [],
+        "local_witness_spanning_forest": [],
+        "full_shadow_witness_components": [],
+        "full_shadow_witness_spanning_forest": [],
+        "visible_pass_count": 1,
+        "full_flag_pass_count": 1
+      },
+      {
+        "direction": "row:2<-4",
+        "family_variables": 10,
+        "plane_variables": 0,
+        "family_movable_pairs": [
+          [
+            0,
+            20
+          ],
+          [
+            1,
+            21
+          ],
+          [
+            2,
+            22
+          ],
+          [
+            3,
+            23
+          ],
+          [
+            4,
+            24
+          ],
+          [
+            5,
+            25
+          ],
+          [
+            6,
+            26
+          ],
+          [
+            7,
+            27
+          ],
+          [
+            8,
+            28
+          ],
+          [
+            9,
+            29
+          ]
+        ],
+        "plane_movable_pairs": [],
+        "local_witness_components": [],
+        "local_witness_spanning_forest": [],
+        "full_shadow_witness_components": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        ],
+        "full_shadow_witness_spanning_forest": [
+          {
+            "left_variable": 0,
+            "right_variable": 1,
+            "witness_child_position": 30,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 2,
+            "witness_child_position": 30,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 3,
+            "witness_child_position": 31,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                0,
+                2
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 4,
+            "witness_child_position": 31,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                0,
+                2
+              ]
+            ]
+          },
+          {
+            "left_variable": 1,
+            "right_variable": 5,
+            "witness_child_position": 32,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                0,
+                3
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 6,
+            "witness_child_position": 34,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                1,
+                2
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 7,
+            "witness_child_position": 34,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                1,
+                2
+              ]
+            ]
+          },
+          {
+            "left_variable": 1,
+            "right_variable": 8,
+            "witness_child_position": 35,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                1,
+                3
+              ]
+            ]
+          },
+          {
+            "left_variable": 3,
+            "right_variable": 9,
+            "witness_child_position": 37,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                2,
+                3
+              ]
+            ]
+          }
+        ],
+        "visible_pass_count": 2,
+        "full_flag_pass_count": 2
+      },
+      {
+        "direction": "row:3<-2",
+        "family_variables": 0,
+        "plane_variables": 0,
+        "family_movable_pairs": [],
+        "plane_movable_pairs": [],
+        "local_witness_components": [],
+        "local_witness_spanning_forest": [],
+        "full_shadow_witness_components": [],
+        "full_shadow_witness_spanning_forest": [],
+        "visible_pass_count": 1,
+        "full_flag_pass_count": 1
+      },
+      {
+        "direction": "row:3<-4",
+        "family_variables": 10,
+        "plane_variables": 0,
+        "family_movable_pairs": [
+          [
+            10,
+            20
+          ],
+          [
+            11,
+            21
+          ],
+          [
+            12,
+            22
+          ],
+          [
+            13,
+            23
+          ],
+          [
+            14,
+            24
+          ],
+          [
+            15,
+            25
+          ],
+          [
+            16,
+            26
+          ],
+          [
+            17,
+            27
+          ],
+          [
+            18,
+            28
+          ],
+          [
+            19,
+            29
+          ]
+        ],
+        "plane_movable_pairs": [],
+        "local_witness_components": [],
+        "local_witness_spanning_forest": [],
+        "full_shadow_witness_components": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        ],
+        "full_shadow_witness_spanning_forest": [
+          {
+            "left_variable": 0,
+            "right_variable": 1,
+            "witness_child_position": 30,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 2,
+            "witness_child_position": 30,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 3,
+            "witness_child_position": 31,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                0,
+                2
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 4,
+            "witness_child_position": 31,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                0,
+                2
+              ]
+            ]
+          },
+          {
+            "left_variable": 1,
+            "right_variable": 5,
+            "witness_child_position": 32,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                0,
+                3
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 6,
+            "witness_child_position": 34,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                1,
+                2
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 7,
+            "witness_child_position": 34,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                1,
+                2
+              ]
+            ]
+          },
+          {
+            "left_variable": 1,
+            "right_variable": 8,
+            "witness_child_position": 35,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                1,
+                3
+              ]
+            ]
+          },
+          {
+            "left_variable": 3,
+            "right_variable": 9,
+            "witness_child_position": 37,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                2,
+                3
+              ]
+            ]
+          }
+        ],
+        "visible_pass_count": 2,
+        "full_flag_pass_count": 2
+      },
+      {
+        "direction": "column:0<-1",
+        "family_variables": 0,
+        "plane_variables": 0,
+        "family_movable_pairs": [],
+        "plane_movable_pairs": [],
+        "local_witness_components": [],
+        "local_witness_spanning_forest": [],
+        "full_shadow_witness_components": [],
+        "full_shadow_witness_spanning_forest": [],
+        "visible_pass_count": 1,
+        "full_flag_pass_count": 1
+      },
+      {
+        "direction": "column:0<-2",
+        "family_variables": 0,
+        "plane_variables": 0,
+        "family_movable_pairs": [],
+        "plane_movable_pairs": [],
+        "local_witness_components": [],
+        "local_witness_spanning_forest": [],
+        "full_shadow_witness_components": [],
+        "full_shadow_witness_spanning_forest": [],
+        "visible_pass_count": 1,
+        "full_flag_pass_count": 1
+      },
+      {
+        "direction": "column:0<-3",
+        "family_variables": 0,
+        "plane_variables": 0,
+        "family_movable_pairs": [],
+        "plane_movable_pairs": [],
+        "local_witness_components": [],
+        "local_witness_spanning_forest": [],
+        "full_shadow_witness_components": [],
+        "full_shadow_witness_spanning_forest": [],
+        "visible_pass_count": 1,
+        "full_flag_pass_count": 1
+      },
+      {
+        "direction": "column:0<-4",
+        "family_variables": 0,
+        "plane_variables": 0,
+        "family_movable_pairs": [],
+        "plane_movable_pairs": [],
+        "local_witness_components": [],
+        "local_witness_spanning_forest": [],
+        "full_shadow_witness_components": [],
+        "full_shadow_witness_spanning_forest": [],
+        "visible_pass_count": 1,
+        "full_flag_pass_count": 1
+      },
+      {
+        "direction": "column:1<-0",
+        "family_variables": 0,
+        "plane_variables": 0,
+        "family_movable_pairs": [],
+        "plane_movable_pairs": [],
+        "local_witness_components": [],
+        "local_witness_spanning_forest": [],
+        "full_shadow_witness_components": [],
+        "full_shadow_witness_spanning_forest": [],
+        "visible_pass_count": 1,
+        "full_flag_pass_count": 1
+      },
+      {
+        "direction": "column:1<-2",
+        "family_variables": 0,
+        "plane_variables": 0,
+        "family_movable_pairs": [],
+        "plane_movable_pairs": [],
+        "local_witness_components": [],
+        "local_witness_spanning_forest": [],
+        "full_shadow_witness_components": [],
+        "full_shadow_witness_spanning_forest": [],
+        "visible_pass_count": 1,
+        "full_flag_pass_count": 1
+      },
+      {
+        "direction": "column:1<-3",
+        "family_variables": 0,
+        "plane_variables": 0,
+        "family_movable_pairs": [],
+        "plane_movable_pairs": [],
+        "local_witness_components": [],
+        "local_witness_spanning_forest": [],
+        "full_shadow_witness_components": [],
+        "full_shadow_witness_spanning_forest": [],
+        "visible_pass_count": 1,
+        "full_flag_pass_count": 1
+      },
+      {
+        "direction": "column:1<-4",
+        "family_variables": 0,
+        "plane_variables": 0,
+        "family_movable_pairs": [],
+        "plane_movable_pairs": [],
+        "local_witness_components": [],
+        "local_witness_spanning_forest": [],
+        "full_shadow_witness_components": [],
+        "full_shadow_witness_spanning_forest": [],
+        "visible_pass_count": 1,
+        "full_flag_pass_count": 1
+      },
+      {
+        "direction": "column:2<-0",
+        "family_variables": 0,
+        "plane_variables": 0,
+        "family_movable_pairs": [],
+        "plane_movable_pairs": [],
+        "local_witness_components": [],
+        "local_witness_spanning_forest": [],
+        "full_shadow_witness_components": [],
+        "full_shadow_witness_spanning_forest": [],
+        "visible_pass_count": 1,
+        "full_flag_pass_count": 1
+      },
+      {
+        "direction": "column:2<-1",
+        "family_variables": 0,
+        "plane_variables": 0,
+        "family_movable_pairs": [],
+        "plane_movable_pairs": [],
+        "local_witness_components": [],
+        "local_witness_spanning_forest": [],
+        "full_shadow_witness_components": [],
+        "full_shadow_witness_spanning_forest": [],
+        "visible_pass_count": 1,
+        "full_flag_pass_count": 1
+      },
+      {
+        "direction": "column:2<-3",
+        "family_variables": 0,
+        "plane_variables": 0,
+        "family_movable_pairs": [],
+        "plane_movable_pairs": [],
+        "local_witness_components": [],
+        "local_witness_spanning_forest": [],
+        "full_shadow_witness_components": [],
+        "full_shadow_witness_spanning_forest": [],
+        "visible_pass_count": 1,
+        "full_flag_pass_count": 1
+      },
+      {
+        "direction": "column:2<-4",
+        "family_variables": 0,
+        "plane_variables": 0,
+        "family_movable_pairs": [],
+        "plane_movable_pairs": [],
+        "local_witness_components": [],
+        "local_witness_spanning_forest": [],
+        "full_shadow_witness_components": [],
+        "full_shadow_witness_spanning_forest": [],
+        "visible_pass_count": 1,
+        "full_flag_pass_count": 1
+      },
+      {
+        "direction": "column:3<-0",
+        "family_variables": 0,
+        "plane_variables": 0,
+        "family_movable_pairs": [],
+        "plane_movable_pairs": [],
+        "local_witness_components": [],
+        "local_witness_spanning_forest": [],
+        "full_shadow_witness_components": [],
+        "full_shadow_witness_spanning_forest": [],
+        "visible_pass_count": 1,
+        "full_flag_pass_count": 1
+      },
+      {
+        "direction": "column:3<-1",
+        "family_variables": 0,
+        "plane_variables": 0,
+        "family_movable_pairs": [],
+        "plane_movable_pairs": [],
+        "local_witness_components": [],
+        "local_witness_spanning_forest": [],
+        "full_shadow_witness_components": [],
+        "full_shadow_witness_spanning_forest": [],
+        "visible_pass_count": 1,
+        "full_flag_pass_count": 1
+      },
+      {
+        "direction": "column:3<-2",
+        "family_variables": 0,
+        "plane_variables": 0,
+        "family_movable_pairs": [],
+        "plane_movable_pairs": [],
+        "local_witness_components": [],
+        "local_witness_spanning_forest": [],
+        "full_shadow_witness_components": [],
+        "full_shadow_witness_spanning_forest": [],
+        "visible_pass_count": 1,
+        "full_flag_pass_count": 1
+      },
+      {
+        "direction": "column:3<-4",
+        "family_variables": 0,
+        "plane_variables": 0,
+        "family_movable_pairs": [],
+        "plane_movable_pairs": [],
+        "local_witness_components": [],
+        "local_witness_spanning_forest": [],
+        "full_shadow_witness_components": [],
+        "full_shadow_witness_spanning_forest": [],
+        "visible_pass_count": 1,
+        "full_flag_pass_count": 1
+      },
+      {
+        "direction": "column:4<-0",
+        "family_variables": 0,
+        "plane_variables": 0,
+        "family_movable_pairs": [],
+        "plane_movable_pairs": [],
+        "local_witness_components": [],
+        "local_witness_spanning_forest": [],
+        "full_shadow_witness_components": [],
+        "full_shadow_witness_spanning_forest": [],
+        "visible_pass_count": 1,
+        "full_flag_pass_count": 1
+      },
+      {
+        "direction": "column:4<-1",
+        "family_variables": 0,
+        "plane_variables": 0,
+        "family_movable_pairs": [],
+        "plane_movable_pairs": [],
+        "local_witness_components": [],
+        "local_witness_spanning_forest": [],
+        "full_shadow_witness_components": [],
+        "full_shadow_witness_spanning_forest": [],
+        "visible_pass_count": 1,
+        "full_flag_pass_count": 1
+      },
+      {
+        "direction": "column:4<-2",
+        "family_variables": 0,
+        "plane_variables": 0,
+        "family_movable_pairs": [],
+        "plane_movable_pairs": [],
+        "local_witness_components": [],
+        "local_witness_spanning_forest": [],
+        "full_shadow_witness_components": [],
+        "full_shadow_witness_spanning_forest": [],
+        "visible_pass_count": 1,
+        "full_flag_pass_count": 1
+      },
+      {
+        "direction": "column:4<-3",
+        "family_variables": 0,
+        "plane_variables": 0,
+        "family_movable_pairs": [],
+        "plane_movable_pairs": [],
+        "local_witness_components": [],
+        "local_witness_spanning_forest": [],
+        "full_shadow_witness_components": [],
+        "full_shadow_witness_spanning_forest": [],
+        "visible_pass_count": 1,
+        "full_flag_pass_count": 1
+      }
+    ],
+    "orbit1": [
+      {
+        "direction": "row:0<-1",
+        "family_variables": 2,
+        "plane_variables": 3,
+        "family_movable_pairs": [
+          [
+            33,
+            63
+          ],
+          [
+            36,
+            66
+          ]
+        ],
+        "plane_movable_pairs": [
+          [
+            1,
+            6
+          ],
+          [
+            2,
+            7
+          ],
+          [
+            3,
+            8
+          ]
+        ],
+        "local_witness_components": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        ],
+        "local_witness_spanning_forest": [
+          {
+            "left_variable": 2,
+            "right_variable": 3,
+            "witness_child_position": 43,
+            "witness_child": [
+              [
+                1,
+                2
+              ],
+              [
+                0,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 2,
+            "right_variable": 4,
+            "witness_child_position": 43,
+            "witness_child": [
+              [
+                1,
+                2
+              ],
+              [
+                0,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 1,
+            "witness_child_position": 57,
+            "witness_child": [
+              [
+                1,
+                3
+              ],
+              [
+                2,
+                3
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 2,
+            "witness_child_position": 57,
+            "witness_child": [
+              [
+                1,
+                3
+              ],
+              [
+                2,
+                3
+              ]
+            ]
+          }
+        ],
+        "full_shadow_witness_components": [],
+        "full_shadow_witness_spanning_forest": [],
+        "visible_pass_count": 2,
+        "full_flag_pass_count": 2
+      },
+      {
+        "direction": "row:0<-2",
+        "family_variables": 2,
+        "plane_variables": 4,
+        "family_movable_pairs": [
+          [
+            13,
+            63
+          ],
+          [
+            16,
+            66
+          ]
+        ],
+        "plane_movable_pairs": [
+          [
+            0,
+            10
+          ],
+          [
+            1,
+            11
+          ],
+          [
+            2,
+            12
+          ],
+          [
+            3,
+            13
+          ]
+        ],
+        "local_witness_components": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ],
+        "local_witness_spanning_forest": [
+          {
+            "left_variable": 3,
+            "right_variable": 4,
+            "witness_child_position": 43,
+            "witness_child": [
+              [
+                1,
+                2
+              ],
+              [
+                0,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 3,
+            "right_variable": 5,
+            "witness_child_position": 43,
+            "witness_child": [
+              [
+                1,
+                2
+              ],
+              [
+                0,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 2,
+            "right_variable": 4,
+            "witness_child_position": 46,
+            "witness_child": [
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 2,
+            "witness_child_position": 57,
+            "witness_child": [
+              [
+                1,
+                3
+              ],
+              [
+                2,
+                3
+              ]
+            ]
+          },
+          {
+            "left_variable": 1,
+            "right_variable": 3,
+            "witness_child_position": 57,
+            "witness_child": [
+              [
+                1,
+                3
+              ],
+              [
+                2,
+                3
+              ]
+            ]
+          }
+        ],
+        "full_shadow_witness_components": [],
+        "full_shadow_witness_spanning_forest": [],
+        "visible_pass_count": 2,
+        "full_flag_pass_count": 2
+      },
+      {
+        "direction": "row:0<-3",
+        "family_variables": 8,
+        "plane_variables": 4,
+        "family_movable_pairs": [
+          [
+            2,
+            62
+          ],
+          [
+            3,
+            63
+          ],
+          [
+            4,
+            64
+          ],
+          [
+            5,
+            65
+          ],
+          [
+            6,
+            66
+          ],
+          [
+            7,
+            67
+          ],
+          [
+            8,
+            68
+          ],
+          [
+            9,
+            69
+          ]
+        ],
+        "plane_movable_pairs": [
+          [
+            0,
+            15
+          ],
+          [
+            1,
+            16
+          ],
+          [
+            2,
+            17
+          ],
+          [
+            3,
+            18
+          ]
+        ],
+        "local_witness_components": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        ],
+        "local_witness_spanning_forest": [
+          {
+            "left_variable": 0,
+            "right_variable": 9,
+            "witness_child_position": 43,
+            "witness_child": [
+              [
+                1,
+                2
+              ],
+              [
+                0,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 2,
+            "right_variable": 10,
+            "witness_child_position": 43,
+            "witness_child": [
+              [
+                1,
+                2
+              ],
+              [
+                0,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 3,
+            "right_variable": 11,
+            "witness_child_position": 43,
+            "witness_child": [
+              [
+                1,
+                2
+              ],
+              [
+                0,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 8,
+            "witness_child_position": 46,
+            "witness_child": [
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 5,
+            "right_variable": 10,
+            "witness_child_position": 46,
+            "witness_child": [
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 6,
+            "right_variable": 11,
+            "witness_child_position": 46,
+            "witness_child": [
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 2,
+            "right_variable": 8,
+            "witness_child_position": 48,
+            "witness_child": [
+              [
+                1,
+                2
+              ],
+              [
+                2,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 7,
+            "right_variable": 11,
+            "witness_child_position": 48,
+            "witness_child": [
+              [
+                1,
+                2
+              ],
+              [
+                2,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 3,
+            "right_variable": 8,
+            "witness_child_position": 49,
+            "witness_child": [
+              [
+                1,
+                2
+              ],
+              [
+                3,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 1,
+            "right_variable": 4,
+            "witness_child_position": 57,
+            "witness_child": [
+              [
+                1,
+                3
+              ],
+              [
+                2,
+                3
+              ]
+            ]
+          },
+          {
+            "left_variable": 1,
+            "right_variable": 7,
+            "witness_child_position": 57,
+            "witness_child": [
+              [
+                1,
+                3
+              ],
+              [
+                2,
+                3
+              ]
+            ]
+          }
+        ],
+        "full_shadow_witness_components": [],
+        "full_shadow_witness_spanning_forest": [],
+        "visible_pass_count": 2,
+        "full_flag_pass_count": 2
+      },
+      {
+        "direction": "row:0<-4",
+        "family_variables": 18,
+        "plane_variables": 4,
+        "family_movable_pairs": [
+          [
+            0,
+            70
+          ],
+          [
+            1,
+            71
+          ],
+          [
+            2,
+            72
+          ],
+          [
+            3,
+            73
+          ],
+          [
+            4,
+            74
+          ],
+          [
+            5,
+            75
+          ],
+          [
+            6,
+            76
+          ],
+          [
+            7,
+            77
+          ],
+          [
+            8,
+            78
+          ],
+          [
+            9,
+            79
+          ],
+          [
+            10,
+            80
+          ],
+          [
+            11,
+            81
+          ],
+          [
+            13,
+            83
+          ],
+          [
+            16,
+            86
+          ],
+          [
+            30,
+            90
+          ],
+          [
+            31,
+            91
+          ],
+          [
+            33,
+            93
+          ],
+          [
+            36,
+            96
+          ]
+        ],
+        "plane_movable_pairs": [
+          [
+            0,
+            20
+          ],
+          [
+            1,
+            21
+          ],
+          [
+            2,
+            22
+          ],
+          [
+            3,
+            23
+          ]
+        ],
+        "local_witness_components": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21
+          ]
+        ],
+        "local_witness_spanning_forest": [
+          {
+            "left_variable": 2,
+            "right_variable": 19,
+            "witness_child_position": 43,
+            "witness_child": [
+              [
+                1,
+                2
+              ],
+              [
+                0,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 4,
+            "right_variable": 20,
+            "witness_child_position": 43,
+            "witness_child": [
+              [
+                1,
+                2
+              ],
+              [
+                0,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 5,
+            "right_variable": 21,
+            "witness_child_position": 43,
+            "witness_child": [
+              [
+                1,
+                2
+              ],
+              [
+                0,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 2,
+            "right_variable": 18,
+            "witness_child_position": 46,
+            "witness_child": [
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 7,
+            "right_variable": 20,
+            "witness_child_position": 46,
+            "witness_child": [
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 8,
+            "right_variable": 21,
+            "witness_child_position": 46,
+            "witness_child": [
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 4,
+            "right_variable": 18,
+            "witness_child_position": 48,
+            "witness_child": [
+              [
+                1,
+                2
+              ],
+              [
+                2,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 9,
+            "right_variable": 21,
+            "witness_child_position": 48,
+            "witness_child": [
+              [
+                1,
+                2
+              ],
+              [
+                2,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 5,
+            "right_variable": 18,
+            "witness_child_position": 49,
+            "witness_child": [
+              [
+                1,
+                2
+              ],
+              [
+                3,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 12,
+            "right_variable": 18,
+            "witness_child_position": 57,
+            "witness_child": [
+              [
+                1,
+                3
+              ],
+              [
+                2,
+                3
+              ]
+            ]
+          },
+          {
+            "left_variable": 13,
+            "right_variable": 19,
+            "witness_child_position": 57,
+            "witness_child": [
+              [
+                1,
+                3
+              ],
+              [
+                2,
+                3
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 1,
+            "witness_child_position": 60,
+            "witness_child": [
+              [
+                1,
+                4
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 2,
+            "witness_child_position": 60,
+            "witness_child": [
+              [
+                1,
+                4
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 10,
+            "witness_child_position": 60,
+            "witness_child": [
+              [
+                1,
+                4
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 11,
+            "witness_child_position": 60,
+            "witness_child": [
+              [
+                1,
+                4
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 3,
+            "witness_child_position": 61,
+            "witness_child": [
+              [
+                1,
+                4
+              ],
+              [
+                0,
+                2
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 6,
+            "witness_child_position": 64,
+            "witness_child": [
+              [
+                1,
+                4
+              ],
+              [
+                1,
+                2
+              ]
+            ]
+          },
+          {
+            "left_variable": 14,
+            "right_variable": 18,
+            "witness_child_position": 74,
+            "witness_child": [
+              [
+                2,
+                3
+              ],
+              [
+                1,
+                2
+              ]
+            ]
+          },
+          {
+            "left_variable": 17,
+            "right_variable": 21,
+            "witness_child_position": 74,
+            "witness_child": [
+              [
+                2,
+                3
+              ],
+              [
+                1,
+                2
+              ]
+            ]
+          },
+          {
+            "left_variable": 15,
+            "right_variable": 18,
+            "witness_child_position": 75,
+            "witness_child": [
+              [
+                2,
+                3
+              ],
+              [
+                1,
+                3
+              ]
+            ]
+          },
+          {
+            "left_variable": 16,
+            "right_variable": 18,
+            "witness_child_position": 77,
+            "witness_child": [
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                3
+              ]
+            ]
+          }
+        ],
+        "full_shadow_witness_components": [],
+        "full_shadow_witness_spanning_forest": [],
+        "visible_pass_count": 2,
+        "full_flag_pass_count": 2
+      },
+      {
+        "direction": "row:1<-2",
+        "family_variables": 0,
+        "plane_variables": 1,
+        "family_movable_pairs": [],
+        "plane_movable_pairs": [
+          [
+            5,
+            10
+          ]
+        ],
+        "local_witness_components": [
+          [
+            0
+          ]
+        ],
+        "local_witness_spanning_forest": [],
+        "full_shadow_witness_components": [],
+        "full_shadow_witness_spanning_forest": [],
+        "visible_pass_count": 2,
+        "full_flag_pass_count": 2
+      },
+      {
+        "direction": "row:1<-3",
+        "family_variables": 6,
+        "plane_variables": 1,
+        "family_movable_pairs": [
+          [
+            2,
+            32
+          ],
+          [
+            4,
+            34
+          ],
+          [
+            5,
+            35
+          ],
+          [
+            7,
+            37
+          ],
+          [
+            8,
+            38
+          ],
+          [
+            9,
+            39
+          ]
+        ],
+        "plane_movable_pairs": [
+          [
+            5,
+            15
+          ]
+        ],
+        "local_witness_components": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        ],
+        "local_witness_spanning_forest": [
+          {
+            "left_variable": 0,
+            "right_variable": 1,
+            "witness_child_position": 23,
+            "witness_child": [
+              [
+                0,
+                3
+              ],
+              [
+                0,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 2,
+            "witness_child_position": 23,
+            "witness_child": [
+              [
+                0,
+                3
+              ],
+              [
+                0,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 3,
+            "witness_child_position": 26,
+            "witness_child": [
+              [
+                0,
+                3
+              ],
+              [
+                1,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 4,
+            "witness_child_position": 26,
+            "witness_child": [
+              [
+                0,
+                3
+              ],
+              [
+                1,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 1,
+            "right_variable": 5,
+            "witness_child_position": 28,
+            "witness_child": [
+              [
+                0,
+                3
+              ],
+              [
+                2,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 3,
+            "right_variable": 6,
+            "witness_child_position": 74,
+            "witness_child": [
+              [
+                2,
+                3
+              ],
+              [
+                1,
+                2
+              ]
+            ]
+          }
+        ],
+        "full_shadow_witness_components": [],
+        "full_shadow_witness_spanning_forest": [],
+        "visible_pass_count": 2,
+        "full_flag_pass_count": 2
+      },
+      {
+        "direction": "row:1<-4",
+        "family_variables": 16,
+        "plane_variables": 1,
+        "family_movable_pairs": [
+          [
+            0,
+            40
+          ],
+          [
+            1,
+            41
+          ],
+          [
+            2,
+            42
+          ],
+          [
+            3,
+            43
+          ],
+          [
+            4,
+            44
+          ],
+          [
+            5,
+            45
+          ],
+          [
+            6,
+            46
+          ],
+          [
+            7,
+            47
+          ],
+          [
+            8,
+            48
+          ],
+          [
+            9,
+            49
+          ],
+          [
+            10,
+            50
+          ],
+          [
+            11,
+            51
+          ],
+          [
+            13,
+            53
+          ],
+          [
+            16,
+            56
+          ],
+          [
+            60,
+            90
+          ],
+          [
+            61,
+            91
+          ]
+        ],
+        "plane_movable_pairs": [
+          [
+            5,
+            20
+          ]
+        ],
+        "local_witness_components": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+          ]
+        ],
+        "local_witness_spanning_forest": [
+          {
+            "left_variable": 0,
+            "right_variable": 1,
+            "witness_child_position": 30,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 2,
+            "witness_child_position": 30,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 10,
+            "witness_child_position": 30,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 11,
+            "witness_child_position": 30,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 3,
+            "witness_child_position": 31,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                0,
+                2
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 4,
+            "witness_child_position": 31,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                0,
+                2
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 12,
+            "witness_child_position": 31,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                0,
+                2
+              ]
+            ]
+          },
+          {
+            "left_variable": 1,
+            "right_variable": 5,
+            "witness_child_position": 32,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                0,
+                3
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 6,
+            "witness_child_position": 34,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                1,
+                2
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 7,
+            "witness_child_position": 34,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                1,
+                2
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 13,
+            "witness_child_position": 34,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                1,
+                2
+              ]
+            ]
+          },
+          {
+            "left_variable": 1,
+            "right_variable": 8,
+            "witness_child_position": 35,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                1,
+                3
+              ]
+            ]
+          },
+          {
+            "left_variable": 3,
+            "right_variable": 9,
+            "witness_child_position": 37,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                2,
+                3
+              ]
+            ]
+          },
+          {
+            "left_variable": 14,
+            "right_variable": 16,
+            "witness_child_position": 74,
+            "witness_child": [
+              [
+                2,
+                3
+              ],
+              [
+                1,
+                2
+              ]
+            ]
+          },
+          {
+            "left_variable": 15,
+            "right_variable": 16,
+            "witness_child_position": 75,
+            "witness_child": [
+              [
+                2,
+                3
+              ],
+              [
+                1,
+                3
+              ]
+            ]
+          },
+          {
+            "left_variable": 2,
+            "right_variable": 14,
+            "witness_child_position": 80,
+            "witness_child": [
+              [
+                2,
+                4
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          }
+        ],
+        "full_shadow_witness_components": [],
+        "full_shadow_witness_spanning_forest": [],
+        "visible_pass_count": 2,
+        "full_flag_pass_count": 2
+      },
+      {
+        "direction": "row:2<-3",
+        "family_variables": 6,
+        "plane_variables": 0,
+        "family_movable_pairs": [
+          [
+            2,
+            12
+          ],
+          [
+            4,
+            14
+          ],
+          [
+            5,
+            15
+          ],
+          [
+            7,
+            17
+          ],
+          [
+            8,
+            18
+          ],
+          [
+            9,
+            19
+          ]
+        ],
+        "plane_movable_pairs": [],
+        "local_witness_components": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            3,
+            4,
+            5
+          ]
+        ],
+        "local_witness_spanning_forest": [
+          {
+            "left_variable": 0,
+            "right_variable": 1,
+            "witness_child_position": 23,
+            "witness_child": [
+              [
+                0,
+                3
+              ],
+              [
+                0,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 2,
+            "witness_child_position": 23,
+            "witness_child": [
+              [
+                0,
+                3
+              ],
+              [
+                0,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 3,
+            "right_variable": 4,
+            "witness_child_position": 26,
+            "witness_child": [
+              [
+                0,
+                3
+              ],
+              [
+                1,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 3,
+            "right_variable": 5,
+            "witness_child_position": 28,
+            "witness_child": [
+              [
+                0,
+                3
+              ],
+              [
+                2,
+                4
+              ]
+            ]
+          }
+        ],
+        "full_shadow_witness_components": [],
+        "full_shadow_witness_spanning_forest": [],
+        "visible_pass_count": 4,
+        "full_flag_pass_count": 2
+      },
+      {
+        "direction": "row:2<-4",
+        "family_variables": 16,
+        "plane_variables": 0,
+        "family_movable_pairs": [
+          [
+            0,
+            20
+          ],
+          [
+            1,
+            21
+          ],
+          [
+            2,
+            22
+          ],
+          [
+            3,
+            23
+          ],
+          [
+            4,
+            24
+          ],
+          [
+            5,
+            25
+          ],
+          [
+            6,
+            26
+          ],
+          [
+            7,
+            27
+          ],
+          [
+            8,
+            28
+          ],
+          [
+            9,
+            29
+          ],
+          [
+            30,
+            50
+          ],
+          [
+            31,
+            51
+          ],
+          [
+            33,
+            53
+          ],
+          [
+            36,
+            56
+          ],
+          [
+            60,
+            80
+          ],
+          [
+            61,
+            81
+          ]
+        ],
+        "plane_movable_pairs": [],
+        "local_witness_components": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ]
+        ],
+        "local_witness_spanning_forest": [
+          {
+            "left_variable": 0,
+            "right_variable": 1,
+            "witness_child_position": 30,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 2,
+            "witness_child_position": 30,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 10,
+            "witness_child_position": 30,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 11,
+            "witness_child_position": 30,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 3,
+            "witness_child_position": 31,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                0,
+                2
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 4,
+            "witness_child_position": 31,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                0,
+                2
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 12,
+            "witness_child_position": 31,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                0,
+                2
+              ]
+            ]
+          },
+          {
+            "left_variable": 1,
+            "right_variable": 5,
+            "witness_child_position": 32,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                0,
+                3
+              ]
+            ]
+          },
+          {
+            "left_variable": 6,
+            "right_variable": 7,
+            "witness_child_position": 34,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                1,
+                2
+              ]
+            ]
+          },
+          {
+            "left_variable": 6,
+            "right_variable": 10,
+            "witness_child_position": 34,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                1,
+                2
+              ]
+            ]
+          },
+          {
+            "left_variable": 6,
+            "right_variable": 13,
+            "witness_child_position": 34,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                1,
+                2
+              ]
+            ]
+          },
+          {
+            "left_variable": 6,
+            "right_variable": 8,
+            "witness_child_position": 35,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                1,
+                3
+              ]
+            ]
+          },
+          {
+            "left_variable": 6,
+            "right_variable": 9,
+            "witness_child_position": 37,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                2,
+                3
+              ]
+            ]
+          },
+          {
+            "left_variable": 2,
+            "right_variable": 14,
+            "witness_child_position": 60,
+            "witness_child": [
+              [
+                1,
+                4
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "left_variable": 2,
+            "right_variable": 15,
+            "witness_child_position": 60,
+            "witness_child": [
+              [
+                1,
+                4
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          }
+        ],
+        "full_shadow_witness_components": [],
+        "full_shadow_witness_spanning_forest": [],
+        "visible_pass_count": 2,
+        "full_flag_pass_count": 2
+      },
+      {
+        "direction": "row:3<-4",
+        "family_variables": 10,
+        "plane_variables": 0,
+        "family_movable_pairs": [
+          [
+            10,
+            20
+          ],
+          [
+            11,
+            21
+          ],
+          [
+            13,
+            23
+          ],
+          [
+            16,
+            26
+          ],
+          [
+            30,
+            40
+          ],
+          [
+            31,
+            41
+          ],
+          [
+            33,
+            43
+          ],
+          [
+            36,
+            46
+          ],
+          [
+            60,
+            70
+          ],
+          [
+            61,
+            71
+          ]
+        ],
+        "plane_movable_pairs": [],
+        "local_witness_components": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          [
+            8,
+            9
+          ]
+        ],
+        "local_witness_spanning_forest": [
+          {
+            "left_variable": 0,
+            "right_variable": 1,
+            "witness_child_position": 30,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 4,
+            "witness_child_position": 30,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 5,
+            "witness_child_position": 30,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 2,
+            "witness_child_position": 31,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                0,
+                2
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 6,
+            "witness_child_position": 31,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                0,
+                2
+              ]
+            ]
+          },
+          {
+            "left_variable": 3,
+            "right_variable": 4,
+            "witness_child_position": 34,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                1,
+                2
+              ]
+            ]
+          },
+          {
+            "left_variable": 3,
+            "right_variable": 7,
+            "witness_child_position": 34,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                1,
+                2
+              ]
+            ]
+          },
+          {
+            "left_variable": 8,
+            "right_variable": 9,
+            "witness_child_position": 60,
+            "witness_child": [
+              [
+                1,
+                4
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          }
+        ],
+        "full_shadow_witness_components": [],
+        "full_shadow_witness_spanning_forest": [],
+        "visible_pass_count": 4,
+        "full_flag_pass_count": 2
+      },
+      {
+        "direction": "column:0<-1",
+        "family_variables": 0,
+        "plane_variables": 1,
+        "family_movable_pairs": [],
+        "plane_movable_pairs": [
+          [
+            5,
+            6
+          ]
+        ],
+        "local_witness_components": [
+          [
+            0
+          ]
+        ],
+        "local_witness_spanning_forest": [],
+        "full_shadow_witness_components": [],
+        "full_shadow_witness_spanning_forest": [],
+        "visible_pass_count": 2,
+        "full_flag_pass_count": 2
+      },
+      {
+        "direction": "column:0<-2",
+        "family_variables": 1,
+        "plane_variables": 1,
+        "family_movable_pairs": [
+          [
+            61,
+            66
+          ]
+        ],
+        "plane_movable_pairs": [
+          [
+            5,
+            7
+          ]
+        ],
+        "local_witness_components": [
+          [
+            0,
+            1
+          ]
+        ],
+        "local_witness_spanning_forest": [
+          {
+            "left_variable": 0,
+            "right_variable": 1,
+            "witness_child_position": 74,
+            "witness_child": [
+              [
+                2,
+                3
+              ],
+              [
+                1,
+                2
+              ]
+            ]
+          }
+        ],
+        "full_shadow_witness_components": [],
+        "full_shadow_witness_spanning_forest": [],
+        "visible_pass_count": 2,
+        "full_flag_pass_count": 2
+      },
+      {
+        "direction": "column:0<-3",
+        "family_variables": 1,
+        "plane_variables": 1,
+        "family_movable_pairs": [
+          [
+            60,
+            66
+          ]
+        ],
+        "plane_movable_pairs": [
+          [
+            5,
+            8
+          ]
+        ],
+        "local_witness_components": [
+          [
+            0,
+            1
+          ]
+        ],
+        "local_witness_spanning_forest": [
+          {
+            "left_variable": 0,
+            "right_variable": 1,
+            "witness_child_position": 74,
+            "witness_child": [
+              [
+                2,
+                3
+              ],
+              [
+                1,
+                2
+              ]
+            ]
+          }
+        ],
+        "full_shadow_witness_components": [],
+        "full_shadow_witness_spanning_forest": [],
+        "visible_pass_count": 2,
+        "full_flag_pass_count": 2
+      },
+      {
+        "direction": "column:0<-4",
+        "family_variables": 8,
+        "plane_variables": 2,
+        "family_movable_pairs": [
+          [
+            10,
+            17
+          ],
+          [
+            30,
+            37
+          ],
+          [
+            60,
+            67
+          ],
+          [
+            11,
+            18
+          ],
+          [
+            31,
+            38
+          ],
+          [
+            61,
+            68
+          ],
+          [
+            13,
+            19
+          ],
+          [
+            33,
+            39
+          ]
+        ],
+        "plane_movable_pairs": [
+          [
+            0,
+            4
+          ],
+          [
+            5,
+            9
+          ]
+        ],
+        "local_witness_components": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        ],
+        "local_witness_spanning_forest": [
+          {
+            "left_variable": 0,
+            "right_variable": 1,
+            "witness_child_position": 26,
+            "witness_child": [
+              [
+                0,
+                3
+              ],
+              [
+                1,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 3,
+            "witness_child_position": 26,
+            "witness_child": [
+              [
+                0,
+                3
+              ],
+              [
+                1,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 4,
+            "witness_child_position": 26,
+            "witness_child": [
+              [
+                0,
+                3
+              ],
+              [
+                1,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 6,
+            "witness_child_position": 28,
+            "witness_child": [
+              [
+                0,
+                3
+              ],
+              [
+                2,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 7,
+            "witness_child_position": 28,
+            "witness_child": [
+              [
+                0,
+                3
+              ],
+              [
+                2,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 2,
+            "right_variable": 5,
+            "witness_child_position": 46,
+            "witness_child": [
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 2,
+            "right_variable": 8,
+            "witness_child_position": 46,
+            "witness_child": [
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 6,
+            "right_variable": 8,
+            "witness_child_position": 57,
+            "witness_child": [
+              [
+                1,
+                3
+              ],
+              [
+                2,
+                3
+              ]
+            ]
+          },
+          {
+            "left_variable": 2,
+            "right_variable": 9,
+            "witness_child_position": 74,
+            "witness_child": [
+              [
+                2,
+                3
+              ],
+              [
+                1,
+                2
+              ]
+            ]
+          }
+        ],
+        "full_shadow_witness_components": [],
+        "full_shadow_witness_spanning_forest": [],
+        "visible_pass_count": 2,
+        "full_flag_pass_count": 2
+      },
+      {
+        "direction": "column:1<-2",
+        "family_variables": 1,
+        "plane_variables": 0,
+        "family_movable_pairs": [
+          [
+            61,
+            63
+          ]
+        ],
+        "plane_movable_pairs": [],
+        "local_witness_components": [
+          [
+            0
+          ]
+        ],
+        "local_witness_spanning_forest": [],
+        "full_shadow_witness_components": [],
+        "full_shadow_witness_spanning_forest": [],
+        "visible_pass_count": 2,
+        "full_flag_pass_count": 2
+      },
+      {
+        "direction": "column:1<-3",
+        "family_variables": 1,
+        "plane_variables": 0,
+        "family_movable_pairs": [
+          [
+            60,
+            63
+          ]
+        ],
+        "plane_movable_pairs": [],
+        "local_witness_components": [
+          [
+            0
+          ]
+        ],
+        "local_witness_spanning_forest": [],
+        "full_shadow_witness_components": [],
+        "full_shadow_witness_spanning_forest": [],
+        "visible_pass_count": 2,
+        "full_flag_pass_count": 2
+      },
+      {
+        "direction": "column:1<-4",
+        "family_variables": 8,
+        "plane_variables": 1,
+        "family_movable_pairs": [
+          [
+            10,
+            14
+          ],
+          [
+            30,
+            34
+          ],
+          [
+            60,
+            64
+          ],
+          [
+            11,
+            15
+          ],
+          [
+            31,
+            35
+          ],
+          [
+            61,
+            65
+          ],
+          [
+            16,
+            19
+          ],
+          [
+            36,
+            39
+          ]
+        ],
+        "plane_movable_pairs": [
+          [
+            1,
+            4
+          ]
+        ],
+        "local_witness_components": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        ],
+        "local_witness_spanning_forest": [
+          {
+            "left_variable": 0,
+            "right_variable": 1,
+            "witness_child_position": 23,
+            "witness_child": [
+              [
+                0,
+                3
+              ],
+              [
+                0,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 3,
+            "witness_child_position": 23,
+            "witness_child": [
+              [
+                0,
+                3
+              ],
+              [
+                0,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 4,
+            "witness_child_position": 23,
+            "witness_child": [
+              [
+                0,
+                3
+              ],
+              [
+                0,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 1,
+            "right_variable": 6,
+            "witness_child_position": 28,
+            "witness_child": [
+              [
+                0,
+                3
+              ],
+              [
+                2,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 1,
+            "right_variable": 7,
+            "witness_child_position": 28,
+            "witness_child": [
+              [
+                0,
+                3
+              ],
+              [
+                2,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 2,
+            "right_variable": 5,
+            "witness_child_position": 43,
+            "witness_child": [
+              [
+                1,
+                2
+              ],
+              [
+                0,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 2,
+            "right_variable": 8,
+            "witness_child_position": 43,
+            "witness_child": [
+              [
+                1,
+                2
+              ],
+              [
+                0,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 6,
+            "right_variable": 8,
+            "witness_child_position": 57,
+            "witness_child": [
+              [
+                1,
+                3
+              ],
+              [
+                2,
+                3
+              ]
+            ]
+          }
+        ],
+        "full_shadow_witness_components": [],
+        "full_shadow_witness_spanning_forest": [],
+        "visible_pass_count": 2,
+        "full_flag_pass_count": 2
+      },
+      {
+        "direction": "column:2<-3",
+        "family_variables": 0,
+        "plane_variables": 0,
+        "family_movable_pairs": [],
+        "plane_movable_pairs": [],
+        "local_witness_components": [],
+        "local_witness_spanning_forest": [],
+        "full_shadow_witness_components": [],
+        "full_shadow_witness_spanning_forest": [],
+        "visible_pass_count": 1,
+        "full_flag_pass_count": 1
+      },
+      {
+        "direction": "column:2<-4",
+        "family_variables": 7,
+        "plane_variables": 1,
+        "family_movable_pairs": [
+          [
+            10,
+            12
+          ],
+          [
+            30,
+            32
+          ],
+          [
+            60,
+            62
+          ],
+          [
+            13,
+            15
+          ],
+          [
+            33,
+            35
+          ],
+          [
+            16,
+            18
+          ],
+          [
+            36,
+            38
+          ]
+        ],
+        "plane_movable_pairs": [
+          [
+            2,
+            4
+          ]
+        ],
+        "local_witness_components": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        ],
+        "local_witness_spanning_forest": [
+          {
+            "left_variable": 0,
+            "right_variable": 1,
+            "witness_child_position": 23,
+            "witness_child": [
+              [
+                0,
+                3
+              ],
+              [
+                0,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 3,
+            "witness_child_position": 23,
+            "witness_child": [
+              [
+                0,
+                3
+              ],
+              [
+                0,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 4,
+            "witness_child_position": 23,
+            "witness_child": [
+              [
+                0,
+                3
+              ],
+              [
+                0,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 1,
+            "right_variable": 5,
+            "witness_child_position": 26,
+            "witness_child": [
+              [
+                0,
+                3
+              ],
+              [
+                1,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 1,
+            "right_variable": 6,
+            "witness_child_position": 26,
+            "witness_child": [
+              [
+                0,
+                3
+              ],
+              [
+                1,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 2,
+            "right_variable": 7,
+            "witness_child_position": 43,
+            "witness_child": [
+              [
+                1,
+                2
+              ],
+              [
+                0,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 6,
+            "right_variable": 7,
+            "witness_child_position": 75,
+            "witness_child": [
+              [
+                2,
+                3
+              ],
+              [
+                1,
+                3
+              ]
+            ]
+          }
+        ],
+        "full_shadow_witness_components": [],
+        "full_shadow_witness_spanning_forest": [],
+        "visible_pass_count": 2,
+        "full_flag_pass_count": 2
+      },
+      {
+        "direction": "column:3<-2",
+        "family_variables": 0,
+        "plane_variables": 0,
+        "family_movable_pairs": [],
+        "plane_movable_pairs": [],
+        "local_witness_components": [],
+        "local_witness_spanning_forest": [],
+        "full_shadow_witness_components": [],
+        "full_shadow_witness_spanning_forest": [],
+        "visible_pass_count": 1,
+        "full_flag_pass_count": 1
+      },
+      {
+        "direction": "column:3<-4",
+        "family_variables": 7,
+        "plane_variables": 1,
+        "family_movable_pairs": [
+          [
+            11,
+            12
+          ],
+          [
+            31,
+            32
+          ],
+          [
+            61,
+            62
+          ],
+          [
+            13,
+            14
+          ],
+          [
+            33,
+            34
+          ],
+          [
+            16,
+            17
+          ],
+          [
+            36,
+            37
+          ]
+        ],
+        "plane_movable_pairs": [
+          [
+            3,
+            4
+          ]
+        ],
+        "local_witness_components": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        ],
+        "local_witness_spanning_forest": [
+          {
+            "left_variable": 0,
+            "right_variable": 1,
+            "witness_child_position": 23,
+            "witness_child": [
+              [
+                0,
+                3
+              ],
+              [
+                0,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 3,
+            "witness_child_position": 23,
+            "witness_child": [
+              [
+                0,
+                3
+              ],
+              [
+                0,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 4,
+            "witness_child_position": 23,
+            "witness_child": [
+              [
+                0,
+                3
+              ],
+              [
+                0,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 1,
+            "right_variable": 5,
+            "witness_child_position": 26,
+            "witness_child": [
+              [
+                0,
+                3
+              ],
+              [
+                1,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 1,
+            "right_variable": 6,
+            "witness_child_position": 26,
+            "witness_child": [
+              [
+                0,
+                3
+              ],
+              [
+                1,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 2,
+            "right_variable": 7,
+            "witness_child_position": 43,
+            "witness_child": [
+              [
+                1,
+                2
+              ],
+              [
+                0,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 6,
+            "right_variable": 7,
+            "witness_child_position": 74,
+            "witness_child": [
+              [
+                2,
+                3
+              ],
+              [
+                1,
+                2
+              ]
+            ]
+          }
+        ],
+        "full_shadow_witness_components": [],
+        "full_shadow_witness_spanning_forest": [],
+        "visible_pass_count": 2,
+        "full_flag_pass_count": 2
+      }
+    ],
+    "orbit13": [
+      {
+        "direction": "row:0<-1",
+        "family_variables": 0,
+        "plane_variables": 1,
+        "family_movable_pairs": [],
+        "plane_movable_pairs": [
+          [
+            2,
+            7
+          ]
+        ],
+        "local_witness_components": [
+          [
+            0
+          ]
+        ],
+        "local_witness_spanning_forest": [],
+        "full_shadow_witness_components": [],
+        "full_shadow_witness_spanning_forest": [],
+        "visible_pass_count": 2,
+        "full_flag_pass_count": 2
+      },
+      {
+        "direction": "row:0<-2",
+        "family_variables": 1,
+        "plane_variables": 3,
+        "family_movable_pairs": [
+          [
+            12,
+            62
+          ]
+        ],
+        "plane_movable_pairs": [
+          [
+            0,
+            10
+          ],
+          [
+            1,
+            11
+          ],
+          [
+            2,
+            12
+          ]
+        ],
+        "local_witness_components": [
+          [
+            0,
+            1,
+            2,
+            3
+          ]
+        ],
+        "local_witness_spanning_forest": [
+          {
+            "left_variable": 0,
+            "right_variable": 2,
+            "witness_child_position": 43,
+            "witness_child": [
+              [
+                1,
+                2
+              ],
+              [
+                0,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 3,
+            "witness_child_position": 43,
+            "witness_child": [
+              [
+                1,
+                2
+              ],
+              [
+                0,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 1,
+            "witness_child_position": 46,
+            "witness_child": [
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                4
+              ]
+            ]
+          }
+        ],
+        "full_shadow_witness_components": [],
+        "full_shadow_witness_spanning_forest": [],
+        "visible_pass_count": 2,
+        "full_flag_pass_count": 2
+      },
+      {
+        "direction": "row:0<-3",
+        "family_variables": 3,
+        "plane_variables": 3,
+        "family_movable_pairs": [
+          [
+            2,
+            62
+          ],
+          [
+            4,
+            64
+          ],
+          [
+            7,
+            67
+          ]
+        ],
+        "plane_movable_pairs": [
+          [
+            0,
+            15
+          ],
+          [
+            1,
+            16
+          ],
+          [
+            2,
+            17
+          ]
+        ],
+        "local_witness_components": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        ],
+        "local_witness_spanning_forest": [
+          {
+            "left_variable": 0,
+            "right_variable": 4,
+            "witness_child_position": 43,
+            "witness_child": [
+              [
+                1,
+                2
+              ],
+              [
+                0,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 1,
+            "right_variable": 5,
+            "witness_child_position": 43,
+            "witness_child": [
+              [
+                1,
+                2
+              ],
+              [
+                0,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 3,
+            "witness_child_position": 46,
+            "witness_child": [
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 2,
+            "right_variable": 5,
+            "witness_child_position": 46,
+            "witness_child": [
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 1,
+            "right_variable": 3,
+            "witness_child_position": 48,
+            "witness_child": [
+              [
+                1,
+                2
+              ],
+              [
+                2,
+                4
+              ]
+            ]
+          }
+        ],
+        "full_shadow_witness_components": [],
+        "full_shadow_witness_spanning_forest": [],
+        "visible_pass_count": 2,
+        "full_flag_pass_count": 2
+      },
+      {
+        "direction": "row:0<-4",
+        "family_variables": 16,
+        "plane_variables": 3,
+        "family_movable_pairs": [
+          [
+            0,
+            70
+          ],
+          [
+            1,
+            71
+          ],
+          [
+            2,
+            72
+          ],
+          [
+            3,
+            73
+          ],
+          [
+            4,
+            74
+          ],
+          [
+            6,
+            76
+          ],
+          [
+            7,
+            77
+          ],
+          [
+            10,
+            80
+          ],
+          [
+            11,
+            81
+          ],
+          [
+            12,
+            82
+          ],
+          [
+            13,
+            83
+          ],
+          [
+            16,
+            86
+          ],
+          [
+            30,
+            90
+          ],
+          [
+            31,
+            91
+          ],
+          [
+            33,
+            93
+          ],
+          [
+            36,
+            96
+          ]
+        ],
+        "plane_movable_pairs": [
+          [
+            0,
+            20
+          ],
+          [
+            1,
+            21
+          ],
+          [
+            2,
+            22
+          ]
+        ],
+        "local_witness_components": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18
+          ]
+        ],
+        "local_witness_spanning_forest": [
+          {
+            "left_variable": 2,
+            "right_variable": 17,
+            "witness_child_position": 43,
+            "witness_child": [
+              [
+                1,
+                2
+              ],
+              [
+                0,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 4,
+            "right_variable": 18,
+            "witness_child_position": 43,
+            "witness_child": [
+              [
+                1,
+                2
+              ],
+              [
+                0,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 2,
+            "right_variable": 16,
+            "witness_child_position": 46,
+            "witness_child": [
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 6,
+            "right_variable": 18,
+            "witness_child_position": 46,
+            "witness_child": [
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 4,
+            "right_variable": 16,
+            "witness_child_position": 48,
+            "witness_child": [
+              [
+                1,
+                2
+              ],
+              [
+                2,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 9,
+            "right_variable": 17,
+            "witness_child_position": 53,
+            "witness_child": [
+              [
+                1,
+                3
+              ],
+              [
+                0,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 1,
+            "witness_child_position": 60,
+            "witness_child": [
+              [
+                1,
+                4
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 2,
+            "witness_child_position": 60,
+            "witness_child": [
+              [
+                1,
+                4
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 7,
+            "witness_child_position": 60,
+            "witness_child": [
+              [
+                1,
+                4
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 8,
+            "witness_child_position": 60,
+            "witness_child": [
+              [
+                1,
+                4
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 3,
+            "witness_child_position": 61,
+            "witness_child": [
+              [
+                1,
+                4
+              ],
+              [
+                0,
+                2
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 10,
+            "witness_child_position": 61,
+            "witness_child": [
+              [
+                1,
+                4
+              ],
+              [
+                0,
+                2
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 5,
+            "witness_child_position": 64,
+            "witness_child": [
+              [
+                1,
+                4
+              ],
+              [
+                1,
+                2
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 11,
+            "witness_child_position": 64,
+            "witness_child": [
+              [
+                1,
+                4
+              ],
+              [
+                1,
+                2
+              ]
+            ]
+          },
+          {
+            "left_variable": 14,
+            "right_variable": 16,
+            "witness_child_position": 77,
+            "witness_child": [
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                3
+              ]
+            ]
+          },
+          {
+            "left_variable": 15,
+            "right_variable": 17,
+            "witness_child_position": 77,
+            "witness_child": [
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                3
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 12,
+            "witness_child_position": 80,
+            "witness_child": [
+              [
+                2,
+                4
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 13,
+            "witness_child_position": 80,
+            "witness_child": [
+              [
+                2,
+                4
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          }
+        ],
+        "full_shadow_witness_components": [],
+        "full_shadow_witness_spanning_forest": [],
+        "visible_pass_count": 2,
+        "full_flag_pass_count": 2
+      },
+      {
+        "direction": "row:1<-2",
+        "family_variables": 1,
+        "plane_variables": 2,
+        "family_movable_pairs": [
+          [
+            12,
+            32
+          ]
+        ],
+        "plane_movable_pairs": [
+          [
+            5,
+            10
+          ],
+          [
+            6,
+            11
+          ]
+        ],
+        "local_witness_components": [
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "local_witness_spanning_forest": [
+          {
+            "left_variable": 1,
+            "right_variable": 2,
+            "witness_child_position": 18,
+            "witness_child": [
+              [
+                0,
+                2
+              ],
+              [
+                2,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 2,
+            "witness_child_position": 23,
+            "witness_child": [
+              [
+                0,
+                3
+              ],
+              [
+                0,
+                4
+              ]
+            ]
+          }
+        ],
+        "full_shadow_witness_components": [],
+        "full_shadow_witness_spanning_forest": [],
+        "visible_pass_count": 2,
+        "full_flag_pass_count": 2
+      },
+      {
+        "direction": "row:1<-3",
+        "family_variables": 3,
+        "plane_variables": 2,
+        "family_movable_pairs": [
+          [
+            2,
+            32
+          ],
+          [
+            4,
+            34
+          ],
+          [
+            7,
+            37
+          ]
+        ],
+        "plane_movable_pairs": [
+          [
+            5,
+            15
+          ],
+          [
+            6,
+            16
+          ]
+        ],
+        "local_witness_components": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        ],
+        "local_witness_spanning_forest": [
+          {
+            "left_variable": 1,
+            "right_variable": 3,
+            "witness_child_position": 18,
+            "witness_child": [
+              [
+                0,
+                2
+              ],
+              [
+                2,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 2,
+            "right_variable": 4,
+            "witness_child_position": 18,
+            "witness_child": [
+              [
+                0,
+                2
+              ],
+              [
+                2,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 1,
+            "witness_child_position": 23,
+            "witness_child": [
+              [
+                0,
+                3
+              ],
+              [
+                0,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 4,
+            "witness_child_position": 23,
+            "witness_child": [
+              [
+                0,
+                3
+              ],
+              [
+                0,
+                4
+              ]
+            ]
+          }
+        ],
+        "full_shadow_witness_components": [],
+        "full_shadow_witness_spanning_forest": [],
+        "visible_pass_count": 2,
+        "full_flag_pass_count": 2
+      },
+      {
+        "direction": "row:1<-4",
+        "family_variables": 16,
+        "plane_variables": 2,
+        "family_movable_pairs": [
+          [
+            0,
+            40
+          ],
+          [
+            1,
+            41
+          ],
+          [
+            2,
+            42
+          ],
+          [
+            3,
+            43
+          ],
+          [
+            4,
+            44
+          ],
+          [
+            6,
+            46
+          ],
+          [
+            7,
+            47
+          ],
+          [
+            10,
+            50
+          ],
+          [
+            11,
+            51
+          ],
+          [
+            12,
+            52
+          ],
+          [
+            13,
+            53
+          ],
+          [
+            16,
+            56
+          ],
+          [
+            60,
+            90
+          ],
+          [
+            61,
+            91
+          ],
+          [
+            63,
+            93
+          ],
+          [
+            66,
+            96
+          ]
+        ],
+        "plane_movable_pairs": [
+          [
+            5,
+            20
+          ],
+          [
+            6,
+            21
+          ]
+        ],
+        "local_witness_components": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ]
+        ],
+        "local_witness_spanning_forest": [
+          {
+            "left_variable": 4,
+            "right_variable": 16,
+            "witness_child_position": 18,
+            "witness_child": [
+              [
+                0,
+                2
+              ],
+              [
+                2,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 6,
+            "right_variable": 17,
+            "witness_child_position": 18,
+            "witness_child": [
+              [
+                0,
+                2
+              ],
+              [
+                2,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 9,
+            "right_variable": 17,
+            "witness_child_position": 23,
+            "witness_child": [
+              [
+                0,
+                3
+              ],
+              [
+                0,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 9,
+            "right_variable": 16,
+            "witness_child_position": 26,
+            "witness_child": [
+              [
+                0,
+                3
+              ],
+              [
+                1,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 1,
+            "witness_child_position": 30,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 2,
+            "witness_child_position": 30,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 7,
+            "witness_child_position": 30,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 8,
+            "witness_child_position": 30,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 9,
+            "witness_child_position": 30,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 3,
+            "witness_child_position": 31,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                0,
+                2
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 10,
+            "witness_child_position": 31,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                0,
+                2
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 5,
+            "witness_child_position": 34,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                1,
+                2
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 11,
+            "witness_child_position": 34,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                1,
+                2
+              ]
+            ]
+          },
+          {
+            "left_variable": 14,
+            "right_variable": 16,
+            "witness_child_position": 77,
+            "witness_child": [
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                3
+              ]
+            ]
+          },
+          {
+            "left_variable": 15,
+            "right_variable": 17,
+            "witness_child_position": 77,
+            "witness_child": [
+              [
+                2,
+                3
+              ],
+              [
+                2,
+                3
+              ]
+            ]
+          },
+          {
+            "left_variable": 1,
+            "right_variable": 12,
+            "witness_child_position": 80,
+            "witness_child": [
+              [
+                2,
+                4
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "left_variable": 1,
+            "right_variable": 13,
+            "witness_child_position": 80,
+            "witness_child": [
+              [
+                2,
+                4
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          }
+        ],
+        "full_shadow_witness_components": [],
+        "full_shadow_witness_spanning_forest": [],
+        "visible_pass_count": 2,
+        "full_flag_pass_count": 2
+      },
+      {
+        "direction": "row:2<-3",
+        "family_variables": 2,
+        "plane_variables": 0,
+        "family_movable_pairs": [
+          [
+            4,
+            14
+          ],
+          [
+            7,
+            17
+          ]
+        ],
+        "plane_movable_pairs": [],
+        "local_witness_components": [
+          [
+            0
+          ],
+          [
+            1
+          ]
+        ],
+        "local_witness_spanning_forest": [],
+        "full_shadow_witness_components": [],
+        "full_shadow_witness_spanning_forest": [],
+        "visible_pass_count": 4,
+        "full_flag_pass_count": 2
+      },
+      {
+        "direction": "row:2<-4",
+        "family_variables": 15,
+        "plane_variables": 0,
+        "family_movable_pairs": [
+          [
+            0,
+            20
+          ],
+          [
+            1,
+            21
+          ],
+          [
+            2,
+            22
+          ],
+          [
+            3,
+            23
+          ],
+          [
+            4,
+            24
+          ],
+          [
+            6,
+            26
+          ],
+          [
+            7,
+            27
+          ],
+          [
+            30,
+            50
+          ],
+          [
+            31,
+            51
+          ],
+          [
+            33,
+            53
+          ],
+          [
+            36,
+            56
+          ],
+          [
+            60,
+            80
+          ],
+          [
+            61,
+            81
+          ],
+          [
+            63,
+            83
+          ],
+          [
+            66,
+            86
+          ]
+        ],
+        "plane_movable_pairs": [],
+        "local_witness_components": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
+          ]
+        ],
+        "local_witness_spanning_forest": [
+          {
+            "left_variable": 0,
+            "right_variable": 1,
+            "witness_child_position": 30,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 2,
+            "witness_child_position": 30,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 7,
+            "witness_child_position": 30,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 8,
+            "witness_child_position": 30,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "left_variable": 3,
+            "right_variable": 4,
+            "witness_child_position": 31,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                0,
+                2
+              ]
+            ]
+          },
+          {
+            "left_variable": 3,
+            "right_variable": 7,
+            "witness_child_position": 31,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                0,
+                2
+              ]
+            ]
+          },
+          {
+            "left_variable": 3,
+            "right_variable": 9,
+            "witness_child_position": 31,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                0,
+                2
+              ]
+            ]
+          },
+          {
+            "left_variable": 5,
+            "right_variable": 6,
+            "witness_child_position": 34,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                1,
+                2
+              ]
+            ]
+          },
+          {
+            "left_variable": 5,
+            "right_variable": 7,
+            "witness_child_position": 34,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                1,
+                2
+              ]
+            ]
+          },
+          {
+            "left_variable": 5,
+            "right_variable": 10,
+            "witness_child_position": 34,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                1,
+                2
+              ]
+            ]
+          },
+          {
+            "left_variable": 1,
+            "right_variable": 11,
+            "witness_child_position": 60,
+            "witness_child": [
+              [
+                1,
+                4
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "left_variable": 1,
+            "right_variable": 12,
+            "witness_child_position": 60,
+            "witness_child": [
+              [
+                1,
+                4
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "left_variable": 3,
+            "right_variable": 13,
+            "witness_child_position": 61,
+            "witness_child": [
+              [
+                1,
+                4
+              ],
+              [
+                0,
+                2
+              ]
+            ]
+          },
+          {
+            "left_variable": 5,
+            "right_variable": 14,
+            "witness_child_position": 64,
+            "witness_child": [
+              [
+                1,
+                4
+              ],
+              [
+                1,
+                2
+              ]
+            ]
+          }
+        ],
+        "full_shadow_witness_components": [],
+        "full_shadow_witness_spanning_forest": [],
+        "visible_pass_count": 2,
+        "full_flag_pass_count": 2
+      },
+      {
+        "direction": "row:3<-4",
+        "family_variables": 13,
+        "plane_variables": 0,
+        "family_movable_pairs": [
+          [
+            10,
+            20
+          ],
+          [
+            11,
+            21
+          ],
+          [
+            12,
+            22
+          ],
+          [
+            13,
+            23
+          ],
+          [
+            16,
+            26
+          ],
+          [
+            30,
+            40
+          ],
+          [
+            31,
+            41
+          ],
+          [
+            33,
+            43
+          ],
+          [
+            36,
+            46
+          ],
+          [
+            60,
+            70
+          ],
+          [
+            61,
+            71
+          ],
+          [
+            63,
+            73
+          ],
+          [
+            66,
+            76
+          ]
+        ],
+        "plane_movable_pairs": [],
+        "local_witness_components": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ]
+        ],
+        "local_witness_spanning_forest": [
+          {
+            "left_variable": 0,
+            "right_variable": 1,
+            "witness_child_position": 30,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 2,
+            "witness_child_position": 30,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 5,
+            "witness_child_position": 30,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 6,
+            "witness_child_position": 30,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "left_variable": 3,
+            "right_variable": 5,
+            "witness_child_position": 31,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                0,
+                2
+              ]
+            ]
+          },
+          {
+            "left_variable": 3,
+            "right_variable": 7,
+            "witness_child_position": 31,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                0,
+                2
+              ]
+            ]
+          },
+          {
+            "left_variable": 4,
+            "right_variable": 5,
+            "witness_child_position": 34,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                1,
+                2
+              ]
+            ]
+          },
+          {
+            "left_variable": 4,
+            "right_variable": 8,
+            "witness_child_position": 34,
+            "witness_child": [
+              [
+                0,
+                4
+              ],
+              [
+                1,
+                2
+              ]
+            ]
+          },
+          {
+            "left_variable": 1,
+            "right_variable": 9,
+            "witness_child_position": 60,
+            "witness_child": [
+              [
+                1,
+                4
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "left_variable": 1,
+            "right_variable": 10,
+            "witness_child_position": 60,
+            "witness_child": [
+              [
+                1,
+                4
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "left_variable": 3,
+            "right_variable": 11,
+            "witness_child_position": 61,
+            "witness_child": [
+              [
+                1,
+                4
+              ],
+              [
+                0,
+                2
+              ]
+            ]
+          },
+          {
+            "left_variable": 4,
+            "right_variable": 12,
+            "witness_child_position": 64,
+            "witness_child": [
+              [
+                1,
+                4
+              ],
+              [
+                1,
+                2
+              ]
+            ]
+          }
+        ],
+        "full_shadow_witness_components": [],
+        "full_shadow_witness_spanning_forest": [],
+        "visible_pass_count": 2,
+        "full_flag_pass_count": 2
+      },
+      {
+        "direction": "column:0<-1",
+        "family_variables": 0,
+        "plane_variables": 0,
+        "family_movable_pairs": [],
+        "plane_movable_pairs": [],
+        "local_witness_components": [],
+        "local_witness_spanning_forest": [],
+        "full_shadow_witness_components": [],
+        "full_shadow_witness_spanning_forest": [],
+        "visible_pass_count": 1,
+        "full_flag_pass_count": 1
+      },
+      {
+        "direction": "column:0<-2",
+        "family_variables": 1,
+        "plane_variables": 1,
+        "family_movable_pairs": [
+          [
+            12,
+            17
+          ]
+        ],
+        "plane_movable_pairs": [
+          [
+            5,
+            7
+          ]
+        ],
+        "local_witness_components": [
+          [
+            0,
+            1
+          ]
+        ],
+        "local_witness_spanning_forest": [
+          {
+            "left_variable": 0,
+            "right_variable": 1,
+            "witness_child_position": 26,
+            "witness_child": [
+              [
+                0,
+                3
+              ],
+              [
+                1,
+                4
+              ]
+            ]
+          }
+        ],
+        "full_shadow_witness_components": [],
+        "full_shadow_witness_spanning_forest": [],
+        "visible_pass_count": 2,
+        "full_flag_pass_count": 2
+      },
+      {
+        "direction": "column:0<-3",
+        "family_variables": 3,
+        "plane_variables": 2,
+        "family_movable_pairs": [
+          [
+            2,
+            8
+          ],
+          [
+            12,
+            18
+          ],
+          [
+            4,
+            9
+          ]
+        ],
+        "plane_movable_pairs": [
+          [
+            0,
+            3
+          ],
+          [
+            5,
+            8
+          ]
+        ],
+        "local_witness_components": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        ],
+        "local_witness_spanning_forest": [
+          {
+            "left_variable": 0,
+            "right_variable": 1,
+            "witness_child_position": 9,
+            "witness_child": [
+              [
+                0,
+                1
+              ],
+              [
+                3,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 2,
+            "witness_child_position": 9,
+            "witness_child": [
+              [
+                0,
+                1
+              ],
+              [
+                3,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 2,
+            "right_variable": 4,
+            "witness_child_position": 18,
+            "witness_child": [
+              [
+                0,
+                2
+              ],
+              [
+                2,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 3,
+            "witness_child_position": 46,
+            "witness_child": [
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                4
+              ]
+            ]
+          }
+        ],
+        "full_shadow_witness_components": [],
+        "full_shadow_witness_spanning_forest": [],
+        "visible_pass_count": 2,
+        "full_flag_pass_count": 2
+      },
+      {
+        "direction": "column:0<-4",
+        "family_variables": 11,
+        "plane_variables": 2,
+        "family_movable_pairs": [
+          [
+            10,
+            17
+          ],
+          [
+            30,
+            37
+          ],
+          [
+            60,
+            67
+          ],
+          [
+            1,
+            8
+          ],
+          [
+            11,
+            18
+          ],
+          [
+            31,
+            38
+          ],
+          [
+            61,
+            68
+          ],
+          [
+            3,
+            9
+          ],
+          [
+            13,
+            19
+          ],
+          [
+            33,
+            39
+          ],
+          [
+            63,
+            69
+          ]
+        ],
+        "plane_movable_pairs": [
+          [
+            0,
+            4
+          ],
+          [
+            5,
+            9
+          ]
+        ],
+        "local_witness_components": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ]
+        ],
+        "local_witness_spanning_forest": [
+          {
+            "left_variable": 3,
+            "right_variable": 4,
+            "witness_child_position": 9,
+            "witness_child": [
+              [
+                0,
+                1
+              ],
+              [
+                3,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 3,
+            "right_variable": 7,
+            "witness_child_position": 9,
+            "witness_child": [
+              [
+                0,
+                1
+              ],
+              [
+                3,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 3,
+            "right_variable": 8,
+            "witness_child_position": 9,
+            "witness_child": [
+              [
+                0,
+                1
+              ],
+              [
+                3,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 1,
+            "right_variable": 7,
+            "witness_child_position": 18,
+            "witness_child": [
+              [
+                0,
+                2
+              ],
+              [
+                2,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 1,
+            "right_variable": 9,
+            "witness_child_position": 18,
+            "witness_child": [
+              [
+                0,
+                2
+              ],
+              [
+                2,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 1,
+            "right_variable": 12,
+            "witness_child_position": 18,
+            "witness_child": [
+              [
+                0,
+                2
+              ],
+              [
+                2,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 5,
+            "right_variable": 7,
+            "witness_child_position": 19,
+            "witness_child": [
+              [
+                0,
+                2
+              ],
+              [
+                3,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 1,
+            "witness_child_position": 26,
+            "witness_child": [
+              [
+                0,
+                3
+              ],
+              [
+                1,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 2,
+            "right_variable": 3,
+            "witness_child_position": 46,
+            "witness_child": [
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 2,
+            "right_variable": 6,
+            "witness_child_position": 46,
+            "witness_child": [
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 2,
+            "right_variable": 11,
+            "witness_child_position": 46,
+            "witness_child": [
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 2,
+            "right_variable": 10,
+            "witness_child_position": 48,
+            "witness_child": [
+              [
+                1,
+                2
+              ],
+              [
+                2,
+                4
+              ]
+            ]
+          }
+        ],
+        "full_shadow_witness_components": [],
+        "full_shadow_witness_spanning_forest": [],
+        "visible_pass_count": 2,
+        "full_flag_pass_count": 2
+      },
+      {
+        "direction": "column:1<-0",
+        "family_variables": 0,
+        "plane_variables": 0,
+        "family_movable_pairs": [],
+        "plane_movable_pairs": [],
+        "local_witness_components": [],
+        "local_witness_spanning_forest": [],
+        "full_shadow_witness_components": [],
+        "full_shadow_witness_spanning_forest": [],
+        "visible_pass_count": 1,
+        "full_flag_pass_count": 1
+      },
+      {
+        "direction": "column:1<-2",
+        "family_variables": 1,
+        "plane_variables": 1,
+        "family_movable_pairs": [
+          [
+            12,
+            14
+          ]
+        ],
+        "plane_movable_pairs": [
+          [
+            6,
+            7
+          ]
+        ],
+        "local_witness_components": [
+          [
+            0,
+            1
+          ]
+        ],
+        "local_witness_spanning_forest": [
+          {
+            "left_variable": 0,
+            "right_variable": 1,
+            "witness_child_position": 23,
+            "witness_child": [
+              [
+                0,
+                3
+              ],
+              [
+                0,
+                4
+              ]
+            ]
+          }
+        ],
+        "full_shadow_witness_components": [],
+        "full_shadow_witness_spanning_forest": [],
+        "visible_pass_count": 2,
+        "full_flag_pass_count": 2
+      },
+      {
+        "direction": "column:1<-3",
+        "family_variables": 3,
+        "plane_variables": 2,
+        "family_movable_pairs": [
+          [
+            2,
+            5
+          ],
+          [
+            12,
+            15
+          ],
+          [
+            7,
+            9
+          ]
+        ],
+        "plane_movable_pairs": [
+          [
+            1,
+            3
+          ],
+          [
+            6,
+            8
+          ]
+        ],
+        "local_witness_components": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        ],
+        "local_witness_spanning_forest": [
+          {
+            "left_variable": 0,
+            "right_variable": 1,
+            "witness_child_position": 9,
+            "witness_child": [
+              [
+                0,
+                1
+              ],
+              [
+                3,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 2,
+            "witness_child_position": 9,
+            "witness_child": [
+              [
+                0,
+                1
+              ],
+              [
+                3,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 2,
+            "right_variable": 4,
+            "witness_child_position": 18,
+            "witness_child": [
+              [
+                0,
+                2
+              ],
+              [
+                2,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 3,
+            "witness_child_position": 43,
+            "witness_child": [
+              [
+                1,
+                2
+              ],
+              [
+                0,
+                4
+              ]
+            ]
+          }
+        ],
+        "full_shadow_witness_components": [],
+        "full_shadow_witness_spanning_forest": [],
+        "visible_pass_count": 2,
+        "full_flag_pass_count": 2
+      },
+      {
+        "direction": "column:1<-4",
+        "family_variables": 11,
+        "plane_variables": 2,
+        "family_movable_pairs": [
+          [
+            10,
+            14
+          ],
+          [
+            30,
+            34
+          ],
+          [
+            60,
+            64
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            11,
+            15
+          ],
+          [
+            31,
+            35
+          ],
+          [
+            61,
+            65
+          ],
+          [
+            6,
+            9
+          ],
+          [
+            16,
+            19
+          ],
+          [
+            36,
+            39
+          ],
+          [
+            66,
+            69
+          ]
+        ],
+        "plane_movable_pairs": [
+          [
+            1,
+            4
+          ],
+          [
+            6,
+            9
+          ]
+        ],
+        "local_witness_components": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ]
+        ],
+        "local_witness_spanning_forest": [
+          {
+            "left_variable": 3,
+            "right_variable": 4,
+            "witness_child_position": 9,
+            "witness_child": [
+              [
+                0,
+                1
+              ],
+              [
+                3,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 3,
+            "right_variable": 7,
+            "witness_child_position": 9,
+            "witness_child": [
+              [
+                0,
+                1
+              ],
+              [
+                3,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 3,
+            "right_variable": 8,
+            "witness_child_position": 9,
+            "witness_child": [
+              [
+                0,
+                1
+              ],
+              [
+                3,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 1,
+            "right_variable": 7,
+            "witness_child_position": 18,
+            "witness_child": [
+              [
+                0,
+                2
+              ],
+              [
+                2,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 1,
+            "right_variable": 9,
+            "witness_child_position": 18,
+            "witness_child": [
+              [
+                0,
+                2
+              ],
+              [
+                2,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 1,
+            "right_variable": 12,
+            "witness_child_position": 18,
+            "witness_child": [
+              [
+                0,
+                2
+              ],
+              [
+                2,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 5,
+            "right_variable": 7,
+            "witness_child_position": 19,
+            "witness_child": [
+              [
+                0,
+                2
+              ],
+              [
+                3,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 1,
+            "witness_child_position": 23,
+            "witness_child": [
+              [
+                0,
+                3
+              ],
+              [
+                0,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 2,
+            "right_variable": 3,
+            "witness_child_position": 43,
+            "witness_child": [
+              [
+                1,
+                2
+              ],
+              [
+                0,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 2,
+            "right_variable": 6,
+            "witness_child_position": 43,
+            "witness_child": [
+              [
+                1,
+                2
+              ],
+              [
+                0,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 2,
+            "right_variable": 11,
+            "witness_child_position": 43,
+            "witness_child": [
+              [
+                1,
+                2
+              ],
+              [
+                0,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 2,
+            "right_variable": 10,
+            "witness_child_position": 48,
+            "witness_child": [
+              [
+                1,
+                2
+              ],
+              [
+                2,
+                4
+              ]
+            ]
+          }
+        ],
+        "full_shadow_witness_components": [],
+        "full_shadow_witness_spanning_forest": [],
+        "visible_pass_count": 2,
+        "full_flag_pass_count": 2
+      },
+      {
+        "direction": "column:2<-3",
+        "family_variables": 2,
+        "plane_variables": 1,
+        "family_movable_pairs": [
+          [
+            4,
+            5
+          ],
+          [
+            7,
+            8
+          ]
+        ],
+        "plane_movable_pairs": [
+          [
+            2,
+            3
+          ]
+        ],
+        "local_witness_components": [
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "local_witness_spanning_forest": [
+          {
+            "left_variable": 0,
+            "right_variable": 1,
+            "witness_child_position": 9,
+            "witness_child": [
+              [
+                0,
+                1
+              ],
+              [
+                3,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 2,
+            "witness_child_position": 43,
+            "witness_child": [
+              [
+                1,
+                2
+              ],
+              [
+                0,
+                4
+              ]
+            ]
+          }
+        ],
+        "full_shadow_witness_components": [],
+        "full_shadow_witness_spanning_forest": [],
+        "visible_pass_count": 2,
+        "full_flag_pass_count": 2
+      },
+      {
+        "direction": "column:2<-4",
+        "family_variables": 10,
+        "plane_variables": 1,
+        "family_movable_pairs": [
+          [
+            30,
+            32
+          ],
+          [
+            60,
+            62
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            13,
+            15
+          ],
+          [
+            33,
+            35
+          ],
+          [
+            63,
+            65
+          ],
+          [
+            6,
+            8
+          ],
+          [
+            16,
+            18
+          ],
+          [
+            36,
+            38
+          ],
+          [
+            66,
+            68
+          ]
+        ],
+        "plane_movable_pairs": [
+          [
+            2,
+            4
+          ]
+        ],
+        "local_witness_components": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ]
+        ],
+        "local_witness_spanning_forest": [
+          {
+            "left_variable": 2,
+            "right_variable": 3,
+            "witness_child_position": 9,
+            "witness_child": [
+              [
+                0,
+                1
+              ],
+              [
+                3,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 2,
+            "right_variable": 6,
+            "witness_child_position": 9,
+            "witness_child": [
+              [
+                0,
+                1
+              ],
+              [
+                3,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 2,
+            "right_variable": 7,
+            "witness_child_position": 9,
+            "witness_child": [
+              [
+                0,
+                1
+              ],
+              [
+                3,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 4,
+            "right_variable": 8,
+            "witness_child_position": 19,
+            "witness_child": [
+              [
+                0,
+                2
+              ],
+              [
+                3,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 3,
+            "witness_child_position": 23,
+            "witness_child": [
+              [
+                0,
+                3
+              ],
+              [
+                0,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 4,
+            "witness_child_position": 23,
+            "witness_child": [
+              [
+                0,
+                3
+              ],
+              [
+                0,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 1,
+            "right_variable": 2,
+            "witness_child_position": 43,
+            "witness_child": [
+              [
+                1,
+                2
+              ],
+              [
+                0,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 1,
+            "right_variable": 5,
+            "witness_child_position": 43,
+            "witness_child": [
+              [
+                1,
+                2
+              ],
+              [
+                0,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 1,
+            "right_variable": 10,
+            "witness_child_position": 43,
+            "witness_child": [
+              [
+                1,
+                2
+              ],
+              [
+                0,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 1,
+            "right_variable": 9,
+            "witness_child_position": 46,
+            "witness_child": [
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                4
+              ]
+            ]
+          }
+        ],
+        "full_shadow_witness_components": [],
+        "full_shadow_witness_spanning_forest": [],
+        "visible_pass_count": 2,
+        "full_flag_pass_count": 2
+      },
+      {
+        "direction": "column:3<-4",
+        "family_variables": 8,
+        "plane_variables": 0,
+        "family_movable_pairs": [
+          [
+            31,
+            32
+          ],
+          [
+            61,
+            62
+          ],
+          [
+            13,
+            14
+          ],
+          [
+            33,
+            34
+          ],
+          [
+            63,
+            64
+          ],
+          [
+            16,
+            17
+          ],
+          [
+            36,
+            37
+          ],
+          [
+            66,
+            67
+          ]
+        ],
+        "plane_movable_pairs": [],
+        "local_witness_components": [
+          [
+            0,
+            2,
+            3,
+            5,
+            6
+          ],
+          [
+            1,
+            4,
+            7
+          ]
+        ],
+        "local_witness_spanning_forest": [
+          {
+            "left_variable": 3,
+            "right_variable": 6,
+            "witness_child_position": 18,
+            "witness_child": [
+              [
+                0,
+                2
+              ],
+              [
+                2,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 2,
+            "witness_child_position": 23,
+            "witness_child": [
+              [
+                0,
+                3
+              ],
+              [
+                0,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 3,
+            "witness_child_position": 23,
+            "witness_child": [
+              [
+                0,
+                3
+              ],
+              [
+                0,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 0,
+            "right_variable": 5,
+            "witness_child_position": 26,
+            "witness_child": [
+              [
+                0,
+                3
+              ],
+              [
+                1,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 1,
+            "right_variable": 4,
+            "witness_child_position": 43,
+            "witness_child": [
+              [
+                1,
+                2
+              ],
+              [
+                0,
+                4
+              ]
+            ]
+          },
+          {
+            "left_variable": 1,
+            "right_variable": 7,
+            "witness_child_position": 46,
+            "witness_child": [
+              [
+                1,
+                2
+              ],
+              [
+                1,
+                4
+              ]
+            ]
+          }
+        ],
+        "full_shadow_witness_components": [],
+        "full_shadow_witness_spanning_forest": [],
+        "visible_pass_count": 4,
+        "full_flag_pass_count": 2
+      }
+    ]
+  },
+  "visible_equality_exceptions": {
+    "orbit0": {},
+    "orbit1": {
+      "row:2<-3": {
+        "count": 2,
+        "full_shadow_sizes": [
+          54,
+          54
+        ],
+        "family_assignments": [
+          "000111",
+          "111000"
+        ],
+        "plane_assignments": [
+          "0",
+          "0"
+        ]
+      },
+      "row:3<-4": {
+        "count": 2,
+        "full_shadow_sizes": [
+          58,
+          58
+        ],
+        "family_assignments": [
+          "0011111111",
+          "1100000000"
+        ],
+        "plane_assignments": [
+          "0",
+          "0"
+        ]
+      }
+    },
+    "orbit13": {
+      "row:2<-3": {
+        "count": 2,
+        "full_shadow_sizes": [
+          51,
+          51
+        ],
+        "family_assignments": [
+          "01",
+          "10"
+        ],
+        "plane_assignments": [
+          "0",
+          "0"
+        ]
+      },
+      "column:3<-4": {
+        "count": 2,
+        "full_shadow_sizes": [
+          53,
+          53
+        ],
+        "family_assignments": [
+          "01101101",
+          "10010010"
+        ],
+        "plane_assignments": [
+          "0",
+          "0"
+        ]
+      }
+    }
+  },
+  "all_full_flag_preimages_are_uniform_endpoints": true,
+  "script_sha256_before_output": "A51B949830BA684970F87F2C41C25206D1DF0453C9884E328096AB8246C03186"
+}

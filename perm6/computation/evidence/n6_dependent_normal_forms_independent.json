@@ -1,0 +1,85 @@
+{
+  "actual_dimension_pairs": [
+    [
+      11,
+      14
+    ],
+    [
+      11,
+      14
+    ],
+    [
+      13,
+      18
+    ],
+    [
+      14,
+      20
+    ],
+    [
+      15,
+      20
+    ]
+  ],
+  "arithmetic": "fractions.Fraction; sparse exact Gaussian elimination",
+  "claim_type": "independent exact QQ derivative audit",
+  "imports_primary_module": false,
+  "negative_regressions": {
+    "T2_formal_pair_vs_actual_D2": [
+      12,
+      11
+    ],
+    "T2_formal_triple_vs_actual_D3": [
+      17,
+      14
+    ],
+    "T3_formal_triple_vs_actual_D3": [
+      19,
+      18
+    ]
+  },
+  "profiles": [
+    {
+      "actual_D2_dimension": 11,
+      "actual_D3_dimension": 14,
+      "formal_pair_product_span_dimension": 11,
+      "formal_triple_product_span_dimension": 14,
+      "normal_form": "x1*x2*x3*x4*x5*(x1+...+x1)",
+      "s": 1
+    },
+    {
+      "actual_D2_dimension": 11,
+      "actual_D3_dimension": 14,
+      "formal_pair_product_span_dimension": 12,
+      "formal_triple_product_span_dimension": 17,
+      "normal_form": "x1*x2*x3*x4*x5*(x1+...+x2)",
+      "s": 2
+    },
+    {
+      "actual_D2_dimension": 13,
+      "actual_D3_dimension": 18,
+      "formal_pair_product_span_dimension": 13,
+      "formal_triple_product_span_dimension": 19,
+      "normal_form": "x1*x2*x3*x4*x5*(x1+...+x3)",
+      "s": 3
+    },
+    {
+      "actual_D2_dimension": 14,
+      "actual_D3_dimension": 20,
+      "formal_pair_product_span_dimension": 14,
+      "formal_triple_product_span_dimension": 20,
+      "normal_form": "x1*x2*x3*x4*x5*(x1+...+x4)",
+      "s": 4
+    },
+    {
+      "actual_D2_dimension": 15,
+      "actual_D3_dimension": 20,
+      "formal_pair_product_span_dimension": 15,
+      "formal_triple_product_span_dimension": 20,
+      "normal_form": "x1*x2*x3*x4*x5*(x1+...+x5)",
+      "s": 5
+    }
+  ],
+  "reads_frozen_json": false,
+  "status": "PASS"
+}

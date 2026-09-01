@@ -1,0 +1,39 @@
+{
+  "artifacts": {
+    "pdf_sha256": "960402FCB7BF16B51FC7C1FB4E641C5E982583A15EF1F38A9F5E6E866F94A7C8",
+    "reviewer_zip_sha256": "CE8F639C532B754B4E0A8EEC959D97E461426C9F9402B923D6A13056F46DFF33"
+  },
+  "base_sha": "4099a5e7a15e7c041f3b01bb3e32b7ce39340dbe",
+  "base_tree_sha": "a2110c75f9355c3ff8f2f7619f9c928130e9061d",
+  "ci_binding": {
+    "location": "exact-head pull-request conversation",
+    "status": "PENDING_FIRST_EXACT_HEAD_RUN"
+  },
+  "external_review_status": {
+    "model_assisted_conditional_pass": true,
+    "named_independent_human_review_complete": false,
+    "verified_baseline": false
+  },
+  "format": "perm345-v14-clean-main-review-boundary-v1",
+  "local_validation": {
+    "english_only_scan": "PASS",
+    "evidence_class": "AUTHOR_INTERNAL_EXACT_REPLAY",
+    "full_unittest_count": 123,
+    "full_unittest_status": "PASS",
+    "python_flint_version": "0.8.0",
+    "python_version": "3.14.4",
+    "reviewer_packet_entries": 110,
+    "reviewer_packet_replay": "PASS",
+    "specialized_outer_verifier_tests": 6
+  },
+  "outer_manifest_sha256": "72030743BF6D8A43D69BE95A3E96C5B80E860A7E0E461C00D1310C3A5C6DE018",
+  "proof_head_sha": "25d85935a8d0d64ae7d568f02f4a77ac11009c0a",
+  "proof_tree_sha": "327f00a6cf28fdc37a176407ed75fb263eafb6ec",
+  "verifier_command": [
+    "python",
+    "-B",
+    "evidence/small_n/v14_repaired/verify_assets.py",
+    "--replay"
+  ],
+  "verifier_git_blob_sha": "cb0675b66fef4e99d29480fbaaabccb0d29a97b2"
+}

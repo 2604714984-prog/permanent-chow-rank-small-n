@@ -1,0 +1,50 @@
+{
+  "characteristic_zero_conclusion": "For every one-intersection Chow flag covered by the geometric degeneration theorem, p(W_10) <= 26.",
+  "claim_type": "standalone exact finite certificate",
+  "coordinate_five_plane_orbits": {
+    "attached": 1200,
+    "external": 900
+  },
+  "dimension_five": {
+    "factor_span_dimension": 5,
+    "flags_checked": 864864,
+    "histogram": {
+      "10": 2238,
+      "11": 10854,
+      "12": 44407,
+      "13": 88827,
+      "14": 143962,
+      "15": 166486,
+      "16": 149800,
+      "17": 110299,
+      "18": 67615,
+      "19": 37787,
+      "20": 19798,
+      "21": 11214,
+      "22": 7394,
+      "23": 2768,
+      "24": 944,
+      "25": 451,
+      "26": 20
+    },
+    "maximum": 26,
+    "orbit_maxima": {
+      "attached": 26,
+      "external": 22
+    }
+  },
+  "dimension_four": {
+    "factor_span_dimension": 4,
+    "flags_checked": 21600,
+    "histogram": {
+      "20": 12300,
+      "21": 5700,
+      "22": 3600
+    },
+    "maximum": 22
+  },
+  "field": "F_3 reduction of integral divided-power coordinate matrices",
+  "quadratic_quotient_weights": 225,
+  "reduced_base_matrix_kernel_dimension": 100,
+  "status": "PASS"
+}

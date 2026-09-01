@@ -1,0 +1,3217 @@
+{
+  "status": "PASS_EXACT_INTEGER_INVERSE_SHIFT_LAYER_ORBIT_REDUCTION_AUDIT",
+  "evidence_role": "diagnostic for the arbitrary-profile layer identity, stabilizer orbit schemes, and Petersen equality cases; no 42-row direction table is an active proof dependency",
+  "n_profile": [
+    0,
+    3,
+    5,
+    6,
+    6,
+    8,
+    9,
+    9,
+    10,
+    10,
+    10
+  ],
+  "delta": [
+    3,
+    2,
+    1,
+    0,
+    2,
+    1,
+    0,
+    1,
+    0,
+    0
+  ],
+  "low_partitions": [
+    [
+      10,
+      10,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      4,
+      4,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      10,
+      4,
+      3,
+      3,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      9,
+      4,
+      4,
+      3,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      8,
+      4,
+      4,
+      4,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      7,
+      5,
+      4,
+      4,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      5,
+      5,
+      5,
+      5,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      4,
+      4,
+      4,
+      4,
+      4,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      4,
+      4,
+      4,
+      4,
+      2,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      4,
+      4,
+      4,
+      4,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    [
+      4,
+      4,
+      4,
+      3,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0
+    ],
+    [
+      4,
+      4,
+      4,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      4,
+      4,
+      3,
+      3,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ]
+  ],
+  "four_vertex_minimizer_count": 5,
+  "seven_vertex_minimizer_count": 10,
+  "profiles": {
+    "row_type1": {
+      "profile": [
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        4,
+        0,
+        4,
+        10
+      ],
+      "sorted_partition": [
+        10,
+        4,
+        4,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "stabilizer_size": 2,
+      "transposition_orbit_count": 7,
+      "transposition_orbits": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ]
+        ],
+        [
+          [
+            0,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ]
+        ],
+        [
+          [
+            1,
+            2
+          ]
+        ],
+        [
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            4
+          ]
+        ],
+        [
+          [
+            3,
+            4
+          ]
+        ]
+      ],
+      "diagnostic_transposition_records": [
+        {
+          "transposition": [
+            0,
+            1
+          ],
+          "scheme": [
+            [
+              4,
+              2
+            ]
+          ],
+          "widths": [
+            2
+          ],
+          "good_count_vectors": [
+            {
+              "counts": [
+                0
+              ],
+              "partition": [
+                10,
+                4,
+                4,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "ferrers_shadow": 48,
+              "layer_defect": 0,
+              "bound": 48
+            },
+            {
+              "counts": [
+                1
+              ],
+              "partition": [
+                10,
+                4,
+                3,
+                3,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "ferrers_shadow": 48,
+              "layer_defect": 0,
+              "bound": 48
+            },
+            {
+              "counts": [
+                2
+              ],
+              "partition": [
+                10,
+                4,
+                4,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "ferrers_shadow": 48,
+              "layer_defect": 0,
+              "bound": 48
+            }
+          ],
+          "noncoherent_good_count": 1
+        },
+        {
+          "transposition": [
+            0,
+            2
+          ],
+          "scheme": [
+            [
+              4,
+              2
+            ]
+          ],
+          "widths": [
+            2
+          ],
+          "good_count_vectors": [
+            {
+              "counts": [
+                0
+              ],
+              "partition": [
+                10,
+                4,
+                4,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "ferrers_shadow": 48,
+              "layer_defect": 0,
+              "bound": 48
+            },
+            {
+              "counts": [
+                1
+              ],
+              "partition": [
+                10,
+                4,
+                3,
+                3,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "ferrers_shadow": 48,
+              "layer_defect": 0,
+              "bound": 48
+            },
+            {
+              "counts": [
+                2
+              ],
+              "partition": [
+                10,
+                4,
+                4,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "ferrers_shadow": 48,
+              "layer_defect": 0,
+              "bound": 48
+            }
+          ],
+          "noncoherent_good_count": 1
+        },
+        {
+          "transposition": [
+            0,
+            3
+          ],
+          "scheme": [
+            [
+              10,
+              2
+            ]
+          ],
+          "widths": [
+            8
+          ],
+          "good_count_vectors": [
+            {
+              "counts": [
+                0
+              ],
+              "partition": [
+                10,
+                4,
+                4,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "ferrers_shadow": 48,
+              "layer_defect": 0,
+              "bound": 48
+            },
+            {
+              "counts": [
+                1
+              ],
+              "partition": [
+                9,
+                4,
+                4,
+                3,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "ferrers_shadow": 48,
+              "layer_defect": 0,
+              "bound": 48
+            },
+            {
+              "counts": [
+                2
+              ],
+              "partition": [
+                8,
+                4,
+                4,
+                4,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "ferrers_shadow": 48,
+              "layer_defect": 0,
+              "bound": 48
+            },
+            {
+              "counts": [
+                3
+              ],
+              "partition": [
+                7,
+                5,
+                4,
+                4,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "ferrers_shadow": 49,
+              "layer_defect": 0,
+              "bound": 49
+            },
+            {
+              "counts": [
+                5
+              ],
+              "partition": [
+                7,
+                5,
+                4,
+                4,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "ferrers_shadow": 49,
+              "layer_defect": 0,
+              "bound": 49
+            },
+            {
+              "counts": [
+                6
+              ],
+              "partition": [
+                8,
+                4,
+                4,
+                4,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "ferrers_shadow": 48,
+              "layer_defect": 0,
+              "bound": 48
+            },
+            {
+              "counts": [
+                7
+              ],
+              "partition": [
+                9,
+                4,
+                4,
+                3,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "ferrers_shadow": 48,
+              "layer_defect": 0,
+              "bound": 48
+            },
+            {
+              "counts": [
+                8
+              ],
+              "partition": [
+                10,
+                4,
+                4,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "ferrers_shadow": 48,
+              "layer_defect": 0,
+              "bound": 48
+            }
+          ],
+          "noncoherent_good_count": 6
+        },
+        {
+          "transposition": [
+            0,
+            4
+          ],
+          "scheme": [
+            [
+              10,
+              0
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              4,
+              0
+            ]
+          ],
+          "widths": [
+            10,
+            4,
+            4
+          ],
+          "good_count_vectors": [
+            {
+              "counts": [
+                0,
+                0,
+                0
+              ],
+              "partition": [
+                10,
+                4,
+                4,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "ferrers_shadow": 48,
+              "layer_defect": 0,
+              "bound": 48
+            },
+            {
+              "counts": [
+                10,
+                4,
+                4
+              ],
+              "partition": [
+                10,
+                4,
+                4,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "ferrers_shadow": 48,
+              "layer_defect": 0,
+              "bound": 48
+            }
+          ],
+          "noncoherent_good_count": 0
+        },
+        {
+          "transposition": [
+            1,
+            2
+          ],
+          "scheme": [],
+          "widths": [],
+          "good_count_vectors": [
+            {
+              "counts": [],
+              "partition": [
+                10,
+                4,
+                4,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "ferrers_shadow": 48,
+              "layer_defect": 0,
+              "bound": 48
+            }
+          ],
+          "noncoherent_good_count": 0
+        },
+        {
+          "transposition": [
+            1,
+            3
+          ],
+          "scheme": [
+            [
+              10,
+              4
+            ]
+          ],
+          "widths": [
+            6
+          ],
+          "good_count_vectors": [
+            {
+              "counts": [
+                0
+              ],
+              "partition": [
+                10,
+                4,
+                4,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "ferrers_shadow": 48,
+              "layer_defect": 0,
+              "bound": 48
+            },
+            {
+              "counts": [
+                6
+              ],
+              "partition": [
+                10,
+                4,
+                4,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "ferrers_shadow": 48,
+              "layer_defect": 0,
+              "bound": 48
+            }
+          ],
+          "noncoherent_good_count": 0
+        },
+        {
+          "transposition": [
+            1,
+            4
+          ],
+          "scheme": [
+            [
+              10,
+              0
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              2,
+              0
+            ]
+          ],
+          "widths": [
+            10,
+            4,
+            2
+          ],
+          "good_count_vectors": [
+            {
+              "counts": [
+                0,
+                0,
+                0
+              ],
+              "partition": [
+                10,
+                4,
+                4,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "ferrers_shadow": 48,
+              "layer_defect": 0,
+              "bound": 48
+            },
+            {
+              "counts": [
+                10,
+                4,
+                2
+              ],
+              "partition": [
+                10,
+                4,
+                4,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "ferrers_shadow": 48,
+              "layer_defect": 0,
+              "bound": 48
+            }
+          ],
+          "noncoherent_good_count": 0
+        },
+        {
+          "transposition": [
+            2,
+            3
+          ],
+          "scheme": [
+            [
+              10,
+              4
+            ]
+          ],
+          "widths": [
+            6
+          ],
+          "good_count_vectors": [
+            {
+              "counts": [
+                0
+              ],
+              "partition": [
+                10,
+                4,
+                4,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "ferrers_shadow": 48,
+              "layer_defect": 0,
+              "bound": 48
+            },
+            {
+              "counts": [
+                6
+              ],
+              "partition": [
+                10,
+                4,
+                4,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "ferrers_shadow": 48,
+              "layer_defect": 0,
+              "bound": 48
+            }
+          ],
+          "noncoherent_good_count": 0
+        },
+        {
+          "transposition": [
+            2,
+            4
+          ],
+          "scheme": [
+            [
+              10,
+              0
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              2,
+              0
+            ]
+          ],
+          "widths": [
+            10,
+            4,
+            2
+          ],
+          "good_count_vectors": [
+            {
+              "counts": [
+                0,
+                0,
+                0
+              ],
+              "partition": [
+                10,
+                4,
+                4,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "ferrers_shadow": 48,
+              "layer_defect": 0,
+              "bound": 48
+            },
+            {
+              "counts": [
+                10,
+                4,
+                2
+              ],
+              "partition": [
+                10,
+                4,
+                4,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "ferrers_shadow": 48,
+              "layer_defect": 0,
+              "bound": 48
+            }
+          ],
+          "noncoherent_good_count": 0
+        },
+        {
+          "transposition": [
+            3,
+            4
+          ],
+          "scheme": [
+            [
+              4,
+              0
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              2,
+              0
+            ]
+          ],
+          "widths": [
+            4,
+            4,
+            2
+          ],
+          "good_count_vectors": [
+            {
+              "counts": [
+                0,
+                0,
+                0
+              ],
+              "partition": [
+                10,
+                4,
+                4,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "ferrers_shadow": 48,
+              "layer_defect": 0,
+              "bound": 48
+            },
+            {
+              "counts": [
+                4,
+                4,
+                2
+              ],
+              "partition": [
+                10,
+                4,
+                4,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "ferrers_shadow": 48,
+              "layer_defect": 0,
+              "bound": 48
+            }
+          ],
+          "noncoherent_good_count": 0
+        }
+      ]
+    },
+    "row_type13": {
+      "profile": [
+        0,
+        0,
+        0,
+        4,
+        0,
+        0,
+        4,
+        0,
+        5,
+        7
+      ],
+      "sorted_partition": [
+        7,
+        5,
+        4,
+        4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "stabilizer_size": 2,
+      "transposition_orbit_count": 7,
+      "transposition_orbits": [
+        [
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            4
+          ]
+        ],
+        [
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            2,
+            4
+          ]
+        ],
+        [
+          [
+            3,
+            4
+          ]
+        ]
+      ],
+      "diagnostic_transposition_records": [
+        {
+          "transposition": [
+            0,
+            1
+          ],
+          "scheme": [],
+          "widths": [],
+          "good_count_vectors": [
+            {
+              "counts": [],
+              "partition": [
+                7,
+                5,
+                4,
+                4,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "ferrers_shadow": 49,
+              "layer_defect": 0,
+              "bound": 49
+            }
+          ],
+          "noncoherent_good_count": 0
+        },
+        {
+          "transposition": [
+            0,
+            2
+          ],
+          "scheme": [
+            [
+              5,
+              4
+            ]
+          ],
+          "widths": [
+            1
+          ],
+          "good_count_vectors": [
+            {
+              "counts": [
+                0
+              ],
+              "partition": [
+                7,
+                5,
+                4,
+                4,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "ferrers_shadow": 49,
+              "layer_defect": 0,
+              "bound": 49
+            },
+            {
+              "counts": [
+                1
+              ],
+              "partition": [
+                7,
+                5,
+                4,
+                4,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "ferrers_shadow": 49,
+              "layer_defect": 0,
+              "bound": 49
+            }
+          ],
+          "noncoherent_good_count": 0
+        },
+        {
+          "transposition": [
+            0,
+            3
+          ],
+          "scheme": [
+            [
+              7,
+              4
+            ]
+          ],
+          "widths": [
+            3
+          ],
+          "good_count_vectors": [
+            {
+              "counts": [
+                0
+              ],
+              "partition": [
+                7,
+                5,
+                4,
+                4,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "ferrers_shadow": 49,
+              "layer_defect": 0,
+              "bound": 49
+            },
+            {
+              "counts": [
+                3
+              ],
+              "partition": [
+                7,
+                5,
+                4,
+                4,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "ferrers_shadow": 49,
+              "layer_defect": 0,
+              "bound": 49
+            }
+          ],
+          "noncoherent_good_count": 0
+        },
+        {
+          "transposition": [
+            0,
+            4
+          ],
+          "scheme": [
+            [
+              7,
+              0
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              4,
+              0
+            ]
+          ],
+          "widths": [
+            7,
+            5,
+            4
+          ],
+          "good_count_vectors": [
+            {
+              "counts": [
+                0,
+                0,
+                0
+              ],
+              "partition": [
+                7,
+                5,
+                4,
+                4,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "ferrers_shadow": 49,
+              "layer_defect": 0,
+              "bound": 49
+            },
+            {
+              "counts": [
+                7,
+                5,
+                4
+              ],
+              "partition": [
+                7,
+                5,
+                4,
+                4,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "ferrers_shadow": 49,
+              "layer_defect": 0,
+              "bound": 49
+            }
+          ],
+          "noncoherent_good_count": 0
+        },
+        {
+          "transposition": [
+            1,
+            2
+          ],
+          "scheme": [
+            [
+              5,
+              4
+            ]
+          ],
+          "widths": [
+            1
+          ],
+          "good_count_vectors": [
+            {
+              "counts": [
+                0
+              ],
+              "partition": [
+                7,
+                5,
+                4,
+                4,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "ferrers_shadow": 49,
+              "layer_defect": 0,
+              "bound": 49
+            },
+            {
+              "counts": [
+                1
+              ],
+              "partition": [
+                7,
+                5,
+                4,
+                4,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "ferrers_shadow": 49,
+              "layer_defect": 0,
+              "bound": 49
+            }
+          ],
+          "noncoherent_good_count": 0
+        },
+        {
+          "transposition": [
+            1,
+            3
+          ],
+          "scheme": [
+            [
+              7,
+              4
+            ]
+          ],
+          "widths": [
+            3
+          ],
+          "good_count_vectors": [
+            {
+              "counts": [
+                0
+              ],
+              "partition": [
+                7,
+                5,
+                4,
+                4,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "ferrers_shadow": 49,
+              "layer_defect": 0,
+              "bound": 49
+            },
+            {
+              "counts": [
+                3
+              ],
+              "partition": [
+                7,
+                5,
+                4,
+                4,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "ferrers_shadow": 49,
+              "layer_defect": 0,
+              "bound": 49
+            }
+          ],
+          "noncoherent_good_count": 0
+        },
+        {
+          "transposition": [
+            1,
+            4
+          ],
+          "scheme": [
+            [
+              7,
+              0
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              4,
+              0
+            ]
+          ],
+          "widths": [
+            7,
+            5,
+            4
+          ],
+          "good_count_vectors": [
+            {
+              "counts": [
+                0,
+                0,
+                0
+              ],
+              "partition": [
+                7,
+                5,
+                4,
+                4,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "ferrers_shadow": 49,
+              "layer_defect": 0,
+              "bound": 49
+            },
+            {
+              "counts": [
+                7,
+                5,
+                4
+              ],
+              "partition": [
+                7,
+                5,
+                4,
+                4,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "ferrers_shadow": 49,
+              "layer_defect": 0,
+              "bound": 49
+            }
+          ],
+          "noncoherent_good_count": 0
+        },
+        {
+          "transposition": [
+            2,
+            3
+          ],
+          "scheme": [
+            [
+              7,
+              5
+            ]
+          ],
+          "widths": [
+            2
+          ],
+          "good_count_vectors": [
+            {
+              "counts": [
+                0
+              ],
+              "partition": [
+                7,
+                5,
+                4,
+                4,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "ferrers_shadow": 49,
+              "layer_defect": 0,
+              "bound": 49
+            },
+            {
+              "counts": [
+                2
+              ],
+              "partition": [
+                7,
+                5,
+                4,
+                4,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "ferrers_shadow": 49,
+              "layer_defect": 0,
+              "bound": 49
+            }
+          ],
+          "noncoherent_good_count": 0
+        },
+        {
+          "transposition": [
+            2,
+            4
+          ],
+          "scheme": [
+            [
+              7,
+              0
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              4,
+              0
+            ]
+          ],
+          "widths": [
+            7,
+            4,
+            4
+          ],
+          "good_count_vectors": [
+            {
+              "counts": [
+                0,
+                0,
+                0
+              ],
+              "partition": [
+                7,
+                5,
+                4,
+                4,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "ferrers_shadow": 49,
+              "layer_defect": 0,
+              "bound": 49
+            },
+            {
+              "counts": [
+                7,
+                4,
+                4
+              ],
+              "partition": [
+                7,
+                5,
+                4,
+                4,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "ferrers_shadow": 49,
+              "layer_defect": 0,
+              "bound": 49
+            }
+          ],
+          "noncoherent_good_count": 0
+        },
+        {
+          "transposition": [
+            3,
+            4
+          ],
+          "scheme": [
+            [
+              5,
+              0
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              4,
+              0
+            ]
+          ],
+          "widths": [
+            5,
+            4,
+            4
+          ],
+          "good_count_vectors": [
+            {
+              "counts": [
+                0,
+                0,
+                0
+              ],
+              "partition": [
+                7,
+                5,
+                4,
+                4,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "ferrers_shadow": 49,
+              "layer_defect": 0,
+              "bound": 49
+            },
+            {
+              "counts": [
+                5,
+                4,
+                4
+              ],
+              "partition": [
+                7,
+                5,
+                4,
+                4,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "ferrers_shadow": 49,
+              "layer_defect": 0,
+              "bound": 49
+            }
+          ],
+          "noncoherent_good_count": 0
+        }
+      ]
+    },
+    "column_type1": {
+      "profile": [
+        1,
+        1,
+        1,
+        3,
+        1,
+        1,
+        3,
+        1,
+        4,
+        4
+      ],
+      "sorted_partition": [
+        4,
+        4,
+        3,
+        3,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "stabilizer_size": 4,
+      "transposition_orbit_count": 5,
+      "transposition_orbits": [
+        [
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            4
+          ]
+        ],
+        [
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            4
+          ]
+        ]
+      ],
+      "diagnostic_transposition_records": [
+        {
+          "transposition": [
+            0,
+            1
+          ],
+          "scheme": [],
+          "widths": [],
+          "good_count_vectors": [
+            {
+              "counts": [],
+              "partition": [
+                4,
+                4,
+                3,
+                3,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "ferrers_shadow": 48,
+              "layer_defect": 0,
+              "bound": 48
+            }
+          ],
+          "noncoherent_good_count": 0
+        },
+        {
+          "transposition": [
+            0,
+            2
+          ],
+          "scheme": [
+            [
+              4,
+              3
+            ]
+          ],
+          "widths": [
+            1
+          ],
+          "good_count_vectors": [
+            {
+              "counts": [
+                0
+              ],
+              "partition": [
+                4,
+                4,
+                3,
+                3,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "ferrers_shadow": 48,
+              "layer_defect": 0,
+              "bound": 48
+            },
+            {
+              "counts": [
+                1
+              ],
+              "partition": [
+                4,
+                4,
+                3,
+                3,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "ferrers_shadow": 48,
+              "layer_defect": 0,
+              "bound": 48
+            }
+          ],
+          "noncoherent_good_count": 0
+        },
+        {
+          "transposition": [
+            0,
+            3
+          ],
+          "scheme": [
+            [
+              4,
+              3
+            ]
+          ],
+          "widths": [
+            1
+          ],
+          "good_count_vectors": [
+            {
+              "counts": [
+                0
+              ],
+              "partition": [
+                4,
+                4,
+                3,
+                3,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "ferrers_shadow": 48,
+              "layer_defect": 0,
+              "bound": 48
+            },
+            {
+              "counts": [
+                1
+              ],
+              "partition": [
+                4,
+                4,
+                3,
+                3,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "ferrers_shadow": 48,
+              "layer_defect": 0,
+              "bound": 48
+            }
+          ],
+          "noncoherent_good_count": 0
+        },
+        {
+          "transposition": [
+            0,
+            4
+          ],
+          "scheme": [
+            [
+              4,
+              1
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              3,
+              1
+            ]
+          ],
+          "widths": [
+            3,
+            3,
+            2
+          ],
+          "good_count_vectors": [
+            {
+              "counts": [
+                0,
+                0,
+                0
+              ],
+              "partition": [
+                4,
+                4,
+                3,
+                3,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "ferrers_shadow": 48,
+              "layer_defect": 0,
+              "bound": 48
+            },
+            {
+              "counts": [
+                3,
+                3,
+                2
+              ],
+              "partition": [
+                4,
+                4,
+                3,
+                3,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "ferrers_shadow": 48,
+              "layer_defect": 0,
+              "bound": 48
+            }
+          ],
+          "noncoherent_good_count": 0
+        },
+        {
+          "transposition": [
+            1,
+            2
+          ],
+          "scheme": [
+            [
+              4,
+              3
+            ]
+          ],
+          "widths": [
+            1
+          ],
+          "good_count_vectors": [
+            {
+              "counts": [
+                0
+              ],
+              "partition": [
+                4,
+                4,
+                3,
+                3,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "ferrers_shadow": 48,
+              "layer_defect": 0,
+              "bound": 48
+            },
+            {
+              "counts": [
+                1
+              ],
+              "partition": [
+                4,
+                4,
+                3,
+                3,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "ferrers_shadow": 48,
+              "layer_defect": 0,
+              "bound": 48
+            }
+          ],
+          "noncoherent_good_count": 0
+        },
+        {
+          "transposition": [
+            1,
+            3
+          ],
+          "scheme": [
+            [
+              4,
+              3
+            ]
+          ],
+          "widths": [
+            1
+          ],
+          "good_count_vectors": [
+            {
+              "counts": [
+                0
+              ],
+              "partition": [
+                4,
+                4,
+                3,
+                3,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "ferrers_shadow": 48,
+              "layer_defect": 0,
+              "bound": 48
+            },
+            {
+              "counts": [
+                1
+              ],
+              "partition": [
+                4,
+                4,
+                3,
+                3,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "ferrers_shadow": 48,
+              "layer_defect": 0,
+              "bound": 48
+            }
+          ],
+          "noncoherent_good_count": 0
+        },
+        {
+          "transposition": [
+            1,
+            4
+          ],
+          "scheme": [
+            [
+              4,
+              1
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              3,
+              1
+            ]
+          ],
+          "widths": [
+            3,
+            3,
+            2
+          ],
+          "good_count_vectors": [
+            {
+              "counts": [
+                0,
+                0,
+                0
+              ],
+              "partition": [
+                4,
+                4,
+                3,
+                3,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "ferrers_shadow": 48,
+              "layer_defect": 0,
+              "bound": 48
+            },
+            {
+              "counts": [
+                3,
+                3,
+                2
+              ],
+              "partition": [
+                4,
+                4,
+                3,
+                3,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "ferrers_shadow": 48,
+              "layer_defect": 0,
+              "bound": 48
+            }
+          ],
+          "noncoherent_good_count": 0
+        },
+        {
+          "transposition": [
+            2,
+            3
+          ],
+          "scheme": [],
+          "widths": [],
+          "good_count_vectors": [
+            {
+              "counts": [],
+              "partition": [
+                4,
+                4,
+                3,
+                3,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "ferrers_shadow": 48,
+              "layer_defect": 0,
+              "bound": 48
+            }
+          ],
+          "noncoherent_good_count": 0
+        },
+        {
+          "transposition": [
+            2,
+            4
+          ],
+          "scheme": [
+            [
+              4,
+              1
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              3,
+              1
+            ]
+          ],
+          "widths": [
+            3,
+            2,
+            2
+          ],
+          "good_count_vectors": [
+            {
+              "counts": [
+                0,
+                0,
+                0
+              ],
+              "partition": [
+                4,
+                4,
+                3,
+                3,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "ferrers_shadow": 48,
+              "layer_defect": 0,
+              "bound": 48
+            },
+            {
+              "counts": [
+                3,
+                2,
+                2
+              ],
+              "partition": [
+                4,
+                4,
+                3,
+                3,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "ferrers_shadow": 48,
+              "layer_defect": 0,
+              "bound": 48
+            }
+          ],
+          "noncoherent_good_count": 0
+        },
+        {
+          "transposition": [
+            3,
+            4
+          ],
+          "scheme": [
+            [
+              4,
+              1
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              3,
+              1
+            ]
+          ],
+          "widths": [
+            3,
+            2,
+            2
+          ],
+          "good_count_vectors": [
+            {
+              "counts": [
+                0,
+                0,
+                0
+              ],
+              "partition": [
+                4,
+                4,
+                3,
+                3,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "ferrers_shadow": 48,
+              "layer_defect": 0,
+              "bound": 48
+            },
+            {
+              "counts": [
+                3,
+                2,
+                2
+              ],
+              "partition": [
+                4,
+                4,
+                3,
+                3,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+              ],
+              "ferrers_shadow": 48,
+              "layer_defect": 0,
+              "bound": 48
+            }
+          ],
+          "noncoherent_good_count": 0
+        }
+      ]
+    },
+    "column_type13": {
+      "profile": [
+        0,
+        0,
+        1,
+        4,
+        0,
+        1,
+        4,
+        2,
+        4,
+        4
+      ],
+      "sorted_partition": [
+        4,
+        4,
+        4,
+        4,
+        2,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "stabilizer_size": 2,
+      "transposition_orbit_count": 7,
+      "transposition_orbits": [
+        [
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            4
+          ]
+        ],
+        [
+          [
+            2,
+            3
+          ]
+        ],
+        [
+          [
+            2,
+            4
+          ]
+        ],
+        [
+          [
+            3,
+            4
+          ]
+        ]
+      ],
+      "diagnostic_transposition_records": [
+        {
+          "transposition": [
+            0,
+            1
+          ],
+          "scheme": [],
+          "widths": [],
+          "good_count_vectors": [
+            {
+              "counts": [],
+              "partition": [
+                4,
+                4,
+                4,
+                4,
+                2,
+                1,
+                1,
+                0,
+                0,
+                0
+              ],
+              "ferrers_shadow": 49,
+              "layer_defect": 0,
+              "bound": 49
+            }
+          ],
+          "noncoherent_good_count": 0
+        },
+        {
+          "transposition": [
+            0,
+            2
+          ],
+          "scheme": [
+            [
+              2,
+              1
+            ]
+          ],
+          "widths": [
+            1
+          ],
+          "good_count_vectors": [
+            {
+              "counts": [
+                0
+              ],
+              "partition": [
+                4,
+                4,
+                4,
+                4,
+                2,
+                1,
+                1,
+                0,
+                0,
+                0
+              ],
+              "ferrers_shadow": 49,
+              "layer_defect": 0,
+              "bound": 49
+            },
+            {
+              "counts": [
+                1
+              ],
+              "partition": [
+                4,
+                4,
+                4,
+                4,
+                2,
+                1,
+                1,
+                0,
+                0,
+                0
+              ],
+              "ferrers_shadow": 49,
+              "layer_defect": 0,
+              "bound": 49
+            }
+          ],
+          "noncoherent_good_count": 0
+        },
+        {
+          "transposition": [
+            0,
+            3
+          ],
+          "scheme": [
+            [
+              2,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "widths": [
+            2,
+            1
+          ],
+          "good_count_vectors": [
+            {
+              "counts": [
+                0,
+                0
+              ],
+              "partition": [
+                4,
+                4,
+                4,
+                4,
+                2,
+                1,
+                1,
+                0,
+                0,
+                0
+              ],
+              "ferrers_shadow": 49,
+              "layer_defect": 0,
+              "bound": 49
+            },
+            {
+              "counts": [
+                1,
+                0
+              ],
+              "partition": [
+                4,
+                4,
+                4,
+                4,
+                1,
+                1,
+                1,
+                1,
+                0,
+                0
+              ],
+              "ferrers_shadow": 48,
+              "layer_defect": 0,
+              "bound": 48
+            },
+            {
+              "counts": [
+                1,
+                1
+              ],
+              "partition": [
+                4,
+                4,
+                4,
+                4,
+                1,
+                1,
+                1,
+                1,
+                0,
+                0
+              ],
+              "ferrers_shadow": 48,
+              "layer_defect": 0,
+              "bound": 48
+            },
+            {
+              "counts": [
+                2,
+                1
+              ],
+              "partition": [
+                4,
+                4,
+                4,
+                4,
+                2,
+                1,
+                1,
+                0,
+                0,
+                0
+              ],
+              "ferrers_shadow": 49,
+              "layer_defect": 0,
+              "bound": 49
+            }
+          ],
+          "noncoherent_good_count": 2
+        },
+        {
+          "transposition": [
+            0,
+            4
+          ],
+          "scheme": [
+            [
+              4,
+              1
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              4,
+              0
+            ]
+          ],
+          "widths": [
+            3,
+            4,
+            4
+          ],
+          "good_count_vectors": [
+            {
+              "counts": [
+                0,
+                0,
+                0
+              ],
+              "partition": [
+                4,
+                4,
+                4,
+                4,
+                2,
+                1,
+                1,
+                0,
+                0,
+                0
+              ],
+              "ferrers_shadow": 49,
+              "layer_defect": 0,
+              "bound": 49
+            },
+            {
+              "counts": [
+                3,
+                4,
+                4
+              ],
+              "partition": [
+                4,
+                4,
+                4,
+                4,
+                2,
+                1,
+                1,
+                0,
+                0,
+                0
+              ],
+              "ferrers_shadow": 49,
+              "layer_defect": 0,
+              "bound": 49
+            }
+          ],
+          "noncoherent_good_count": 0
+        },
+        {
+          "transposition": [
+            1,
+            2
+          ],
+          "scheme": [
+            [
+              2,
+              1
+            ]
+          ],
+          "widths": [
+            1
+          ],
+          "good_count_vectors": [
+            {
+              "counts": [
+                0
+              ],
+              "partition": [
+                4,
+                4,
+                4,
+                4,
+                2,
+                1,
+                1,
+                0,
+                0,
+                0
+              ],
+              "ferrers_shadow": 49,
+              "layer_defect": 0,
+              "bound": 49
+            },
+            {
+              "counts": [
+                1
+              ],
+              "partition": [
+                4,
+                4,
+                4,
+                4,
+                2,
+                1,
+                1,
+                0,
+                0,
+                0
+              ],
+              "ferrers_shadow": 49,
+              "layer_defect": 0,
+              "bound": 49
+            }
+          ],
+          "noncoherent_good_count": 0
+        },
+        {
+          "transposition": [
+            1,
+            3
+          ],
+          "scheme": [
+            [
+              2,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "widths": [
+            2,
+            1
+          ],
+          "good_count_vectors": [
+            {
+              "counts": [
+                0,
+                0
+              ],
+              "partition": [
+                4,
+                4,
+                4,
+                4,
+                2,
+                1,
+                1,
+                0,
+                0,
+                0
+              ],
+              "ferrers_shadow": 49,
+              "layer_defect": 0,
+              "bound": 49
+            },
+            {
+              "counts": [
+                1,
+                0
+              ],
+              "partition": [
+                4,
+                4,
+                4,
+                4,
+                1,
+                1,
+                1,
+                1,
+                0,
+                0
+              ],
+              "ferrers_shadow": 48,
+              "layer_defect": 0,
+              "bound": 48
+            },
+            {
+              "counts": [
+                1,
+                1
+              ],
+              "partition": [
+                4,
+                4,
+                4,
+                4,
+                1,
+                1,
+                1,
+                1,
+                0,
+                0
+              ],
+              "ferrers_shadow": 48,
+              "layer_defect": 0,
+              "bound": 48
+            },
+            {
+              "counts": [
+                2,
+                1
+              ],
+              "partition": [
+                4,
+                4,
+                4,
+                4,
+                2,
+                1,
+                1,
+                0,
+                0,
+                0
+              ],
+              "ferrers_shadow": 49,
+              "layer_defect": 0,
+              "bound": 49
+            }
+          ],
+          "noncoherent_good_count": 2
+        },
+        {
+          "transposition": [
+            1,
+            4
+          ],
+          "scheme": [
+            [
+              4,
+              1
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              4,
+              0
+            ]
+          ],
+          "widths": [
+            3,
+            4,
+            4
+          ],
+          "good_count_vectors": [
+            {
+              "counts": [
+                0,
+                0,
+                0
+              ],
+              "partition": [
+                4,
+                4,
+                4,
+                4,
+                2,
+                1,
+                1,
+                0,
+                0,
+                0
+              ],
+              "ferrers_shadow": 49,
+              "layer_defect": 0,
+              "bound": 49
+            },
+            {
+              "counts": [
+                3,
+                4,
+                4
+              ],
+              "partition": [
+                4,
+                4,
+                4,
+                4,
+                2,
+                1,
+                1,
+                0,
+                0,
+                0
+              ],
+              "ferrers_shadow": 49,
+              "layer_defect": 0,
+              "bound": 49
+            }
+          ],
+          "noncoherent_good_count": 0
+        },
+        {
+          "transposition": [
+            2,
+            3
+          ],
+          "scheme": [
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "widths": [
+            1,
+            1
+          ],
+          "good_count_vectors": [
+            {
+              "counts": [
+                0,
+                0
+              ],
+              "partition": [
+                4,
+                4,
+                4,
+                4,
+                2,
+                1,
+                1,
+                0,
+                0,
+                0
+              ],
+              "ferrers_shadow": 49,
+              "layer_defect": 0,
+              "bound": 49
+            },
+            {
+              "counts": [
+                1,
+                1
+              ],
+              "partition": [
+                4,
+                4,
+                4,
+                4,
+                2,
+                1,
+                1,
+                0,
+                0,
+                0
+              ],
+              "ferrers_shadow": 49,
+              "layer_defect": 0,
+              "bound": 49
+            }
+          ],
+          "noncoherent_good_count": 0
+        },
+        {
+          "transposition": [
+            2,
+            4
+          ],
+          "scheme": [
+            [
+              4,
+              2
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              4,
+              0
+            ]
+          ],
+          "widths": [
+            2,
+            4,
+            4
+          ],
+          "good_count_vectors": [
+            {
+              "counts": [
+                0,
+                0,
+                0
+              ],
+              "partition": [
+                4,
+                4,
+                4,
+                4,
+                2,
+                1,
+                1,
+                0,
+                0,
+                0
+              ],
+              "ferrers_shadow": 49,
+              "layer_defect": 0,
+              "bound": 49
+            },
+            {
+              "counts": [
+                2,
+                4,
+                4
+              ],
+              "partition": [
+                4,
+                4,
+                4,
+                4,
+                2,
+                1,
+                1,
+                0,
+                0,
+                0
+              ],
+              "ferrers_shadow": 49,
+              "layer_defect": 0,
+              "bound": 49
+            }
+          ],
+          "noncoherent_good_count": 0
+        },
+        {
+          "transposition": [
+            3,
+            4
+          ],
+          "scheme": [
+            [
+              4,
+              2
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              4,
+              1
+            ]
+          ],
+          "widths": [
+            2,
+            3,
+            3
+          ],
+          "good_count_vectors": [
+            {
+              "counts": [
+                0,
+                0,
+                0
+              ],
+              "partition": [
+                4,
+                4,
+                4,
+                4,
+                2,
+                1,
+                1,
+                0,
+                0,
+                0
+              ],
+              "ferrers_shadow": 49,
+              "layer_defect": 0,
+              "bound": 49
+            },
+            {
+              "counts": [
+                2,
+                3,
+                3
+              ],
+              "partition": [
+                4,
+                4,
+                4,
+                4,
+                2,
+                1,
+                1,
+                0,
+                0,
+                0
+              ],
+              "ferrers_shadow": 49,
+              "layer_defect": 0,
+              "bound": 49
+            }
+          ],
+          "noncoherent_good_count": 0
+        }
+      ]
+    }
+  },
+  "summary": {
+    "base_profiles": 4,
+    "diagnostic_unordered_transpositions": 40,
+    "stabilizer_transposition_orbit_types": 26,
+    "exceptional_movement_schemes": 3,
+    "exceptional_transpositions": 5,
+    "active_42_direction_table_required": false,
+    "remaining_nonuniform_family_states_after_union_bounds": 14
+  },
+  "script_sha256_before_output": "31B37F27D95E025296D7CCBED917A71D1B10EAA8C8C5FB675657D810AA8F31D0"
+}

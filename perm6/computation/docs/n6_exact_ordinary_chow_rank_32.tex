@@ -1,0 +1,505 @@
+\documentclass[11pt]{amsart}
+
+\usepackage[letterpaper,margin=1in]{geometry}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{booktabs}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage[colorlinks=true,linkcolor=blue!45!black,citecolor=blue!45!black,
+  urlcolor=blue!45!black]{hyperref}
+
+\newcommand{\K}{\mathbb{K}}
+\newcommand{\Sym}{\operatorname{Sym}}
+\newcommand{\Span}{\operatorname{span}}
+\newcommand{\im}{\operatorname{im}}
+\newcommand{\rank}{\operatorname{rank}}
+\newcommand{\essdim}{\operatorname{essdim}}
+\newcommand{\perm}{\operatorname{perm}}
+\newcommand{\CR}{\mathrm{R}_{\mathrm{Chow},\K}}
+\newcommand{\cD}{\mathcal{D}}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+
+\title[The Chow Rank of the Six-by-Six Permanent]
+{The Ordinary Chow Rank of the Six-by-Six Permanent}
+\author{}
+\date{August 21, 2026; post-audit revision}
+\subjclass[2020]{Primary 15A69; Secondary 14N05, 68V05}
+\keywords{permanent, Chow rank, product rank, catalecticant,
+computer-assisted proof}
+
+\begin{document}
+
+\begin{abstract}
+Let \(\perm_6\) be the permanent of a generic \(6\) by \(6\) matrix.
+Over an algebraically closed field of characteristic zero, we prove that its
+ordinary Chow rank is \(32\). The upper bound is Glynn's identity. The lower
+bound combines a symmetric image-span inequality with a half-defect estimate
+for arbitrary quotient derivative symbols of a sextic Chow term. A proof
+audit exposed a false identification between formal subproduct spaces and
+actual derivative spaces in two dependent-factor profiles. This revision
+removes that identification, computes the actual spaces, and uses weaker
+sufficient local rows. The finite parts have an exact rational replay. No
+border-rank or general-\(n\) equality is claimed.
+\end{abstract}
+
+\maketitle
+
+\section{Statement and permanent derivatives}
+
+Let \(\K\) be algebraically closed of characteristic zero and let
+\[
+ V=\Span_{\K}\{x_{rc}:1\le r,c\le6\},\qquad \dim V=36.
+\]
+For a homogeneous polynomial \(f\), let \(\cD_j(f)\subset\Sym^jV\) be the
+span of all derivatives whose remaining degree is \(j\), and put
+\(E_j=\cD_j(\perm_6)\).
+
+\begin{definition}
+A sextic Chow term is a nonzero product \(T=\ell_1\cdots\ell_6\). The
+ordinary Chow rank \(\CR(f)\) is the least number of such terms whose sum is
+\(f\).
+\end{definition}
+
+\begin{theorem}\label{thm:main}
+Over \(\K\),
+\[
+ \boxed{\CR(\perm_6)=32.}
+\]
+\end{theorem}
+
+We first record the permanent derivative facts used below.
+
+\begin{lemma}[Permanent derivative tower]\label{lem:tower}
+One has
+\[
+ \dim E_3=400,\qquad \dim E_2=225,\qquad
+ \partial E_2=V,
+\]
+and
+\[
+ E_2^{(1)}:=\{g\in\Sym^3V:\partial g\subset E_2\}=E_3. \tag{1.1}
+\]
+Moreover, every nonzero element of \(E_2\) has quadratic matrix rank at
+least four, and every nonzero element of \(E_3\) has at least nine essential
+variables.
+\end{lemma}
+
+\begin{proof}
+The \(3\times3\) and \(2\times2\) subpermanents are bases of \(E_3\) and
+\(E_2\): distinct row-column blocks have disjoint matching supports. Their
+numbers are \(\binom63^2=400\) and \(\binom62^2=225\). Differentiating a
+rectangle permanent at one corner gives the opposite variable, proving
+\(\partial E_2=V\).
+
+The inclusion \(E_3\subset E_2^{(1)}\) is immediate. Conversely, suppose
+all first derivatives of a cubic \(g\) lie in \(E_2\). Row and column
+multiaffinity forces every monomial of \(g\) to be a three-edge matching.
+Inside a fixed \(3\times3\) block, the rectangle relations equate
+coefficients of matching monomials related by a transposition. Transpositions
+connect all six matchings, so each block is a scalar subpermanent. This proves
+(1.1).
+
+The row-column diagonal torus has distinct characters on each subpermanent
+basis. A generic one-parameter subgroup degenerates any nonzero element to a
+single basis element, while matrix and first-catalectic ranks cannot increase
+under specialization. A rectangle permanent has quadratic rank four. The
+nine first derivatives of a \(3\times3\) permanent are independent. The two
+rank floors follow.
+\end{proof}
+
+\section{Small permanent-quadratic intersections}
+
+\begin{lemma}\label{lem:small-intersection}
+If \(L\subset V\) has dimension at most six, then
+\[
+ \dim(E_2\cap\Sym^2L)\le3.
+\]
+If \(\dim L\le5\), the upper bound improves to one.
+\end{lemma}
+
+\begin{proof}
+For fixed \(a,q\), the locus in \(\operatorname{Gr}(a,V)\) on which
+\(\dim(E_2\cap\Sym^2L)\ge q\) is closed, projective, and stable under the
+connected row-column torus. If nonempty, the Borel fixed-point theorem gives
+a torus-fixed point. Since the variable weight spaces are one-dimensional,
+such a point is a coordinate \(a\)-plane, equivalently a bipartite graph with
+\(a\) edges.
+
+At a coordinate point, the intersection has one independent rectangle
+permanent for each four-cycle. Two distinct four-cycles have a union of at
+least six edges. If the union has exactly six edges, it is \(K_{2,3}\) or
+\(K_{3,2}\), which has exactly three four-cycles. Thus five edges support at
+most one four-cycle and six edges support at most three.
+\end{proof}
+
+\section{Local linear algebra}
+
+Polarization gives an injective map
+\[
+ \delta:\Sym^3L\longrightarrow L\otimes\Sym^2L.
+\]
+
+\begin{lemma}[Kernel-preimage bound]\label{lem:kernel-preimage}
+Let \(P:L\twoheadrightarrow D\) have rank \(d\), let \(S=\ker P\), and
+let \(R\subset\Sym^2L\). Then
+\[
+ \ker((P\otimes1)\delta)=\Sym^3S,
+\]
+and the inverse image of \(D\otimes R\) has dimension at most
+\[
+ \boxed{\binom{\dim L-d+2}{3}+d\dim R.} \tag{3.1}
+\]
+\end{lemma}
+
+\begin{proof}
+The first equality follows in coordinates: all derivatives in directions
+modulo \(S\) vanish precisely when the cubic depends only on \(S\). The
+inverse image of a subspace has dimension at most the kernel dimension plus
+the subspace dimension, which gives (3.1).
+\end{proof}
+
+\begin{lemma}[Squarefree projected-symbol table]\label{lem:squarefree}
+Let \(\widehat L=\K^6\) with basis \(z_1,\ldots,z_6\), and let
+\(\widehat F,\widehat U\) be the squarefree quadratic and cubic spaces. Set
+\[
+ \delta(z_az_bz_c)=z_a\otimes z_bz_c+z_b\otimes z_az_c
+                    +z_c\otimes z_az_b.
+\]
+If \(P:\widehat L\twoheadrightarrow D\) has rank \(d\) and
+\(R\subset\widehat F\) has dimension at most \(r\le3\), then the following
+table is a rowwise lower bound for
+\(\rank((P\otimes q_R)\delta)\):
+\[
+\begin{array}{c|rrrrrrr}
+r\backslash d&0&1&2&3&4&5&6\\ \hline
+0&0&10&16&19&20&20&20\\
+1&0&9&14&16&16&20&20\\
+2&0&8&12&13&16&19&20\\
+3&0&7&10&10&15&17&19.
+\end{array} \tag{3.2}
+\]
+\end{lemma}
+
+\begin{proof}
+The diagonal torus preserves \(\delta\). The orbit closure of
+\((\ker P,R)\) in the relevant product of Grassmannians contains a fixed
+point, and rank can only drop in specialization. Thus \(\ker P\) may be
+taken as a vertex set \(B\), and \(R\) as the span of an edge set \(A\)
+with at most \(r\) edges. Put \(O=[6]\setminus B\).
+
+Distinct source cubics have disjoint output supports. The number of killed
+cubics is
+\[
+ \binom{|B|}{3}+|O|e_A(B)
+ +\sum_{b\in B}\binom{\deg_A(b,O)}2
+ +\#\{\text{triangles of }A[O]\}. \tag{3.3}
+\]
+Inspection of edge sets of size at most three gives (3.2). The exact replay
+independently checks all 45,696 coordinate pairs and records a minimizer for
+each entry.
+\end{proof}
+
+\section{The half-defect estimate}
+
+Let \(T=\ell_1\cdots\ell_6\ne0\), and set
+\[
+ L=\Span\{\ell_1,\ldots,\ell_6\},\quad
+ U=\cD_3(T),\quad u=\dim U,
+\]
+\[
+ F=\cD_2(T),\quad R=F\cap E_2.
+\]
+For a quotient \(P:L\twoheadrightarrow D\) of rank \(d\), define
+\[
+ \beta_{P,R}:U\xrightarrow{\delta}L\otimes F
+ \xrightarrow{P\otimes q_R}D\otimes(F/R).
+\]
+
+\begin{proposition}[Half-defect quotient-symbol estimate]
+\label{prop:half-defect}
+For every nonzero sextic Chow term and every quotient of its actual factor
+span,
+\[
+ \boxed{\rank\beta_{P,R}+\frac{20-u}{2}\ge\frac{10}{3}d.} \tag{4.1}
+\]
+\end{proposition}
+
+\begin{proof}
+Write \(\ell=\dim L\).
+
+\paragraph{Factor span at most four.}
+Choose \(\ell\) independent factors as coordinates. A generic diagonal
+one-parameter subgroup degenerates the remaining factors to unique coordinate
+initials, so \(T\) specializes to
+\[
+ x_1^{m_1}\cdots x_\ell^{m_\ell},\qquad m_j\ge1,
+ \qquad\sum_jm_j=6.
+\]
+Middle rank cannot increase in the limit. Counting degree-three divisors over
+the positive partitions of six gives
+\[
+ \ell=1,2,3,4\quad\Longrightarrow\quad u\ge1,2,4,8. \tag{4.2}
+\]
+Lemma~\ref{lem:small-intersection} gives \(\dim R\le1\). For
+\(0<d<\ell\), Lemma~\ref{lem:kernel-preimage} gives
+\[
+ \rank\beta_{P,R}\ge
+ \max\left\{0,u-\binom{\ell-d+2}{3}-d\right\}. \tag{4.3}
+\]
+At \(d=\ell\), a kernel cubic lies in \(E_2^{(1)}=E_3\), but it is
+supported on at most six essential variables, contrary to
+Lemma~\ref{lem:tower}. Thus the full symbol is injective. Minimizing over the
+conservative interval from (4.2) to
+\(\min\{20,\binom{\ell+2}{3}\}\) gives
+\[
+\begin{array}{c|c}
+\ell&\rank\beta_{P,R}+(20-u)/2\text{ for }d=0,\ldots,\ell\\ \hline
+4&(0,9/2,8,10,14)\\
+3&(5,15/2,9,12)\\
+2&(8,9,11)\\
+1&(19/2,21/2).
+\end{array} \tag{4.4}
+\]
+
+\paragraph{Six independent factors.}
+Here \(u=20\), the actual derivative spaces are the squarefree spaces, and
+\(\dim R\le3\). The last row of (3.2), improved at \(d=6\) by full-symbol
+injectivity, gives
+\[
+ (0,7,10,10,15,17,20). \tag{4.5}
+\]
+
+\paragraph{Five-dimensional factor span.}
+The unique relation among the six factors puts \(T\), after changing and
+rescaling coordinates, into exactly one form
+\[
+ T_s=x_1x_2x_3x_4x_5(x_1+\cdots+x_s),\qquad1\le s\le5. \tag{4.6}
+\]
+Lemma~\ref{lem:small-intersection} gives \(\dim R\le1\). Exact
+differentiation of the actual polynomial gives
+\[
+\begin{array}{c|rrrrr}
+s&1&2&3&4&5\\ \hline
+\dim F&11&11&13&14&15\\
+u&14&14&18&20&20.
+\end{array} \tag{4.7}
+\]
+The replay constructs the order-four and order-three derivative matrices of
+(4.6) in the ordinary monomial bases and row-reduces them over \(\mathbb Q\).
+
+For \(s=3\), the actual space \(U\) contains the nine squarefree cubics
+other than \(x_1x_2x_3\). For \(s=4,5\), it contains all ten squarefree
+cubics. These subspaces are stable under the diagonal torus. A nonzero
+rank-one quotient specializes to a coordinate functional, whose rank is the
+number of displayed triples through that coordinate: at least five for
+\(s=3\) and six for \(s=4,5\). Quotienting by \(R\) loses at most one.
+Together with (3.1) and full-symbol injectivity this gives
+\[
+\begin{array}{c|c|c}
+s&u&\rank\beta_{P,R}+(20-u)/2\\ \hline
+4,5&20&(0,5,8,13,15,20)\\
+3&18&(1,5,7,12,14,19).
+\end{array} \tag{4.8}
+\]
+
+For \(s=1\), the actual \(U\) is spanned by the ten squarefree cubics and
+\(x_1^2x_j\), \(2\le j\le5\). If a direction
+\(\lambda=\sum a_j\partial_{x_j}\) has \(a_j\ne0\) for some \(j\ge2\),
+the six squarefree cubics divisible by \(x_j\) and \(x_1^2x_j\), projected
+modulo \(x_jL\), give seven independent quadrics. The pure \(x_1\)
+direction has rank ten.
+
+For \(s=2\), a basis consists of the seven squarefree cubics containing at
+most one of \(x_1,x_2\), the six cubics
+\[
+ x_2^2x_j+2x_1x_2x_j,\qquad
+ x_1x_2x_j+\tfrac12x_1^2x_j\quad(3\le j\le5),
+\]
+and \(x_1x_2(x_1+x_2)\). If \(a_j\ne0\) for some \(j\ge3\), five
+squarefree inputs and the two special inputs give, modulo \(x_jL\), five
+distinct pair monomials and the independent quadrics
+\(x_2^2+2x_1x_2\) and \(x_1x_2+\tfrac12x_1^2\). If
+\(\lambda=a_1\partial_{x_1}+a_2\partial_{x_2}\), the image contains the
+three pair monomials on \(x_3,x_4,x_5\), a nonzero direction in each
+\(\Span\{x_1x_j,x_2x_j\}\), and the nonzero quadratic
+\[
+ a_2x_1^2+2(a_1+a_2)x_1x_2+a_1x_2^2.
+\]
+Thus every nonzero directional map has rank at least seven, and every
+positive-rank quotient symbol has rank at least six after reducing by \(R\).
+
+For \(d=4\), let \(S=\ker P\) be a line and let \(v\) lie in the symbol
+kernel. Its four complementary derivatives span a subspace of \(R\). If
+that span were nonzero, the essential-variable space of \(v\) would have
+dimension at most two and would support a nonzero element of \(E_2\),
+contrary to the rank-four floor in Lemma~\ref{lem:tower}. Hence
+\(v\in\Sym^3S\), so the kernel has dimension at most one. The full symbol at
+\(d=5\) is injective. With (3.1), the \(s=1,2\) row is
+\[
+ (3,9,9,10,16,17). \tag{4.9}
+\]
+
+Every entry of (4.4), (4.5), (4.8), and (4.9) is at least \(10d/3\).
+This proves (4.1).
+\end{proof}
+
+\begin{remark}[The repaired boundary]\label{rem:repair}
+The formal pair- and triple-product spans for \(T_2\) have dimensions 12
+and 17, while the actual derivative spaces have dimensions 11 and 14. For
+\(T_3\), the formal triple-product span has dimension 19 while the actual
+middle derivative space has dimension 18. The proof above deliberately uses
+the formal squarefree table only in the six-independent-factor case. The
+negative equalities are frozen as regression tests.
+\end{remark}
+
+\section{A symmetric image-span inequality}
+
+\begin{lemma}\label{lem:image-span}
+Let \(A_i:W^*\to W\) be symmetric maps, let \(r_i=\rank A_i\), and put
+\(D=\dim\sum_i\im A_i\). Then
+\[
+ \rank\Bigl(\sum_iA_i\Bigr)\ge2D-\sum_i r_i. \tag{5.1}
+\]
+\end{lemma}
+
+\begin{proof}
+Choose \(B_i:\K^{r_i}\to W\) onto \(\im A_i\). Symmetry gives
+\(\ker A_i=(\im A_i)^\perp\), so
+\(A_i=B_iJ_iB_i^*\) for an invertible symmetric \(J_i\). With
+\(B=[B_1\ \cdots\ B_N]\) and block-diagonal \(J\), Sylvester's inequality
+gives
+\[
+ \rank(BJB^*)\ge\rank(BJ)+\rank(B^*)-\sum_i r_i
+ =2D-\sum_i r_i.
+\]
+\end{proof}
+
+\section{The global lower bound}\label{sec:global}
+
+Suppose
+\[
+ \perm_6=\sum_{i=1}^NT_i
+\]
+with no zero summands. Let
+\[
+ A_i=C_{3,3}(T_i),\quad U_i=\im A_i,\quad u_i=\dim U_i,
+ \quad\delta_i=20-u_i,\quad\Delta=\sum_i\delta_i.
+\]
+Put \(U=\sum_iU_i\) and \(\dim U=400+h\). The sum of the symmetric maps
+\(A_i\) is the permanent middle catalecticant, with rank 400 and image
+\(E_3\). Lemma~\ref{lem:image-span} gives
+\[
+ \boxed{h\le10N-200-\frac\Delta2.} \tag{6.1}
+\]
+
+Let \(F_i=\cD_2(T_i)\), \(F=\sum_iF_i\), and \(Q=F/E_2\). Linearity of
+the derivative spaces gives \(E_2\subset F\). Blockwise differentiation
+modulo \(E_2\) defines
+\[
+ \widetilde\beta:\bigoplus_iU_i\longrightarrow V\otimes Q.
+\]
+Its kernel consists precisely of tuples for which every first derivative of
+\(\sum_i g_i\) lies in \(E_2\), equivalently
+\(\sum_i g_i\in E_3\) by Lemma~\ref{lem:tower}. Since \(E_3\subset U\),
+\[
+ \rank\widetilde\beta=\dim(U/E_3)=h. \tag{6.2}
+\]
+
+Let \(L_i\) be the actual factor span of \(T_i\). Since
+\(E_2\subset F\), \(\partial E_2=V\), and \(\partial F_i\subset L_i\),
+the spaces \(L_i\) span all 36 variables. Choose any ordering and put
+\[
+ W_i=\sum_{j\le i}L_j,
+ \qquad d_i=\dim(W_i/W_{i-1}),
+ \qquad\sum_i d_i=36.
+\]
+
+Let \(Z_i\subset L_i\otimes Q\) be the image of the \(i\)-th block and
+let \(H_i=\sum_{j\le i}Z_j\). Projection
+\[
+ \pi_i:W_i\otimes Q\longrightarrow(W_i/W_{i-1})\otimes Q
+\]
+kills \(H_{i-1}\), hence
+\[
+ \dim H_i-\dim H_{i-1}\ge\dim\pi_i(H_i)=\dim\pi_i(Z_i). \tag{6.3}
+\]
+On the current block, the first-factor map is
+\[
+ P_i:L_i\twoheadrightarrow L_i/(L_i\cap W_{i-1}),
+ \qquad\rank P_i=d_i.
+\]
+The natural map
+\[
+ F_i/(F_i\cap E_2)\longrightarrow F/E_2
+\]
+is injective. Therefore \(\dim\pi_i(Z_i)\) is exactly the local symbol rank
+in Proposition~\ref{prop:half-defect}. Summing (6.3) gives
+\[
+ \boxed{h\ge\sum_i\left(\frac{10}{3}d_i-\frac{\delta_i}{2}\right)
+ =120-\frac\Delta2.} \tag{6.4}
+\]
+Comparing (6.1) and (6.4) cancels the complete individual middle-rank defect
+and yields \(N\ge32\).
+
+For the reverse inequality, Glynn's identity \cite{Glynn2010} gives
+\[
+ \perm_6=\frac1{32}
+ \sum_{\epsilon_1=1,\ \epsilon_2,\ldots,\epsilon_6=\pm1}
+ \left(\prod_{r=1}^6\epsilon_r\right)
+ \prod_{c=1}^6\left(\sum_{r=1}^6\epsilon_rx_{rc}\right).
+\]
+Walsh cancellation leaves exactly the monomials that use each row once. This
+is a 32-term Chow decomposition. Theorem~\ref{thm:main} follows.
+
+\section{Exact replay and audit boundary}
+
+From the repository checkout, run
+\begin{verbatim}
+python scripts/n6_exact_ordinary_chow_rank_32.py \
+  --verify-json data/n6_exact_ordinary_chow_rank_32.json
+python -m unittest tests.test_n6_exact_ordinary_chow_rank_32 -v
+\end{verbatim}
+The first command derives the coordinate intersection maxima, all 45,696
+coordinate cases behind (3.2), the actual normal-form derivative ranks and
+squarefree subspaces in (4.7)--(4.8), the low-span monomial floors, and the
+final cancellation. It also records the formal/actual mismatches in
+Remark~\ref{rem:repair}.
+
+The Borel fixed-point reductions, prolongation identity, elementary
+directional arguments, symmetric image-span lemma, and filtration increment
+(6.3) are written proofs, not numerical inferences. This is an internal
+computation-assisted exact proof; named external peer review and
+proof-assistant formalization remain outstanding.
+
+\begin{remark}[Scope]
+The theorem concerns ordinary Chow rank over characteristic zero. It does not
+determine border Chow rank or prove \(\CR(\perm_n)=2^{n-1}\) for general
+\(n\). Product rank and Chow rank are used synonymously in the relevant
+literature; see \cite{IltenTeitler2016}.
+\end{remark}
+
+\begin{thebibliography}{9}
+
+\bibitem{Glynn2010}
+D.~G. Glynn,
+\emph{The permanent of a square matrix},
+European J. Combin. \textbf{31} (2010), no.~7, 1887--1891,
+\href{https://doi.org/10.1016/j.ejc.2010.01.010}
+{doi:10.1016/j.ejc.2010.01.010}.
+
+\bibitem{IltenTeitler2016}
+N.~Ilten and Z.~Teitler,
+\emph{Product ranks of the \(3\times3\) determinant and permanent},
+Canad. Math. Bull. \textbf{59} (2016), no.~2, 311--319,
+\href{https://doi.org/10.4153/CMB-2015-076-1}
+{doi:10.4153/CMB-2015-076-1}.
+
+\end{thebibliography}
+
+\end{document}

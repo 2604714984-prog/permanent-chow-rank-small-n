@@ -1,0 +1,1007 @@
+{
+  "certificate_files": {
+    "n5_flag_local_witness_forests_20260810.md": "AB1393F97BE7F4CB40A93CD536EE85D5071670051707673E512D1AA732A1C9EC",
+    "n5_flag_orbit0_full_shadow_witness_forests_20260810.md": "C59ECF59C54ECCB74101FD39E2AA6A96B50FD4E37A0F6B1A1062EF5E037B86E4"
+  },
+  "edge_count": 342,
+  "exceptional_two_component_checks": {
+    "orbit13:column:3<-4": {
+      "mixed_component_full_shadows": [
+        53,
+        53
+      ],
+      "mixed_component_visible_shadows": [
+        40,
+        40
+      ],
+      "uniform_endpoint_count": 2,
+      "variable_count": 8
+    },
+    "orbit13:row:2<-3": {
+      "mixed_component_full_shadows": [
+        51,
+        51
+      ],
+      "mixed_component_visible_shadows": [
+        40,
+        40
+      ],
+      "uniform_endpoint_count": 2,
+      "variable_count": 2
+    },
+    "orbit1:row:2<-3": {
+      "mixed_component_full_shadows": [
+        54,
+        54
+      ],
+      "mixed_component_visible_shadows": [
+        40,
+        40
+      ],
+      "uniform_endpoint_count": 2,
+      "variable_count": 6
+    },
+    "orbit1:row:3<-4": {
+      "mixed_component_full_shadows": [
+        58,
+        58
+      ],
+      "mixed_component_visible_shadows": [
+        40,
+        40
+      ],
+      "uniform_endpoint_count": 2,
+      "variable_count": 10
+    }
+  },
+  "imports_original_generator": false,
+  "local_boolean_assignments_checked": 5076,
+  "proof_dependency": false,
+  "record_counts": {
+    "orbit0": 8,
+    "orbit1": 21,
+    "orbit13": 21
+  },
+  "records": [
+    {
+      "components": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      ],
+      "direction": "row:0<-1",
+      "edges": 4,
+      "local_boolean_assignments_checked": 16,
+      "orbit": "orbit1",
+      "variables": 5
+    },
+    {
+      "components": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      ],
+      "direction": "row:0<-2",
+      "edges": 5,
+      "local_boolean_assignments_checked": 28,
+      "orbit": "orbit1",
+      "variables": 6
+    },
+    {
+      "components": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ]
+      ],
+      "direction": "row:0<-3",
+      "edges": 11,
+      "local_boolean_assignments_checked": 320,
+      "orbit": "orbit1",
+      "variables": 12
+    },
+    {
+      "components": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ]
+      ],
+      "direction": "row:0<-4",
+      "edges": 21,
+      "local_boolean_assignments_checked": 720,
+      "orbit": "orbit1",
+      "variables": 22
+    },
+    {
+      "components": [
+        [
+          0
+        ]
+      ],
+      "direction": "row:1<-2",
+      "edges": 0,
+      "local_boolean_assignments_checked": 0,
+      "orbit": "orbit1",
+      "variables": 1
+    },
+    {
+      "components": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      ],
+      "direction": "row:1<-3",
+      "edges": 6,
+      "local_boolean_assignments_checked": 34,
+      "orbit": "orbit1",
+      "variables": 7
+    },
+    {
+      "components": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ]
+      ],
+      "direction": "row:1<-4",
+      "edges": 16,
+      "local_boolean_assignments_checked": 308,
+      "orbit": "orbit1",
+      "variables": 17
+    },
+    {
+      "components": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          3,
+          4,
+          5
+        ]
+      ],
+      "direction": "row:2<-3",
+      "edges": 4,
+      "local_boolean_assignments_checked": 16,
+      "orbit": "orbit1",
+      "variables": 6
+    },
+    {
+      "components": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      ],
+      "direction": "row:2<-4",
+      "edges": 15,
+      "local_boolean_assignments_checked": 240,
+      "orbit": "orbit1",
+      "variables": 16
+    },
+    {
+      "components": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          8,
+          9
+        ]
+      ],
+      "direction": "row:3<-4",
+      "edges": 8,
+      "local_boolean_assignments_checked": 64,
+      "orbit": "orbit1",
+      "variables": 10
+    },
+    {
+      "components": [
+        [
+          0
+        ]
+      ],
+      "direction": "column:0<-1",
+      "edges": 0,
+      "local_boolean_assignments_checked": 0,
+      "orbit": "orbit1",
+      "variables": 1
+    },
+    {
+      "components": [
+        [
+          0,
+          1
+        ]
+      ],
+      "direction": "column:0<-2",
+      "edges": 1,
+      "local_boolean_assignments_checked": 2,
+      "orbit": "orbit1",
+      "variables": 2
+    },
+    {
+      "components": [
+        [
+          0,
+          1
+        ]
+      ],
+      "direction": "column:0<-3",
+      "edges": 1,
+      "local_boolean_assignments_checked": 2,
+      "orbit": "orbit1",
+      "variables": 2
+    },
+    {
+      "components": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      ],
+      "direction": "column:0<-4",
+      "edges": 9,
+      "local_boolean_assignments_checked": 98,
+      "orbit": "orbit1",
+      "variables": 10
+    },
+    {
+      "components": [
+        [
+          0
+        ]
+      ],
+      "direction": "column:1<-2",
+      "edges": 0,
+      "local_boolean_assignments_checked": 0,
+      "orbit": "orbit1",
+      "variables": 1
+    },
+    {
+      "components": [
+        [
+          0
+        ]
+      ],
+      "direction": "column:1<-3",
+      "edges": 0,
+      "local_boolean_assignments_checked": 0,
+      "orbit": "orbit1",
+      "variables": 1
+    },
+    {
+      "components": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      ],
+      "direction": "column:1<-4",
+      "edges": 8,
+      "local_boolean_assignments_checked": 50,
+      "orbit": "orbit1",
+      "variables": 9
+    },
+    {
+      "components": [],
+      "direction": "column:2<-3",
+      "edges": 0,
+      "local_boolean_assignments_checked": 0,
+      "orbit": "orbit1",
+      "variables": 0
+    },
+    {
+      "components": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      ],
+      "direction": "column:2<-4",
+      "edges": 7,
+      "local_boolean_assignments_checked": 44,
+      "orbit": "orbit1",
+      "variables": 8
+    },
+    {
+      "components": [],
+      "direction": "column:3<-2",
+      "edges": 0,
+      "local_boolean_assignments_checked": 0,
+      "orbit": "orbit1",
+      "variables": 0
+    },
+    {
+      "components": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      ],
+      "direction": "column:3<-4",
+      "edges": 7,
+      "local_boolean_assignments_checked": 44,
+      "orbit": "orbit1",
+      "variables": 8
+    },
+    {
+      "components": [
+        [
+          0
+        ]
+      ],
+      "direction": "row:0<-1",
+      "edges": 0,
+      "local_boolean_assignments_checked": 0,
+      "orbit": "orbit13",
+      "variables": 1
+    },
+    {
+      "components": [
+        [
+          0,
+          1,
+          2,
+          3
+        ]
+      ],
+      "direction": "row:0<-2",
+      "edges": 3,
+      "local_boolean_assignments_checked": 12,
+      "orbit": "orbit13",
+      "variables": 4
+    },
+    {
+      "components": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      ],
+      "direction": "row:0<-3",
+      "edges": 5,
+      "local_boolean_assignments_checked": 40,
+      "orbit": "orbit13",
+      "variables": 6
+    },
+    {
+      "components": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18
+        ]
+      ],
+      "direction": "row:0<-4",
+      "edges": 18,
+      "local_boolean_assignments_checked": 508,
+      "orbit": "orbit13",
+      "variables": 19
+    },
+    {
+      "components": [
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "direction": "row:1<-2",
+      "edges": 2,
+      "local_boolean_assignments_checked": 4,
+      "orbit": "orbit13",
+      "variables": 3
+    },
+    {
+      "components": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      ],
+      "direction": "row:1<-3",
+      "edges": 4,
+      "local_boolean_assignments_checked": 24,
+      "orbit": "orbit13",
+      "variables": 5
+    },
+    {
+      "components": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ]
+      ],
+      "direction": "row:1<-4",
+      "edges": 17,
+      "local_boolean_assignments_checked": 356,
+      "orbit": "orbit13",
+      "variables": 18
+    },
+    {
+      "components": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "direction": "row:2<-3",
+      "edges": 0,
+      "local_boolean_assignments_checked": 0,
+      "orbit": "orbit13",
+      "variables": 2
+    },
+    {
+      "components": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ]
+      ],
+      "direction": "row:2<-4",
+      "edges": 14,
+      "local_boolean_assignments_checked": 224,
+      "orbit": "orbit13",
+      "variables": 15
+    },
+    {
+      "components": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      ],
+      "direction": "row:3<-4",
+      "edges": 12,
+      "local_boolean_assignments_checked": 144,
+      "orbit": "orbit13",
+      "variables": 13
+    },
+    {
+      "components": [],
+      "direction": "column:0<-1",
+      "edges": 0,
+      "local_boolean_assignments_checked": 0,
+      "orbit": "orbit13",
+      "variables": 0
+    },
+    {
+      "components": [
+        [
+          0,
+          1
+        ]
+      ],
+      "direction": "column:0<-2",
+      "edges": 1,
+      "local_boolean_assignments_checked": 2,
+      "orbit": "orbit13",
+      "variables": 2
+    },
+    {
+      "components": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      ],
+      "direction": "column:0<-3",
+      "edges": 4,
+      "local_boolean_assignments_checked": 12,
+      "orbit": "orbit13",
+      "variables": 5
+    },
+    {
+      "components": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      ],
+      "direction": "column:0<-4",
+      "edges": 12,
+      "local_boolean_assignments_checked": 112,
+      "orbit": "orbit13",
+      "variables": 13
+    },
+    {
+      "components": [],
+      "direction": "column:1<-0",
+      "edges": 0,
+      "local_boolean_assignments_checked": 0,
+      "orbit": "orbit13",
+      "variables": 0
+    },
+    {
+      "components": [
+        [
+          0,
+          1
+        ]
+      ],
+      "direction": "column:1<-2",
+      "edges": 1,
+      "local_boolean_assignments_checked": 2,
+      "orbit": "orbit13",
+      "variables": 2
+    },
+    {
+      "components": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      ],
+      "direction": "column:1<-3",
+      "edges": 4,
+      "local_boolean_assignments_checked": 12,
+      "orbit": "orbit13",
+      "variables": 5
+    },
+    {
+      "components": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      ],
+      "direction": "column:1<-4",
+      "edges": 12,
+      "local_boolean_assignments_checked": 112,
+      "orbit": "orbit13",
+      "variables": 13
+    },
+    {
+      "components": [
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "direction": "column:2<-3",
+      "edges": 2,
+      "local_boolean_assignments_checked": 4,
+      "orbit": "orbit13",
+      "variables": 3
+    },
+    {
+      "components": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      ],
+      "direction": "column:2<-4",
+      "edges": 10,
+      "local_boolean_assignments_checked": 72,
+      "orbit": "orbit13",
+      "variables": 11
+    },
+    {
+      "components": [
+        [
+          0,
+          2,
+          3,
+          5,
+          6
+        ],
+        [
+          1,
+          4,
+          7
+        ]
+      ],
+      "direction": "column:3<-4",
+      "edges": 6,
+      "local_boolean_assignments_checked": 18,
+      "orbit": "orbit13",
+      "variables": 8
+    },
+    {
+      "components": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      ],
+      "direction": "row:0<-2",
+      "edges": 9,
+      "local_boolean_assignments_checked": 36,
+      "orbit": "orbit0",
+      "variables": 10
+    },
+    {
+      "components": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      ],
+      "direction": "row:0<-3",
+      "edges": 9,
+      "local_boolean_assignments_checked": 36,
+      "orbit": "orbit0",
+      "variables": 10
+    },
+    {
+      "components": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ]
+      ],
+      "direction": "row:0<-4",
+      "edges": 19,
+      "local_boolean_assignments_checked": 608,
+      "orbit": "orbit0",
+      "variables": 20
+    },
+    {
+      "components": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      ],
+      "direction": "row:1<-2",
+      "edges": 9,
+      "local_boolean_assignments_checked": 36,
+      "orbit": "orbit0",
+      "variables": 10
+    },
+    {
+      "components": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      ],
+      "direction": "row:1<-3",
+      "edges": 9,
+      "local_boolean_assignments_checked": 36,
+      "orbit": "orbit0",
+      "variables": 10
+    },
+    {
+      "components": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ]
+      ],
+      "direction": "row:1<-4",
+      "edges": 19,
+      "local_boolean_assignments_checked": 608,
+      "orbit": "orbit0",
+      "variables": 20
+    },
+    {
+      "components": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      ],
+      "direction": "row:2<-4",
+      "edges": 9,
+      "local_boolean_assignments_checked": 36,
+      "orbit": "orbit0",
+      "variables": 10
+    },
+    {
+      "components": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      ],
+      "direction": "row:3<-4",
+      "edges": 9,
+      "local_boolean_assignments_checked": 36,
+      "orbit": "orbit0",
+      "variables": 10
+    }
+  ],
+  "script_sha256_before_output": "B20948ED72AFDD13353D8CB68B6015A6BA31B685A528E77C28AEA82CF7F2772F",
+  "status": "PASS_EXACT_INTEGER_INDEPENDENT_WITNESS_FOREST_AUDIT"
+}

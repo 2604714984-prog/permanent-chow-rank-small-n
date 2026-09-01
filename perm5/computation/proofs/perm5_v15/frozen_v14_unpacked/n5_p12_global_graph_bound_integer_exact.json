@@ -1,0 +1,63 @@
+{
+  "status": "PASS",
+  "claim_type": "integer audit of the pure graph case split p12<=61",
+  "mu_0_through_11": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    4,
+    5,
+    6,
+    6,
+    7,
+    8,
+    9
+  ],
+  "one_crossing_bounds_by_square_count": {
+    "0": 59,
+    "1": 60,
+    "2": 54,
+    "3": 49,
+    "4": 61,
+    "5": 54,
+    "6": 42,
+    "7": 35,
+    "8": 28,
+    "9": 24,
+    "10": 21,
+    "11": 20
+  },
+  "two_crossing_bounds_by_square_count": {
+    "0": 59,
+    "1": 57,
+    "2": 53,
+    "3": 53,
+    "4": 61,
+    "5": 49,
+    "6": 42,
+    "7": 35,
+    "8": 31,
+    "9": 28,
+    "10": 27
+  },
+  "at_least_three_crossing_bounds": {
+    "3": 59,
+    "4": 58,
+    "5": 60,
+    "6": 61,
+    "7": 56,
+    "8": 57,
+    "9": 57,
+    "10": 56,
+    "11": 56,
+    "12": 55
+  },
+  "global_p12_upper": 61,
+  "exceptional_K5_plus_square_diagnostic_histogram": {
+    "56": 16,
+    "55": 84
+  },
+  "strict_evidence_note": "The global proof is the handwritten no-crossing formula plus cut marginal lemmas. The finite-field local-model comparison is diagnostic only."
+}

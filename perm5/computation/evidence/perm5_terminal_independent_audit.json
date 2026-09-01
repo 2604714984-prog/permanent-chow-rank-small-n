@@ -1,0 +1,50 @@
+{
+  "boolean_fourier": {
+    "RM_degree_at_most_2_dimension": 11,
+    "RM_degree_at_most_3_dimension": 15,
+    "baseline_catalecticant_rank": 10,
+    "field": "QQ",
+    "global_terminal_K_lower": 2215,
+    "masked_catalecticant_rank_histogram": {
+      "9": 600
+    },
+    "maximum_proper_shortening_nullity": 1,
+    "nine_Chow_term_K_upper": 2205,
+    "omega_size": 16,
+    "predicted_R4_dimension_histogram": {
+      "5": 40,
+      "6": 560
+    },
+    "rank_four_six_subsets": 600,
+    "status": "PASS",
+    "strict_gap": 10,
+    "uniform_R4_upper_bound": 7
+  },
+  "claim_type": "independent definition-level audit of the orbit-0 terminal certificate",
+  "imports_project_code": false,
+  "reads_frozen_payload": false,
+  "status": "PASS",
+  "strict_scope": "The script verifies the finite orbit-0 tangent and Fourier endpoint.  The geometric reduction to the three terminal orbits and the local-to-global symbol comparison remain written arguments in the manuscript.",
+  "tangent_graph": {
+    "coefficient_pattern": "one-variable anchors and two-variable (+1,-1) edges",
+    "column_permutation_group_order": 120,
+    "connected_component_count": 1214,
+    "distinct_one_term_equations": 3820,
+    "distinct_two_term_equations": 3960,
+    "every_kernel_component_fixed_setwise_by_columns": true,
+    "kernel_dimension_over_every_field": 8,
+    "status": "PASS",
+    "unanchored_component_count": 8,
+    "unanchored_component_sizes": [
+      20,
+      20,
+      20,
+      20,
+      30,
+      30,
+      50,
+      50
+    ],
+    "vertex_count": 4100
+  }
+}

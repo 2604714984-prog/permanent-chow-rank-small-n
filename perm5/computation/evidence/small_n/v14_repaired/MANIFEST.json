@@ -1,0 +1,21 @@
+{
+  "artifacts": [
+    {
+      "bytes": 3422375,
+      "file": "perm345_chow_rank_v14_repaired_zh_ams.pdf",
+      "sha256": "960402FCB7BF16B51FC7C1FB4E641C5E982583A15EF1F38A9F5E6E866F94A7C8"
+    },
+    {
+      "bytes": 1315441,
+      "file": "perm345_reviewer_submission_v14_repaired_20260812.zip",
+      "sha256": "CE8F639C532B754B4E0A8EEC959D97E461426C9F9402B923D6A13056F46DFF33"
+    }
+  ],
+  "active_computation_premise": "one-intersection flag endpoint bound",
+  "external_review_complete": false,
+  "format": "perm345-v14-repaired-release-assets-v1",
+  "pdf_embedded_files": 104,
+  "pdf_pages": 50,
+  "proof_status": "REPAIRED_INTERNAL_DRAFT_FRESH_EXTERNAL_REVIEW_PENDING",
+  "zip_entries": 110
+}
