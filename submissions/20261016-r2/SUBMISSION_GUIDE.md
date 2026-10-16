@@ -30,9 +30,10 @@ manuscripts omitted from that subset remain available in the repository.
 | MSC 2020 | Primary 15A69; Secondary 14N05, 68V05 | Primary 15A69; Secondary 14N05, 68V05 |
 | Theorem scope | Ordinary Chow rank 16, characteristic zero | Ordinary Chow rank 32, characteristic zero |
 
-Use the abstract in the corresponding current `main.tex`, with any nonstandard
-macro expanded when entering it in the metadata form. The metadata JSON here
-contains the exact source abstract for copying, not an approved final form.
+Use `abstract_arxiv_form_tex` in the metadata JSON for the abstract field;
+it expands the manuscript-specific permanent macro and uses dollar-delimited
+inline math. The exact original source abstract is also retained. These are
+prepared metadata values for author review, not an approved submission record.
 Select the subject classification appropriate to the work (the algebraic
 geometry category is a natural candidate); the author controls the final
 selection. Do not describe either paper as a border-rank result, a proof for

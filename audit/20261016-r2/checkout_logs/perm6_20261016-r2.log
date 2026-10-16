@@ -1,0 +1,66 @@
+INVENTORY_PASS submission_files=15 frozen_computation_files=7 historical_manifest_entries=13
+{
+  "arithmetic": "exact rational; standard library only",
+  "results": [
+    {
+      "E2_first_derivatives_span_V": true,
+      "basis_exactly_three_by_three_subpermanents": true,
+      "cubic_monomials": 8436,
+      "forced_zero_cubic_coefficients": 6036,
+      "n": 6,
+      "prolongation_dimension": 400,
+      "quadratic_monomials": 666,
+      "rectangle_basis_dimension": 225,
+      "status": "PASS",
+      "two_term_derivative_equations": 8100,
+      "variables": 36
+    }
+  ]
+}
+GLYNN_EXACT_PASS n=6 expanded_choices=1492992 permutation_monomials=720
+PASS: exact ordinary rank-32 finite proof payload matches
+test_actual_span_five_derivative_profiles (tests.test_n6_exact_ordinary_chow_rank_32.N6ExactOrdinaryChowRank32Test.test_actual_span_five_derivative_profiles) ... ok
+test_claim_boundary_is_ordinary_only (tests.test_n6_exact_ordinary_chow_rank_32.N6ExactOrdinaryChowRank32Test.test_claim_boundary_is_ordinary_only) ... ok
+test_defect_cancels_and_first_feasible_term_count_is_32 (tests.test_n6_exact_ordinary_chow_rank_32.N6ExactOrdinaryChowRank32Test.test_defect_cancels_and_first_feasible_term_count_is_32) ... ok
+test_every_half_defect_row_dominates_ten_thirds (tests.test_n6_exact_ordinary_chow_rank_32.N6ExactOrdinaryChowRank32Test.test_every_half_defect_row_dominates_ten_thirds) ... ok
+test_frozen_payload (tests.test_n6_exact_ordinary_chow_rank_32.N6ExactOrdinaryChowRank32Test.test_frozen_payload) ... ok
+test_rejected_formal_actual_shortcut_stays_rejected (tests.test_n6_exact_ordinary_chow_rank_32.N6ExactOrdinaryChowRank32Test.test_rejected_formal_actual_shortcut_stays_rejected) ... ok
+test_repaired_rows_are_derived_from_actual_profiles (tests.test_n6_exact_ordinary_chow_rank_32.N6ExactOrdinaryChowRank32Test.test_repaired_rows_are_derived_from_actual_profiles) ... ok
+test_small_permanent_intersection_coordinate_maxima (tests.test_n6_exact_ordinary_chow_rank_32.N6ExactOrdinaryChowRank32Test.test_small_permanent_intersection_coordinate_maxima) ... ok
+test_squarefree_symbol_table_is_derived_exactly (tests.test_n6_exact_ordinary_chow_rank_32.N6ExactOrdinaryChowRank32Test.test_squarefree_symbol_table_is_derived_exactly) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.751s
+
+OK
+PASS: independent n=6 finite-core verification
+labelled bipartite graphs checked: 2,391,496
+coordinate symbol cases checked: 45,696
+{
+  "actual_dimension_pairs": [
+    [
+      11,
+      14
+    ],
+    [
+      11,
+      14
+    ],
+    [
+      13,
+      18
+    ],
+    [
+      14,
+      20
+    ],
+    [
+      15,
+      20
+    ]
+  ],
+  "output_sha256": "35C834CAAE365F6761E49A9E3BDE30AF8EE42C4C0471562CE60FD3C259340306",
+  "status": "PASS"
+}
+PERM6_VERIFY_PASS
+PERM6_SUBMISSION_COMPUTATION_PASS written_proof_requires_mathematical_review

@@ -89,6 +89,11 @@ inventories to fail, with CRLF conversion observed. The revised Git attributes
 protect all submission and audit bytes. See the before/after checkout receipts
 for this separately demonstrated public-checkout issue. It is not the unrelated
 private v15 transport incident, which was neither changed nor declared fixed.
+The corrected real checkout passed both historical r1 source inventories and
+both full r2 computations under optimization. All **237 tracked files** in
+the original/submission/audit byte-protected trees matched their Git blob
+bytes, and the r2 ZIPs rebuilt to their published hashes. The checkout stayed
+clean after replay.
 
 **Paths and case-domain precision.** Two perm6 program paths now resolve from
 the standalone package. The 45,696-case domain is explicitly indexed by

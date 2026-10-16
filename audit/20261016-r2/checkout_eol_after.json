@@ -1,0 +1,47 @@
+{
+  "artifact_hashes": {
+    "perm5_arxiv_20261016-r2.zip": "47dafb5120877b536ddbebf5a2c1b5052d254a147a3dc3d50b952fa07ccf3057",
+    "perm6_arxiv_20261016-r2.zip": "3a90428a827e1c808f928e2d0d172c7835fe3604d6c16997180d7e77834a0c15"
+  },
+  "checkout_byte_mismatches": [],
+  "commands": [
+    {
+      "PYTHONOPTIMIZE": 2,
+      "exit_code": 0,
+      "label": "perm5_20261016",
+      "log": "checkout_logs/perm5_20261016.log",
+      "log_sha256": "bae3f3e5cf753a1ee8678c3e902062458c3f38cf768d27743f4928b03d4c06a6",
+      "seconds": 0.409
+    },
+    {
+      "PYTHONOPTIMIZE": 2,
+      "exit_code": 0,
+      "label": "perm6_20261016",
+      "log": "checkout_logs/perm6_20261016.log",
+      "log_sha256": "72c9c6930e88cc0b9be853e9a0d7f0a852ca563119a944360a63b07c1479afc4",
+      "seconds": 0.364
+    },
+    {
+      "PYTHONOPTIMIZE": 2,
+      "exit_code": 0,
+      "label": "perm5_20261016-r2",
+      "log": "checkout_logs/perm5_20261016-r2.log",
+      "log_sha256": "4d352554eb4468fc90ea7aaadbe1b8358a22fe695c9d31737a67205e1706a437",
+      "seconds": 15.072
+    },
+    {
+      "PYTHONOPTIMIZE": 2,
+      "exit_code": 0,
+      "label": "perm6_20261016-r2",
+      "log": "checkout_logs/perm6_20261016-r2.log",
+      "log_sha256": "e8b7c97a9d873ef76ada35d2c4da2f4f6f63d490e30bd805ca189caddb5cc432",
+      "seconds": 22.403
+    }
+  ],
+  "core_autocrlf": "true",
+  "protected_tracked_files_checked": 237,
+  "scope": "real native Windows clone with byte-preserving repository attributes",
+  "status": "PASS",
+  "tested_commit": "e3b6817d660031ada721ed4c579884a234a223eb",
+  "working_tree_clean": true
+}

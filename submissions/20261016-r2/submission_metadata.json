@@ -14,7 +14,8 @@
       "preview_pages": 7,
       "license": null,
       "author_approval_recorded": false,
-      "arxiv_submission_id": null
+      "arxiv_submission_id": null,
+      "abstract_arxiv_form_tex": "We prove that the ordinary Chow rank of the permanent of a generic five by five matrix is sixteen over every field of characteristic zero. The lower bound uses an image-span inequality for rectangular catalecticants and a quotient-symbol estimate for a single quintic product. The finite verification records a 352-case squarefree table, four small rational derivative matrices, and elementary partition bounds. Their inputs and independent verification programs are included. The proof makes no assertion about border Chow rank."
     },
     {
       "n": 6,
@@ -28,7 +29,8 @@
       "preview_pages": 11,
       "license": null,
       "author_approval_recorded": false,
-      "arxiv_submission_id": null
+      "arxiv_submission_id": null,
+      "abstract_arxiv_form_tex": "Let $\\operatorname{perm}_6$ be the permanent of a generic $6$ by $6$ matrix. Over every field of characteristic zero, we prove that its ordinary Chow rank is $32$. The finite computations are stated as explicit lemmas with exhaustive domains and exact outputs. The lower bound combines a symmetric image-span inequality with a half-defect estimate for arbitrary quotient derivative symbols of a sextic Chow term. An exact verification reconstructs all finite tables. A second implementation independently checks every labelled bipartite graph with at most six edges and all $45{,}696$ coordinate squarefree-symbol cases. No floating-point or randomized step is used. A separate standard-library implementation independently expands and differentiates all five dependent-factor normal forms. No border-rank or general-$n$ equality is claimed."
     }
   ]
 }
