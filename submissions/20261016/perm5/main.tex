@@ -1,0 +1,432 @@
+\documentclass[11pt]{amsart}
+\usepackage{amsmath,amssymb,mathtools,booktabs,microtype}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xurl}
+\emergencystretch=3em
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+\numberwithin{equation}{section}
+\newcommand{\K}{\mathbb K}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\Sym}{\operatorname{Sym}}
+\newcommand{\Span}{\operatorname{span}}
+\newcommand{\im}{\operatorname{im}}
+\newcommand{\rank}{\operatorname{rank}}
+\newcommand{\perm}{\operatorname{perm}}
+\newcommand{\CR}{\operatorname{ChowRank}}
+\newcommand{\cD}{\mathcal D}
+\title{The Chow Rank of the Five-by-Five Permanent}
+\author{Rongyu Xu}
+\date{October 16, 2026}
+\subjclass[2020]{Primary 15A69; Secondary 14N05, 68V05}
+\keywords{permanent, Chow rank, product rank, catalecticant}
+\hypersetup{pdftitle={The Chow Rank of the Five-by-Five Permanent},pdfauthor={Rongyu Xu}}
+\begin{document}
+\begin{abstract}
+We prove that the ordinary Chow rank of the permanent of a generic five by
+five matrix is sixteen over every field of characteristic zero. The lower
+bound uses an image-span inequality for rectangular catalecticants and a
+quotient-symbol estimate for a single quintic product. The finite
+verification records a 352-case squarefree table, four small rational
+derivative matrices, and elementary partition bounds. Their inputs and
+independent verification programs are included. The proof makes no
+assertion about border Chow rank.
+\end{abstract}
+\maketitle
+
+\section{Statement and derivative spaces}
+Let \(\K\) initially be algebraically closed of characteristic zero, and put
+\[
+ V=\Span_{\K}\{x_{ij}:1\le i,j\le5\},\qquad
+ f=\perm_5=\sum_{\sigma\in S_5}\prod_{i=1}^5x_{i,\sigma(i)}.
+\]
+Here \(S_5\) is the permutation group on \(\{1,\ldots,5\}\).
+For a degree-\(m\) form \(g\in\Sym^m V\), define
+\[
+ \begin{aligned}
+ C_{a,m-a}(g)&:\Sym^a V^*\longrightarrow\Sym^{m-a}V,\\
+ C_{a,m-a}(g)(\lambda_1\cdots\lambda_a)
+   &:=\partial_{\lambda_1}\cdots\partial_{\lambda_a}g,\\
+ \cD_j(g)&:=\im C_{m-j,j}(g).
+ \end{aligned}
+\]
+The variables are members of \(V\), hence linear functions on \(V^*\).
+For a subspace \(G\) of forms, \(\partial G\) is the span of all its
+first directional derivatives. For a quadratic form, rank means the rank of
+its symmetric bilinear matrix. Its essential-variable space is the least
+\(L\subset V\) supporting it; this has dimension equal to its matrix rank.
+
+The ordinary Chow rank \(\CR_{\K}(g)\) is the least number of nonzero
+products of \(m\) linear forms summing to \(g\), with \(\CR_{\K}(0)=0\).
+It is also called product rank \cite{IltenTeitler2016}.
+Han and Song \cite{HanSong2026} prove rank sixteen for the five by five
+permanent tensor, regarded as a tensor with five separate row factors.
+Tensor decompositions require each linear factor to belong to its assigned
+row space; an ordinary Chow decomposition imposes no such requirement.
+Thus that tensor-rank lower bound does not by itself give the Chow-rank
+lower bound proved here.
+\begin{theorem}\label{thm:main}
+Over every field \(\K\) of characteristic zero,
+\[\CR_{\K}(\perm_5)=16.\]
+\end{theorem}
+
+Put \(E_j=\cD_j(f)\). We will use the following elementary facts.
+\begin{lemma}\label{lem:permanent}
+One has \(\dim E_2=\dim E_3=100\), \(\partial E_2=V\), and
+\[
+ E_2^{(1)}:=\{g\in\Sym^3 V:\partial g\subset E_2\}=E_3.
+\]
+Every nonzero quadratic in \(E_2\) has matrix rank at least four. If
+\(L\subset V\) has dimension at most five, then
+\[\dim(E_2\cap\Sym^2L)\le1.\]
+\end{lemma}
+\begin{proof}
+The subpermanents on two rows and two columns form a basis of \(E_2\),
+and those on three rows and three columns form a basis of \(E_3\).
+Their matching supports are disjoint, and both counts are \(\binom52^2=100\).
+Differentiating a rectangle at one corner gives the opposite variable.
+
+If every derivative of a cubic lies in \(E_2\), a monomial with a repeated
+row or column is impossible: some first derivative would contain a monomial
+outside the matching support of \(E_2\). Inside one three by three block,
+the rectangle relations equate the coefficients of matchings differing by a
+transposition. Transpositions connect the six matchings. Thus the cubic is
+a linear combination of the three by three subpermanents, proving the
+prolongation assertion.
+
+The row-column diagonal torus acts with distinct characters on the rectangle
+subpermanents. A generic one-parameter subgroup takes any nonzero quadratic
+in \(E_2\), projectively, to a single rectangle. Matrix rank cannot increase
+under this specialization, and a rectangle has rank four.
+
+For completeness, the coordinate-specialization argument needed for the
+intersection bound is as follows. Choose a one-parameter subgroup whose
+weights on the 25 variables are distinct. In the Grassmannian of
+\(a\)-planes, the limit of any \(L\) is a coordinate \(a\)-plane: the
+limit is fixed by the subgroup, whose variable eigenspaces are one-dimensional.
+The dimension of \(E_2\cap\Sym^2L\) is upper semicontinuous, since it is
+a kernel dimension of a vector-bundle map. It suffices to bound it at the
+coordinate limit. A coordinate plane corresponds to a bipartite graph with
+\(a\le5\) edges, and its intersection dimension counts four-cycles.
+Two different four-cycles use at least six edges. The bound is therefore one.
+\end{proof}
+
+\section{A quotient-symbol estimate for quintic products}
+Let \(T=\ell_1\cdots\ell_5\ne0\), and set
+\[
+ \begin{gathered}
+ L=\Span\{\ell_1,\ldots,\ell_5\},\qquad
+ F=\cD_2(T),\qquad U=\cD_3(T),\\
+ u=\dim U=\dim F\le10.
+ \end{gathered}
+\]
+The equality of dimensions follows by transposing the two catalecticants
+under the perfect differential pairing in characteristic zero. The upper
+bound follows because third derivatives are spanned by the ten pair products.
+Let \(R=F\cap E_2\). Lemma~\ref{lem:permanent} gives \(\dim R\le1\),
+and each nonzero element of \(R\) has quadratic rank at least four.
+
+For a surjection \(P:L\twoheadrightarrow D\), of rank \(d\), let
+\(q_R:F\to F/R\) be the quotient map. Polarization is
+\[
+ \delta:U\longrightarrow L\otimes F,\qquad
+ g\longmapsto\sum_j y_j\otimes\partial_{y_j^*}g,
+\]
+where \((y_j)\) is any basis of \(L\) and \((y_j^*)\) its dual.
+It is basis-independent. Write \(\beta=(P\otimes q_R)\delta\).
+
+\begin{lemma}[Small complementary span]\label{lem:kernel}
+If \(k=\dim\ker P\le2\), then
+\[
+ \ker\beta=U\cap\Sym^3(\ker P),\qquad
+ \rank\beta\ge\max\{0,u-\tbinom{k+2}{3}\}.
+\]
+\end{lemma}
+\begin{proof}
+Choose coordinates consisting of a basis of \(S=\ker P\) and \(d\)
+complementary variables. For a kernel cubic, its derivatives in all the
+complementary directions lie in \(R\). If one is nonzero, changing the
+complementary coordinates makes these derivatives \(q,0,\ldots,0\),
+with \(0\ne q\in R\). Characteristic zero then implies that the cubic,
+and hence \(q\), uses only \(S\) and the first complementary variable.
+This gives \(\rank q\le k+1\le3\), a contradiction. All complementary
+derivatives vanish, which is precisely membership in \(\Sym^3S\).
+The dimension bound follows.
+\end{proof}
+
+\begin{lemma}[Five independent factors]\label{lem:independent}
+If \(\dim L=5\), then \(u=10\) and \(\rank\beta\ge2d\).
+\end{lemma}
+\begin{proof}
+Use the factors as coordinates \(z_1,\ldots,z_5\). Then \(U\) and \(F\)
+are the squarefree cubic and quadratic spaces. For arbitrary
+\((\ker P,R)\), simultaneously specialize in their Grassmannians by a
+generic one-parameter subgroup of the diagonal torus. Its weights on the
+variables and on the quadratic monomials can be chosen distinct, so both
+limits are coordinate subspaces. The rank of the induced map of the
+tautological quotient bundles cannot increase in this limit.
+No rank-four condition on the limiting \(R\) is required here.
+
+At a coordinate point let \(B\) index the kernel of \(P\), with
+\(|B|=5-d\), and let \(A\) be the empty set or a single killed quadratic
+edge. Different source triples have disjoint polarization supports.
+A cubic column is killed exactly when it is contained in \(B\), or has
+one vertex outside \(B\) and its remaining edge is the unique edge of
+\(A\) contained in \(B\). The number of killed columns is therefore
+\[
+ \binom{5-d}{3}+d\,\mathbf1_{\{A=\{e\},\ e\subset B\}}.
+\]
+Taking the minimum rank over these possibilities gives
+\[
+\begin{array}{c|rrrrrr}
+d&0&1&2&3&4&5\\\hline
+\rank\beta\text{ lower bound}&0&5&7&7&10&10.
+\end{array}
+\]
+Each entry is at least \(2d\). The entire coordinate domain has
+\(2^5(1+\binom52)=352\) pairs and is also checked directly by the supplied
+programs.
+\end{proof}
+
+\begin{lemma}[Four-dimensional factor span]\label{lem:four}
+If \(\dim L=4\), then \(u\ge7\). For \(d=1\),
+\[
+ \rank\beta+(10-u)/2\ge2.
+\]
+\end{lemma}
+\begin{proof}
+Choosing four independent factors and rescaling coordinates puts the product
+in one of the forms
+\[
+ T_s=x_1x_2x_3x_4(x_1+\cdots+x_s),\qquad 1\le s\le4.
+\]
+Order-two differentiation, over \(\Q\), gives
+\[
+\begin{array}{c|rrrr}
+s&1&2&3&4\\\hline
+u&7&7&9&10.
+\end{array}                                                    \tag{2.1}
+\]
+These are ranks of the coefficient matrices of the ten second partials
+in the twenty degree-three monomials on four variables. Appendix~\ref{app:minors}
+gives explicit nonzero minors and upper-rank relations; the ancillary
+programs independently check the complete matrices. Since their coefficients are rational, the ranks
+hold over every characteristic-zero field.
+
+For \(s=1,2\), the actual cubic derivative space contains
+\(x_1x_3x_4\) and \(x_2x_3x_4\). Every nonzero direction differentiates
+at least one of these to a nonzero quadric on at most three variables.
+That quadric has rank at most three and hence cannot belong to \(R\).
+Thus \(\rank\beta\ge1\), which with \(u=7\) is more than enough.
+
+For \(s=3\), the actual space contains
+\(x_1x_2x_4,x_1x_3x_4,x_2x_3x_4\). Write the direction as
+\(\lambda=\sum_{j=1}^4a_j\partial_{x_j}\). If \(a_4\ne0\), projecting
+their derivatives modulo \(x_4L\) gives three independent pair monomials,
+so quotienting by \(R\) leaves rank at least two. If \(a_4=0\), their
+derivatives span a space of dimension at least two divisible by \(x_4\):
+if, for example, \(a_1\ne0\), the first two have independent linear
+factors. Every quadric in this space has rank at most two, so its intersection
+with \(R\) is zero. Again \(\rank\beta\ge2\).
+
+For \(s=4\), the actual space contains all four squarefree cubics. Choose
+\(a_j\ne0\); differentiating the three cubics containing \(x_j\), modulo
+\(x_jL\), gives three independent pair monomials. The quotient by \(R\)
+has rank at least two. The stated inequality follows for \(u=9,10\).
+All the cubic-space inclusions used here are checked directly along with
+(2.1), rather than inferred from formal product spans.
+\end{proof}
+
+\begin{proposition}[Half-defect estimate]\label{prop:local}
+For every nonzero quintic Chow term and every quotient of its actual factor
+span,
+\[\boxed{\rank\beta+\frac{10-u}{2}\ge2d.}\]
+\end{proposition}
+\begin{proof}
+The independent case is Lemma~\ref{lem:independent}. For factor-span
+dimension \(\ell\le4\), the middle rank is bounded above by
+\(\min\{10,\binom{\ell+1}{2}\}\), because \(u=\dim F\).
+It is bounded below by \(1,2,4,7\), respectively for
+\(\ell=1,2,3,4\). Indeed, choose \(\ell\) independent factors as
+coordinates and specialize every remaining factor to a coordinate initial
+by a generic diagonal one-parameter subgroup. The resulting monomial uses
+all \(\ell\) variables and has total degree five. Counting its degree-two
+divisors, over the positive partitions of five, gives these minima.
+Catalecticant rank cannot increase under specialization.
+
+If \(\ell\le3\), every \(d>0\) has complementary span at most two.
+Lemma~\ref{lem:kernel}, minimized over the indicated integer interval for
+\(u\), gives the following lower bounds for
+\(\rank\beta+(10-u)/2\):
+\[
+\begin{array}{c|c}
+\ell& d=0,\ldots,\ell\\\hline
+1&(9/2,11/2)\\
+2&(7/2,5,6)\\
+3&(2,3,6,7).
+\end{array}
+\]
+For \(\ell=4\), the same lemma covers \(d=2,3,4\) and gives
+\(9/2,15/2,17/2\), respectively. The case \(d=0\) is immediate, and
+\(d=1\) is Lemma~\ref{lem:four}. Every bound is at least \(2d\).
+\end{proof}
+
+\section{Two global estimates}
+\begin{lemma}[Rectangular image-span inequality]\label{lem:rectangular}
+Let \(A_i:X^*\to Y\) be linear maps of ranks \(u_i\). If
+\(D_Y=\dim\sum_i\im A_i\) and
+\(D_X=\dim\sum_i\im A_i^*\), then
+\[\rank\Bigl(\sum_iA_i\Bigr)\ge D_Y+D_X-\sum_i u_i.\]
+\end{lemma}
+\begin{proof}
+Factor \(A_i=B_iC_i\), with \(B_i:\K^{u_i}\to Y\) injective and
+\(C_i:X^*\to\K^{u_i}\) surjective. The horizontal concatenation \(B\)
+has rank \(D_Y\), and the vertical concatenation \(C\) has rank
+\(D_X\), since its dual image is \(\sum_i\im A_i^*\).
+Now \(\sum_iA_i=BC\); Sylvester's rank inequality proves the claim.
+\end{proof}
+
+Suppose \(f=\sum_{i=1}^N T_i\), with nonzero quintic Chow terms. Put
+\[
+ F_i=\cD_2(T_i),\quad U_i=\cD_3(T_i),\quad u_i=\dim F_i=\dim U_i,
+ \quad \Delta=\sum_i(10-u_i),
+\]
+\[
+ F=\sum_iF_i,\quad U=\sum_iU_i,\quad
+ \dim F=100+h_2,\quad \dim U=100+h_3.
+\]
+Linearity of the catalecticants gives \(E_2\subset F\) and
+\(E_3\subset U\), so \(h_2,h_3\ge0\). Under the differential pairings,
+the transpose of \(C_{3,2}(T_i)\) is \(C_{2,3}(T_i)\).
+Lemma~\ref{lem:rectangular}, applied to their sum, gives
+\begin{equation}\label{eq:upper}
+ h_2+h_3\le10N-100-\Delta.
+\end{equation}
+
+Let \(q:F\to F/E_2\). The map
+\[
+ \widetilde\beta:\bigoplus_iU_i\longrightarrow V\otimes(F/E_2),
+ \qquad (g_i)\longmapsto\sum_i(1_V\otimes q)\delta(g_i)
+\]
+factors through addition into \(U\). By Lemma~\ref{lem:permanent}, its
+kernel after addition is exactly \(E_3\), hence
+\(\rank\widetilde\beta=h_3\).
+
+Set \(L_i=\Span\{\text{factors of }T_i\}\), choose any order, and put
+\(W_i=L_1+\cdots+L_i\), \(W_0=0\), and
+\(d_i=\dim(W_i/W_{i-1})\). These spaces span \(V\), since
+\(V=\partial E_2\subset\partial F\subset\sum_iL_i\), so
+\(\sum_i d_i=25\). Let \(Z_i\) be the image of the \(i\)-th summand
+of \(\widetilde\beta\), and \(H_i=Z_1+\cdots+Z_i\). Projection to
+\((W_i/W_{i-1})\otimes(F/E_2)\) kills \(H_{i-1}\). Thus
+\[
+ \dim H_i-\dim H_{i-1}\ge
+ \rank\bigl((P_i\otimes q|_{F_i})\delta|_{U_i}\bigr),
+\]
+where \(P_i:L_i\to L_i/(L_i\cap W_{i-1})\) has rank \(d_i\).
+The injection \(F_i/(F_i\cap E_2)\hookrightarrow F/E_2\) shows that
+this is exactly the local symbol from Proposition~\ref{prop:local}.
+Summing gives
+\begin{equation}\label{eq:lower}
+ h_3\ge\sum_i\left(2d_i-\frac{10-u_i}{2}\right)
+ =50-\frac\Delta2.
+\end{equation}
+Combining \eqref{eq:upper} and \eqref{eq:lower} yields
+\[h_2+\frac\Delta2\le10N-150.\]
+Consequently \(N\ge15\). If \(N=15\), both \(h_2\) and \(\Delta\)
+are zero. Then \(F=E_2\), while each \(F_i\) has dimension ten and is
+contained in \(E_2\cap\Sym^2L_i\), contradicting the one-dimensional
+bound of Lemma~\ref{lem:permanent}. Hence \(N\ge16\).
+
+\section{Upper bound, scope, and exact verification}
+Glynn's identity \cite{Glynn2010} is
+\[
+ \perm_5=\frac1{16}
+ \sum_{\substack{\epsilon\in\{\pm1\}^5\\\epsilon_1=1}}
+ \left(\prod_{r=1}^5\epsilon_r\right)
+ \prod_{c=1}^5\left(\sum_{r=1}^5\epsilon_rx_{rc}\right).
+\]
+To verify it, expand by row choices in each column. Summation over the four
+free signs kills a monomial unless each of rows two through five occurs an
+odd number of times; total degree five then forces every row to occur once.
+Its coefficient is sixteen before division. This gives a sixteen-term
+decomposition. Over an arbitrary characteristic-zero field, any hypothetical
+shorter decomposition remains one after extension to its algebraic closure,
+where the lower bound applies. The displayed upper bound is rational.
+This proves Theorem~\ref{thm:main} over every characteristic-zero field.
+
+The theorem concerns ordinary rank, and proves no border-rank equality.
+The supplied standard-library verifiers reconstruct the 352 coordinate
+symbols, the four actual derivative matrices and required cubic inclusions,
+the positive-partition floors, and every rational inequality used in
+Proposition~\ref{prop:local}. They also expand the upper bound over all
+\(16\cdot5^5=50{,}000\) row choices. From the extracted submission root run
+\begin{verbatim}
+python -B anc/verify_submission.py
+\end{verbatim}
+The independent finite implementations do not replace the written
+specialization, rank-four kernel, image-span, or filtration arguments.
+The earlier September proof package is preserved, with its unchanged
+manifest, under \path{anc/original/}. The present lower bound uses the
+short argument above and does not depend on that package's state routing,
+terminal orbit classification, or historical private replay receipts.
+
+\appendix
+\section{Exact normal-form minors}\label{app:minors}
+This appendix specifies the small calculation in (2.1) without relying on
+a stored rank value. Let \(M_s\) have columns
+\(\partial_{x_i}\partial_{x_j}T_s\), in the order
+\[
+ (11,12,13,14,22,23,24,33,34,44).
+\]
+Its rows are indexed by the twenty exponent vectors
+\((e_1,e_2,e_3,e_4)\) of total degree three in ascending lexicographic
+order, starting with \((0,0,0,3)\). Indices in the following table start
+at one. Each indicated square submatrix has the displayed determinant.
+\begin{center}
+\small
+\begin{tabular}{@{}cllr@{}}
+\toprule
+\(s\)&column indices&row indices&determinant\\\midrule
+1&1,2,3,4,6,7,9&6,12,14,15,17,18,19&16\\
+2&1,2,3,4,6,7,9&6,8,9,12,14,15,16&16\\
+3&1,2,3,4,5,6,7,8,9&3,6,7,8,12,13,14,15,17&\(-16\)\\
+4&1,2,3,4,5,6,7,8,9,10&2,5,6,7,11,12,13,14,15,16&16\\\bottomrule
+\end{tabular}
+\end{center}
+For \(s=1\), columns 5, 8, and 10 are zero. For \(s=2\), columns 8
+and 10 are zero, and column 1 minus column 2 plus column 5 is zero.
+For \(s=3\), column 10 is zero. These give the matching upper ranks
+\(7,7,9\); the upper rank ten for \(s=4\) is immediate from the number
+of columns. Together with the minors this proves (2.1).
+
+The required cubic inclusions have an equally direct check. For
+\(j\le s\),
+\[
+ \partial_{x_j}^2T_s=2\prod_{i\ne j}x_i.
+\]
+For \(s=1\) this yields \(x_2x_3x_4\), and
+\(\partial_{x_1}\partial_{x_2}T_1=2x_1x_3x_4\).
+For \(s=2,3,4\), the displayed diagonal derivatives give precisely the
+squarefree cubics used in Lemma~\ref{lem:four}.
+
+\begin{thebibliography}{9}
+\bibitem{HanSong2026}
+J.~I. Han and J.~Song, \emph{The rank of the \(5\times5\) permanent
+tensor is sixteen}, preprint, 2026,
+\href{https://arxiv.org/abs/2608.09708}{arXiv:2608.09708}.
+\bibitem{Glynn2010}
+D.~G. Glynn, \emph{The permanent of a square matrix},
+European J. Combin. \textbf{31} (2010), no.~7, 1887--1891,
+\href{https://doi.org/10.1016/j.ejc.2010.01.010}{doi:10.1016/j.ejc.2010.01.010}.
+\bibitem{IltenTeitler2016}
+N.~Ilten and Z.~Teitler,
+\emph{Product ranks of the \(3\times3\) determinant and permanent},
+Canad. Math. Bull. \textbf{59} (2016), no.~2, 311--319,
+\href{https://doi.org/10.4153/CMB-2015-076-1}{doi:10.4153/CMB-2015-076-1}.
+\end{thebibliography}
+\end{document}

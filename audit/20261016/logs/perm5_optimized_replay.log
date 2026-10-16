@@ -1,0 +1,1088 @@
+INVENTORY_PASS submission_files=24 frozen_files=15
+PERM5_SHORT_PROOF_FINITE_PASS profiles=4 coordinate_symbols=352 floors=1,2,4,7
+PERM5_SHORT_PROOF_INDEPENDENT_PASS rational_matrices=4+352 floors=1,2,4,7
+GLYNN_EXACT_PASS n=5 expanded_choices=50000 permutation_monomials=120
+{
+  "characteristic_zero_conclusion": "Every one-intersection endpoint has relative prolongation kernel at most 26 over characteristic zero.",
+  "claim_type": "independent multifield exact endpoint certificate",
+  "cubic_torus_blocks": 1225,
+  "five_plane_orbit_sizes": {
+    "attached": 1200,
+    "external": 900
+  },
+  "imports_project_generator": false,
+  "maximal_attached_flags_QQ": [
+    {
+      "base_kernel_QQ": 100,
+      "extra_weight": "cross:0:1:0:2",
+      "nine_weights": [
+        "square:0:0",
+        "square:0:1",
+        "square:0:2",
+        "square:1:0",
+        "row:0:0:1",
+        "row:0:0:2",
+        "row:0:1:2",
+        "column:0:1:0",
+        "cross:0:1:0:1"
+      ],
+      "relative_kernel_QQ": 26,
+      "ten_weight_set": [
+        "square:0:0",
+        "square:0:1",
+        "square:0:2",
+        "square:1:0",
+        "row:0:0:1",
+        "row:0:0:2",
+        "row:0:1:2",
+        "column:0:1:0",
+        "cross:0:1:0:1",
+        "cross:0:1:0:2"
+      ]
+    },
+    {
+      "base_kernel_QQ": 100,
+      "extra_weight": "cross:0:1:0:1",
+      "nine_weights": [
+        "square:0:0",
+        "square:0:1",
+        "square:0:2",
+        "square:1:0",
+        "row:0:0:1",
+        "row:0:0:2",
+        "row:0:1:2",
+        "column:0:1:0",
+        "cross:0:1:0:2"
+      ],
+      "relative_kernel_QQ": 26,
+      "ten_weight_set": [
+        "square:0:0",
+        "square:0:1",
+        "square:0:2",
+        "square:1:0",
+        "row:0:0:1",
+        "row:0:0:2",
+        "row:0:1:2",
+        "column:0:1:0",
+        "cross:0:1:0:1",
+        "cross:0:1:0:2"
+      ]
+    },
+    {
+      "base_kernel_QQ": 100,
+      "extra_weight": "column:0:1:0",
+      "nine_weights": [
+        "square:0:0",
+        "square:0:1",
+        "square:0:2",
+        "square:1:0",
+        "row:0:0:1",
+        "row:0:0:2",
+        "row:0:1:2",
+        "cross:0:1:0:1",
+        "cross:0:1:0:2"
+      ],
+      "relative_kernel_QQ": 26,
+      "ten_weight_set": [
+        "square:0:0",
+        "square:0:1",
+        "square:0:2",
+        "square:1:0",
+        "row:0:0:1",
+        "row:0:0:2",
+        "row:0:1:2",
+        "column:0:1:0",
+        "cross:0:1:0:1",
+        "cross:0:1:0:2"
+      ]
+    },
+    {
+      "base_kernel_QQ": 100,
+      "extra_weight": "row:0:1:2",
+      "nine_weights": [
+        "square:0:0",
+        "square:0:1",
+        "square:0:2",
+        "square:1:0",
+        "row:0:0:1",
+        "row:0:0:2",
+        "column:0:1:0",
+        "cross:0:1:0:1",
+        "cross:0:1:0:2"
+      ],
+      "relative_kernel_QQ": 26,
+      "ten_weight_set": [
+        "square:0:0",
+        "square:0:1",
+        "square:0:2",
+        "square:1:0",
+        "row:0:0:1",
+        "row:0:0:2",
+        "row:0:1:2",
+        "column:0:1:0",
+        "cross:0:1:0:1",
+        "cross:0:1:0:2"
+      ]
+    },
+    {
+      "base_kernel_QQ": 100,
+      "extra_weight": "row:0:0:2",
+      "nine_weights": [
+        "square:0:0",
+        "square:0:1",
+        "square:0:2",
+        "square:1:0",
+        "row:0:0:1",
+        "row:0:1:2",
+        "column:0:1:0",
+        "cross:0:1:0:1",
+        "cross:0:1:0:2"
+      ],
+      "relative_kernel_QQ": 26,
+      "ten_weight_set": [
+        "square:0:0",
+        "square:0:1",
+        "square:0:2",
+        "square:1:0",
+        "row:0:0:1",
+        "row:0:0:2",
+        "row:0:1:2",
+        "column:0:1:0",
+        "cross:0:1:0:1",
+        "cross:0:1:0:2"
+      ]
+    },
+    {
+      "base_kernel_QQ": 100,
+      "extra_weight": "row:0:0:1",
+      "nine_weights": [
+        "square:0:0",
+        "square:0:1",
+        "square:0:2",
+        "square:1:0",
+        "row:0:0:2",
+        "row:0:1:2",
+        "column:0:1:0",
+        "cross:0:1:0:1",
+        "cross:0:1:0:2"
+      ],
+      "relative_kernel_QQ": 26,
+      "ten_weight_set": [
+        "square:0:0",
+        "square:0:1",
+        "square:0:2",
+        "square:1:0",
+        "row:0:0:1",
+        "row:0:0:2",
+        "row:0:1:2",
+        "column:0:1:0",
+        "cross:0:1:0:1",
+        "cross:0:1:0:2"
+      ]
+    },
+    {
+      "base_kernel_QQ": 100,
+      "extra_weight": "cross:0:1:1:2",
+      "nine_weights": [
+        "square:0:0",
+        "square:0:1",
+        "square:0:2",
+        "square:1:1",
+        "row:0:0:1",
+        "row:0:0:2",
+        "row:0:1:2",
+        "column:0:1:1",
+        "cross:0:1:0:1"
+      ],
+      "relative_kernel_QQ": 26,
+      "ten_weight_set": [
+        "square:0:0",
+        "square:0:1",
+        "square:0:2",
+        "square:1:1",
+        "row:0:0:1",
+        "row:0:0:2",
+        "row:0:1:2",
+        "column:0:1:1",
+        "cross:0:1:0:1",
+        "cross:0:1:1:2"
+      ]
+    },
+    {
+      "base_kernel_QQ": 100,
+      "extra_weight": "cross:0:1:0:1",
+      "nine_weights": [
+        "square:0:0",
+        "square:0:1",
+        "square:0:2",
+        "square:1:1",
+        "row:0:0:1",
+        "row:0:0:2",
+        "row:0:1:2",
+        "column:0:1:1",
+        "cross:0:1:1:2"
+      ],
+      "relative_kernel_QQ": 26,
+      "ten_weight_set": [
+        "square:0:0",
+        "square:0:1",
+        "square:0:2",
+        "square:1:1",
+        "row:0:0:1",
+        "row:0:0:2",
+        "row:0:1:2",
+        "column:0:1:1",
+        "cross:0:1:0:1",
+        "cross:0:1:1:2"
+      ]
+    },
+    {
+      "base_kernel_QQ": 100,
+      "extra_weight": "column:0:1:1",
+      "nine_weights": [
+        "square:0:0",
+        "square:0:1",
+        "square:0:2",
+        "square:1:1",
+        "row:0:0:1",
+        "row:0:0:2",
+        "row:0:1:2",
+        "cross:0:1:0:1",
+        "cross:0:1:1:2"
+      ],
+      "relative_kernel_QQ": 26,
+      "ten_weight_set": [
+        "square:0:0",
+        "square:0:1",
+        "square:0:2",
+        "square:1:1",
+        "row:0:0:1",
+        "row:0:0:2",
+        "row:0:1:2",
+        "column:0:1:1",
+        "cross:0:1:0:1",
+        "cross:0:1:1:2"
+      ]
+    },
+    {
+      "base_kernel_QQ": 100,
+      "extra_weight": "row:0:1:2",
+      "nine_weights": [
+        "square:0:0",
+        "square:0:1",
+        "square:0:2",
+        "square:1:1",
+        "row:0:0:1",
+        "row:0:0:2",
+        "column:0:1:1",
+        "cross:0:1:0:1",
+        "cross:0:1:1:2"
+      ],
+      "relative_kernel_QQ": 26,
+      "ten_weight_set": [
+        "square:0:0",
+        "square:0:1",
+        "square:0:2",
+        "square:1:1",
+        "row:0:0:1",
+        "row:0:0:2",
+        "row:0:1:2",
+        "column:0:1:1",
+        "cross:0:1:0:1",
+        "cross:0:1:1:2"
+      ]
+    },
+    {
+      "base_kernel_QQ": 100,
+      "extra_weight": "row:0:0:2",
+      "nine_weights": [
+        "square:0:0",
+        "square:0:1",
+        "square:0:2",
+        "square:1:1",
+        "row:0:0:1",
+        "row:0:1:2",
+        "column:0:1:1",
+        "cross:0:1:0:1",
+        "cross:0:1:1:2"
+      ],
+      "relative_kernel_QQ": 26,
+      "ten_weight_set": [
+        "square:0:0",
+        "square:0:1",
+        "square:0:2",
+        "square:1:1",
+        "row:0:0:1",
+        "row:0:0:2",
+        "row:0:1:2",
+        "column:0:1:1",
+        "cross:0:1:0:1",
+        "cross:0:1:1:2"
+      ]
+    },
+    {
+      "base_kernel_QQ": 100,
+      "extra_weight": "row:0:0:1",
+      "nine_weights": [
+        "square:0:0",
+        "square:0:1",
+        "square:0:2",
+        "square:1:1",
+        "row:0:0:2",
+        "row:0:1:2",
+        "column:0:1:1",
+        "cross:0:1:0:1",
+        "cross:0:1:1:2"
+      ],
+      "relative_kernel_QQ": 26,
+      "ten_weight_set": [
+        "square:0:0",
+        "square:0:1",
+        "square:0:2",
+        "square:1:1",
+        "row:0:0:1",
+        "row:0:0:2",
+        "row:0:1:2",
+        "column:0:1:1",
+        "cross:0:1:0:1",
+        "cross:0:1:1:2"
+      ]
+    },
+    {
+      "base_kernel_QQ": 100,
+      "extra_weight": "square:1:0",
+      "nine_weights": [
+        "square:0:0",
+        "square:0:1",
+        "square:0:2",
+        "row:0:0:1",
+        "row:0:0:2",
+        "row:0:1:2",
+        "column:0:1:0",
+        "cross:0:1:0:1",
+        "cross:0:1:0:2"
+      ],
+      "relative_kernel_QQ": 26,
+      "ten_weight_set": [
+        "square:0:0",
+        "square:0:1",
+        "square:0:2",
+        "square:1:0",
+        "row:0:0:1",
+        "row:0:0:2",
+        "row:0:1:2",
+        "column:0:1:0",
+        "cross:0:1:0:1",
+        "cross:0:1:0:2"
+      ]
+    },
+    {
+      "base_kernel_QQ": 100,
+      "extra_weight": "square:1:1",
+      "nine_weights": [
+        "square:0:0",
+        "square:0:1",
+        "square:0:2",
+        "row:0:0:1",
+        "row:0:0:2",
+        "row:0:1:2",
+        "column:0:1:1",
+        "cross:0:1:0:1",
+        "cross:0:1:1:2"
+      ],
+      "relative_kernel_QQ": 26,
+      "ten_weight_set": [
+        "square:0:0",
+        "square:0:1",
+        "square:0:2",
+        "square:1:1",
+        "row:0:0:1",
+        "row:0:0:2",
+        "row:0:1:2",
+        "column:0:1:1",
+        "cross:0:1:0:1",
+        "cross:0:1:1:2"
+      ]
+    },
+    {
+      "base_kernel_QQ": 100,
+      "extra_weight": "square:0:2",
+      "nine_weights": [
+        "square:0:0",
+        "square:0:1",
+        "square:1:0",
+        "row:0:0:1",
+        "row:0:0:2",
+        "row:0:1:2",
+        "column:0:1:0",
+        "cross:0:1:0:1",
+        "cross:0:1:0:2"
+      ],
+      "relative_kernel_QQ": 26,
+      "ten_weight_set": [
+        "square:0:0",
+        "square:0:1",
+        "square:0:2",
+        "square:1:0",
+        "row:0:0:1",
+        "row:0:0:2",
+        "row:0:1:2",
+        "column:0:1:0",
+        "cross:0:1:0:1",
+        "cross:0:1:0:2"
+      ]
+    },
+    {
+      "base_kernel_QQ": 100,
+      "extra_weight": "square:0:2",
+      "nine_weights": [
+        "square:0:0",
+        "square:0:1",
+        "square:1:1",
+        "row:0:0:1",
+        "row:0:0:2",
+        "row:0:1:2",
+        "column:0:1:1",
+        "cross:0:1:0:1",
+        "cross:0:1:1:2"
+      ],
+      "relative_kernel_QQ": 26,
+      "ten_weight_set": [
+        "square:0:0",
+        "square:0:1",
+        "square:0:2",
+        "square:1:1",
+        "row:0:0:1",
+        "row:0:0:2",
+        "row:0:1:2",
+        "column:0:1:1",
+        "cross:0:1:0:1",
+        "cross:0:1:1:2"
+      ]
+    },
+    {
+      "base_kernel_QQ": 100,
+      "extra_weight": "square:0:1",
+      "nine_weights": [
+        "square:0:0",
+        "square:0:2",
+        "square:1:0",
+        "row:0:0:1",
+        "row:0:0:2",
+        "row:0:1:2",
+        "column:0:1:0",
+        "cross:0:1:0:1",
+        "cross:0:1:0:2"
+      ],
+      "relative_kernel_QQ": 26,
+      "ten_weight_set": [
+        "square:0:0",
+        "square:0:1",
+        "square:0:2",
+        "square:1:0",
+        "row:0:0:1",
+        "row:0:0:2",
+        "row:0:1:2",
+        "column:0:1:0",
+        "cross:0:1:0:1",
+        "cross:0:1:0:2"
+      ]
+    },
+    {
+      "base_kernel_QQ": 100,
+      "extra_weight": "square:0:1",
+      "nine_weights": [
+        "square:0:0",
+        "square:0:2",
+        "square:1:1",
+        "row:0:0:1",
+        "row:0:0:2",
+        "row:0:1:2",
+        "column:0:1:1",
+        "cross:0:1:0:1",
+        "cross:0:1:1:2"
+      ],
+      "relative_kernel_QQ": 26,
+      "ten_weight_set": [
+        "square:0:0",
+        "square:0:1",
+        "square:0:2",
+        "square:1:1",
+        "row:0:0:1",
+        "row:0:0:2",
+        "row:0:1:2",
+        "column:0:1:1",
+        "cross:0:1:0:1",
+        "cross:0:1:1:2"
+      ]
+    },
+    {
+      "base_kernel_QQ": 100,
+      "extra_weight": "square:0:0",
+      "nine_weights": [
+        "square:0:1",
+        "square:0:2",
+        "square:1:0",
+        "row:0:0:1",
+        "row:0:0:2",
+        "row:0:1:2",
+        "column:0:1:0",
+        "cross:0:1:0:1",
+        "cross:0:1:0:2"
+      ],
+      "relative_kernel_QQ": 26,
+      "ten_weight_set": [
+        "square:0:0",
+        "square:0:1",
+        "square:0:2",
+        "square:1:0",
+        "row:0:0:1",
+        "row:0:0:2",
+        "row:0:1:2",
+        "column:0:1:0",
+        "cross:0:1:0:1",
+        "cross:0:1:0:2"
+      ]
+    },
+    {
+      "base_kernel_QQ": 100,
+      "extra_weight": "square:0:0",
+      "nine_weights": [
+        "square:0:1",
+        "square:0:2",
+        "square:1:1",
+        "row:0:0:1",
+        "row:0:0:2",
+        "row:0:1:2",
+        "column:0:1:1",
+        "cross:0:1:0:1",
+        "cross:0:1:1:2"
+      ],
+      "relative_kernel_QQ": 26,
+      "ten_weight_set": [
+        "square:0:0",
+        "square:0:1",
+        "square:0:2",
+        "square:1:1",
+        "row:0:0:1",
+        "row:0:0:2",
+        "row:0:1:2",
+        "column:0:1:1",
+        "cross:0:1:0:1",
+        "cross:0:1:1:2"
+      ]
+    }
+  ],
+  "monomial_encoding": "25-entry divided-power exponent vectors",
+  "prime_results": {
+    "3": {
+      "base_kernel_dimension": 100,
+      "dimension_five": {
+        "attached": {
+          "flags_checked": 432432,
+          "histogram": {
+            "12": 4071,
+            "13": 17439,
+            "14": 44832,
+            "15": 71558,
+            "16": 86596,
+            "17": 75444,
+            "18": 56447,
+            "19": 33813,
+            "20": 19619,
+            "21": 11072,
+            "22": 7358,
+            "23": 2768,
+            "24": 944,
+            "25": 451,
+            "26": 20
+          },
+          "maximum": 26,
+          "maximum_flag_count": 20
+        },
+        "external": {
+          "flags_checked": 432432,
+          "histogram": {
+            "10": 2238,
+            "11": 10854,
+            "12": 40336,
+            "13": 71388,
+            "14": 99130,
+            "15": 94928,
+            "16": 63204,
+            "17": 34855,
+            "18": 11168,
+            "19": 3974,
+            "20": 179,
+            "21": 142,
+            "22": 36
+          },
+          "maximum": 22,
+          "maximum_flag_count": 36
+        }
+      },
+      "dimension_four": {
+        "flags_checked": 21600,
+        "histogram": {
+          "20": 12300,
+          "21": 5700,
+          "22": 3600
+        },
+        "maximum": 22
+      },
+      "prime": 3,
+      "total_flags_checked": 886464
+    },
+    "5": {
+      "base_kernel_dimension": 100,
+      "dimension_five": {
+        "attached": {
+          "flags_checked": 432432,
+          "histogram": {
+            "12": 4071,
+            "13": 17439,
+            "14": 44832,
+            "15": 71558,
+            "16": 86596,
+            "17": 75444,
+            "18": 56447,
+            "19": 33813,
+            "20": 19619,
+            "21": 11072,
+            "22": 7358,
+            "23": 2768,
+            "24": 944,
+            "25": 451,
+            "26": 20
+          },
+          "maximum": 26,
+          "maximum_flag_count": 20
+        },
+        "external": {
+          "flags_checked": 432432,
+          "histogram": {
+            "10": 2238,
+            "11": 10854,
+            "12": 40336,
+            "13": 71388,
+            "14": 99130,
+            "15": 94928,
+            "16": 63204,
+            "17": 34855,
+            "18": 11168,
+            "19": 3974,
+            "20": 179,
+            "21": 142,
+            "22": 36
+          },
+          "maximum": 22,
+          "maximum_flag_count": 36
+        }
+      },
+      "dimension_four": {
+        "flags_checked": 21600,
+        "histogram": {
+          "20": 12300,
+          "21": 5700,
+          "22": 3600
+        },
+        "maximum": 22
+      },
+      "prime": 5,
+      "total_flags_checked": 886464
+    },
+    "7": {
+      "base_kernel_dimension": 100,
+      "dimension_five": {
+        "attached": {
+          "flags_checked": 432432,
+          "histogram": {
+            "12": 4071,
+            "13": 17439,
+            "14": 44832,
+            "15": 71558,
+            "16": 86596,
+            "17": 75444,
+            "18": 56447,
+            "19": 33813,
+            "20": 19619,
+            "21": 11072,
+            "22": 7358,
+            "23": 2768,
+            "24": 944,
+            "25": 451,
+            "26": 20
+          },
+          "maximum": 26,
+          "maximum_flag_count": 20
+        },
+        "external": {
+          "flags_checked": 432432,
+          "histogram": {
+            "10": 2238,
+            "11": 10854,
+            "12": 40336,
+            "13": 71388,
+            "14": 99130,
+            "15": 94928,
+            "16": 63204,
+            "17": 34855,
+            "18": 11168,
+            "19": 3974,
+            "20": 179,
+            "21": 142,
+            "22": 36
+          },
+          "maximum": 22,
+          "maximum_flag_count": 36
+        }
+      },
+      "dimension_four": {
+        "flags_checked": 21600,
+        "histogram": {
+          "20": 12300,
+          "21": 5700,
+          "22": 3600
+        },
+        "maximum": 22
+      },
+      "prime": 7,
+      "total_flags_checked": 886464
+    }
+  },
+  "primes": [
+    3,
+    5,
+    7
+  ],
+  "quadratic_quotient_weights": 225,
+  "reads_frozen_result": false,
+  "status": "PASS"
+}
+PERM5_ONE_INTERSECTION_INDEPENDENT_MULTIFIELD_PASS
+{
+  "csv_sha256": "A6E481F3E5F534970435DB848D6FFB498404BB81F5DF42BF3139FD2DA68BD8C5",
+  "json_sha256": "20311429F7E5125D482E3B05C3C538C7B2D366348B87687F6823CAB61BA06166",
+  "route_counts": {
+    "A": 1,
+    "B": 38,
+    "C": 1,
+    "D": 2,
+    "E": 1,
+    "F": 1,
+    "G": 5,
+    "H": 9
+  },
+  "state_count": 58,
+  "status": "PASS",
+  "tex_sha256": "899657B372D61232519FF75E278730EFE159467CF6975FFD7117FC3DC8C5F1F0"
+}
+{
+  "claim_type": "independent exact integer verification of finite parent table only",
+  "coordinate_five_planes_checked": 53130,
+  "cubic_flag_sizes": {
+    "S22": 22,
+    "delete_core_inner": 21,
+    "delete_core_with_4": 21,
+    "delete_side": 21
+  },
+  "first_maximizing_plane_by_row_partition": {
+    "1+1+1+1+1": {
+      "S22": [
+        0,
+        5,
+        10,
+        15,
+        20
+      ],
+      "delete_core_inner": [
+        0,
+        5,
+        10,
+        15,
+        20
+      ],
+      "delete_core_with_4": [
+        0,
+        5,
+        10,
+        15,
+        20
+      ],
+      "delete_side": [
+        0,
+        5,
+        10,
+        15,
+        20
+      ]
+    },
+    "2+1+1+1": {
+      "S22": [
+        0,
+        1,
+        5,
+        10,
+        15
+      ],
+      "delete_core_inner": [
+        0,
+        1,
+        5,
+        10,
+        15
+      ],
+      "delete_core_with_4": [
+        0,
+        5,
+        12,
+        13,
+        15
+      ],
+      "delete_side": [
+        3,
+        8,
+        10,
+        13,
+        15
+      ]
+    },
+    "2+2+1": {
+      "S22": [
+        0,
+        1,
+        5,
+        6,
+        10
+      ],
+      "delete_core_inner": [
+        0,
+        1,
+        5,
+        6,
+        10
+      ],
+      "delete_core_with_4": [
+        0,
+        7,
+        8,
+        12,
+        13
+      ],
+      "delete_side": [
+        0,
+        3,
+        8,
+        10,
+        13
+      ]
+    },
+    "3+1+1": {
+      "S22": [
+        0,
+        1,
+        2,
+        5,
+        10
+      ],
+      "delete_core_inner": [
+        0,
+        1,
+        2,
+        5,
+        10
+      ],
+      "delete_core_with_4": [
+        0,
+        2,
+        3,
+        5,
+        10
+      ],
+      "delete_side": [
+        3,
+        8,
+        10,
+        11,
+        13
+      ]
+    },
+    "3+2": {
+      "S22": [
+        0,
+        1,
+        2,
+        5,
+        6
+      ],
+      "delete_core_inner": [
+        0,
+        1,
+        2,
+        5,
+        6
+      ],
+      "delete_core_with_4": [
+        0,
+        2,
+        3,
+        7,
+        8
+      ],
+      "delete_side": [
+        0,
+        3,
+        10,
+        11,
+        13
+      ]
+    },
+    "4+1": {
+      "S22": [
+        0,
+        1,
+        2,
+        3,
+        5
+      ],
+      "delete_core_inner": [
+        0,
+        1,
+        2,
+        3,
+        5
+      ],
+      "delete_core_with_4": [
+        0,
+        1,
+        2,
+        3,
+        5
+      ],
+      "delete_side": [
+        3,
+        10,
+        11,
+        12,
+        13
+      ]
+    },
+    "5": {
+      "S22": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "delete_core_inner": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "delete_core_with_4": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "delete_side": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  "global_maxima": {
+    "S22": 4,
+    "delete_core_inner": 4,
+    "delete_core_with_4": 5,
+    "delete_side": 7
+  },
+  "imports_project_generator": false,
+  "maximum_killed_parent_points_by_row_partition": {
+    "1+1+1+1+1": {
+      "S22": 0,
+      "delete_core_inner": 0,
+      "delete_core_with_4": 0,
+      "delete_side": 0
+    },
+    "2+1+1+1": {
+      "S22": 0,
+      "delete_core_inner": 0,
+      "delete_core_with_4": 2,
+      "delete_side": 2
+    },
+    "2+2+1": {
+      "S22": 1,
+      "delete_core_inner": 1,
+      "delete_core_with_4": 5,
+      "delete_side": 2
+    },
+    "3+1+1": {
+      "S22": 1,
+      "delete_core_inner": 1,
+      "delete_core_with_4": 2,
+      "delete_side": 5
+    },
+    "3+2": {
+      "S22": 2,
+      "delete_core_inner": 2,
+      "delete_core_with_4": 5,
+      "delete_side": 3
+    },
+    "4+1": {
+      "S22": 4,
+      "delete_core_inner": 4,
+      "delete_core_with_4": 4,
+      "delete_side": 7
+    },
+    "5": {
+      "S22": 4,
+      "delete_core_inner": 4,
+      "delete_core_with_4": 4,
+      "delete_side": 4
+    }
+  },
+  "quadratic_shadow_sizes": {
+    "S22": 48,
+    "delete_core_inner": 48,
+    "delete_core_with_4": 48,
+    "delete_side": 48
+  },
+  "reads_frozen_result": false,
+  "status": "PASS",
+  "strict_scope": "This verifies the finite coordinate parent table. It does not prove the torus fixed-point reduction, DVR extension, or relative Grassmannian argument."
+}
+PERM5_D11_D12_PARENT_TABLE_INDEPENDENT_PASS
+{
+  "gap": 10,
+  "nine_term_upper": 2205,
+  "output_sha256": "8A5DE1B3DC91E65FF09F7B11BA4EAD4852245FB8248579483880ADA00886FCCF",
+  "status": "PASS",
+  "tangent_kernel": 8,
+  "terminal_lower": 2215
+}
+{
+  "claim_type": "independent exact expansion of the Glynn upper bound",
+  "conclusion": "ChowRank(perm_5) <= 16 over characteristic zero.",
+  "expanded_column_choices": 50000,
+  "imports_project_generator": false,
+  "nonpermutation_coefficient": 0,
+  "nonpermutation_monomials": 3005,
+  "normalized_sign_terms": 16,
+  "permutation_coefficient": 1,
+  "permutation_monomials": 120,
+  "permutation_support_sha256": "FADA73A7D6A4DAC3C95123E543C108BF675FA873A930148068697BB7F054045E",
+  "reads_frozen_result": false,
+  "row_choice_monomials": 3125,
+  "status": "PASS"
+}
+PERM5_GLYNN_UPPER_BOUND_INDEPENDENT_PASS
+PERM5_PROOF_VERIFICATION_PASS computations=5
+PERM5_SUBMISSION_COMPUTATION_PASS written_proof_requires_mathematical_review

@@ -1,0 +1,30 @@
+{
+  "records": [
+    {
+      "F_dimension": 110,
+      "Glynn_terms": 16,
+      "U_dimension": 150,
+      "global_bound_is_sharp": true,
+      "h2": 10,
+      "h3": 50,
+      "individual_middle_defect": 0,
+      "n": 5,
+      "row_cubic_span": 15,
+      "row_quadratic_span": 11
+    },
+    {
+      "F_dimension": 240,
+      "Glynn_terms": 32,
+      "U_dimension": 520,
+      "global_bound_is_sharp": true,
+      "h2": 15,
+      "h3": 120,
+      "individual_middle_defect": 0,
+      "n": 6,
+      "row_cubic_span": 26,
+      "row_quadratic_span": 16
+    }
+  ],
+  "scope": "integration diagnostic on actual known decompositions",
+  "status": "PASS"
+}

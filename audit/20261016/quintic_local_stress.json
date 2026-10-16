@@ -1,0 +1,61 @@
+{
+  "elapsed_seconds": 432.266,
+  "field": "F_3",
+  "records": [
+    {
+      "middle_rank": 7,
+      "minimum_symbol_ranks_by_d": [
+        0,
+        4,
+        6,
+        7,
+        7
+      ],
+      "projective_rank_four_quadrics": 702,
+      "quotient_row_spaces": 212,
+      "support": 1
+    },
+    {
+      "middle_rank": 7,
+      "minimum_symbol_ranks_by_d": [
+        0,
+        4,
+        6,
+        7,
+        7
+      ],
+      "projective_rank_four_quadrics": 702,
+      "quotient_row_spaces": 212,
+      "support": 2
+    },
+    {
+      "middle_rank": 9,
+      "minimum_symbol_ranks_by_d": [
+        0,
+        5,
+        8,
+        9,
+        9
+      ],
+      "projective_rank_four_quadrics": 6318,
+      "quotient_row_spaces": 212,
+      "support": 3
+    },
+    {
+      "middle_rank": 10,
+      "minimum_symbol_ranks_by_d": [
+        0,
+        5,
+        9,
+        10,
+        10
+      ],
+      "projective_rank_four_quadrics": 18954,
+      "quotient_row_spaces": 212,
+      "support": 4
+    }
+  ],
+  "scope": "diagnostic only; does not prove a characteristic-zero theorem",
+  "status": "PASS",
+  "total_quotient_quadric_pairs": 5656160
+}

@@ -1,0 +1,120 @@
+{
+  "cases": 16,
+  "expected_hashes_changed": false,
+  "records": [
+    {
+      "case": "clean_inventory",
+      "expected_exit": "zero",
+      "n": 5,
+      "optimized": false,
+      "pass": true
+    },
+    {
+      "case": "clean_inventory",
+      "expected_exit": "zero",
+      "n": 5,
+      "optimized": true,
+      "pass": true
+    },
+    {
+      "case": "altered_source",
+      "expected_exit": "nonzero",
+      "n": 5,
+      "optimized": false,
+      "pass": true
+    },
+    {
+      "case": "altered_source",
+      "expected_exit": "nonzero",
+      "n": 5,
+      "optimized": true,
+      "pass": true
+    },
+    {
+      "case": "missing_frozen_verifier",
+      "expected_exit": "nonzero",
+      "n": 5,
+      "optimized": false,
+      "pass": true
+    },
+    {
+      "case": "missing_frozen_verifier",
+      "expected_exit": "nonzero",
+      "n": 5,
+      "optimized": true,
+      "pass": true
+    },
+    {
+      "case": "altered_frozen_evidence",
+      "expected_exit": "nonzero",
+      "n": 5,
+      "optimized": false,
+      "pass": true
+    },
+    {
+      "case": "altered_frozen_evidence",
+      "expected_exit": "nonzero",
+      "n": 5,
+      "optimized": true,
+      "pass": true
+    },
+    {
+      "case": "clean_inventory",
+      "expected_exit": "zero",
+      "n": 6,
+      "optimized": false,
+      "pass": true
+    },
+    {
+      "case": "clean_inventory",
+      "expected_exit": "zero",
+      "n": 6,
+      "optimized": true,
+      "pass": true
+    },
+    {
+      "case": "altered_source",
+      "expected_exit": "nonzero",
+      "n": 6,
+      "optimized": false,
+      "pass": true
+    },
+    {
+      "case": "altered_source",
+      "expected_exit": "nonzero",
+      "n": 6,
+      "optimized": true,
+      "pass": true
+    },
+    {
+      "case": "missing_frozen_verifier",
+      "expected_exit": "nonzero",
+      "n": 6,
+      "optimized": false,
+      "pass": true
+    },
+    {
+      "case": "missing_frozen_verifier",
+      "expected_exit": "nonzero",
+      "n": 6,
+      "optimized": true,
+      "pass": true
+    },
+    {
+      "case": "altered_frozen_evidence",
+      "expected_exit": "nonzero",
+      "n": 6,
+      "optimized": false,
+      "pass": true
+    },
+    {
+      "case": "altered_frozen_evidence",
+      "expected_exit": "nonzero",
+      "n": 6,
+      "optimized": true,
+      "pass": true
+    }
+  ],
+  "scope": "inventory guards, not a mathematical proof or full optimized replay",
+  "status": "PASS"
+}

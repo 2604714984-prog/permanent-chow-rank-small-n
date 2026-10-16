@@ -1,0 +1,71 @@
+{
+  "archive": "perm6_arxiv_20261016.zip",
+  "archive_sha256": "0faed871d1b04f12b8ab5c09f752b7d9d89e12ea58ae7d448e3c745729cd80a7",
+  "commands": [
+    {
+      "command": [
+        "pdflatex",
+        "-no-shell-escape",
+        "-recorder",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "main.tex"
+      ],
+      "elapsed_seconds": 0.444,
+      "log": "perm6_compile_pass1.log",
+      "log_sha256": "99930f8520477eac9a6c8834b6b068410c340a0bc6ffba6b828cc530843fa4cc",
+      "returncode": 0
+    },
+    {
+      "command": [
+        "pdflatex",
+        "-no-shell-escape",
+        "-recorder",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "main.tex"
+      ],
+      "elapsed_seconds": 0.375,
+      "log": "perm6_compile_pass2.log",
+      "log_sha256": "1459c650a001615d037a3bb9431e33ca0104d3dd4306e5e882b8ab7de51560b1",
+      "returncode": 0
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-B",
+        "/workspace/scratch/c99082855395/perm6_release_vs73q5tn/anc/verify_submission.py"
+      ],
+      "elapsed_seconds": 24.236,
+      "log": "perm6_release_replay.log",
+      "log_sha256": "e9d280dfedad5454dfe3f13f013c14aa13b32836ddee0a512dc98dc2cf8ecfa9",
+      "returncode": 0
+    },
+    {
+      "command": [
+        "pdfinfo",
+        "/workspace/scratch/c99082855395/permanent-chow-rank-small-n/dist/perm6_chow_rank_32_20261016.pdf"
+      ],
+      "elapsed_seconds": 0.021,
+      "log": "perm6_pdfinfo.log",
+      "log_sha256": "bd6a1bbafb0d7b871d22a6b29b1e22b4003d91cd56af9ffe57c3dab86677ef1c",
+      "returncode": 0
+    },
+    {
+      "command": [
+        "pdffonts",
+        "/workspace/scratch/c99082855395/permanent-chow-rank-small-n/dist/perm6_chow_rank_32_20261016.pdf"
+      ],
+      "elapsed_seconds": 0.05,
+      "log": "perm6_fonts.log",
+      "log_sha256": "22f69005e899d759add37a5dc14673a1c7be27a646e6f8a5dc8e11365016aced",
+      "returncode": 0
+    }
+  ],
+  "members": 20,
+  "n": 6,
+  "preview_sha256": "8aef582f5870be65c72a9652de8d42211247dcf9677ecc1a440304a5c209a64b",
+  "python_version": "3.12.14",
+  "stage_directory": "/workspace/scratch/c99082855395/perm6_release_vs73q5tn",
+  "status": "PASS_LOCAL_SOURCE_AND_COMPUTATION"
+}

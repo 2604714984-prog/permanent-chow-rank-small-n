@@ -1,0 +1,39 @@
+[
+  {
+    "actual_local_tex_inputs": [
+      "main.tex"
+    ],
+    "document_class": [
+      "amsart"
+    ],
+    "explicit_input_commands": [],
+    "n": 5,
+    "packages": [
+      "amsmath,amssymb,mathtools,booktabs,microtype",
+      "hyperref",
+      "xurl"
+    ],
+    "shell_escape": false,
+    "top_level_tex": "main.tex"
+  },
+  {
+    "actual_local_tex_inputs": [
+      "main.tex"
+    ],
+    "document_class": [
+      "amsart"
+    ],
+    "explicit_input_commands": [],
+    "n": 6,
+    "packages": [
+      "amsmath,amssymb,mathtools",
+      "booktabs",
+      "microtype",
+      "xcolor",
+      "xurl",
+      "hyperref"
+    ],
+    "shell_escape": false,
+    "top_level_tex": "main.tex"
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "PYTHONOPTIMIZE": "1",
+    "archive_sha256": "7f87d01b9900a4e1b238548f583781b5cd5d9f2406f3fe08bce5d141b47fc804",
+    "exit_code": 0,
+    "log": "perm5_optimized_replay.log",
+    "log_sha256": "ae7f6616e691364d532983acfd7cf53a8742a164b082922ba5605a35fed7f39e",
+    "n": 5
+  },
+  {
+    "PYTHONOPTIMIZE": "1",
+    "archive_sha256": "0faed871d1b04f12b8ab5c09f752b7d9d89e12ea58ae7d448e3c745729cd80a7",
+    "exit_code": 0,
+    "log": "perm6_optimized_replay.log",
+    "log_sha256": "d537fdb0e2a87271085134bc5228917798c1b28ec0f704789adf65f5f7dba837",
+    "n": 6
+  }
+]
