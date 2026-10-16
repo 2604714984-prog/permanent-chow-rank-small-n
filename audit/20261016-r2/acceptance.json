@@ -1,0 +1,245 @@
+{
+  "baseline_commit": "ff27dd3377e341ae89e4fd9017cf3d174f51d7c8",
+  "commands": [
+    {
+      "PYTHONOPTIMIZE": 0,
+      "command": [
+        "C:\\Users\\rongyu\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "-B",
+        "perm5/verify_all.py"
+      ],
+      "cwd_relative_to_repository": ".",
+      "exit_code": 0,
+      "label": "perm5_public",
+      "log": "logs/perm5_public.log",
+      "log_sha256": "77d9d118129ff62c2a006065b73fd251a4ffd9c90f20368995a34723835cd261",
+      "seconds": 10.973
+    },
+    {
+      "PYTHONOPTIMIZE": 0,
+      "command": [
+        "C:\\Users\\rongyu\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "-B",
+        "anc/verify_submission.py"
+      ],
+      "cwd_relative_to_repository": "..\\fresh extracted submissions\\perm5",
+      "exit_code": 0,
+      "label": "perm5_submission_O0",
+      "log": "logs/perm5_submission_O0.log",
+      "log_sha256": "d0630c776ba6ee02908fdaa347adb342f2ab8e3e1a895f42527c8d217f756413",
+      "seconds": 11.465
+    },
+    {
+      "PYTHONOPTIMIZE": 1,
+      "command": [
+        "C:\\Users\\rongyu\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "-B",
+        "anc/verify_submission.py"
+      ],
+      "cwd_relative_to_repository": "..\\fresh extracted submissions\\perm5",
+      "exit_code": 0,
+      "label": "perm5_submission_O1",
+      "log": "logs/perm5_submission_O1.log",
+      "log_sha256": "d0630c776ba6ee02908fdaa347adb342f2ab8e3e1a895f42527c8d217f756413",
+      "seconds": 11.469
+    },
+    {
+      "PYTHONOPTIMIZE": 2,
+      "command": [
+        "C:\\Users\\rongyu\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "-B",
+        "anc/verify_submission.py"
+      ],
+      "cwd_relative_to_repository": "..\\fresh extracted submissions\\perm5",
+      "exit_code": 0,
+      "label": "perm5_submission_O2",
+      "log": "logs/perm5_submission_O2.log",
+      "log_sha256": "d0630c776ba6ee02908fdaa347adb342f2ab8e3e1a895f42527c8d217f756413",
+      "seconds": 12.842
+    },
+    {
+      "PYTHONOPTIMIZE": 0,
+      "command": [
+        "C:\\Users\\rongyu\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "-B",
+        "D:\\UserData\\ResearchArchives\\perm56\\arxiv-audit-20261016-r2\\fresh extracted submissions\\perm5\\anc\\verify_submission.py",
+        "--inventory-only"
+      ],
+      "cwd_relative_to_repository": "..",
+      "exit_code": 0,
+      "label": "perm5_foreign_cwd_inventory",
+      "log": "logs/perm5_foreign_cwd_inventory.log",
+      "log_sha256": "bae3f3e5cf753a1ee8678c3e902062458c3f38cf768d27743f4928b03d4c06a6",
+      "seconds": 0.088
+    },
+    {
+      "PYTHONOPTIMIZE": 0,
+      "command": [
+        "pdflatex",
+        "--disable-installer",
+        "-no-shell-escape",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "-recorder",
+        "main.tex"
+      ],
+      "cwd_relative_to_repository": "..\\fresh extracted submissions\\perm5",
+      "exit_code": 0,
+      "label": "perm5_pdflatex_pass1",
+      "log": "logs/perm5_pdflatex_pass1.log",
+      "log_sha256": "ca61c52d61dd751a20511e0f51cb662e174476320d96dea148c5b21bf20a100a",
+      "seconds": 0.999
+    },
+    {
+      "PYTHONOPTIMIZE": 0,
+      "command": [
+        "pdflatex",
+        "--disable-installer",
+        "-no-shell-escape",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "-recorder",
+        "main.tex"
+      ],
+      "cwd_relative_to_repository": "..\\fresh extracted submissions\\perm5",
+      "exit_code": 0,
+      "label": "perm5_pdflatex_pass2",
+      "log": "logs/perm5_pdflatex_pass2.log",
+      "log_sha256": "1bf55432260c5ea12383c6c37b705d4170bd1c03d51e94c86e57563a05f2621e",
+      "seconds": 0.494
+    },
+    {
+      "PYTHONOPTIMIZE": 0,
+      "command": [
+        "C:\\Users\\rongyu\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "-B",
+        "perm6/verify_all.py"
+      ],
+      "cwd_relative_to_repository": ".",
+      "exit_code": 0,
+      "label": "perm6_public",
+      "log": "logs/perm6_public.log",
+      "log_sha256": "ca97a592116a9c780cabe97da1102263b978c8a9e3e3aa1dc4d7e4121185d095",
+      "seconds": 19.935
+    },
+    {
+      "PYTHONOPTIMIZE": 0,
+      "command": [
+        "C:\\Users\\rongyu\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "-B",
+        "anc/verify_submission.py"
+      ],
+      "cwd_relative_to_repository": "..\\fresh extracted submissions\\perm6",
+      "exit_code": 0,
+      "label": "perm6_submission_O0",
+      "log": "logs/perm6_submission_O0.log",
+      "log_sha256": "7fd2079460871a33562f70a400a3b34157688ee56fc7f03288f962e9646ec5f8",
+      "seconds": 20.206
+    },
+    {
+      "PYTHONOPTIMIZE": 1,
+      "command": [
+        "C:\\Users\\rongyu\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "-B",
+        "anc/verify_submission.py"
+      ],
+      "cwd_relative_to_repository": "..\\fresh extracted submissions\\perm6",
+      "exit_code": 0,
+      "label": "perm6_submission_O1",
+      "log": "logs/perm6_submission_O1.log",
+      "log_sha256": "9de51fdfd949f5fb3375f81d6c887a8e237586765afa920122e6a49e67a31a75",
+      "seconds": 20.807
+    },
+    {
+      "PYTHONOPTIMIZE": 2,
+      "command": [
+        "C:\\Users\\rongyu\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "-B",
+        "anc/verify_submission.py"
+      ],
+      "cwd_relative_to_repository": "..\\fresh extracted submissions\\perm6",
+      "exit_code": 0,
+      "label": "perm6_submission_O2",
+      "log": "logs/perm6_submission_O2.log",
+      "log_sha256": "4f74eb127131ec279cb7e07ed5d35101fad35342e156532a3b9cead80489d76c",
+      "seconds": 21.209
+    },
+    {
+      "PYTHONOPTIMIZE": 0,
+      "command": [
+        "C:\\Users\\rongyu\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "-B",
+        "D:\\UserData\\ResearchArchives\\perm56\\arxiv-audit-20261016-r2\\fresh extracted submissions\\perm6\\anc\\verify_submission.py",
+        "--inventory-only"
+      ],
+      "cwd_relative_to_repository": "..",
+      "exit_code": 0,
+      "label": "perm6_foreign_cwd_inventory",
+      "log": "logs/perm6_foreign_cwd_inventory.log",
+      "log_sha256": "72c9c6930e88cc0b9be853e9a0d7f0a852ca563119a944360a63b07c1479afc4",
+      "seconds": 0.082
+    },
+    {
+      "PYTHONOPTIMIZE": 0,
+      "command": [
+        "pdflatex",
+        "--disable-installer",
+        "-no-shell-escape",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "-recorder",
+        "main.tex"
+      ],
+      "cwd_relative_to_repository": "..\\fresh extracted submissions\\perm6",
+      "exit_code": 0,
+      "label": "perm6_pdflatex_pass1",
+      "log": "logs/perm6_pdflatex_pass1.log",
+      "log_sha256": "b74acc112c44b51c19a31e06ff6d7039b30cb79c63f75b5c412856dec3c344d5",
+      "seconds": 0.606
+    },
+    {
+      "PYTHONOPTIMIZE": 0,
+      "command": [
+        "pdflatex",
+        "--disable-installer",
+        "-no-shell-escape",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "-recorder",
+        "main.tex"
+      ],
+      "cwd_relative_to_repository": "..\\fresh extracted submissions\\perm6",
+      "exit_code": 0,
+      "label": "perm6_pdflatex_pass2",
+      "log": "logs/perm6_pdflatex_pass2.log",
+      "log_sha256": "d143bb8cba31811de6310d0f990ecd5cef7c03cb489af4b47d7afb14b236653f",
+      "seconds": 0.543
+    }
+  ],
+  "environment": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]"
+  },
+  "packages": {
+    "5": {
+      "archive_sha256": "7f87d01b9900a4e1b238548f583781b5cd5d9f2406f3fe08bce5d141b47fc804",
+      "compiled_pdf_sha256": "494daac7222c1ae834ba3e778944e641df930c333ee3bba7d5b1c722b9407e83",
+      "final_tex_warnings": [
+        "Package epstopdf Warning: Shell escape feature is not enabled."
+      ],
+      "frozen_ancillary_bytes_unchanged": true,
+      "members": 25
+    },
+    "6": {
+      "archive_sha256": "0faed871d1b04f12b8ab5c09f752b7d9d89e12ea58ae7d448e3c745729cd80a7",
+      "compiled_pdf_sha256": "4c0b176614efae406053898f2a4c1c93d4a4b582f006bb742b102e8f2b69756f",
+      "final_tex_warnings": [
+        "Package epstopdf Warning: Shell escape feature is not enabled."
+      ],
+      "frozen_ancillary_bytes_unchanged": true,
+      "members": 20
+    }
+  },
+  "public_original_bytes_unchanged": true,
+  "status": "PASS"
+}

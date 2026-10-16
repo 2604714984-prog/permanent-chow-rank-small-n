@@ -1,0 +1,21 @@
+test_frozen_expected_hashes_and_subsets (__main__.PublishedReleaseTests.test_frozen_expected_hashes_and_subsets) ... ok
+test_legacy_archives_rebuild_exact_payloads (__main__.PublishedReleaseTests.test_legacy_archives_rebuild_exact_payloads) ... ok
+test_no_disappearing_python_assert_checks (__main__.PublishedReleaseTests.test_no_disappearing_python_assert_checks) ... ok
+test_r2_actual_archives_rebuild_byte_for_byte (__main__.PublishedReleaseTests.test_r2_actual_archives_rebuild_byte_for_byte) ... ok
+test_changed_payload_rejected_without_hash_rewrite (__main__.SyntheticBuilderTests.test_changed_payload_rejected_without_hash_rewrite) ... ok
+test_default_creator_platform_does_not_change_bytes (__main__.SyntheticBuilderTests.test_default_creator_platform_does_not_change_bytes) ... ok
+test_does_not_call_a_compression_backend (__main__.SyntheticBuilderTests.test_does_not_call_a_compression_backend) ... ok
+test_duplicate_manifest_entry_rejected (__main__.SyntheticBuilderTests.test_duplicate_manifest_entry_rejected) ... ok
+test_metadata_and_stored_payloads (__main__.SyntheticBuilderTests.test_metadata_and_stored_payloads) ... ok
+test_missing_main_tex_rejected (__main__.SyntheticBuilderTests.test_missing_main_tex_rejected) ... ok
+test_missing_payload_rejected (__main__.SyntheticBuilderTests.test_missing_payload_rejected) ... ok
+test_nested_tex_rejected (__main__.SyntheticBuilderTests.test_nested_tex_rejected) ... ok
+test_parent_path_rejected (__main__.SyntheticBuilderTests.test_parent_path_rejected) ... ok
+test_repeated_build_is_identical (__main__.SyntheticBuilderTests.test_repeated_build_is_identical) ... ok
+test_root_noise_rejected (__main__.SyntheticBuilderTests.test_root_noise_rejected) ... ok
+test_unknown_release_rejected (__main__.SyntheticBuilderTests.test_unknown_release_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.218s
+
+OK

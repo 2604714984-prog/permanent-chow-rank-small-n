@@ -1,0 +1,34 @@
+{
+  "release": "20261016-r2",
+  "status": "draft metadata for author review, not a submitted record",
+  "papers": [
+    {
+      "n": 5,
+      "title": "The Chow Rank of the Five-by-Five Permanent",
+      "authors_in_source": [
+        "Rongyu Xu"
+      ],
+      "abstract_exact_latex_source": "We prove that the ordinary Chow rank of the permanent of a generic five by\nfive matrix is sixteen over every field of characteristic zero. The lower\nbound uses an image-span inequality for rectangular catalecticants and a\nquotient-symbol estimate for a single quintic product. The finite\nverification records a 352-case squarefree table, four small rational\nderivative matrices, and elementary partition bounds. Their inputs and\nindependent verification programs are included. The proof makes no\nassertion about border Chow rank.",
+      "processor": "pdflatex",
+      "main_file": "main.tex",
+      "preview_pages": 7,
+      "license": null,
+      "author_approval_recorded": false,
+      "arxiv_submission_id": null
+    },
+    {
+      "n": 6,
+      "title": "The Chow Rank of the Six-by-Six Permanent",
+      "authors_in_source": [
+        "Rongyu Xu"
+      ],
+      "abstract_exact_latex_source": "Let \\(\\perm_6\\) be the permanent of a generic \\(6\\) by \\(6\\) matrix.\nOver every field of characteristic zero, we prove that its\nordinary Chow rank is \\(32\\). The finite computations are stated as explicit\nlemmas with exhaustive domains and exact\noutputs. The lower bound combines a\nsymmetric image-span inequality with a half-defect estimate for arbitrary\nquotient derivative symbols of a sextic Chow term. An exact verification\nreconstructs all finite tables. A second implementation independently checks\nevery labelled bipartite graph with at most six edges and all \\(45{,}696\\)\ncoordinate squarefree-symbol cases. No floating-point or randomized step is\nused. A separate standard-library implementation independently expands and\ndifferentiates all five dependent-factor normal forms. No border-rank or\ngeneral-\\(n\\) equality is claimed.",
+      "processor": "pdflatex",
+      "main_file": "main.tex",
+      "preview_pages": 11,
+      "license": null,
+      "author_approval_recorded": false,
+      "arxiv_submission_id": null
+    }
+  ]
+}

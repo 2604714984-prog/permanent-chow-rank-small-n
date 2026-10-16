@@ -1,0 +1,31 @@
+{
+  "arithmetic": "exact rational; standard library only",
+  "results": [
+    {
+      "E2_first_derivatives_span_V": true,
+      "basis_exactly_three_by_three_subpermanents": true,
+      "cubic_monomials": 2925,
+      "forced_zero_cubic_coefficients": 2325,
+      "n": 5,
+      "prolongation_dimension": 100,
+      "quadratic_monomials": 325,
+      "rectangle_basis_dimension": 100,
+      "status": "PASS",
+      "two_term_derivative_equations": 2500,
+      "variables": 25
+    },
+    {
+      "E2_first_derivatives_span_V": true,
+      "basis_exactly_three_by_three_subpermanents": true,
+      "cubic_monomials": 8436,
+      "forced_zero_cubic_coefficients": 6036,
+      "n": 6,
+      "prolongation_dimension": 400,
+      "quadratic_monomials": 666,
+      "rectangle_basis_dimension": 225,
+      "status": "PASS",
+      "two_term_derivative_equations": 8100,
+      "variables": 36
+    }
+  ]
+}

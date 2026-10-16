@@ -1,0 +1,392 @@
+{
+  "PDF_descriptor_reader": "pypdf",
+  "font_files_extracted": false,
+  "renderer": "PyMuPDF 1.28.0",
+  "results": [
+    {
+      "all_fonts_embedded": true,
+      "bibliography": "inline thebibliography; no bibtex/biber input",
+      "changed_pages_from_reviewed_draft": [],
+      "declared_packages": [
+        "amsmath,amssymb,mathtools,booktabs,microtype",
+        "hyperref",
+        "xurl"
+      ],
+      "embedded_files": 0,
+      "figures": "no external figures",
+      "final_tex_warnings": [
+        "Package epstopdf Warning: Shell escape feature is not enabled."
+      ],
+      "font_descriptor_metadata": [
+        {
+          "embedded": true,
+          "name": "/ADIDAP+CMR9",
+          "subtype": "/Type1"
+        },
+        {
+          "embedded": true,
+          "name": "/ADQXPW+CMMI10",
+          "subtype": "/Type1"
+        },
+        {
+          "embedded": true,
+          "name": "/AGJUKD+CMR8",
+          "subtype": "/Type1"
+        },
+        {
+          "embedded": true,
+          "name": "/FPZVBH+CMTT10",
+          "subtype": "/Type1"
+        },
+        {
+          "embedded": true,
+          "name": "/GTHCGE+CMMI8",
+          "subtype": "/Type1"
+        },
+        {
+          "embedded": true,
+          "name": "/GUOWTK+CMSY6",
+          "subtype": "/Type1"
+        },
+        {
+          "embedded": true,
+          "name": "/IFQEST+CMSY8",
+          "subtype": "/Type1"
+        },
+        {
+          "embedded": true,
+          "name": "/IOJUZD+CMR6",
+          "subtype": "/Type1"
+        },
+        {
+          "embedded": true,
+          "name": "/MZRCVC+CMR10",
+          "subtype": "/Type1"
+        },
+        {
+          "embedded": true,
+          "name": "/OPEKTB+CMSY9",
+          "subtype": "/Type1"
+        },
+        {
+          "embedded": true,
+          "name": "/OZBBNW+MSBM10",
+          "subtype": "/Type1"
+        },
+        {
+          "embedded": true,
+          "name": "/QJVHQQ+CMSY10",
+          "subtype": "/Type1"
+        },
+        {
+          "embedded": true,
+          "name": "/QNJWUE+CMMI6",
+          "subtype": "/Type1"
+        },
+        {
+          "embedded": true,
+          "name": "/SKOUQS+CMEX10",
+          "subtype": "/Type1"
+        },
+        {
+          "embedded": true,
+          "name": "/SQRKHI+CMBX10",
+          "subtype": "/Type1"
+        },
+        {
+          "embedded": true,
+          "name": "/UFWEUC+CMCSC10",
+          "subtype": "/Type1"
+        },
+        {
+          "embedded": true,
+          "name": "/UUSBII+CMBX9",
+          "subtype": "/Type1"
+        },
+        {
+          "embedded": true,
+          "name": "/VBWQUV+CMTI9",
+          "subtype": "/Type1"
+        },
+        {
+          "embedded": true,
+          "name": "/VTGQQT+MSAM10",
+          "subtype": "/Type1"
+        },
+        {
+          "embedded": true,
+          "name": "/ZGQLLC+CMTI10",
+          "subtype": "/Type1"
+        }
+      ],
+      "n": 5,
+      "page_checks": [
+        {
+          "embedded_images": 0,
+          "matches_reviewed_draft_render": true,
+          "page": 1,
+          "words": 339,
+          "words_outside_page": 0
+        },
+        {
+          "embedded_images": 0,
+          "matches_reviewed_draft_render": true,
+          "page": 2,
+          "words": 427,
+          "words_outside_page": 0
+        },
+        {
+          "embedded_images": 0,
+          "matches_reviewed_draft_render": true,
+          "page": 3,
+          "words": 451,
+          "words_outside_page": 0
+        },
+        {
+          "embedded_images": 0,
+          "matches_reviewed_draft_render": true,
+          "page": 4,
+          "words": 428,
+          "words_outside_page": 0
+        },
+        {
+          "embedded_images": 0,
+          "matches_reviewed_draft_render": true,
+          "page": 5,
+          "words": 398,
+          "words_outside_page": 0
+        },
+        {
+          "embedded_images": 0,
+          "matches_reviewed_draft_render": true,
+          "page": 6,
+          "words": 377,
+          "words_outside_page": 0
+        },
+        {
+          "embedded_images": 0,
+          "matches_reviewed_draft_render": true,
+          "page": 7,
+          "words": 367,
+          "words_outside_page": 0
+        }
+      ],
+      "pages": 7,
+      "pdf_bytes": 309819,
+      "pdf_sha256": "3aea76a790da5456e475a06633938bccb07b32ee7e810ec9620ddc4c44645294",
+      "source_uses_shell_escape": false
+    },
+    {
+      "all_fonts_embedded": true,
+      "bibliography": "inline thebibliography; no bibtex/biber input",
+      "changed_pages_from_reviewed_draft": [
+        5
+      ],
+      "declared_packages": [
+        "amsmath,amssymb,mathtools",
+        "booktabs",
+        "microtype",
+        "xcolor",
+        "xurl",
+        "hyperref"
+      ],
+      "embedded_files": 0,
+      "figures": "no external figures",
+      "final_tex_warnings": [
+        "Package epstopdf Warning: Shell escape feature is not enabled."
+      ],
+      "font_descriptor_metadata": [
+        {
+          "embedded": true,
+          "name": "/ADUSFC+CMTT10",
+          "subtype": "/Type1"
+        },
+        {
+          "embedded": true,
+          "name": "/BYHLED+CMR10",
+          "subtype": "/Type1"
+        },
+        {
+          "embedded": true,
+          "name": "/DCNLJM+CMTI10",
+          "subtype": "/Type1"
+        },
+        {
+          "embedded": true,
+          "name": "/FZLGCA+CMMI6",
+          "subtype": "/Type1"
+        },
+        {
+          "embedded": true,
+          "name": "/FZTQRH+CMCSC10",
+          "subtype": "/Type1"
+        },
+        {
+          "embedded": true,
+          "name": "/GTWSFS+CMMI9",
+          "subtype": "/Type1"
+        },
+        {
+          "embedded": true,
+          "name": "/GUOWTK+CMSY6",
+          "subtype": "/Type1"
+        },
+        {
+          "embedded": true,
+          "name": "/HBHRUN+CMSY8",
+          "subtype": "/Type1"
+        },
+        {
+          "embedded": true,
+          "name": "/NAMSJV+CMEX10",
+          "subtype": "/Type1"
+        },
+        {
+          "embedded": true,
+          "name": "/NVZYBU+CMBX10",
+          "subtype": "/Type1"
+        },
+        {
+          "embedded": true,
+          "name": "/OPEKTB+CMSY9",
+          "subtype": "/Type1"
+        },
+        {
+          "embedded": true,
+          "name": "/OVTLEI+CMSY10",
+          "subtype": "/Type1"
+        },
+        {
+          "embedded": true,
+          "name": "/OZBBNW+MSBM10",
+          "subtype": "/Type1"
+        },
+        {
+          "embedded": true,
+          "name": "/QSHGSL+CMMI10",
+          "subtype": "/Type1"
+        },
+        {
+          "embedded": true,
+          "name": "/QYKDAR+CMTI9",
+          "subtype": "/Type1"
+        },
+        {
+          "embedded": true,
+          "name": "/UUSBII+CMBX9",
+          "subtype": "/Type1"
+        },
+        {
+          "embedded": true,
+          "name": "/VFFFAK+CMR8",
+          "subtype": "/Type1"
+        },
+        {
+          "embedded": true,
+          "name": "/VTGQQT+MSAM10",
+          "subtype": "/Type1"
+        },
+        {
+          "embedded": true,
+          "name": "/VVBKTH+CMR6",
+          "subtype": "/Type1"
+        },
+        {
+          "embedded": true,
+          "name": "/WMWPJU+CMR9",
+          "subtype": "/Type1"
+        },
+        {
+          "embedded": true,
+          "name": "/YAAFIJ+CMMI8",
+          "subtype": "/Type1"
+        }
+      ],
+      "n": 6,
+      "page_checks": [
+        {
+          "embedded_images": 0,
+          "matches_reviewed_draft_render": true,
+          "page": 1,
+          "words": 351,
+          "words_outside_page": 0
+        },
+        {
+          "embedded_images": 0,
+          "matches_reviewed_draft_render": true,
+          "page": 2,
+          "words": 413,
+          "words_outside_page": 0
+        },
+        {
+          "embedded_images": 0,
+          "matches_reviewed_draft_render": true,
+          "page": 3,
+          "words": 421,
+          "words_outside_page": 0
+        },
+        {
+          "embedded_images": 0,
+          "matches_reviewed_draft_render": true,
+          "page": 4,
+          "words": 380,
+          "words_outside_page": 0
+        },
+        {
+          "embedded_images": 0,
+          "matches_reviewed_draft_render": false,
+          "page": 5,
+          "words": 409,
+          "words_outside_page": 0
+        },
+        {
+          "embedded_images": 0,
+          "matches_reviewed_draft_render": true,
+          "page": 6,
+          "words": 430,
+          "words_outside_page": 0
+        },
+        {
+          "embedded_images": 0,
+          "matches_reviewed_draft_render": true,
+          "page": 7,
+          "words": 452,
+          "words_outside_page": 0
+        },
+        {
+          "embedded_images": 0,
+          "matches_reviewed_draft_render": true,
+          "page": 8,
+          "words": 323,
+          "words_outside_page": 0
+        },
+        {
+          "embedded_images": 0,
+          "matches_reviewed_draft_render": true,
+          "page": 9,
+          "words": 345,
+          "words_outside_page": 0
+        },
+        {
+          "embedded_images": 0,
+          "matches_reviewed_draft_render": true,
+          "page": 10,
+          "words": 379,
+          "words_outside_page": 0
+        },
+        {
+          "embedded_images": 0,
+          "matches_reviewed_draft_render": true,
+          "page": 11,
+          "words": 383,
+          "words_outside_page": 0
+        }
+      ],
+      "pages": 11,
+      "pdf_bytes": 355156,
+      "pdf_sha256": "7b12c4e53d27c9016f5cf9073de354abeaf628989e5bbcd7bfb83788008d493e",
+      "source_uses_shell_escape": false
+    }
+  ],
+  "status": "PASS"
+}

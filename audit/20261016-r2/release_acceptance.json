@@ -1,0 +1,439 @@
+{
+  "baseline_commit": "ff27dd3377e341ae89e4fd9017cf3d174f51d7c8",
+  "commands": [
+    {
+      "PYTHONOPTIMIZE": 0,
+      "arguments": [
+        "pdflatex",
+        "--version"
+      ],
+      "cwd": ".",
+      "exit_code": 0,
+      "expected_success": true,
+      "label": "pdflatex_version",
+      "log": "release_logs/pdflatex_version.log",
+      "log_sha256": "f6a45f722e3abb06ca69eec4d97c85e299cd004d1f5a046e1a5dcd31783dc91e",
+      "seconds": 0.224
+    },
+    {
+      "PYTHONOPTIMIZE": 0,
+      "arguments": [
+        "C:\\Users\\rongyu\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "-B",
+        "anc/verify_submission.py"
+      ],
+      "cwd": "..\\r2 accepted source extraction\\perm5",
+      "exit_code": 0,
+      "expected_success": true,
+      "label": "perm5_r2_O0",
+      "log": "release_logs/perm5_r2_O0.log",
+      "log_sha256": "4d352554eb4468fc90ea7aaadbe1b8358a22fe695c9d31737a67205e1706a437",
+      "seconds": 11.848
+    },
+    {
+      "PYTHONOPTIMIZE": 1,
+      "arguments": [
+        "C:\\Users\\rongyu\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "-B",
+        "anc/verify_submission.py"
+      ],
+      "cwd": "..\\r2 accepted source extraction\\perm5",
+      "exit_code": 0,
+      "expected_success": true,
+      "label": "perm5_r2_O1",
+      "log": "release_logs/perm5_r2_O1.log",
+      "log_sha256": "4d352554eb4468fc90ea7aaadbe1b8358a22fe695c9d31737a67205e1706a437",
+      "seconds": 11.633
+    },
+    {
+      "PYTHONOPTIMIZE": 2,
+      "arguments": [
+        "C:\\Users\\rongyu\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "-B",
+        "anc/verify_submission.py"
+      ],
+      "cwd": "..\\r2 accepted source extraction\\perm5",
+      "exit_code": 0,
+      "expected_success": true,
+      "label": "perm5_r2_O2",
+      "log": "release_logs/perm5_r2_O2.log",
+      "log_sha256": "4d352554eb4468fc90ea7aaadbe1b8358a22fe695c9d31737a67205e1706a437",
+      "seconds": 12.829
+    },
+    {
+      "PYTHONOPTIMIZE": 2,
+      "arguments": [
+        "C:\\Users\\rongyu\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "-B",
+        "<audit-workspace>\\r2 accepted source extraction\\perm5\\anc\\verify_submission.py"
+      ],
+      "cwd": "..\\r2 accepted source extraction",
+      "exit_code": 0,
+      "expected_success": true,
+      "label": "perm5_r2_foreign_cwd",
+      "log": "release_logs/perm5_r2_foreign_cwd.log",
+      "log_sha256": "4d352554eb4468fc90ea7aaadbe1b8358a22fe695c9d31737a67205e1706a437",
+      "seconds": 13.137
+    },
+    {
+      "PYTHONOPTIMIZE": 0,
+      "arguments": [
+        "pdflatex",
+        "--disable-installer",
+        "-no-shell-escape",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "-recorder",
+        "main.tex"
+      ],
+      "cwd": "..\\r2 accepted source extraction\\perm5",
+      "exit_code": 0,
+      "expected_success": true,
+      "label": "perm5_r2_tex1",
+      "log": "release_logs/perm5_r2_tex1.log",
+      "log_sha256": "359dae2d8322925e872d1965175c1e02546fc63b5149af391ffcbd98de9dfc14",
+      "seconds": 0.558
+    },
+    {
+      "PYTHONOPTIMIZE": 0,
+      "arguments": [
+        "pdflatex",
+        "--disable-installer",
+        "-no-shell-escape",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "-recorder",
+        "main.tex"
+      ],
+      "cwd": "..\\r2 accepted source extraction\\perm5",
+      "exit_code": 0,
+      "expected_success": true,
+      "label": "perm5_r2_tex2",
+      "log": "release_logs/perm5_r2_tex2.log",
+      "log_sha256": "9dab987945e8e285aee08f4747117e1d7d1a2d84ef2aa27180dc321e9337d789",
+      "seconds": 0.549
+    },
+    {
+      "PYTHONOPTIMIZE": 2,
+      "arguments": [
+        "C:\\Users\\rongyu\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "-B",
+        "anc/verify_submission.py",
+        "--inventory-only"
+      ],
+      "cwd": "<system-temp>/perm5_alter_certificate_oys749_v",
+      "exit_code": 1,
+      "expected_success": false,
+      "label": "perm5_alter_certificate_O2",
+      "log": "release_logs/perm5_alter_certificate_O2.log",
+      "log_sha256": "88e2602490edd1d466205fe10ef938b91adcf9b44327cb495a7e0e86c95b3380",
+      "seconds": 0.227
+    },
+    {
+      "PYTHONOPTIMIZE": 2,
+      "arguments": [
+        "C:\\Users\\rongyu\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "-B",
+        "anc/verify_submission.py",
+        "--inventory-only"
+      ],
+      "cwd": "<system-temp>/perm5_missing_certificate_ybjzxvxb",
+      "exit_code": 1,
+      "expected_success": false,
+      "label": "perm5_missing_certificate_O2",
+      "log": "release_logs/perm5_missing_certificate_O2.log",
+      "log_sha256": "4f993d376c118face7a7ce0131fb37a9455b99346076c1e9559f737aaf555720",
+      "seconds": 0.222
+    },
+    {
+      "PYTHONOPTIMIZE": 2,
+      "arguments": [
+        "C:\\Users\\rongyu\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "-B",
+        "anc/verify_submission.py",
+        "--inventory-only"
+      ],
+      "cwd": "<system-temp>/perm5_duplicate_manifest_entry_ftg99w3a",
+      "exit_code": 1,
+      "expected_success": false,
+      "label": "perm5_duplicate_manifest_entry_O2",
+      "log": "release_logs/perm5_duplicate_manifest_entry_O2.log",
+      "log_sha256": "6960ff1aba9a5838169369f8bdf982a8d8cb23385a4023dbf64239766e0c07ed",
+      "seconds": 0.215
+    },
+    {
+      "PYTHONOPTIMIZE": 2,
+      "arguments": [
+        "C:\\Users\\rongyu\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "-B",
+        "anc/verify_submission.py",
+        "--inventory-only"
+      ],
+      "cwd": "<system-temp>/perm5_unlisted_ancillary__cubw85g",
+      "exit_code": 1,
+      "expected_success": false,
+      "label": "perm5_unlisted_ancillary_O2",
+      "log": "release_logs/perm5_unlisted_ancillary_O2.log",
+      "log_sha256": "6218e4d66e9bdfe6c9ae382befed67c0aa5303933fa046d4bba7e8831df0f0a1",
+      "seconds": 0.26
+    },
+    {
+      "PYTHONOPTIMIZE": 0,
+      "arguments": [
+        "C:\\Users\\rongyu\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "-B",
+        "anc/verify_submission.py"
+      ],
+      "cwd": "..\\r2 accepted source extraction\\perm6",
+      "exit_code": 0,
+      "expected_success": true,
+      "label": "perm6_r2_O0",
+      "log": "release_logs/perm6_r2_O0.log",
+      "log_sha256": "333634590f536af814be8eed5ad8b619ccb3a619925df053a92cabd246e47d49",
+      "seconds": 20.388
+    },
+    {
+      "PYTHONOPTIMIZE": 1,
+      "arguments": [
+        "C:\\Users\\rongyu\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "-B",
+        "anc/verify_submission.py"
+      ],
+      "cwd": "..\\r2 accepted source extraction\\perm6",
+      "exit_code": 0,
+      "expected_success": true,
+      "label": "perm6_r2_O1",
+      "log": "release_logs/perm6_r2_O1.log",
+      "log_sha256": "8c40a5ad2a9b07eb6a23dc7b3ae84a2fb58ca0b2223404050ea7506256967318",
+      "seconds": 20.467
+    },
+    {
+      "PYTHONOPTIMIZE": 2,
+      "arguments": [
+        "C:\\Users\\rongyu\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "-B",
+        "anc/verify_submission.py"
+      ],
+      "cwd": "..\\r2 accepted source extraction\\perm6",
+      "exit_code": 0,
+      "expected_success": true,
+      "label": "perm6_r2_O2",
+      "log": "release_logs/perm6_r2_O2.log",
+      "log_sha256": "dc1bdcc360b6b337707b5eeeda075ebc7037fe2f6a876359d1915084e319a250",
+      "seconds": 21.279
+    },
+    {
+      "PYTHONOPTIMIZE": 2,
+      "arguments": [
+        "C:\\Users\\rongyu\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "-B",
+        "<audit-workspace>\\r2 accepted source extraction\\perm6\\anc\\verify_submission.py"
+      ],
+      "cwd": "..\\r2 accepted source extraction",
+      "exit_code": 0,
+      "expected_success": true,
+      "label": "perm6_r2_foreign_cwd",
+      "log": "release_logs/perm6_r2_foreign_cwd.log",
+      "log_sha256": "b80090763b67329deaa04b225be8f3d00b5628e153627252de957e774bc819e4",
+      "seconds": 21.483
+    },
+    {
+      "PYTHONOPTIMIZE": 0,
+      "arguments": [
+        "pdflatex",
+        "--disable-installer",
+        "-no-shell-escape",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "-recorder",
+        "main.tex"
+      ],
+      "cwd": "..\\r2 accepted source extraction\\perm6",
+      "exit_code": 0,
+      "expected_success": true,
+      "label": "perm6_r2_tex1",
+      "log": "release_logs/perm6_r2_tex1.log",
+      "log_sha256": "087b81d9fef64f808289c7d2ee022c0113b581a75b36101bafb0337468791177",
+      "seconds": 0.574
+    },
+    {
+      "PYTHONOPTIMIZE": 0,
+      "arguments": [
+        "pdflatex",
+        "--disable-installer",
+        "-no-shell-escape",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "-recorder",
+        "main.tex"
+      ],
+      "cwd": "..\\r2 accepted source extraction\\perm6",
+      "exit_code": 0,
+      "expected_success": true,
+      "label": "perm6_r2_tex2",
+      "log": "release_logs/perm6_r2_tex2.log",
+      "log_sha256": "67d42f48f8866a3d576498992814e0c2da1d4dbef9f27650424e2449da8eec82",
+      "seconds": 0.56
+    },
+    {
+      "PYTHONOPTIMIZE": 2,
+      "arguments": [
+        "C:\\Users\\rongyu\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "-B",
+        "anc/verify_submission.py",
+        "--inventory-only"
+      ],
+      "cwd": "<system-temp>/perm6_alter_certificate_xegcxg54",
+      "exit_code": 1,
+      "expected_success": false,
+      "label": "perm6_alter_certificate_O2",
+      "log": "release_logs/perm6_alter_certificate_O2.log",
+      "log_sha256": "509b3358732b269fa69bae3e7e3ec79c7e6ea472ce8aab47e46968d4220c9bd1",
+      "seconds": 0.238
+    },
+    {
+      "PYTHONOPTIMIZE": 2,
+      "arguments": [
+        "C:\\Users\\rongyu\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "-B",
+        "anc/verify_submission.py",
+        "--inventory-only"
+      ],
+      "cwd": "<system-temp>/perm6_missing_certificate__xz06nto",
+      "exit_code": 1,
+      "expected_success": false,
+      "label": "perm6_missing_certificate_O2",
+      "log": "release_logs/perm6_missing_certificate_O2.log",
+      "log_sha256": "71d987c292694f6b16a2e0e4801eeda70c8dbb025fa503464f361cef0ce09d96",
+      "seconds": 0.244
+    },
+    {
+      "PYTHONOPTIMIZE": 2,
+      "arguments": [
+        "C:\\Users\\rongyu\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "-B",
+        "anc/verify_submission.py",
+        "--inventory-only"
+      ],
+      "cwd": "<system-temp>/perm6_duplicate_manifest_entry_4gtfd8by",
+      "exit_code": 1,
+      "expected_success": false,
+      "label": "perm6_duplicate_manifest_entry_O2",
+      "log": "release_logs/perm6_duplicate_manifest_entry_O2.log",
+      "log_sha256": "847e70d2acf518de790b267746809a84bc44c82b1f1c439959bbf58529415a16",
+      "seconds": 0.224
+    },
+    {
+      "PYTHONOPTIMIZE": 2,
+      "arguments": [
+        "C:\\Users\\rongyu\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "-B",
+        "anc/verify_submission.py",
+        "--inventory-only"
+      ],
+      "cwd": "<system-temp>/perm6_unlisted_ancillary_hsfs8chz",
+      "exit_code": 1,
+      "expected_success": false,
+      "label": "perm6_unlisted_ancillary_O2",
+      "log": "release_logs/perm6_unlisted_ancillary_O2.log",
+      "log_sha256": "d4df79db6f733b316b1cddda5cab88b75e6519000d4e69c600bb1e31481bdf6d",
+      "seconds": 0.256
+    }
+  ],
+  "environment": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+    "zlib_runtime": "1.3.1.zlib-ng"
+  },
+  "legacy_dist_unchanged": true,
+  "negative_tests": [
+    {
+      "case": "alter_certificate",
+      "exit_code": 1,
+      "n": 5,
+      "original_expected_hashes_unchanged": true
+    },
+    {
+      "case": "missing_certificate",
+      "exit_code": 1,
+      "n": 5,
+      "original_expected_hashes_unchanged": true
+    },
+    {
+      "case": "duplicate_manifest_entry",
+      "exit_code": 1,
+      "n": 5,
+      "original_expected_hashes_unchanged": true
+    },
+    {
+      "case": "unlisted_ancillary",
+      "exit_code": 1,
+      "n": 5,
+      "original_expected_hashes_unchanged": true
+    },
+    {
+      "case": "alter_certificate",
+      "exit_code": 1,
+      "n": 6,
+      "original_expected_hashes_unchanged": true
+    },
+    {
+      "case": "missing_certificate",
+      "exit_code": 1,
+      "n": 6,
+      "original_expected_hashes_unchanged": true
+    },
+    {
+      "case": "duplicate_manifest_entry",
+      "exit_code": 1,
+      "n": 6,
+      "original_expected_hashes_unchanged": true
+    },
+    {
+      "case": "unlisted_ancillary",
+      "exit_code": 1,
+      "n": 6,
+      "original_expected_hashes_unchanged": true
+    }
+  ],
+  "packages": {
+    "5": {
+      "all_member_bytes_match_source": true,
+      "all_zip_members_stored": true,
+      "ancillary_bytes_unchanged_after_replay_and_compile": true,
+      "external_figure_files": [],
+      "final_tex_warnings": [
+        "Package epstopdf Warning: Shell escape feature is not enabled."
+      ],
+      "nested_tex_files": [],
+      "preview_pdf_bytes": 309819,
+      "preview_pdf_sha256": "3aea76a790da5456e475a06633938bccb07b32ee7e810ec9620ddc4c44645294",
+      "source_manifest_sha256": "bce32484e62f49188277090ecd0f5920142ef421210f3e9bcf169b2d57bbbd77",
+      "unexpected_tex_warnings": [],
+      "zip_bytes": 156187,
+      "zip_members": 21,
+      "zip_sha256": "47dafb5120877b536ddbebf5a2c1b5052d254a147a3dc3d50b952fa07ccf3057"
+    },
+    "6": {
+      "all_member_bytes_match_source": true,
+      "all_zip_members_stored": true,
+      "ancillary_bytes_unchanged_after_replay_and_compile": true,
+      "external_figure_files": [],
+      "final_tex_warnings": [
+        "Package epstopdf Warning: Shell escape feature is not enabled."
+      ],
+      "nested_tex_files": [],
+      "preview_pdf_bytes": 355156,
+      "preview_pdf_sha256": "7b12c4e53d27c9016f5cf9073de354abeaf628989e5bbcd7bfb83788008d493e",
+      "source_manifest_sha256": "96ba9e4fd388e0699da345808dc65ab1cbb2f3e5bef60c90046a8fff44e589f0",
+      "unexpected_tex_warnings": [],
+      "zip_bytes": 108705,
+      "zip_members": 16,
+      "zip_sha256": "3a90428a827e1c808f928e2d0d172c7835fe3604d6c16997180d7e77834a0c15"
+    }
+  },
+  "protected_original_trees_unchanged": true,
+  "release": "20261016-r2",
+  "scope": "Exact finite replay and local technical acceptance; not external peer review or arXiv processor approval.",
+  "status": "PASS"
+}

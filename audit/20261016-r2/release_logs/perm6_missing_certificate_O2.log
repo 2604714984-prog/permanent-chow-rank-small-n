@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "C:\Users\rongyu\AppData\Local\Temp\perm6_missing_certificate__xz06nto\anc\verify_submission.py", line 93, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\rongyu\AppData\Local\Temp\perm6_missing_certificate__xz06nto\anc\verify_submission.py", line 67, in main
+    current = inventory(ROOT, ANC / "SOURCE_MANIFEST.sha256")
+  File "C:\Users\rongyu\AppData\Local\Temp\perm6_missing_certificate__xz06nto\anc\verify_submission.py", line 42, in inventory
+    if hashlib.sha256(path.read_bytes()).hexdigest() != expected:
+                      ~~~~~~~~~~~~~~~^^
+  File "C:\Users\rongyu\AppData\Local\Programs\Python\Python314\Lib\pathlib\__init__.py", line 777, in read_bytes
+    with self.open(mode='rb', buffering=0) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\rongyu\AppData\Local\Programs\Python\Python314\Lib\pathlib\__init__.py", line 771, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\rongyu\\AppData\\Local\\Temp\\perm6_missing_certificate__xz06nto\\anc\\original\\computation\\data\\n6_exact_ordinary_chow_rank_32.json'

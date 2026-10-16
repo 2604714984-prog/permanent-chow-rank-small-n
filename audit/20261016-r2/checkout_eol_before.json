@@ -1,0 +1,20 @@
+[
+  {
+    "n": 5,
+    "baseline_commit": "ff27dd3377e341ae89e4fd9017cf3d174f51d7c8",
+    "core_autocrlf": "true",
+    "inventory_exit_code": 1,
+    "output": "Traceback (most recent call last):\n  File \"D:\\UserData\\ResearchArchives\\perm56\\arxiv-audit-20261016-r2\\baseline-autocrlf-checkout\\submissions\\20261016\\perm5\\anc\\verify_submission.py\", line 58, in <module>\n    main()\n    ~~~~^^\n  File \"D:\\UserData\\ResearchArchives\\perm56\\arxiv-audit-20261016-r2\\baseline-autocrlf-checkout\\submissions\\20261016\\perm5\\anc\\verify_submission.py\", line 40, in main\n    current = inventory(ROOT, ANC / \"SOURCE_MANIFEST.sha256\")\n  File \"D:\\UserData\\ResearchArchives\\perm56\\arxiv-audit-20261016-r2\\baseline-autocrlf-checkout\\submissions\\20261016\\perm5\\anc\\verify_submission.py\", line 25, in inventory\n    raise RuntimeError(f\"SHA-256 mismatch: {path.relative_to(ROOT)}\")\nRuntimeError: SHA-256 mismatch: anc\\ORIGIN.json\n",
+    "source_contains_CRLF": true,
+    "source_sha256": "ce8e8d61aaa9756e078cd037993bf7353f8b40743070aab8aa6beafd1bf01696"
+  },
+  {
+    "n": 6,
+    "baseline_commit": "ff27dd3377e341ae89e4fd9017cf3d174f51d7c8",
+    "core_autocrlf": "true",
+    "inventory_exit_code": 1,
+    "output": "Traceback (most recent call last):\n  File \"D:\\UserData\\ResearchArchives\\perm56\\arxiv-audit-20261016-r2\\baseline-autocrlf-checkout\\submissions\\20261016\\perm6\\anc\\verify_submission.py\", line 50, in <module>\n    main()\n    ~~~~^^\n  File \"D:\\UserData\\ResearchArchives\\perm56\\arxiv-audit-20261016-r2\\baseline-autocrlf-checkout\\submissions\\20261016\\perm6\\anc\\verify_submission.py\", line 38, in main\n    current = inventory(ROOT, ANC / \"SOURCE_MANIFEST.sha256\")\n  File \"D:\\UserData\\ResearchArchives\\perm56\\arxiv-audit-20261016-r2\\baseline-autocrlf-checkout\\submissions\\20261016\\perm6\\anc\\verify_submission.py\", line 23, in inventory\n    raise RuntimeError(f\"SHA-256 mismatch: {path.relative_to(ROOT)}\")\nRuntimeError: SHA-256 mismatch: anc\\ORIGIN.json\n",
+    "source_contains_CRLF": true,
+    "source_sha256": "f0af32424bd613a74dc1c13107ad488277179998da609b6c931834c730851c4a"
+  }
+]

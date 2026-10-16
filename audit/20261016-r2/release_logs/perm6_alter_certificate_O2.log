@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "C:\Users\rongyu\AppData\Local\Temp\perm6_alter_certificate_xegcxg54\anc\verify_submission.py", line 93, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\rongyu\AppData\Local\Temp\perm6_alter_certificate_xegcxg54\anc\verify_submission.py", line 67, in main
+    current = inventory(ROOT, ANC / "SOURCE_MANIFEST.sha256")
+  File "C:\Users\rongyu\AppData\Local\Temp\perm6_alter_certificate_xegcxg54\anc\verify_submission.py", line 43, in inventory
+    raise RuntimeError("SHA-256 mismatch: " + name)
+RuntimeError: SHA-256 mismatch: anc/original/computation/data/n6_exact_ordinary_chow_rank_32.json

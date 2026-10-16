@@ -1,0 +1,64 @@
+{
+  "format": "compact summary of the exhaustive local byte-offset diagnosis",
+  "full_original_diagnostic_sha256": "ef63b909d2ae6377bbe4d7546f4c986440cb3a25744b45de6093eb47c80d394f",
+  "full_original_diagnostic_bytes": 14300133,
+  "full_original_diagnostic_preserved_locally": "../local-audit-evidence/zip_portability_before.full.json",
+  "comparisons": [
+    {
+      "n": 5,
+      "original_sha256": "7f87d01b9900a4e1b238548f583781b5cd5d9f2406f3fe08bce5d141b47fc804",
+      "windows_rebuild_sha256": "e4b4258fd7bb26bce4ebe42dd9871f292bd05f3a8b0cd48c04c1d36ef106b78e",
+      "all_member_bytes_identical": true,
+      "zip_size_unchanged": false,
+      "published_create_system": 3,
+      "windows_create_system": 0,
+      "number_of_different_byte_offsets": 387300,
+      "first_different_byte_offsets": [
+        5775,
+        5890,
+        5896,
+        5897,
+        5898,
+        5899,
+        5900,
+        5901,
+        5902,
+        5903,
+        5904,
+        5905,
+        5906,
+        5907,
+        5908,
+        5909
+      ]
+    },
+    {
+      "n": 6,
+      "original_sha256": "0faed871d1b04f12b8ab5c09f752b7d9d89e12ea58ae7d448e3c745729cd80a7",
+      "windows_rebuild_sha256": "19224617a4f93fd8623d5ede834336123252630fcd2a1e1e401d1aeda3bef2b8",
+      "all_member_bytes_identical": true,
+      "zip_size_unchanged": false,
+      "published_create_system": 3,
+      "windows_create_system": 0,
+      "number_of_different_byte_offsets": 648347,
+      "first_different_byte_offsets": [
+        3699,
+        3778,
+        3783,
+        3786,
+        3787,
+        3793,
+        3794,
+        3795,
+        3796,
+        3797,
+        3798,
+        3799,
+        3800,
+        3801,
+        3802,
+        3803
+      ]
+    }
+  ]
+}

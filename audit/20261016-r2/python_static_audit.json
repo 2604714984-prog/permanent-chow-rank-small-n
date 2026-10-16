@@ -1,0 +1,235 @@
+[
+  {
+    "file": "submissions/20261016-r2/perm5/anc/original/computation/scripts/perm5_d11_d12_parent_table_independent.py",
+    "assert_statements": [],
+    "imports": [
+      "__future__",
+      "argparse",
+      "collections",
+      "itertools",
+      "json",
+      "math",
+      "pathlib"
+    ]
+  },
+  {
+    "file": "submissions/20261016-r2/perm5/anc/original/computation/scripts/perm5_fixed_six_state_table.py",
+    "assert_statements": [],
+    "imports": [
+      "__future__",
+      "argparse",
+      "csv",
+      "functools",
+      "hashlib",
+      "json",
+      "pathlib"
+    ]
+  },
+  {
+    "file": "submissions/20261016-r2/perm5/anc/original/computation/scripts/perm5_glynn_upper_bound_independent.py",
+    "assert_statements": [],
+    "imports": [
+      "__future__",
+      "argparse",
+      "hashlib",
+      "itertools",
+      "json",
+      "pathlib"
+    ]
+  },
+  {
+    "file": "submissions/20261016-r2/perm5/anc/original/computation/scripts/perm5_one_intersection_independent_multifield.py",
+    "assert_statements": [],
+    "imports": [
+      "__future__",
+      "argparse",
+      "collections",
+      "fractions",
+      "itertools",
+      "json",
+      "pathlib"
+    ]
+  },
+  {
+    "file": "submissions/20261016-r2/perm5/anc/original/computation/scripts/perm5_terminal_independent_verification.py",
+    "assert_statements": [],
+    "imports": [
+      "__future__",
+      "argparse",
+      "collections",
+      "fractions",
+      "hashlib",
+      "itertools",
+      "json",
+      "pathlib"
+    ]
+  },
+  {
+    "file": "submissions/20261016-r2/perm5/anc/original/verify_all.py",
+    "assert_statements": [],
+    "imports": [
+      "__future__",
+      "json",
+      "pathlib",
+      "subprocess",
+      "sys",
+      "tempfile"
+    ]
+  },
+  {
+    "file": "submissions/20261016-r2/perm5/anc/verify_glynn.py",
+    "assert_statements": [],
+    "imports": [
+      "argparse",
+      "itertools",
+      "math"
+    ]
+  },
+  {
+    "file": "submissions/20261016-r2/perm5/anc/verify_prolongation_independent.py",
+    "assert_statements": [],
+    "imports": [
+      "__future__",
+      "argparse",
+      "fractions",
+      "itertools",
+      "json",
+      "math",
+      "pathlib"
+    ]
+  },
+  {
+    "file": "submissions/20261016-r2/perm5/anc/verify_short_proof.py",
+    "assert_statements": [],
+    "imports": [
+      "argparse",
+      "fractions",
+      "itertools",
+      "json",
+      "math",
+      "pathlib"
+    ]
+  },
+  {
+    "file": "submissions/20261016-r2/perm5/anc/verify_short_proof_independent.py",
+    "assert_statements": [],
+    "imports": [
+      "fractions",
+      "itertools",
+      "math"
+    ]
+  },
+  {
+    "file": "submissions/20261016-r2/perm5/anc/verify_submission.py",
+    "assert_statements": [],
+    "imports": [
+      "__future__",
+      "argparse",
+      "hashlib",
+      "json",
+      "pathlib",
+      "re",
+      "subprocess",
+      "sys",
+      "tempfile"
+    ]
+  },
+  {
+    "file": "submissions/20261016-r2/perm6/anc/original/computation/scripts/n6_dependent_normal_forms_independent.py",
+    "assert_statements": [],
+    "imports": [
+      "__future__",
+      "argparse",
+      "fractions",
+      "hashlib",
+      "itertools",
+      "json",
+      "pathlib",
+      "typing"
+    ]
+  },
+  {
+    "file": "submissions/20261016-r2/perm6/anc/original/computation/scripts/n6_exact_ordinary_chow_rank_32.py",
+    "assert_statements": [],
+    "imports": [
+      "__future__",
+      "argparse",
+      "fractions",
+      "itertools",
+      "json",
+      "math",
+      "pathlib",
+      "typing"
+    ]
+  },
+  {
+    "file": "submissions/20261016-r2/perm6/anc/original/computation/scripts/n6_independent_finite_core_verification.py",
+    "assert_statements": [],
+    "imports": [
+      "__future__",
+      "itertools",
+      "math"
+    ]
+  },
+  {
+    "file": "submissions/20261016-r2/perm6/anc/original/computation/tests/test_n6_exact_ordinary_chow_rank_32.py",
+    "assert_statements": [],
+    "imports": [
+      "__future__",
+      "fractions",
+      "importlib",
+      "json",
+      "pathlib",
+      "unittest"
+    ]
+  },
+  {
+    "file": "submissions/20261016-r2/perm6/anc/original/verify_all.py",
+    "assert_statements": [],
+    "imports": [
+      "__future__",
+      "json",
+      "pathlib",
+      "subprocess",
+      "sys",
+      "tempfile"
+    ]
+  },
+  {
+    "file": "submissions/20261016-r2/perm6/anc/verify_glynn.py",
+    "assert_statements": [],
+    "imports": [
+      "argparse",
+      "itertools",
+      "math"
+    ]
+  },
+  {
+    "file": "submissions/20261016-r2/perm6/anc/verify_prolongation_independent.py",
+    "assert_statements": [],
+    "imports": [
+      "__future__",
+      "argparse",
+      "fractions",
+      "itertools",
+      "json",
+      "math",
+      "pathlib"
+    ]
+  },
+  {
+    "file": "submissions/20261016-r2/perm6/anc/verify_submission.py",
+    "assert_statements": [],
+    "imports": [
+      "__future__",
+      "argparse",
+      "hashlib",
+      "json",
+      "pathlib",
+      "re",
+      "subprocess",
+      "sys",
+      "tempfile"
+    ]
+  }
+]

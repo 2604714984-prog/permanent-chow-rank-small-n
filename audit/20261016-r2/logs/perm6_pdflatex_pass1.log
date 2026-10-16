@@ -1,0 +1,229 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex.fmt)
+entering extended mode
+(main.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2025-12-24>
+(C:\Users\rongyu\AppData\Local\Programs\MiKTeX\tex/latex/amscls\amsart.cls
+Document Class: amsart 2020/05/29 v2.20.6
+(C:\Users\rongyu\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+For additional information on amsmath, use the `?' option.
+(C:\Users\rongyu\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+(C:\Users\rongyu\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty))
+(C:\Users\rongyu\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty)
+(C:\Users\rongyu\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty))
+(C:\Users\rongyu\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd)
+(C:\Users\rongyu\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty)
+) (C:\Users\rongyu\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+)
+(C:\Users\rongyu\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mathtools.st
+y (C:\Users\rongyu\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty)
+ (C:\Users\rongyu\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty)
+(C:\Users\rongyu\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mhsetup.sty)
+)
+(C:\Users\rongyu\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty)
+
+(C:\Users\rongyu\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype.st
+y
+(C:\Users\rongyu\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty)
+
+(C:\Users\rongyu\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype-pd
+ftex.def)
+(C:\Users\rongyu\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype.cf
+g)) (C:\Users\rongyu\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+(C:\Users\rongyu\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+)
+(C:\Users\rongyu\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.de
+f)
+(C:\Users\rongyu\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx
+)) (C:\Users\rongyu\AppData\Local\Programs\MiKTeX\tex/latex/xurl\xurl.sty
+(C:\Users\rongyu\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty))
+(C:\Users\rongyu\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
+(C:\Users\rongyu\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty)
+(C:\Users\rongyu\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.st
+y)
+(C:\Users\rongyu\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefin
+ekeys.sty)
+(C:\Users\rongyu\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.
+sty
+(C:\Users\rongyu\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty)
+
+(C:\Users\rongyu\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmd
+s.sty
+(C:\Users\rongyu\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.
+sty)))
+(C:\Users\rongyu\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty)
+(C:\Users\rongyu\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
+(C:\Users\rongyu\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty)
+
+(C:\Users\rongyu\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\getti
+tlestring.sty
+(C:\Users\rongyu\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.st
+y)))
+(C:\Users\rongyu\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\stringenc.
+sty)
+(C:\Users\rongyu\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def)
+(C:\Users\rongyu\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty)
+(C:\Users\rongyu\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def)
+(C:\Users\rongyu\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
+(C:\Users\rongyu\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcal
+c.sty)))
+(C:\Users\rongyu\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
+(C:\Users\rongyu\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfi
+lecheck.sty
+(C:\Users\rongyu\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\unique
+counter.sty)))
+(C:\Users\rongyu\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pd
+ftex.def)
+No file main.aux.
+(C:\Users\rongyu\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd)
+(C:\Users\rongyu\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd)
+(C:\Users\rongyu\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+(C:\Users\rongyu\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+(C:\Users\rongyu\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty)
+(C:\Users\rongyu\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.
+cfg)))
+(C:\Users\rongyu\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-cmr.cfg)
+(C:\Users\rongyu\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.m
+kii
+[Loading MPS to PDF converter (version 2006.09.02).]
+)
+(C:\Users\rongyu\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-
+base.sty
+
+Package epstopdf Warning: Shell escape feature is not enabled.
+
+
+(C:\Users\rongyu\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.
+cfg))
+
+LaTeX Warning: Citation `IltenTeitler2016' on page 1 undefined on input line 68
+.
+
+(C:\Users\rongyu\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msa.cfg)
+(C:\Users\rongyu\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msb.cfg)
+
+LaTeX Warning: Reference `thm:main' on page 1 undefined on input line 71.
+
+
+LaTeX Warning: Reference `sec:global' on page 1 undefined on input line 75.
+
+[1{C:/Users/rongyu/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2]
+
+LaTeX Warning: Citation `Borel1991' on page 3 undefined on input line 212.
+
+[3] [4]
+
+LaTeX Warning: Reference `lem:small-intersection' on page 5 undefined on input 
+line 358.
+
+
+LaTeX Warning: Reference `lem:kernel-preimage' on page 5 undefined on input lin
+e 359.
+
+[5]
+
+LaTeX Warning: Reference `lem:tower' on page 6 undefined on input line 366.
+
+
+LaTeX Warning: Reference `lem:small-intersection' on page 6 undefined on input 
+line 393.
+
+[6]
+
+LaTeX Warning: Reference `lem:tower' on page 7 undefined on input line 455.
+
+[7]
+
+LaTeX Warning: Reference `lem:image-span' on page 8 undefined on input line 514
+.
+
+
+LaTeX Warning: Reference `lem:tower' on page 8 undefined on input line 532.
+
+[8]
+
+LaTeX Warning: Reference `prop:half-defect' on page 9 undefined on input line 5
+67.
+
+
+LaTeX Warning: Citation `Glynn2010' on page 9 undefined on input line 575.
+
+
+LaTeX Warning: Reference `thm:main' on page 9 undefined on input line 583.
+
+
+LaTeX Warning: Reference `sec:local-linear-algebra' on page 9 undefined on inpu
+t line 622.
+
+[9]
+
+LaTeX Warning: Reference `sec:half-defect' on page 10 undefined on input line 6
+50.
+
+
+LaTeX Warning: Reference `sec:half-defect' on page 10 undefined on input line 6
+55.
+
+
+LaTeX Warning: Reference `sec:global' on page 10 undefined on input line 657.
+
+
+LaTeX Warning: Reference `rem:actual-spaces' on page 10 undefined on input line
+ 692.
+
+[10]
+
+LaTeX Warning: Reference `lem:certificate-intersection' on page 11 undefined on
+ input line 696.
+
+
+LaTeX Warning: Reference `lem:certificate-squarefree' on page 11 undefined on i
+nput line 697.
+
+
+LaTeX Warning: Reference `lem:certificate-half-defect' on page 11 undefined on 
+input line 699.
+
+
+LaTeX Warning: Citation `IltenTeitler2016' on page 11 undefined on input line 7
+16.
+
+[11] (main.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+ )<C:/Users/rongyu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
+/cmbx10.pfb><C:/Users/rongyu/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
+msfonts/cm/cmbx9.pfb><C:/Users/rongyu/AppData/Local/Programs/MiKTeX/fonts/type1
+/public/amsfonts/cm/cmcsc10.pfb><C:/Users/rongyu/AppData/Local/Programs/MiKTeX/
+fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/rongyu/AppData/Local/Progra
+ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/rongyu/AppData/Lo
+cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/rongyu/A
+ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users
+/rongyu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb>
+<C:/Users/rongyu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
+mr10.pfb><C:/Users/rongyu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
+onts/cm/cmr6.pfb><C:/Users/rongyu/AppData/Local/Programs/MiKTeX/fonts/type1/pub
+lic/amsfonts/cm/cmr8.pfb><C:/Users/rongyu/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/public/amsfonts/cm/cmr9.pfb><C:/Users/rongyu/AppData/Local/Programs/MiKTeX
+/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/rongyu/AppData/Local/Progr
+ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/rongyu/AppData/Lo
+cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/rongyu/A
+ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Users
+/rongyu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb
+><C:/Users/rongyu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
+cmti9.pfb><C:/Users/rongyu/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
+fonts/cm/cmtt10.pfb><C:/Users/rongyu/AppData/Local/Programs/MiKTeX/fonts/type1/
+public/amsfonts/symbols/msam10.pfb><C:/Users/rongyu/AppData/Local/Programs/MiKT
+eX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on main.pdf (11 pages, 344966 bytes).
+Transcript written on main.log.
+pdflatex: major issue: So far, you have not checked for MiKTeX updates.

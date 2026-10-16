@@ -1,0 +1,16 @@
+{
+  "renderer": "pypdfium2/PDFium",
+  "all_pages_rendered": true,
+  "results": [
+    {
+      "n": 5,
+      "pages_rendered": 7,
+      "pdf_sha256": "3aea76a790da5456e475a06633938bccb07b32ee7e810ec9620ddc4c44645294"
+    },
+    {
+      "n": 6,
+      "pages_rendered": 11,
+      "pdf_sha256": "7b12c4e53d27c9016f5cf9073de354abeaf628989e5bbcd7bfb83788008d493e"
+    }
+  ]
+}

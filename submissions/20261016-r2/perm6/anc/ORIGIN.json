@@ -1,0 +1,27 @@
+{
+  "baseline_commit": "ff27dd3377e341ae89e4fd9017cf3d174f51d7c8",
+  "historical_full_package_is_preserved_in_repository": true,
+  "included_frozen_computational_paths": [
+    "computation/data/n6_exact_ordinary_chow_rank_32.json",
+    "computation/evidence/n6_dependent_normal_forms_independent.json",
+    "computation/scripts/n6_dependent_normal_forms_independent.py",
+    "computation/scripts/n6_exact_ordinary_chow_rank_32.py",
+    "computation/scripts/n6_independent_finite_core_verification.py",
+    "computation/tests/test_n6_exact_ordinary_chow_rank_32.py",
+    "verify_all.py"
+  ],
+  "mathematical_review": "AI-assisted internal review, not external peer review",
+  "omitted_historical_noncomputational_paths": [
+    "computation/docs/n6_exact_ordinary_chow_rank_32.md",
+    "computation/docs/n6_exact_ordinary_chow_rank_32.pdf",
+    "computation/docs/n6_exact_ordinary_chow_rank_32.tex",
+    "paper/perm6_chow_rank_32.pdf",
+    "paper/source/main.tex",
+    "README.md"
+  ],
+  "original_directory": "perm6",
+  "original_expected_hashes_changed": false,
+  "original_manifest_sha256": "438419643bca599aaafa1360009b0225f87aedc0b3d1925a83f56fd000dad102",
+  "release": "20261016-r2",
+  "repository": "https://github.com/2604714984-prog/permanent-chow-rank-small-n"
+}

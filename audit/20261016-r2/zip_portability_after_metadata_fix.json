@@ -1,0 +1,244 @@
+{
+  "zlib_version": "1.3.1.zlib-ng",
+  "zlib_runtime": "1.3.1.zlib-ng",
+  "comparison": [
+    {
+      "n": 5,
+      "build": "../rebuilt-original",
+      "reference_sha256": "7f87d01b9900a4e1b238548f583781b5cd5d9f2406f3fe08bce5d141b47fc804",
+      "rebuilt_sha256": "e4b4258fd7bb26bce4ebe42dd9871f292bd05f3a8b0cd48c04c1d36ef106b78e",
+      "reference_bytes": 395057,
+      "rebuilt_bytes": 395305,
+      "same_all_payloads": true,
+      "create_system": 0,
+      "different_compressed_sizes": [
+        {
+          "name": "anc/original/computation/evidence/perm5_fixed_six_state_table.json",
+          "reference": 1514,
+          "rebuilt": 1518
+        },
+        {
+          "name": "anc/original/computation/scripts/perm5_d11_d12_parent_table_independent.py",
+          "reference": 2093,
+          "rebuilt": 2097
+        },
+        {
+          "name": "anc/original/computation/scripts/perm5_fixed_six_state_table.py",
+          "reference": 3440,
+          "rebuilt": 3446
+        },
+        {
+          "name": "anc/original/computation/scripts/perm5_one_intersection_independent_multifield.py",
+          "reference": 4894,
+          "rebuilt": 4906
+        },
+        {
+          "name": "anc/original/computation/scripts/perm5_terminal_independent_verification.py",
+          "reference": 3963,
+          "rebuilt": 3978
+        },
+        {
+          "name": "anc/original/paper/perm5_chow_rank_16.pdf",
+          "reference": 338475,
+          "rebuilt": 338645
+        },
+        {
+          "name": "anc/original/paper/source/main.tex",
+          "reference": 12674,
+          "rebuilt": 12698
+        },
+        {
+          "name": "anc/short_proof_exact.json",
+          "reference": 860,
+          "rebuilt": 861
+        },
+        {
+          "name": "anc/verify_short_proof.py",
+          "reference": 2491,
+          "rebuilt": 2497
+        },
+        {
+          "name": "main.tex",
+          "reference": 7768,
+          "rebuilt": 7774
+        }
+      ]
+    },
+    {
+      "n": 5,
+      "build": "../rebuilt-fixed",
+      "reference_sha256": "7f87d01b9900a4e1b238548f583781b5cd5d9f2406f3fe08bce5d141b47fc804",
+      "rebuilt_sha256": "767b5c130673afb91cd5eee6c7f8947b1fc39a921f4f4a61e93f334e53989b6a",
+      "reference_bytes": 395057,
+      "rebuilt_bytes": 395305,
+      "same_all_payloads": true,
+      "create_system": 3,
+      "different_compressed_sizes": [
+        {
+          "name": "anc/original/computation/evidence/perm5_fixed_six_state_table.json",
+          "reference": 1514,
+          "rebuilt": 1518
+        },
+        {
+          "name": "anc/original/computation/scripts/perm5_d11_d12_parent_table_independent.py",
+          "reference": 2093,
+          "rebuilt": 2097
+        },
+        {
+          "name": "anc/original/computation/scripts/perm5_fixed_six_state_table.py",
+          "reference": 3440,
+          "rebuilt": 3446
+        },
+        {
+          "name": "anc/original/computation/scripts/perm5_one_intersection_independent_multifield.py",
+          "reference": 4894,
+          "rebuilt": 4906
+        },
+        {
+          "name": "anc/original/computation/scripts/perm5_terminal_independent_verification.py",
+          "reference": 3963,
+          "rebuilt": 3978
+        },
+        {
+          "name": "anc/original/paper/perm5_chow_rank_16.pdf",
+          "reference": 338475,
+          "rebuilt": 338645
+        },
+        {
+          "name": "anc/original/paper/source/main.tex",
+          "reference": 12674,
+          "rebuilt": 12698
+        },
+        {
+          "name": "anc/short_proof_exact.json",
+          "reference": 860,
+          "rebuilt": 861
+        },
+        {
+          "name": "anc/verify_short_proof.py",
+          "reference": 2491,
+          "rebuilt": 2497
+        },
+        {
+          "name": "main.tex",
+          "reference": 7768,
+          "rebuilt": 7774
+        }
+      ]
+    },
+    {
+      "n": 6,
+      "build": "../rebuilt-original",
+      "reference_sha256": "0faed871d1b04f12b8ab5c09f752b7d9d89e12ea58ae7d448e3c745729cd80a7",
+      "rebuilt_sha256": "19224617a4f93fd8623d5ede834336123252630fcd2a1e1e401d1aeda3bef2b8",
+      "reference_bytes": 654846,
+      "rebuilt_bytes": 655257,
+      "same_all_payloads": true,
+      "create_system": 0,
+      "different_compressed_sizes": [
+        {
+          "name": "anc/original/computation/data/n6_exact_ordinary_chow_rank_32.json",
+          "reference": 1853,
+          "rebuilt": 1861
+        },
+        {
+          "name": "anc/original/computation/docs/n6_exact_ordinary_chow_rank_32.md",
+          "reference": 6454,
+          "rebuilt": 6460
+        },
+        {
+          "name": "anc/original/computation/docs/n6_exact_ordinary_chow_rank_32.pdf",
+          "reference": 280558,
+          "rebuilt": 280725
+        },
+        {
+          "name": "anc/original/computation/docs/n6_exact_ordinary_chow_rank_32.tex",
+          "reference": 7035,
+          "rebuilt": 7043
+        },
+        {
+          "name": "anc/original/computation/scripts/n6_dependent_normal_forms_independent.py",
+          "reference": 2038,
+          "rebuilt": 2039
+        },
+        {
+          "name": "anc/original/computation/scripts/n6_exact_ordinary_chow_rank_32.py",
+          "reference": 6046,
+          "rebuilt": 6066
+        },
+        {
+          "name": "anc/original/paper/perm6_chow_rank_32.pdf",
+          "reference": 317118,
+          "rebuilt": 317297
+        },
+        {
+          "name": "anc/original/paper/source/main.tex",
+          "reference": 10564,
+          "rebuilt": 10575
+        },
+        {
+          "name": "main.tex",
+          "reference": 11072,
+          "rebuilt": 11083
+        }
+      ]
+    },
+    {
+      "n": 6,
+      "build": "../rebuilt-fixed",
+      "reference_sha256": "0faed871d1b04f12b8ab5c09f752b7d9d89e12ea58ae7d448e3c745729cd80a7",
+      "rebuilt_sha256": "a8f8b83735070e91b33fbb398613fee358a3131a3777aa0d1d05a26b36ee4451",
+      "reference_bytes": 654846,
+      "rebuilt_bytes": 655257,
+      "same_all_payloads": true,
+      "create_system": 3,
+      "different_compressed_sizes": [
+        {
+          "name": "anc/original/computation/data/n6_exact_ordinary_chow_rank_32.json",
+          "reference": 1853,
+          "rebuilt": 1861
+        },
+        {
+          "name": "anc/original/computation/docs/n6_exact_ordinary_chow_rank_32.md",
+          "reference": 6454,
+          "rebuilt": 6460
+        },
+        {
+          "name": "anc/original/computation/docs/n6_exact_ordinary_chow_rank_32.pdf",
+          "reference": 280558,
+          "rebuilt": 280725
+        },
+        {
+          "name": "anc/original/computation/docs/n6_exact_ordinary_chow_rank_32.tex",
+          "reference": 7035,
+          "rebuilt": 7043
+        },
+        {
+          "name": "anc/original/computation/scripts/n6_dependent_normal_forms_independent.py",
+          "reference": 2038,
+          "rebuilt": 2039
+        },
+        {
+          "name": "anc/original/computation/scripts/n6_exact_ordinary_chow_rank_32.py",
+          "reference": 6046,
+          "rebuilt": 6066
+        },
+        {
+          "name": "anc/original/paper/perm6_chow_rank_32.pdf",
+          "reference": 317118,
+          "rebuilt": 317297
+        },
+        {
+          "name": "anc/original/paper/source/main.tex",
+          "reference": 10564,
+          "rebuilt": 10575
+        },
+        {
+          "name": "main.tex",
+          "reference": 11072,
+          "rebuilt": 11083
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "tests_per_run": 16,
+  "builder_sha256": "fbd95a34b92b2e1f53ce488b7565bfc6fdec1e8ce085c905819952699d28eb12",
+  "tests_include_active_default_release": true,
+  "runs": [
+    {
+      "PYTHONOPTIMIZE": 0,
+      "exit_code": 0,
+      "seconds": 0.434,
+      "log_sha256": "80b9f5a0cc07b24308312022647c444c4ed30198010c0d40f244965849a7155d",
+      "log": "release_contract_O0.log"
+    },
+    {
+      "PYTHONOPTIMIZE": 2,
+      "exit_code": 0,
+      "seconds": 0.624,
+      "log_sha256": "d51b6503e2d0e514f3a16d67e24a7a965dbdeeccf6e787191e4a34b60c1559d6",
+      "log": "release_contract_O2.log"
+    }
+  ]
+}

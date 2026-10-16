@@ -11,3 +11,12 @@ __pycache__/
 */paper/source/*.pdf
 */paper/source/*.synctex.gz
 */paper/source/*.xdv
+
+submissions/**/main.aux
+submissions/**/main.fdb_latexmk
+submissions/**/main.fls
+submissions/**/main.log
+submissions/**/main.out
+submissions/**/main.pdf
+submissions/**/main.synctex.gz
+submissions/**/main.xdv

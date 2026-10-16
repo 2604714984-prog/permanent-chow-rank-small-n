@@ -3,6 +3,8 @@
 
 This builder never rewrites an inventory, including historical certificates.
 PDF previews are separate deliverables, not top-level source ZIP members.
+The r2 source archives use ZIP_STORED to avoid zlib/zlib-ng byte differences.
+Legacy compressed archives remain payload-reproducible across those backends.
 """
 import argparse
 import hashlib
@@ -12,8 +14,10 @@ import zipfile
 ROOT = Path(__file__).resolve().parents[1]
 
 
-def build(n, output_directory):
-    source = ROOT / "submissions" / "20261016" / f"perm{n}"
+def build(n, output_directory, release="20261016-r2"):
+    if release not in {"20261016", "20261016-r2"}:
+        raise ValueError("unknown release")
+    source = ROOT / "submissions" / release / f"perm{n}"
     manifest = source / "anc" / "SOURCE_MANIFEST.sha256"
     members = []
     for line in manifest.read_text().splitlines():
@@ -32,20 +36,26 @@ def build(n, output_directory):
         raise RuntimeError("duplicate member or missing main.tex")
     if any(name != "main.tex" and not name.startswith("anc/") for name in names):
         raise RuntimeError("unexpected top-level submission member")
+    if release != "20261016" and any(name.lower().endswith(".tex") and name != "main.tex" for name in names):
+        raise RuntimeError("TeX source is not permitted inside ancillary files")
     output_directory.mkdir(parents=True, exist_ok=True)
-    archive = output_directory / f"perm{n}_arxiv_20261016.zip"
-    with zipfile.ZipFile(archive, "w", compression=zipfile.ZIP_DEFLATED, compresslevel=9) as z:
+    archive = output_directory / f"perm{n}_arxiv_{release}.zip"
+    compression = zipfile.ZIP_DEFLATED if release == "20261016" else zipfile.ZIP_STORED
+    with zipfile.ZipFile(archive, "w", compression=compression, compresslevel=9) as z:
         for name,data in sorted(members):
             info = zipfile.ZipInfo(name, date_time=(2026,10,16,0,0,0))
-            info.compress_type = zipfile.ZIP_DEFLATED
+            # Pin the ZIP creator platform: Windows otherwise changes frozen archive bytes.
+            info.create_system = 3
+            info.compress_type = compression
             info.external_attr = 0o100644 << 16
-            z.writestr(info,data,compress_type=zipfile.ZIP_DEFLATED,compresslevel=9)
+            z.writestr(info,data,compress_type=compression,compresslevel=9)
     print(f"{archive.name} members={len(members)} sha256={hashlib.sha256(archive.read_bytes()).hexdigest()}")
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--output-dir", type=Path, default=ROOT / "dist")
+    parser.add_argument("--release", choices=("20261016", "20261016-r2"), default="20261016-r2")
     args = parser.parse_args()
     for n in (5,6):
-        build(n,args.output_dir)
+        build(n,args.output_dir,args.release)

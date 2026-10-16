@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "C:\Users\rongyu\AppData\Local\Temp\perm5_alter_certificate_oys749_v\anc\verify_submission.py", line 93, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\rongyu\AppData\Local\Temp\perm5_alter_certificate_oys749_v\anc\verify_submission.py", line 67, in main
+    current = inventory(ROOT, ANC / "SOURCE_MANIFEST.sha256")
+  File "C:\Users\rongyu\AppData\Local\Temp\perm5_alter_certificate_oys749_v\anc\verify_submission.py", line 43, in inventory
+    raise RuntimeError("SHA-256 mismatch: " + name)
+RuntimeError: SHA-256 mismatch: anc/original/computation/evidence/perm5_fixed_six_state_table.json
