@@ -65,7 +65,7 @@ unfilled logical obligation in the dependencies it examined. It is an
 AI-assisted internal review, not formal proof certification or external
 peer review. Final author approval of the revised arguments is not recorded.
 The earlier withdrawn joint arXiv record is not used as a proof premise;
-the author must confirm the appropriate authorship and relationship to it.
+the author's subsequent contribution statement is recorded below.
 
 ## Reproduction and acceptance
 
@@ -104,7 +104,7 @@ Review the revised proofs, authorship, earlier-work relationship, AI-use
 disclosure, license and final metadata. The 2026-10-16 acceptance did not inspect account endorsement or capacity,
 and did not perform an arXiv upload, license acceptance, announcement or
 external-review certification. The 2026-10-18 continuation below records the
-later account-side inspection and the approval gate before file upload.
+later account-side inspection, author authorizations, and the endorsement gate before file upload.
 
 All testing is local; do not add a duplicate CI/scheduler or use local Codex.
 The unrelated private perm5-v15 LF/CRLF receipt issue is not a dependency of
@@ -119,28 +119,38 @@ are in the repository. No data-provider, quant database or perm7 task was used.
 
 ## Submission continuation — 2026-10-18
 
-See [submission-side preflight and next gate](audit/20261018-submission/STATUS.md)
+See [actual submission status and next gate](audit/20261018-submission/STATUS.md)
 and [package integrity receipt](audit/20261018-submission/package_preflight.json).
-The r2 release is unchanged. An authenticated session was checked and one empty
-new-submission workflow was opened, intended for perm5. No files were uploaded,
-no arXiv PDF was generated, and neither paper was publicly submitted by this
-session. The actual Start page requires author/contact certification, the
-Submission Agreement, and a license before file upload; those declarations
-remain unaccepted pending explicit author confirmation. math.AG was selected
-in the unsaved form, but endorsement is not yet verified. Resume the existing
-draft rather than opening a duplicate. Private account/draft details are not
-stored in this public repository.
+The frozen **20261016-r2** release and mathematical evidence remain unchanged.
 
-The prior withdrawn joint paper's attribution and new-work versus replacement
-relationship remain unresolved. Do not alter frozen r2 manuscripts to resolve
-these points without an explicitly approved successor release. Public
-submission remains separately gated after actual server-preview review.
+The author confirmed identity/current affiliation and authorized the saved
+affiliation spelling correction. The author stated that the withdrawn joint
+work is background only, with no earlier-coauthor contribution to the new
+manuscripts. This supports the proposed two-new-work route subject to moderation;
+no manuscript text or attribution was changed.
 
-### Author clarification received (2026-10-18)
+The author selected the **arXiv non-exclusive license for both papers** and
+authorized accepting the Submission Agreement to continue upload/preview.
+Those declarations were saved in the existing perm5 Start workflow. Continue
+returned **"You are not endorsed for this archive"** for math.AG. The endorsement
+request page reported that arXiv sent a code email to the account holder.
+No message was forwarded to another person.
 
-The author confirmed identity/current affiliation and stated that the withdrawn
-joint work is background only, with no earlier-coauthor contribution to the
-new manuscripts. The authorized affiliation spelling correction was saved.
-See the dated clarification in the submission status report. License selection
-and Submission Agreement acceptance remain pending; do not treat a question
-about licenses as authorization. No upload or public submission has occurred.
+| Paper | Actual arXiv state |
+|---|---|
+| perm5 | Existing incomplete draft; blocked at Start by missing math.AG endorsement |
+| perm6 | No draft created yet; the same account/category eligibility gate applies |
+
+Neither source ZIP has been uploaded; no arXiv-generated PDF or ancillary
+preview has been inspected; neither paper has been publicly submitted by this
+session. The local 7-page and 11-page PDFs are not server previews.
+Private account details, endorsement codes and draft identifiers remain outside
+this public repository.
+
+Next: obtain math.AG endorsement, resume the existing perm5 draft, then process
+the separate perm6 draft. Reuse the already confirmed identity, license and
+upload/preview authorization. Keep all frozen sources and certificates intact.
+After inspecting both actual server previews, obtain explicit final confirmation
+of manuscript content, AI disclosure, and public submission before Submit Article.
+Do not treat the current endorsement blocker as a reason to rewrite the release
+or choose an unrelated category.
