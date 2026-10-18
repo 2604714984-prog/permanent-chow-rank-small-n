@@ -1,0 +1,265 @@
+{
+  "checked_at_utc": "2026-10-18T02:01:44.410496+00:00",
+  "release": "20261016-r2",
+  "input_commit": "99c3af555199a8f7932e9bd720c1f0bf79bf2d74",
+  "scope": "Transport integrity, source inventory, and metadata only. No mathematical re-audit, verifier execution, or compilation.",
+  "papers": [
+    {
+      "n": 5,
+      "archive": "perm5_arxiv_20261016-r2.zip",
+      "bytes": 156187,
+      "sha256": "47dafb5120877b536ddbebf5a2c1b5052d254a147a3dc3d50b952fa07ccf3057",
+      "member_count": 21,
+      "ancillary_count": 20,
+      "abstract_characters": 529,
+      "checks": {
+        "archive_sha256_matches_frozen_manifest": true,
+        "crc_ok": true,
+        "unique_members": true,
+        "safe_names": true,
+        "main_tex_plus_anc_only": true,
+        "no_tex_or_pdf_in_anc": true,
+        "manifest_covers_every_payload": true,
+        "every_payload_hash_matches": true,
+        "every_member_matches_repository_blob": true,
+        "abstract_exact_source_matches": true,
+        "title_matches": true,
+        "author_matches": true,
+        "form_abstract_only_macro_and_delimiter_expansion": true,
+        "form_metadata_ascii": true,
+        "abstract_below_1920_characters": true,
+        "ai_disclosure_present": true,
+        "no_unapproved_author_signoff": true
+      },
+      "all_checks_pass": true,
+      "members": [
+        {
+          "path": "anc/COMPUTATION_INPUTS.sha256",
+          "bytes": 1085,
+          "sha256": "249e56f2a6d6dc2b736d341d24dad983de3b9e59164bc3c44e7e63663d06b4e8"
+        },
+        {
+          "path": "anc/ORIGIN.json",
+          "bytes": 1378,
+          "sha256": "becb580faa8792c4936b5257e7f2e106a6498f7e726ad9d206734781f257e44b"
+        },
+        {
+          "path": "anc/README.md",
+          "bytes": 2439,
+          "sha256": "e5a23b96247b652af8fcbadf7b7bca623d32858924b246e82624e4f205f010a5"
+        },
+        {
+          "path": "anc/SOURCE_MANIFEST.sha256",
+          "bytes": 2201,
+          "sha256": "bce32484e62f49188277090ecd0f5920142ef421210f3e9bcf169b2d57bbbd77"
+        },
+        {
+          "path": "anc/original/MANIFEST.sha256",
+          "bytes": 1665,
+          "sha256": "5fe7ad33411a876e83a00e62b1577fa96fb846058d0f27066ed1165351fa5cda"
+        },
+        {
+          "path": "anc/original/computation/evidence/perm5_fixed_six_state_table.csv",
+          "bytes": 4162,
+          "sha256": "d7139460f38b301c515477f4fbd60da1606078509bd77a2b2a26f76e1ff57c06"
+        },
+        {
+          "path": "anc/original/computation/evidence/perm5_fixed_six_state_table.json",
+          "bytes": 20307,
+          "sha256": "20311429f7e5125d482e3b05c3c538c7b2d366348b87687f6823cab61ba06166"
+        },
+        {
+          "path": "anc/original/computation/evidence/perm5_terminal_independent_verification.json",
+          "bytes": 1562,
+          "sha256": "8a5de1b3dc91e65ff09f7b11ba4ead4852245fb8248579483880ada00886fccf"
+        },
+        {
+          "path": "anc/original/computation/scripts/perm5_d11_d12_parent_table_independent.py",
+          "bytes": 5830,
+          "sha256": "37a37dbf9cbce8c3377e4511abbf1150cb03019cbcfec6f6aa67a561dd098220"
+        },
+        {
+          "path": "anc/original/computation/scripts/perm5_fixed_six_state_table.py",
+          "bytes": 9562,
+          "sha256": "0b6e83f78625e64180fc36c54e3df98d65786ce8433612641da9ec0eea829ace"
+        },
+        {
+          "path": "anc/original/computation/scripts/perm5_glynn_upper_bound_independent.py",
+          "bytes": 3684,
+          "sha256": "17d21d92af55100f99c2a823b0863339f72e85ed892449dde7bf4b391a9767a4"
+        },
+        {
+          "path": "anc/original/computation/scripts/perm5_one_intersection_independent_multifield.py",
+          "bytes": 19556,
+          "sha256": "8a18eadec19f89a0fac16e545c8d338705db3b57e1d5f6c7e05e9dd30b9962e2"
+        },
+        {
+          "path": "anc/original/computation/scripts/perm5_terminal_independent_verification.py",
+          "bytes": 14269,
+          "sha256": "0c989bad731c885e0e2842ba69f7a62c453bad744a70ecb1fa66b247481aaa8d"
+        },
+        {
+          "path": "anc/original/verify_all.py",
+          "bytes": 1983,
+          "sha256": "7d6559535244dba21d142e1f7d9d5c0debd4e8768a82153cb1348d5955536670"
+        },
+        {
+          "path": "anc/short_proof_exact.json",
+          "bytes": 22832,
+          "sha256": "ab683da8173751b8edae730b1e6ea8c765a0120c4086bf3ad14bc37e0b6ea5f7"
+        },
+        {
+          "path": "anc/verify_glynn.py",
+          "bytes": 1261,
+          "sha256": "dfac6ae94da8254e0450cb2340c28efcc1071b9981d08dc2720a14c391db6878"
+        },
+        {
+          "path": "anc/verify_prolongation_independent.py",
+          "bytes": 4418,
+          "sha256": "dcaf2a7281b1d59d8a256283bc4f58c7157a4d47bb9c251479e0428c28fbd9da"
+        },
+        {
+          "path": "anc/verify_short_proof.py",
+          "bytes": 7448,
+          "sha256": "c704bfc8ccfb1e9b28aea8af2b9a7daa1b8f0be96927ce9766cf0125ef0fc586"
+        },
+        {
+          "path": "anc/verify_short_proof_independent.py",
+          "bytes": 3704,
+          "sha256": "e0a647be469561e0a7667af686fd5cb3ae2545f02f8ceaa676a5783437b38992"
+        },
+        {
+          "path": "anc/verify_submission.py",
+          "bytes": 3975,
+          "sha256": "9c7ca340e232fbb45bc05c1cfb30872dd7fcae75bf96d4e51e2ca96822b87bdd"
+        },
+        {
+          "path": "main.tex",
+          "bytes": 19474,
+          "sha256": "756c6315a18b456a861e28412f31bdece0df71f1b9f42dc93adaafb458a06742"
+        }
+      ],
+      "old_record_referenced_in_main": false,
+      "arxiv_upload": false,
+      "arxiv_generated_pdf_checked": false,
+      "public_submission": false
+    },
+    {
+      "n": 6,
+      "archive": "perm6_arxiv_20261016-r2.zip",
+      "bytes": 108705,
+      "sha256": "3a90428a827e1c808f928e2d0d172c7835fe3604d6c16997180d7e77834a0c15",
+      "member_count": 16,
+      "ancillary_count": 15,
+      "abstract_characters": 841,
+      "checks": {
+        "archive_sha256_matches_frozen_manifest": true,
+        "crc_ok": true,
+        "unique_members": true,
+        "safe_names": true,
+        "main_tex_plus_anc_only": true,
+        "no_tex_or_pdf_in_anc": true,
+        "manifest_covers_every_payload": true,
+        "every_payload_hash_matches": true,
+        "every_member_matches_repository_blob": true,
+        "abstract_exact_source_matches": true,
+        "title_matches": true,
+        "author_matches": true,
+        "form_abstract_only_macro_and_delimiter_expansion": true,
+        "form_metadata_ascii": true,
+        "abstract_below_1920_characters": true,
+        "ai_disclosure_present": true,
+        "no_unapproved_author_signoff": true
+      },
+      "all_checks_pass": true,
+      "members": [
+        {
+          "path": "anc/COMPUTATION_INPUTS.sha256",
+          "bytes": 828,
+          "sha256": "4c4cca4c76cf287bea861fdb8b54e8ccd5eb49b8913f738b8e86f4475014816f"
+        },
+        {
+          "path": "anc/ORIGIN.json",
+          "bytes": 1271,
+          "sha256": "3a492698c5cc20e1e2dd6f4bd4b8006ccbdae3211b32e544ce1e060ce5310c28"
+        },
+        {
+          "path": "anc/README.md",
+          "bytes": 2439,
+          "sha256": "2624056d951de44319cba6bc5fd2acd3f776e6776faff7d3a2ac59256c45613a"
+        },
+        {
+          "path": "anc/SOURCE_MANIFEST.sha256",
+          "bytes": 1629,
+          "sha256": "96ba9e4fd388e0699da345808dc65ab1cbb2f3e5bef60c90046a8fff44e589f0"
+        },
+        {
+          "path": "anc/original/MANIFEST.sha256",
+          "bytes": 1440,
+          "sha256": "438419643bca599aaafa1360009b0225f87aedc0b3d1925a83f56fd000dad102"
+        },
+        {
+          "path": "anc/original/computation/data/n6_exact_ordinary_chow_rank_32.json",
+          "bytes": 18736,
+          "sha256": "d2819841e13605fa50810be99cb0d80ec10180e534f4e63d2e2f9f9946eca404"
+        },
+        {
+          "path": "anc/original/computation/evidence/n6_dependent_normal_forms_independent.json",
+          "bytes": 1869,
+          "sha256": "13725f1f3697c70b3ec46be1b0daf16441dbdd3e7408ede433b39f2dc886713d"
+        },
+        {
+          "path": "anc/original/computation/scripts/n6_dependent_normal_forms_independent.py",
+          "bytes": 6106,
+          "sha256": "04090cd2a38e3c7e0f6984782f5b8fe6236d3508206d7c4ef9be1dae8f923d83"
+        },
+        {
+          "path": "anc/original/computation/scripts/n6_exact_ordinary_chow_rank_32.py",
+          "bytes": 21942,
+          "sha256": "bea2865f9c939c47c8950cf67a25c5c2db25c1da4a7e33c7d583ec46cb1fcfe6"
+        },
+        {
+          "path": "anc/original/computation/scripts/n6_independent_finite_core_verification.py",
+          "bytes": 4243,
+          "sha256": "a4f97e37db6e2e596acacf4cd89fba0af4f55f75809dac538c704df219ceea60"
+        },
+        {
+          "path": "anc/original/computation/tests/test_n6_exact_ordinary_chow_rank_32.py",
+          "bytes": 4333,
+          "sha256": "7bbc6cbe20f8fbbcbd710d775e2b320e302623eca25e85761f0d3959820bb691"
+        },
+        {
+          "path": "anc/original/verify_all.py",
+          "bytes": 1503,
+          "sha256": "ad9e3085657178f69fcb68bd5185f9a353b78e358b1a3cb1236b3d4b1a83c20b"
+        },
+        {
+          "path": "anc/verify_glynn.py",
+          "bytes": 1261,
+          "sha256": "dfac6ae94da8254e0450cb2340c28efcc1071b9981d08dc2720a14c391db6878"
+        },
+        {
+          "path": "anc/verify_prolongation_independent.py",
+          "bytes": 4418,
+          "sha256": "dcaf2a7281b1d59d8a256283bc4f58c7157a4d47bb9c251479e0428c28fbd9da"
+        },
+        {
+          "path": "anc/verify_submission.py",
+          "bytes": 3975,
+          "sha256": "cfa472d2b04325dc3a0ffcbba0b6d934f7445c1959fb74b60a84194d14c51c68"
+        },
+        {
+          "path": "main.tex",
+          "bytes": 30174,
+          "sha256": "7ed3db38c76fe5b4e17180d56ac67d8194463448c77b7041280f76253a33ab4f"
+        }
+      ],
+      "old_record_referenced_in_main": false,
+      "arxiv_upload": false,
+      "arxiv_generated_pdf_checked": false,
+      "public_submission": false
+    }
+  ],
+  "all_checks_pass": true
+}
+

@@ -1,6 +1,6 @@
 # perm5 / perm6 arXiv preparation handoff
 
-Updated: 2026-10-16, Asia/Shanghai. Active release: **20261016-r2**.
+Updated: 2026-10-18, Asia/Shanghai. Active release: **20261016-r2**.
 
 ## Read these first
 
@@ -101,10 +101,10 @@ technical acceptance, not the actual arXiv processor preview.
 ## Remaining author/account actions
 
 Review the revised proofs, authorship, earlier-work relationship, AI-use
-disclosure, license and final metadata. Check actual account endorsement and
-submission capacity, then inspect the PDF and ancillary files produced by
-arXiv during upload. No arXiv upload, license acceptance, announcement,
-external-review certification or account-side quota check was performed.
+disclosure, license and final metadata. The 2026-10-16 acceptance did not inspect account endorsement or capacity,
+and did not perform an arXiv upload, license acceptance, announcement or
+external-review certification. The 2026-10-18 continuation below records the
+later account-side inspection and the approval gate before file upload.
 
 All testing is local; do not add a duplicate CI/scheduler or use local Codex.
 The unrelated private perm5-v15 LF/CRLF receipt issue is not a dependency of
@@ -116,3 +116,22 @@ Local audit workspace:
 Raw transport-offset and intermediate failed-driver logs remain preserved
 beside the workspace under `local-audit-evidence/`; compact readable receipts
 are in the repository. No data-provider, quant database or perm7 task was used.
+
+## Submission continuation — 2026-10-18
+
+See [submission-side preflight and next gate](audit/20261018-submission/STATUS.md)
+and [package integrity receipt](audit/20261018-submission/package_preflight.json).
+The r2 release is unchanged. An authenticated session was checked and one empty
+new-submission workflow was opened, intended for perm5. No files were uploaded,
+no arXiv PDF was generated, and neither paper was publicly submitted by this
+session. The actual Start page requires author/contact certification, the
+Submission Agreement, and a license before file upload; those declarations
+remain unaccepted pending explicit author confirmation. math.AG was selected
+in the unsaved form, but endorsement is not yet verified. Resume the existing
+draft rather than opening a duplicate. Private account/draft details are not
+stored in this public repository.
+
+The prior withdrawn joint paper's attribution and new-work versus replacement
+relationship remain unresolved. Do not alter frozen r2 manuscripts to resolve
+these points without an explicitly approved successor release. Public
+submission remains separately gated after actual server-preview review.
