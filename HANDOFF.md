@@ -1,6 +1,25 @@
-# perm5 / perm6 arXiv preparation handoff
+# Small-permanent results: publication and handoff
 
-Updated: 2026-10-18, Asia/Shanghai. Active release: **20261016-r2**.
+Updated: 2026-10-18, Asia/Shanghai. Active perm5 / perm6 release: **20261016-r2**.
+
+## Current direction — public GitHub publication
+
+The author requested on 2026-10-18 that arXiv work stop for now and that the
+n = 5 and n = 6 results be organized in this public mathematical project,
+alongside its existing n = 3 and n = 4 results. The [repository homepage](README.md)
+now links all four current manuscripts, sources and verification packages.
+Both r2 ZIPs, PDFs, source trees and SHA-256 inventories are already public.
+
+**arXiv is paused.** No source upload, server-generated PDF or public arXiv
+submission was completed. Preserve the historical account-side observations
+below; do not restart uploads or endorsement outreach unless the author asks.
+The earlier license authorization remains a recorded choice for a possible
+future arXiv workflow, not a new repository-wide reuse license.
+
+This publication organization changes documentation only. All n = 3 / n = 4
+files and the frozen n = 5 / n = 6 releases retain their existing Git blob IDs.
+No mathematical re-audit, certificate rewrite, source rebuild or CI dispatch
+is required for this documentation change.
 
 ## Read these first
 
@@ -98,7 +117,7 @@ no missing references or final layout warnings. All 18 pages were rendered
 and visually checked; font embedding and page bounds pass. This is local
 technical acceptance, not the actual arXiv processor preview.
 
-## Remaining author/account actions
+## If arXiv is resumed later
 
 Review the revised proofs, authorship, earlier-work relationship, AI-use
 disclosure, license and final metadata. The 2026-10-16 acceptance did not inspect account endorsement or capacity,
@@ -149,8 +168,9 @@ session. The local 7-page and 11-page PDFs are not server previews.
 Private account details, endorsement codes and draft identifiers remain outside
 this public repository.
 
-Next: obtain math.AG endorsement, resume the existing perm5 draft, then process
-the separate perm6 draft. Reuse the already confirmed identity, license and
+The author subsequently paused this route in favor of GitHub publication.
+If the author later requests resumption: obtain math.AG endorsement, check
+whether the existing perm5 draft still exists, and then process both drafts. Reuse the already confirmed identity, license and
 upload/preview authorization. Keep all frozen sources and certificates intact.
 After inspecting both actual server previews, obtain explicit final confirmation
 of manuscript content, AI disclosure, and public submission before Submit Article.

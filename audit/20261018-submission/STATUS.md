@@ -1,6 +1,18 @@
 # arXiv submission continuation — 2026-10-18
 
-## Actual state
+## Latest author decision — GitHub publication, arXiv paused
+
+On 2026-10-18 the author asked to stop the arXiv workflow for now and organize
+the n = 5 and n = 6 results in the existing public mathematical repository
+alongside n = 3 and n = 4. The [homepage](../../README.md) provides direct links
+to the current papers, complete source ZIPs, exact verification programs and
+checksums. The frozen release is unchanged.
+
+The account-side record below describes the earlier submission attempt.
+It is retained as history, not an instruction to continue arXiv automatically.
+No files were uploaded and neither paper was publicly submitted to arXiv.
+
+## Actual state of the paused arXiv workflow
 
 Release: **20261016-r2**, input commit `99c3af555199a8f7932e9bd720c1f0bf79bf2d74`.
 
@@ -60,7 +72,7 @@ The [submission overview](https://info.arxiv.org/help/submit/index.html) require
 
 Any needed manuscript citation, acknowledgement, or authorship change requires an explicit successor release and acceptance of the changed submission material. Do not silently patch r2 or edit historical certificate hashes.
 
-## Resume procedure and approvals
+## Resume procedure and approvals — only if requested later
 
 1. Have a qualified arXiv author complete math.AG endorsement using the email arXiv sent to the account holder. Do not publish the code or forward it to anyone without the author's instruction.
 2. Resume the existing perm5 draft and recheck eligibility and capacity. Identity/affiliation, contribution relationship, license selection for both papers, and agreement acceptance for upload/preview have already been authorized; do not ask again unless their substance changes.
