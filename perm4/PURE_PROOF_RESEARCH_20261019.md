@@ -40,7 +40,7 @@ The first prolongation \(F_T^{(1)}\) consists exactly of the squarefree cubics i
 \[
 \operatorname{rank}K(T)=6\cdot16-4=92.
 \]
-For dependent factors, upper semicontinuity of matrix rank gives the same upper bound. This replaces the modular rank calculation for a single Chow term.
+For dependent factors, approximate the factor tuple by tuples of independent factors. The locus of matrices of rank at most 92 is Zariski closed (it is cut out by the 93-by-93 minors), so the limiting flattening also has rank at most 92. This replaces the modular rank calculation for a single Chow term.
 
 ## 3. The remaining bottleneck: the chart lemma
 
