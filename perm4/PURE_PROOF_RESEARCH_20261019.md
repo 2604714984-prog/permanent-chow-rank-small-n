@@ -88,3 +88,8 @@ A different proof would need a stronger or combined flattening/rank invariant th
 - **Not changed:** the published proof, PDF, and existing verification scripts.
 
 The next mathematically meaningful target is to prove directly that \(\ker\theta_q\) has dimension at most one. Until that is proved, the result should be described as a partially de-computationalized proof, not a fully pure proof. The existing exact certificate must remain in place as the rigorous fallback.
+
+
+## 7. Alternative flattenings checked
+
+A literature search found the 2025 preprint *Recursive Koszul flattenings of determinant and permanent tensors* (Han–Ju–Kim, arXiv:2503.12032), which proves tensor rank \(R(\operatorname{perm}_4)=8\) using a 70-rank flattening lower bound against a per-simple-tensor bound of 9. This is an interesting small-matrix alternative for the **tensor-rank** problem, but it does not directly prove ordinary Chow rank 8 here: a Chow term \(\ell_1\ell_2\ell_3\ell_4\) allows each \(\ell_i\) to involve all 16 variables, and its multihomogeneous projection is not generally a single rank-one tensor in the four row/column factors. No valid transfer of that flattening bound to arbitrary Chow terms was found. It should not be substituted into this proof without a separate per-Chow-term bound.
