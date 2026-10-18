@@ -69,3 +69,11 @@ Any needed manuscript citation, acknowledgement, or authorship change requires a
 7. Present both exact server previews, metadata, licenses, and any remaining warnings. Obtain explicit final authorization before Submit Article. Record actual status transitions and identifiers privately, publishing only announced identifiers to the public handoff.
 
 No public submission, license acceptance, author certification, external message, or change to the withdrawn record occurred in this continuation.
+
+## Author clarification — 2026-10-18, 11:21 Asia/Shanghai
+
+The author confirmed the account identity and current affiliation, and authorized correction of the affiliation spelling. The profile correction was saved and the account page confirmed success. Private contact details remain outside this repository.
+
+The author stated that the new manuscripts contain no contribution from the earlier coauthor and that the withdrawn joint paper is research background only. This records the author's contribution statement; it is not an independent authorship determination. This resolves the contribution question previously marked open and supports proceeding with the proposed two-new-work route, subject to arXiv moderation. No manuscript text or attribution was changed.
+
+The author asked for an explanation of license differences, rather than selecting a license. License choice and acceptance of the Submittal Agreement remain unapproved. The existing draft is still incomplete; no source files have been uploaded. Approval of final content, AI disclosure, and public submission remains outstanding.

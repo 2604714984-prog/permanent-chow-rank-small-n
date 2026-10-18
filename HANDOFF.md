@@ -135,3 +135,12 @@ The prior withdrawn joint paper's attribution and new-work versus replacement
 relationship remain unresolved. Do not alter frozen r2 manuscripts to resolve
 these points without an explicitly approved successor release. Public
 submission remains separately gated after actual server-preview review.
+
+### Author clarification received (2026-10-18)
+
+The author confirmed identity/current affiliation and stated that the withdrawn
+joint work is background only, with no earlier-coauthor contribution to the
+new manuscripts. The authorized affiliation spelling correction was saved.
+See the dated clarification in the submission status report. License selection
+and Submission Agreement acceptance remain pending; do not treat a question
+about licenses as authorization. No upload or public submission has occurred.
