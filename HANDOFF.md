@@ -131,10 +131,12 @@ no manuscript text or attribution was changed.
 
 The author selected the **arXiv non-exclusive license for both papers** and
 authorized accepting the Submission Agreement to continue upload/preview.
-Those declarations were saved in the existing perm5 Start workflow. Continue
+Those declarations were entered in the existing perm5 Start workflow. Continue
 returned **"You are not endorsed for this archive"** for math.AG. The endorsement
 request page reported that arXiv sent a code email to the account holder.
-No message was forwarded to another person.
+No message was forwarded to another person. Reopening the draft showed the Start
+controls reset; the failed Start step did not persist these selections. The
+author's permission remains recorded and can be reused when endorsement is ready.
 
 | Paper | Actual arXiv state |
 |---|---|
