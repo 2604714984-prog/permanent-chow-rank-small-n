@@ -1,6 +1,6 @@
 # Small-permanent results: publication and handoff
 
-Updated: 2026-10-18, Asia/Shanghai. Active perm5 / perm6 release: **20261016-r2**.
+Updated: 2026-10-19, Asia/Shanghai. Active perm4 reading version: **computation-free revision 20261019**. Active perm5 / perm6 release: **20261016-r2**.
 
 ## Current direction — public GitHub publication
 
@@ -179,12 +179,12 @@ or choose an unrelated category.
 
 ## perm4 computation-free continuation — 2026-10-19
 
-The complete computation-free proof source and review materials have now been
-merged into `main` at `perm4/pure_proof_20261019/`.
+The complete computation-free proof source, seven-page PDF, English overview,
+and review materials are published on `main` at `perm4/pure_proof_20261019/`.
 
 Read first:
 - [Complete LaTeX manuscript](perm4/pure_proof_20261019/main.tex)
-- [Chinese explanation](perm4/pure_proof_20261019/README.zh.md)
+- [English overview](perm4/pure_proof_20261019/README.md)
 - [Internal audit](perm4/pure_proof_20261019/AUDIT.md)
 - [Focused handoff](perm4/pure_proof_20261019/HANDOFF.md)
 - [Optional supplementary checks](perm4/pure_proof_20261019/verify_supplementary.py)
