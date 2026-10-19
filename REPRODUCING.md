@@ -4,14 +4,22 @@ Each package is independent. Run its entry point from the repository root:
 
 ```text
 python -B perm3/certificates/verify_all.py
-python -B perm4/certificates/verify_all.py
+python -B perm4/archive/computation-assisted/certificates/verify_all.py
 python -B perm5/verify_all.py
 python -B perm6/verify_all.py
 ```
 
-`perm4` has the dependency declared in
-`perm4/certificates/requirements-replay.txt`. The `perm5` and `perm6`
-verification programs use only the standard library.
+`perm4`'s historical computation-assisted replay has the dependency declared in
+`perm4/archive/computation-assisted/certificates/requirements-replay.txt`.
+The current computation-free proof is in `perm4/paper/source/main.tex`; its
+optional supplementary checks run with the standard library:
+
+```sh
+python -B perm4/paper/verify_supplementary.py
+```
+
+The current proof does not depend on these optional checks. The `perm5` and
+`perm6` verification programs use only the standard library.
 
 Every package has its own `MANIFEST.sha256`.
 
