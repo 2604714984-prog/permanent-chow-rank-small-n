@@ -176,3 +176,30 @@ After inspecting both actual server previews, obtain explicit final confirmation
 of manuscript content, AI disclosure, and public submission before Submit Article.
 Do not treat the current endorsement blocker as a reason to rewrite the release
 or choose an unrelated category.
+
+## perm4 computation-free continuation — 2026-10-19
+
+The research branch `research/perm4-pure-proof-20261019` now contains a complete
+computation-free rewrite in [perm4/pure_proof_20261019](perm4/pure_proof_20261019/).
+Read the [Chinese explanation](perm4/pure_proof_20261019/README.zh.md),
+[manuscript](perm4/pure_proof_20261019/main.tex),
+[internal audit](perm4/pure_proof_20261019/AUDIT.md), and
+[focused handoff](perm4/pure_proof_20261019/HANDOFF.md).
+
+The missing-derivative lemma P_x00 = D + K*x00^3 proves the quotient kernel
+at a coordinate vector. Explicit row-column scaling with weights 0, 1 and 2,
+followed by rank specialization, proves the uniform rank-99 lemma. Together
+with direct prolongation proofs of 560 and 92, this removes the computational
+dependencies from the ordinary rank-eight proof while retaining its
+559 > 552 subtraction strategy. All downstream arguments are written out.
+
+Independent local rational and two-prime tests support the derivation but are
+not premises of the manuscript. The seven-page locally compiled PDF is delivered
+in the conversation. Original perm4 source, PDF and certificates, the main
+branch, and all other n packages are not modified by this continuation.
+The initial research note is retained with a pointer to the completed revision.
+
+This is internally reviewed AI-assisted mathematics, not external peer review
+or formal certification. Author acceptance before promoting the new reading
+version remains a separate gate. No border-rank or general-n equality is
+claimed. arXiv remains paused; no CI or local Codex was used.
