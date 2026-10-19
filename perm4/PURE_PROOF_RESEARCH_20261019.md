@@ -1,5 +1,7 @@
 # perm4 pure-proof investigation — 2026-10-19
 
+> **Continuation, 2026-10-19:** The previously unresolved chart lemma now has a computation-free proof, using the missing-derivative classification and an explicit row-column scaling. Read the [complete new manuscript](pure_proof_20261019/main.tex), [Chinese explanation](pure_proof_20261019/README.zh.md), [internal audit](pure_proof_20261019/AUDIT.md), and [current handoff](pure_proof_20261019/HANDOFF.md). The original manuscript and certificates remain unchanged. The sections below preserve the initial investigation and its then-unresolved status; they are not the current completion report.
+
 ## Scope and status
 
 This is a research note, not a replacement for the theorem or its existing certificate. The target is to remove computer-assisted steps from the proof of
