@@ -222,6 +222,9 @@ the low-dimensional catalecticant floors from positive exponent partitions.
 The manuscript and audit notes are under
 perm5/pure_proof_20261019/.
 
-This is a research draft until the source compiles and its mathematical
-arguments are reviewed. The released source, original certificates, frozen
-manifests, and main branch remain unchanged. No CI is run for this work.
+This remains a research draft pending author acceptance, but the source has
+now compiled twice with MiKTeX and the three targeted replacements have been
+internally checked. The PDF is 8 pages; no unresolved references remain. The
+released source, original certificates, frozen manifests, and main branch
+remain unchanged. No CI is run for this work. See the branch AUDIT.md for the
+exact checks and the remaining external-review/formal-certification boundary.
