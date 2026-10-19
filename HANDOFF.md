@@ -189,3 +189,41 @@ The computation-free proof is now the canonical release:
 The earlier computation-assisted PDF, source files, certificate scripts and original manifest are preserved under `perm4/archive/computation-assisted/`. The root README links the current versions and explains the archive boundary.
 
 The proof establishes ordinary Chow rank eight in characteristic zero. It has received internal mathematical review, not external peer review or formal proof-assistant certification. No border-rank or general-n equality is claimed. The optional regression checks are not premises of the proof. arXiv remains paused; no hosted CI was run for this synchronization.
+
+
+## perm5 completed computation-free revision — 2026-10-19
+
+The canonical perm5 reading entry now points to `perm5/pure_proof_20261019/`:
+`main.tex`, `perm5_chow_rank_16_computation_free.pdf`, `README.md`, `README.zh.md`,
+`AUDIT.md`, and the focused `HANDOFF.md`. This final revision develops the active
+October short proof. Its mathematical argument does not use the old 58-state
+route, a 352-case table, positive-partition enumeration, interval minimization,
+or four computed normal-form ranks.
+
+The local half-defect estimate is established by a triple-column formula,
+a uniform divisor count, a small-complement kernel argument, and explicit
+actual derivatives in the sole remaining four-dimensional case. The rectangular
+image-span bound and the factor-span filtration give
+`h2 + Delta/2 <= 10*N - 150`; fifteen terms are impossible and Glynn supplies
+the sixteen-term upper bound. No unfilled mathematical implication was found
+in the complete internal review. All dependent/repeated factors and arbitrary
+factor-span quotients are included; ordinary Chow rank only is claimed.
+
+The final source SHA-256 is
+`272fe8933808e7e58574a6588082005c0bd35a0dc6e1d1fc4b5939ccb47cd611`.
+The eight-page source builds in an empty directory without any ancillary file.
+Local TeX Live and workstation MiKTeX builds pass with shell escape disabled.
+There are no undefined references, missing citations, or overflowing boxes.
+Native PDF geometry checks cover all eight pages; build receipts distinguish
+platform-specific PDF hashes. Standard-library exact tests and optimized-mode
+tests match on both platforms, including 399 quotient examples, 252 kernel
+identities, all 352 coordinate symbols, and the actual Glynn image sums.
+These tests support error detection and are not proof premises.
+
+The root README now uses the final PDF/source, and this continuation is
+synchronized with the existing research branch. Frozen submissions, `dist/`
+release files, original perm5 paper/computations/manifests, and all other n
+packages are retained unchanged. Prior drafts remain in Git history. arXiv
+remains paused. No hosted CI, local Codex, new scheduler, or unrelated project
+operation was used. Internal review is not external peer review or a formal
+proof-assistant certificate.

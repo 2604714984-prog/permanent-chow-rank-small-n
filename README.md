@@ -12,8 +12,16 @@ Read the current manuscript first, then its scope notes and audit. Verification 
 |---|---:|---|---|
 | `perm_3` | 4 | [Manuscript PDF](perm3/paper/perm3_chow_rank_4.pdf) | [LaTeX source](perm3/paper/source/) · [Verification package](perm3/certificates/) |
 | `perm_4` | 8 | [**Current computation-free PDF**](perm4/paper/perm4_chow_rank_8.pdf) | [LaTeX source](perm4/paper/source/main.tex) · [Reader guide](perm4/README.md) · [Internal audit](perm4/paper/AUDIT.md) · [Optional checks](perm4/paper/verify_supplementary.py) |
-| `perm_5` | 16 | [Manuscript PDF (20261016-r2)](dist/perm5_chow_rank_16_20261016-r2.pdf) | [Standalone source](submissions/20261016-r2/perm5/) · [Verification inputs](submissions/20261016-r2/perm5/anc/) |
+| `perm_5` | 16 | [**Current computation-free PDF**](perm5/pure_proof_20261019/perm5_chow_rank_16_computation_free.pdf) | [Self-contained source](perm5/pure_proof_20261019/main.tex) · [Reader guide](perm5/pure_proof_20261019/README.md) · [Internal audit](perm5/pure_proof_20261019/AUDIT.md) · [Optional checks](perm5/pure_proof_20261019/verify_optional.py) |
 | `perm_6` | 32 | [Manuscript PDF (20261016-r2)](dist/perm6_chow_rank_32_20261016-r2.pdf) | [Standalone source](submissions/20261016-r2/perm6/) · [Verification inputs](submissions/20261016-r2/perm6/anc/) |
+
+## Current `perm_5` proof
+
+The current reading version is the eight-page computation-free revision dated October 19, 2026, in [`perm5/pure_proof_20261019/`](perm5/pure_proof_20261019/). It develops the active October short proof, not the historical 58-state route. The local estimate is proved by a closed triple-column count, a uniform degree-two-divisor bound, and explicit derivatives; neither finite tables nor the four normal-form matrix ranks are premises.
+
+The global argument uses actual derivative images and gives `h2 + Delta/2 <= 10*N - 150`. Its endpoint excludes fifteen terms; the sixteen-term upper bound is proved by sign cancellation. The source builds by itself without programs or ancillary inputs. [Optional exact checks](perm5/pure_proof_20261019/verification_results.json), [workstation acceptance](perm5/pure_proof_20261019/BUILD_ACCEPTANCE.json), and [handoff](perm5/pure_proof_20261019/HANDOFF.md) record the completed internal review and technical checks; they are not formal or external peer certification.
+
+The frozen [20261016-r2 source](submissions/20261016-r2/perm5/) and its [reading PDF](dist/perm5_chow_rank_16_20261016-r2.pdf), as well as the older computation-assisted packages, remain unchanged as historical releases.
 
 ## Current `perm_4` proof
 
@@ -46,9 +54,9 @@ The optional checks are not premises of the written proof.
 
 ## Scope and status
 
-All stated results concern **ordinary Chow rank**, not border Chow rank. No general formula for arbitrary matrix size is claimed. The current `perm_4` revision has received internal mathematical review; it has not received external peer review or formal proof-assistant certification.
+All stated results concern **ordinary Chow rank**, not border Chow rank. No general formula for arbitrary matrix size is claimed. The current `perm_4` and `perm_5` revisions have received internal mathematical review; they have not received external peer review or formal proof-assistant certification.
 
-The `perm_5` and `perm_6` release packages are frozen at **20261016-r2**. The arXiv workflow is paused; the PDFs linked here are reading copies, not arXiv-generated previews.
+The historical `perm_5` and current `perm_6` release packages remain frozen at **20261016-r2**. The current `perm_5` reading revision is separately preserved in `perm5/pure_proof_20261019/`. The arXiv workflow is paused; the PDFs linked here are reading copies, not arXiv-generated previews.
 
 ## Language and archive policy
 

@@ -1,0 +1,112 @@
+{
+  "proof_dependency": false,
+  "arithmetic": "exact integers and rational fractions",
+  "tests": {
+    "test_coordinate_symbols": {
+      "pairs": 352,
+      "minimum_ranks_by_d": [
+        0,
+        5,
+        7,
+        7,
+        10,
+        10
+      ],
+      "formula_matches": true
+    },
+    "test_normal_form_identities": {
+      "normal_forms": [
+        {
+          "s": 1,
+          "u_observed": 7,
+          "identities_match": true
+        },
+        {
+          "s": 2,
+          "u_observed": 7,
+          "identities_match": true
+        },
+        {
+          "s": 3,
+          "u_observed": 9,
+          "identities_match": true
+        },
+        {
+          "s": 4,
+          "u_observed": 10,
+          "identities_match": true
+        }
+      ],
+      "s3_s4_exact_ranks_are_not_proof_inputs": true
+    },
+    "test_divisor_formula": {
+      "formula_matches": true,
+      "by_factor_span": [
+        {
+          "ell": 1,
+          "compositions": 1,
+          "minimum_u": 1
+        },
+        {
+          "ell": 2,
+          "compositions": 4,
+          "minimum_u": 2
+        },
+        {
+          "ell": 3,
+          "compositions": 6,
+          "minimum_u": 4
+        },
+        {
+          "ell": 4,
+          "compositions": 4,
+          "minimum_u": 7
+        },
+        {
+          "ell": 5,
+          "compositions": 1,
+          "minimum_u": 10
+        }
+      ]
+    },
+    "test_nonnormal_quotients": {
+      "products": 19,
+      "exact_quotient_checks": 399,
+      "nonzero_rank_at_least_four_R_checks": 159,
+      "small_complement_kernel_checks": 252,
+      "minimum_twice_slack": 0,
+      "seed": 20261019,
+      "sampling_is_not_a_proof": true
+    },
+    "test_permanent_prolongation": {
+      "quadratic_dimension": 100,
+      "cubic_prolongation_dimension_over_Q": 100,
+      "distinct_variable_weights": 25,
+      "distinct_rectangle_weights": 100,
+      "minimum_two_rectangle_union": 6
+    },
+    "test_rectangular_inequality": {
+      "exact_examples_including_cancellation": 40
+    },
+    "test_glynn": {
+      "expanded_choices": 50000,
+      "row_choice_monomials": 3125,
+      "nonzero_monomials": 120,
+      "unnormalized_permutation_coefficient": 16
+    },
+    "test_glynn_image_spans": {
+      "terms": 16,
+      "actual_pair_image_sum_dimension": 110,
+      "actual_cubic_image_sum_dimension": 150,
+      "h2": 10,
+      "h3": 50,
+      "Delta": 0,
+      "global_inequalities_are_equalities": true
+    }
+  },
+  "status": "OPTIONAL_EXACT_CHECKS_PASS",
+  "source_sha256": "272fe8933808e7e58574a6588082005c0bd35a0dc6e1d1fc4b5939ccb47cd611",
+  "verifier_sha256": "c7ccd98a077c9106da9b16e034a4c95a614790f6fbbd1a8a37241801e56311f2",
+  "python_version": "3.14.4",
+  "elapsed_seconds": 0.28
+}

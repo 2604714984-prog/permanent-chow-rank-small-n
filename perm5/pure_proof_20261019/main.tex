@@ -1,0 +1,516 @@
+\documentclass[11pt]{amsart}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,mathtools,microtype}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xurl}
+\raggedbottom
+\emergencystretch=3em
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\numberwithin{equation}{section}
+\newcommand{\K}{\mathbb K}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\Sym}{\operatorname{Sym}}
+\newcommand{\Span}{\operatorname{span}}
+\newcommand{\im}{\operatorname{im}}
+\newcommand{\rank}{\operatorname{rank}}
+\newcommand{\perm}{\operatorname{perm}}
+\newcommand{\CR}{\operatorname{ChowRank}}
+\newcommand{\cD}{\mathcal D}
+\newcommand{\dd}{\partial}
+\title[A computation-free proof for the five-by-five permanent]{A computation-free proof of the Chow rank\\of the five-by-five permanent}
+\author{Rongyu Xu}
+\date{October 19, 2026}
+\subjclass[2020]{Primary 15A69; Secondary 14N05, 68V05}
+\keywords{permanent, Chow rank, product rank, catalecticant}
+\hypersetup{pdftitle={A computation-free proof of the Chow rank of the five-by-five permanent},pdfauthor={Rongyu Xu}}
+\begin{document}
+\begin{abstract}
+We prove that the ordinary Chow rank of the permanent of a generic
+five-by-five matrix is sixteen over every field of characteristic zero.
+The proof combines a rectangular image-span inequality with a local
+polarization estimate for quintic products. A closed count of squarefree
+triples, a uniform monomial-divisor bound, and explicit derivatives in
+four variables establish the local estimate. No computer-generated rank,
+finite search, or stored certificate is a premise. In particular, the
+four normal-form catalecticant ranks need not be determined separately.
+The argument does not assert an equality for border Chow rank.
+\end{abstract}
+\maketitle
+
+\section{Statement and specialization conventions}
+Let \(\K\) initially be algebraically closed of characteristic zero. Write
+\([m]=\{1,\ldots,m\}\), and set
+\[
+ V=\Span_{\K}\{x_{ij}:i,j\in[5]\},\qquad
+ f=\perm_5=\sum_{\sigma\in S_5}\prod_{i=1}^5x_{i,\sigma(i)}.
+\]
+Thus \(\dim V=25\), and elements of \(V\) are linear forms on \(V^*\).
+The ordinary Chow rank, also called product rank, of a degree-\(m\) form
+is the least number of nonzero products of \(m\) linear forms summing to
+it; scalar coefficients may be absorbed into a factor.
+\begin{theorem}\label{thm:main}
+For every field \(\K\) of characteristic zero,
+\[
+ \CR_{\K}(\perm_5)=16.
+\]
+\end{theorem}
+The factors in a Chow term may involve all twenty-five variables. This
+is distinct from the tensor rank of the permanent in five separate row
+spaces. Han and Song prove that the latter rank is sixteen
+\cite{HanSong2026}; that lower bound is not used here. In fact, the
+component with degree one in each row of the single Chow term
+\(\prod_{j=1}^5(\sum_{i=1}^5x_{ij})\) is the permanent itself.
+For background on product rank, see \cite{IltenTeitler2016}.
+
+For a form \(h\in\Sym^mV\) let
+\[
+ \begin{gathered}
+ C_{a,m-a}(h):\Sym^aV^*\longrightarrow\Sym^{m-a}V,
+ \quad D\longmapsto D(h),\\
+ \cD_j(h)=\im C_{m-j,j}(h).
+ \end{gathered}
+\]
+All derivative spaces below are \emph{actual} images of these maps,
+not formal spans of factor products. For a space of forms \(G\),
+\(\dd G\) denotes the span of all first directional derivatives.
+The differential pairing between symmetric powers is perfect in
+characteristic zero. Under it \(C_{a,m-a}(h)^*=C_{m-a,a}(h)\), since
+\(D'D(h)=DD'(h)\). In particular these maps have the same rank.
+
+We record precisely how specialization is used. For a polynomial matrix,
+rank at a special parameter value is no larger than rank for general
+values: every minor that vanishes identically still vanishes at the
+special value. Subspaces of a fixed dimension have limits under a diagonal
+one-parameter action. One can see existence by taking the least-weight
+nonzero term in their Pl\"ucker coordinates, after removing a common power
+of the parameter. The limit is fixed by the action. When the weights on
+the underlying basis vectors are distinct, every fixed subspace is a span
+of basis vectors, so the limit is coordinate. The same argument applies
+to several subspaces simultaneously. Locally on a Grassmannian, bases of
+the subspaces and their quotients give regular matrices; the minor
+criterion therefore applies to maps between these quotients as well.
+Thus an intersection or a kernel dimension can increase, but cannot
+decrease, at a special point. Only these elementary facts about limits
+are required below; no classification of algebraic-group orbits is used.
+
+\section{The permanent's derivative spaces}
+Put \(E_j=\cD_j(f)\).
+\begin{lemma}\label{lem:permanent}
+One has
+\[
+ \begin{gathered}
+ \dim E_2=\dim E_3=100,\qquad \dd E_2=V,\\
+ E_2^{(1)}:=\{g\in\Sym^3V:\dd g\subset E_2\}=E_3.
+ \end{gathered}
+\]
+Every nonzero quadratic in \(E_2\) has matrix rank at least four. For
+any \(L\subset V\) of dimension at most five,
+\begin{equation}\label{eq:intersection}
+ \dim(E_2\cap\Sym^2L)\le1.
+\end{equation}
+\end{lemma}
+\begin{proof}
+The quadratic and cubic subpermanents form bases of \(E_2\) and \(E_3\).
+Different row-set/column-set pairs have disjoint matching-monomial supports,
+and their numbers are \(\binom52^2=\binom53^2=100\).
+In particular,
+\[
+ E_2=\Span\{x_{ia}x_{jb}+x_{ib}x_{ja}:i<j,\ a<b\}.
+\]
+Differentiating a rectangle at one corner gives its opposite variable,
+so \(\dd E_2=V\).
+
+Suppose every first derivative of a cubic \(g\) belongs to \(E_2\).
+A cubic monomial with two factors in one row or column, including a
+repeated factor, is impossible: differentiation by the remaining factor
+produces a quadratic monomial forbidden in \(E_2\). For a fixed
+partial derivative and a fixed resulting monomial there is a unique
+source monomial, so its coefficient cannot be cancelled by a different
+source. Its derivative multiplicity is nonzero. Every surviving monomial
+is consequently a three-edge matching. For fixed three rows and three
+columns, swapping the assignments of two rows leaves the third factor
+unchanged. Differentiating by that common factor forces the two matching
+coefficients to agree. Transpositions connect all six permutations,
+so their coefficients all agree. This proves \(E_2^{(1)}=E_3\), including
+the immediate reverse inclusion.
+
+For the remaining assertions use the row-column scaling
+\begin{equation}\label{eq:row-column}
+ \tau_t(x_{ij})=t^{r_i+c_j}x_{ij},\qquad
+ r_i=2^{i-1},\quad c_j=2^{5+j-1},\quad t\ne0.
+\end{equation}
+The twenty-five variable weights are distinct. Both monomials of each
+rectangle acquire the same weight, and the one hundred rectangle weights
+are distinct, by uniqueness of binary expansion. Thus \(\tau_t\)
+preserves \(E_2\), and any nonzero \(q\in E_2\) has a projectively
+normalized limit equal to a nonzero rectangle. Invertible substitutions
+and nonzero scalar multiplication preserve quadratic rank; specialization
+cannot increase it. A rectangle is the sum of two products on four
+independent variables, with a nonsingular four-dimensional symmetric
+matrix. Its rank is four, proving the minimum-rank claim.
+
+For \(a=\dim L\le5\), take the coordinate limit \(L_0\) of
+\(\tau_tL\) in \(\operatorname{Gr}(a,V)\). The intersection in
+\eqref{eq:intersection} is the kernel of
+\(\Sym^2L\to\Sym^2V/E_2\). Because \(E_2\) is preserved and kernel
+dimension cannot decrease at the limit, it suffices to bound the
+intersection for \(L_0\). Let \(\Omega\subset[5]\times[5]\) be its
+set of \(a\) variables. Distinct rectangles have disjoint quadratic
+monomial supports, so \(E_2\cap\Sym^2L_0\) has as a basis precisely
+the rectangles whose four corners lie in \(\Omega\).
+Two different rectangles share at most two corners: three corners
+determine the fourth. They therefore require at least six variables.
+Since \(|\Omega|\le5\), at most one rectangle occurs.
+\end{proof}
+
+\section{Local polarization of a quintic product}
+Let \(T=\ell_1\cdots\ell_5\ne0\), and put
+\[
+ \begin{gathered}
+ L=\Span(\ell_1,\ldots,\ell_5),\quad \ell=\dim L,\\
+ F=\cD_2(T),\quad U=\cD_3(T),\quad u=\dim F=\dim U\le10.
+ \end{gathered}
+\]
+The equality uses the differential pairing. The upper bound follows
+because third derivatives are linear combinations of the ten pair
+products of the five factors. Also \(F\subset\Sym^2L\) and
+\(\dd U\subset F\). Let \(R=F\cap E_2\); by
+Lemma~\ref{lem:permanent}, \(\dim R\le1\), and every nonzero element
+of \(R\) has quadratic rank at least four.
+
+For a surjection \(P:L\to D\), set \(d=\dim D\),
+\(S=\ker P\), and \(k=\dim S=\ell-d\). Define
+\[
+ \delta:U\to L\otimes F,\qquad
+ \delta(g)=\sum_j y_j\otimes\dd_{y_j^*}g,
+ \qquad \beta=(P\otimes q_R)\delta,
+\]
+where \(q_R:F\to F/R\) is the quotient map. The displayed
+polarization is independent of the choice of basis \((y_j)\) of \(L\).
+It is injective, since multiplication of its two factors sends
+\(\delta(g)\) to \(3g\).
+
+\begin{lemma}[A small complementary span]\label{lem:kernel}
+If \(k\le2\), then
+\[
+ \ker\beta=U\cap\Sym^3S,\qquad
+ \rank\beta\ge u-\binom{k+2}{3}.
+\]
+\end{lemma}
+\begin{proof}
+Choose a basis of \(S\), extended by complementary variables
+\(z_1,\ldots,z_d\) in \(L\). For a kernel cubic the derivatives
+\(\dd_{z_j^*}g\) all lie in \(R\). If any is nonzero, a change of
+complementary coordinates makes these derivatives \(q,0,\ldots,0\)
+for some \(0\ne q\in R\), since \(\dim R\le1\). Vanishing of the
+last \(d-1\) derivatives implies that \(g\), and then \(q\), uses
+only \(S\) and \(z_1\). Hence \(\rank q\le k+1\le3\), a
+contradiction. All complementary derivatives must vanish, which is
+exactly \(g\in\Sym^3S\). The converse is immediate, and
+\(\dim\Sym^3S=\binom{k+2}{3}\).
+\end{proof}
+
+\begin{lemma}[A uniform divisor bound]\label{lem:floor}
+If \(1\le\ell\le4\), then
+\begin{equation}\label{eq:floor}
+ u\ge\binom{\ell}{2}+1.
+\end{equation}
+\end{lemma}
+\begin{proof}
+Choose \(\ell\) independent factors as coordinates \(y_1,\ldots,y_\ell\).
+Scale the coordinates with distinct weights and divide each factor by
+its own least power of the parameter. Each normalized factor tends to a
+nonzero coordinate multiple. For nonzero parameter their product is a
+scalar multiple of an invertible transform of \(T\). The limit is a
+nonzero monomial \(c\prod_i y_i^{\alpha_i}\), with \(\alpha_i\ge1\) and
+\(\sum_i\alpha_i=5\); the initially chosen coordinate factors ensure
+that none of the \(\ell\) variables is lost. Its nonzero second
+partials are indexed by its distinct degree-two divisors and yield
+distinct cubic monomials. The number of these divisors is
+\[
+ \binom{\ell}{2}+\#\{i:\alpha_i\ge2\}.
+\]
+Since \(5>\ell\), at least one exponent is at least two. Rank of
+the catalecticant cannot increase under specialization, giving
+\eqref{eq:floor}. No enumeration of positive partitions is involved.
+\end{proof}
+
+\begin{lemma}[Five independent factors]\label{lem:independent}
+If \(\ell=5\), then \(u=10\) and \(\rank\beta\ge2d\).
+\end{lemma}
+\begin{proof}
+Use the five factors as coordinates \(z_1,\ldots,z_5\). The spaces
+\(U\) and \(F\) are respectively the squarefree cubic and quadratic
+spaces. We prove the estimate for every subspace \(R\subset F\) of
+dimension at most one, without its minimum-rank condition.
+
+Replace \(P\) by the canonical quotient \(L\to L/S\), which does
+not change the rank. Simultaneously specialize \(S\) and \(R\) by the
+diagonal action with variable weights \(2^{i-1}\). The weights on
+variables and on squarefree quadratic monomials are distinct. Both limits
+are coordinate subspaces, and \(U,F\) are preserved throughout. By
+polarization equivariance the rank is constant for \(t\ne0\), and
+it cannot increase at the limit. For clarity, the kernel of the induced
+quotient map on \(L\otimes F\) is
+\(S\otimes F+L\otimes R\), of constant dimension
+\(10k+5\dim R-k\dim R\). The specialization comparison is therefore
+between fixed-rank subspace quotients, not between arbitrarily chosen
+bases of changing dimension. The limit of \(R\) need not retain
+quadratic rank four; our stronger statement does not require that.
+
+Write \(z_J=\prod_{j\in J}z_j\). At the limit let \(B\subset[5]\) index the basis of \(S\), and set
+\(b=|B|=5-d\). If \(R\ne0\), let \(e\in\binom{[5]}2\) be
+the edge with \(R=\Span(z_e)\). A source triple \(I\in\binom{[5]}3\)
+has components \(z_i\otimes z_{I\setminus\{i\}}\), for \(i\in I\).
+A component survives exactly when \(i\notin B\) and its complementary
+edge is not \(e\). Different triples have disjoint component supports,
+so the rank is the number of surviving columns. A column is zero if
+\(I\subset B\), or if it has exactly one vertex outside \(B\) and
+its complementary edge is \(e\subset B\). A triple with two or more
+vertices outside \(B\) cannot be killed by a single edge.
+Consequently the coordinate rank is exactly
+\begin{equation}\label{eq:triple-count}
+ 10-\binom b3-d\,\mathbf1_{\{R\ne0,\ e\subset B\}}.
+\end{equation}
+If \(b=0,1\), the indicator and binomial coefficient vanish, so this
+rank is ten, at least \(2d\). If \(2\le b\le5\), subtracting
+\(2d=2(5-b)\) from its lower bound gives
+\[
+ 10-\binom b3-(5-b)-2(5-b)
+ =\frac{(5-b)(b^2+2b-6)}6\ge0.
+\]
+This proves the assertion without a coordinate-case table.
+\end{proof}
+
+\begin{lemma}[One new direction in a four-dimensional factor span]
+\label{lem:four}
+If \(\ell=4\) and \(d=1\), then
+\[
+ \rank\beta+\frac{10-u}{2}\ge2.
+\]
+\end{lemma}
+\begin{proof}
+Choose four independent factors as coordinates. Up to a nonzero scalar,
+rescaling and permuting them makes the product
+\[
+ T_s=x_1x_2x_3x_4(x_1+\cdots+x_s),\qquad 1\le s\le4.
+\]
+Identify the one-dimensional target of \(P\) with \(\K\). Then
+\(\beta\) is differentiation in a nonzero direction
+\(\lambda=\sum_{j=1}^4a_j\dd_{x_j}\), followed by the quotient by \(R\).
+Write \(H_{ij}=\dd_{x_i}\dd_{x_j}T_s\).
+
+For \(s=1\), \(H_{22}=H_{33}=H_{44}=0\), so \(u\le7\).
+For \(s=2\), one has
+\[
+ H_{33}=H_{44}=0,\quad
+ H_{11}=2x_2x_3x_4,\quad H_{22}=2x_1x_3x_4,\quad
+ H_{12}=H_{11}+H_{22},
+\]
+so again \(u\le7\). In both cases \(U\) contains
+\(g_1=x_1x_3x_4\) and \(g_2=x_2x_3x_4\): for \(s=1\) use
+\(H_{12}/2,H_{11}/2\), and for \(s=2\) use \(H_{22}/2,H_{11}/2\).
+Their supports together contain all four variables. Directly,
+\(\dd_\lambda g_1=\dd_\lambda g_2=0\) forces all four \(a_j\) to
+vanish, by comparing their distinct pair monomials. Thus at least one
+of these derivatives is nonzero. It uses at most three variables and
+has quadratic rank at most three, so it cannot lie in \(R\).
+It follows that \(\rank\beta\ge1\), and
+\(\rank\beta+(10-u)/2\ge1+3/2>2\).
+
+For \(s=3\), the identities
+\(H_{jj}=2\prod_{i\ne j}x_i\), for \(j=1,2,3\), show that \(U\)
+contains \(x_1x_2x_4,x_1x_3x_4,x_2x_3x_4\).
+If \(a_4\ne0\), their derivatives modulo \(x_4L\) are nonzero
+multiples of three distinct pair monomials. Their derivative span has
+dimension at least three, so its quotient by the at-most-one-dimensional
+\(R\) has dimension at least two. If \(a_4=0\), relabel
+\(x_1,x_2,x_3\) so that \(a_1\ne0\). The derivatives of
+\(x_1x_2x_4,x_1x_3x_4\) are
+\[
+ x_4(a_1x_2+a_2x_1),\qquad x_4(a_1x_3+a_3x_1).
+\]
+They are independent. Every quadratic in their span is divisible by
+\(x_4\), hence has rank at most two, so the span meets \(R\) trivially.
+Again \(\rank\beta\ge2\).
+
+For \(s=4\), the same diagonal derivative identities show that \(U\)
+contains all four squarefree cubics. Choose \(a_j\ne0\). Differentiating
+the three cubics containing \(x_j\), and reducing modulo \(x_jL\),
+gives three independent pair monomials on the other three variables.
+Quotienting their derivative span by \(R\) leaves dimension at least two.
+For \(s=3,4\), \(u\le10\) now proves the asserted inequality.
+In particular, neither of their exact catalecticant ranks was needed.
+\end{proof}
+
+\begin{proposition}[The local half-defect estimate]\label{prop:local}
+For every nonzero quintic Chow term and every quotient \(P\) of its
+actual factor span,
+\begin{equation}\label{eq:local}
+ \boxed{\rank\beta+\frac{10-u}{2}\ge2d.}
+\end{equation}
+\end{proposition}
+\begin{proof}
+For \(d=0\) this is immediate, since \(u\le10\).
+If \(\ell=5\), use Lemma~\ref{lem:independent}.
+Suppose \(\ell\le4\) and \(d>0\). If \(k=\ell-d\le2\),
+Lemmas~\ref{lem:kernel} and \ref{lem:floor} give
+\begin{align*}
+ \rank\beta+\frac{10-u}{2}-2d
+ &\ge5+\frac{u}{2}-\binom{k+2}{3}-2(\ell-k)\\
+ &\ge\frac{(\ell-4)(\ell-5)+2}{4}
+       +2k-\binom{k+2}{3}\ge0.
+\end{align*}
+Indeed \((\ell-4)(\ell-5)\ge0\) for \(1\le\ell\le4\), and
+\(2k-\binom{k+2}{3}\) is respectively \(0,1,0\) for \(k=0,1,2\).
+The only remaining possibility is \(\ell=4,d=1,k=3\), covered by
+Lemma~\ref{lem:four}. Thus no integer-interval or partition table is
+required to complete the cases.
+\end{proof}
+
+\section{The global dimension contradiction}
+\begin{lemma}[Rectangular image spans]\label{lem:rectangular}
+For linear maps \(A_i:X^*\to Y\) of ranks \(u_i\), put
+\(D_Y=\dim\sum_i\im A_i\) and \(D_X=\dim\sum_i\im A_i^*\).
+Then
+\[
+ \rank\Bigl(\sum_iA_i\Bigr)\ge D_Y+D_X-\sum_i u_i.
+\]
+\end{lemma}
+\begin{proof}
+Factor \(A_i=B_iC_i\) through a vector space of dimension \(u_i\),
+with \(B_i\) injective and \(C_i\) surjective. The concatenated maps
+\(B:\bigoplus_i\K^{u_i}\to Y\) and
+\(C:X^*\to\bigoplus_i\K^{u_i}\) have ranks \(D_Y,D_X\), respectively,
+and \(BC=\sum_iA_i\). Here \(\im A_i^*=\im C_i^*\), since
+\(B_i^*\) is onto, justifying the rank of \(C\). Since
+\(\dim(\im C\cap\ker B)\le\dim\ker B=\sum_i u_i-D_Y\), the
+rank of \(BC\) is at least \(D_X+D_Y-\sum_i u_i\).
+\end{proof}
+
+Suppose an actual Chow decomposition \(f=\sum_{i=1}^N T_i\) is given.
+Let
+\[
+ F_i=\cD_2(T_i),\quad U_i=\cD_3(T_i),\quad
+ u_i=\dim F_i=\dim U_i,\quad \Delta=\sum_i(10-u_i)\ge0,
+\]
+\[
+ F=\sum_iF_i,\quad U=\sum_iU_i,\qquad
+ \dim F=100+h_2,\quad\dim U=100+h_3.
+\]
+Linearity of catalecticants gives \(E_2\subset F\), \(E_3\subset U\),
+so \(h_2,h_3\ge0\). Apply Lemma~\ref{lem:rectangular} to
+\(A_i=C_{3,2}(T_i)\). Their adjoints have images \(U_i\), and their
+sum \(C_{3,2}(f)\) has rank one hundred. Hence
+\begin{equation}\label{eq:upper}
+ h_2+h_3\le10N-100-\Delta.
+\end{equation}
+
+Let \(q:F\to F/E_2\) and use polarization to define
+\[
+ b:U\longrightarrow V\otimes(F/E_2),\qquad b(g)=(1_V\otimes q)\delta(g).
+\]
+Since \(\dd U\subset F\), this map is well defined. Its kernel is
+\(U\cap E_2^{(1)}=E_3\), by Lemma~\ref{lem:permanent} and
+\(E_3\subset U\). Therefore
+\begin{equation}\label{eq:image-h3}
+ \rank b=h_3.
+\end{equation}
+
+Order the terms arbitrarily. Put
+\(L_i=\Span\{\text{factors of }T_i\}\),
+\(W_i=L_1+\cdots+L_i\), \(W_0=0\), and
+\(d_i=\dim(W_i/W_{i-1})\). We have \(W_N=V\), because
+\(V=\dd E_2\subset\dd F\subset\sum_iL_i\). Thus \(\sum_i d_i=25\).
+Set \(Z_i=b(U_i)\) and \(H_i=Z_1+\cdots+Z_i\).
+As \(Z_j\subset L_j\otimes(F/E_2)\), projection to
+\((W_i/W_{i-1})\otimes(F/E_2)\) kills \(H_{i-1}\). It follows that
+\[
+ \dim H_i-\dim H_{i-1}\ge
+ \rank\bigl((P_i\otimes q|_{F_i})\delta|_{U_i}\bigr),
+\]
+where \(P_i:L_i\to L_i/(L_i\cap W_{i-1})\) has rank \(d_i\).
+The natural map \(F_i/(F_i\cap E_2)\hookrightarrow F/E_2\) is
+injective. Thus the rank on the right is exactly the local symbol rank
+in Proposition~\ref{prop:local}, not an assumed independence of the
+unprojected images \(Z_i\). Since \(H_N=b(U)\), summation yields
+\begin{equation}\label{eq:lower}
+ h_3\ge\sum_i\left(2d_i-\frac{10-u_i}{2}\right)
+      =50-\frac{\Delta}{2}.
+\end{equation}
+Combining \eqref{eq:upper} and \eqref{eq:lower}, we obtain
+\begin{equation}\label{eq:terminal}
+ \boxed{h_2+\frac{\Delta}{2}\le10N-150.}
+\end{equation}
+For \(N<15\) the right side is negative, impossible. If \(N=15\),
+nonnegativity forces \(h_2=\Delta=0\). Then \(F=E_2\), and every
+\(u_i=10\), because each \(10-u_i\) is nonnegative. Consequently
+\[
+ F_i\subset E_2\cap\Sym^2L_i,\qquad \dim F_i=10,
+\]
+contradicting \eqref{eq:intersection}, since \(\dim L_i\le5\).
+We conclude that \(N\ge16\).
+
+\section{The upper bound and the logical boundary}
+Glynn's identity \cite{Glynn2010} specializes to
+\begin{equation}\label{eq:glynn}
+ \perm_5=\frac1{16}
+ \sum_{\substack{\epsilon\in\{\pm1\}^5\\\epsilon_1=1}}
+ \left(\prod_{r=1}^5\epsilon_r\right)
+ \prod_{c=1}^5\left(\sum_{r=1}^5\epsilon_rx_{rc}\right).
+\end{equation}
+Here is a direct coefficient proof. Every expansion monomial chooses a
+row in each of the five columns. Let \(m_r\) count its row-\(r\)
+choices. The coefficient of this monomial is
+\[
+ \frac1{16}\prod_{r=2}^5\sum_{\epsilon_r=\pm1}\epsilon_r^{m_r+1}.
+\]
+It vanishes unless \(m_2,m_3,m_4,m_5\) are all odd. They are
+nonnegative integers whose total, together with \(m_1\), is five.
+The four odd counts must each be one, since making one at least three
+would require total at least six. Then \(m_1=1\). Precisely the
+permutation monomials survive, each with coefficient one. Equation
+\eqref{eq:glynn} has sixteen Chow terms and proves the upper bound.
+Together with the preceding section it proves Theorem~\ref{thm:main}
+over algebraically closed characteristic-zero fields. For any
+characteristic-zero field, scalar extension preserves a hypothetical
+shorter decomposition, giving the same lower bound over that field;
+the rational upper bound already holds there.
+
+\paragraph{Scope and disclosure.}
+Every estimate used above is proved in the text. The triple formula
+\eqref{eq:triple-count} replaces the coordinate scan,
+Lemma~\ref{lem:floor} replaces partitions, and Lemma~\ref{lem:four}
+uses explicit derivatives rather than four exact catalecticant ranks.
+Optional programs are regression checks, not proof premises. No border-rank
+equality or general-size formula is claimed.
+
+This AI-assisted revision develops the author's October 16, 2026 short
+proof in \texttt{permanent-chow-rank-small-n},
+\path{submissions/20261016-r2/perm5/main.tex}; that frozen release is
+unchanged. ChatGPT assisted argument development, internal auditing,
+exposition, and verification materials. Internal review is not external
+peer review or formal proof-assistant certification. Responsibility for
+the final manuscript rests with the author.
+
+\begin{thebibliography}{9}
+\bibitem{HanSong2026}
+J.~I.~Han and J.~Song, \emph{The rank of the \(5\times5\) permanent tensor
+is sixteen}, preprint, arXiv:2608.09708v2 (2026),
+\href{https://arxiv.org/abs/2608.09708}{arXiv:2608.09708}.
+\bibitem{Glynn2010}
+D.~G.~Glynn, \emph{The permanent of a square matrix},
+European J. Combin. \textbf{31} (2010), no.~7, 1887--1891,
+\href{https://doi.org/10.1016/j.ejc.2010.01.010}{doi:10.1016/j.ejc.2010.01.010}.
+\bibitem{IltenTeitler2016}
+N.~Ilten and Z.~Teitler, \emph{Product ranks of the \(3\times3\)
+determinant and permanent}, Canad. Math. Bull. \textbf{59} (2016),
+no.~2, 311--319,
+\href{https://doi.org/10.4153/CMB-2015-076-1}{doi:10.4153/CMB-2015-076-1}.
+\end{thebibliography}
+\end{document}

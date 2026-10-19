@@ -1,0 +1,29 @@
+{
+  "source_sha256": "272fe8933808e7e58574a6588082005c0bd35a0dc6e1d1fc4b5939ccb47cd611",
+  "native_pdf_sha256": "57fdf1f7704ddb2fdca565676ba77f5d471c8fb2dab7b45a86aee1bce70a1005",
+  "native_pdf_bytes": 395747,
+  "native_pdf_pages": 8,
+  "engine": "MiKTeX-pdfTeX 4.23 (MiKTeX 25.12)",
+  "python_version": "3.14.4",
+  "compilation_passes": 2,
+  "shell_escape": false,
+  "automatic_package_installation": false,
+  "source_only_build": true,
+  "undefined_references": false,
+  "overfull_boxes": false,
+  "underfull_boxes": false,
+  "normal_and_optimized_checks_match": true,
+  "cross_platform_exact_test_payload_match": true,
+  "pdf_geometry": {
+    "checked": true,
+    "renderer": "PyMuPDF 1.28.0",
+    "pages": 8,
+    "outside_page_text_boxes": 0,
+    "rendered_pages": 8
+  },
+  "date_utc": "2026-10-19T15:51:09.694898+00:00",
+  "proof_dependency": false,
+  "ci_dispatched": false,
+  "warning": "epstopdf reports shell escape disabled; no external image conversion required",
+  "certification": "Internal review, not external peer review or formal proof-assistant certification"
+}

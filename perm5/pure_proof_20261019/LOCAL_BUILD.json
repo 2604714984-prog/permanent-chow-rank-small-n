@@ -1,0 +1,17 @@
+{
+  "source_sha256": "272fe8933808e7e58574a6588082005c0bd35a0dc6e1d1fc4b5939ccb47cd611",
+  "local_pdf_sha256": "045d0a207667e44b5ec44c98b9fd3f7303e3b46c6e585dabc494a1ae2061ad21",
+  "local_pdf_bytes": 366083,
+  "local_pdf_pages": 8,
+  "engine": "pdfTeX 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian)",
+  "shell_escape": false,
+  "compilation_passes": 2,
+  "undefined_references": false,
+  "overfull_boxes": false,
+  "underfull_boxes": false,
+  "source_only_build": true,
+  "warning": "epstopdf: shell escape disabled (no external graphics conversion is needed)",
+  "mathematical_certification": "Internal review, not peer review or formal certification",
+  "outside_page_text_boxes": 0,
+  "optimized_checks_match": true
+}
