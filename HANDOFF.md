@@ -1,6 +1,6 @@
 # Small-permanent results: publication and handoff
 
-Updated: 2026-10-18, Asia/Shanghai. Active perm5 / perm6 release: **20261016-r2**.
+Updated: 2026-10-19, Asia/Shanghai. Active perm4 reading version: **computation-free revision 20261019**. Active perm5 / perm6 release: **20261016-r2**.
 
 ## Current direction — public GitHub publication
 
@@ -179,12 +179,12 @@ or choose an unrelated category.
 
 ## perm4 computation-free continuation — 2026-10-19
 
-The complete computation-free proof source and review materials have now been
-merged into `main` at `perm4/pure_proof_20261019/`.
+The complete computation-free proof source, seven-page PDF, English overview,
+and review materials are published on `main` at `perm4/pure_proof_20261019/`.
 
 Read first:
 - [Complete LaTeX manuscript](perm4/pure_proof_20261019/main.tex)
-- [Chinese explanation](perm4/pure_proof_20261019/README.zh.md)
+- [English overview](perm4/pure_proof_20261019/README.md)
 - [Internal audit](perm4/pure_proof_20261019/AUDIT.md)
 - [Focused handoff](perm4/pure_proof_20261019/HANDOFF.md)
 - [Optional supplementary checks](perm4/pure_proof_20261019/verify_supplementary.py)
@@ -209,3 +209,19 @@ not external peer review or formal proof-assistant certification. The theorem
 concerns ordinary Chow rank only; no border-rank or general-n equality is
 claimed. arXiv remains paused. No hosted CI was run for this documentation and
 source synchronization.
+
+
+## perm5 computation-free proof attempt — 2026-10-19
+
+A separate research branch research/perm5-computation-free-20261019 is testing a
+proof revision without altering the released 20261016-r2 source. The first
+revision replaces the 352-case coordinate scan by a closed formula for the
+rank of each coordinate symbol, replaces the four rational normal-form rank
+checks by displayed derivative identities and coefficient pivots, and proves
+the low-dimensional catalecticant floors from positive exponent partitions.
+The manuscript and audit notes are under
+perm5/pure_proof_20261019/.
+
+This is a research draft until the source compiles and its mathematical
+arguments are reviewed. The released source, original certificates, frozen
+manifests, and main branch remain unchanged. No CI is run for this work.
