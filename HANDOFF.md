@@ -179,27 +179,33 @@ or choose an unrelated category.
 
 ## perm4 computation-free continuation — 2026-10-19
 
-The research branch `research/perm4-pure-proof-20261019` now contains a complete
-computation-free rewrite in [perm4/pure_proof_20261019](perm4/pure_proof_20261019/).
-Read the [Chinese explanation](perm4/pure_proof_20261019/README.zh.md),
-[manuscript](perm4/pure_proof_20261019/main.tex),
-[internal audit](perm4/pure_proof_20261019/AUDIT.md), and
-[focused handoff](perm4/pure_proof_20261019/HANDOFF.md).
+The complete computation-free proof source and review materials have now been
+merged into `main` at `perm4/pure_proof_20261019/`.
 
-The missing-derivative lemma P_x00 = D + K*x00^3 proves the quotient kernel
-at a coordinate vector. Explicit row-column scaling with weights 0, 1 and 2,
-followed by rank specialization, proves the uniform rank-99 lemma. Together
-with direct prolongation proofs of 560 and 92, this removes the computational
-dependencies from the ordinary rank-eight proof while retaining its
-559 > 552 subtraction strategy. All downstream arguments are written out.
+Read first:
+- [Complete LaTeX manuscript](perm4/pure_proof_20261019/main.tex)
+- [Chinese explanation](perm4/pure_proof_20261019/README.zh.md)
+- [Internal audit](perm4/pure_proof_20261019/AUDIT.md)
+- [Focused handoff](perm4/pure_proof_20261019/HANDOFF.md)
+- [Optional supplementary checks](perm4/pure_proof_20261019/verify_supplementary.py)
+- [Frozen supplementary result receipt](perm4/pure_proof_20261019/supplementary_results.json)
 
-Independent local rational and two-prime tests support the derivation but are
-not premises of the manuscript. The seven-page locally compiled PDF is delivered
-in the conversation. Original perm4 source, PDF and certificates, the main
-branch, and all other n packages are not modified by this continuation.
-The initial research note is retained with a pointer to the completed revision.
+The missing-derivative lemma (P_{x_{00}}=D+Kx_{00}^3) proves the quotient
+kernel at a coordinate vector. Explicit row-column scaling with weights 0, 1
+and 2, followed by rank specialization, proves the uniform rank-99 lemma.
+Together with direct prolongation proofs of 560 and 92, this removes the
+computational dependencies from the ordinary rank-eight proof while retaining
+the 559 > 552 subtraction argument.
 
-This is internally reviewed AI-assisted mathematics, not external peer review
-or formal certification. Author acceptance before promoting the new reading
-version remains a separate gate. No border-rank or general-n equality is
-claimed. arXiv remains paused; no CI or local Codex was used.
+The optional regression checks are not premises of the written proof. The
+standalone seven-page PDF is retained as a conversation/library artifact and
+has not yet been added to GitHub; therefore the repository's old PDF remains
+the historical computation-assisted reading version. The new LaTeX source is
+the current computation-free manuscript. No old source, PDF, certificate,
+frozen release or unrelated n package was overwritten.
+
+The internal audit found no unresolved step in the written argument. This is
+not external peer review or formal proof-assistant certification. The theorem
+concerns ordinary Chow rank only; no border-rank or general-n equality is
+claimed. arXiv remains paused. No hosted CI was run for this documentation and
+source synchronization.
