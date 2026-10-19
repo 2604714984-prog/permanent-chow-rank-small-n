@@ -1,37 +1,41 @@
-# Handoff — perm4 pure proof
+# Handoff: Computation-Free `perm_4` Proof
 
-Updated: 2026-10-19.
+Updated: October 19, 2026.
 
-## Result
+## Current reading order
 
-A complete computation-free rewrite of the ordinary rank-eight proof has been produced. The new ingredient is the missing-derivative lemma
+1. [`main.pdf`](main.pdf) — seven-page reading copy.
+2. [`main.tex`](main.tex) — complete standalone LaTeX manuscript used to build the PDF.
+3. [`README.md`](README.md) — theorem, reproduction instructions, and scope.
+4. [`AUDIT.md`](AUDIT.md) — internal dependency and edge-case review.
+5. [`verify_supplementary.py`](verify_supplementary.py) and [`supplementary_results.json`](supplementary_results.json) — optional regression checks and their recorded output.
 
-    P_x00 = D + K*x00^3,
+## Result and proof structure
 
-proved by excluding forbidden cubic monomials and recovering a missing matching-coefficient equality along a three-swap path. It gives the quotient kernel at x00. The row-column scaling with corner/boundary/interior weights 0/1/2 then gives the uniform rank-99 statement by rank specialization. The proof retains the original low-rank classification and the 559 > 552 subtraction contradiction, re-proved in full.
+The manuscript proves the ordinary Chow rank of the generic four-by-four permanent is eight over fields of characteristic zero.
 
-## Read first
+The main new ingredient is the missing-derivative lemma at `z = x_00`, proved by excluding forbidden cubic monomials and recovering the missing matching-coefficient equality along a three-swap path. Explicit row-column scaling with weights 0, 1, and 2 then transfers the quotient-kernel rank statement to every nonzero vector by rank specialization. The proof combines this with the prolongation ranks 560 and 92, the low-rank quadratic classification, and the final contradiction `559 > 552`.
 
-- `main.tex`: complete mathematical proof; sections 3 and 4 are the new central arguments.
-- `README.zh.md`: Chinese explanation and six-stage outcome.
-- `AUDIT.md`: internal dependency/edge-case review.
-- `verify_supplementary.py` and `supplementary_results.json`: optional independent regression tests, not proof premises.
+## Reproduction
 
-The locally compiled seven-page PDF and a complete package are delivered in the conversation. The repository stores the source and review materials; it does not require the PDF as a verification input.
+From the repository root:
+
+```sh
+python -B perm4/pure_proof_20261019/verify_supplementary.py
+```
+
+To rebuild the PDF, run the following twice from this directory:
+
+```sh
+pdflatex -no-shell-escape -interaction=nonstopmode -halt-on-error main.tex
+```
+
+The supplementary program is a regression check only; its output is not a premise of the proof.
 
 ## Boundaries
 
 - Ordinary Chow rank only; no border-rank claim.
-- No general-n Chow-rank equality, and no perm5/perm6/perm7 claim.
-- Original manuscript, original certificate expectations, frozen releases, and main branch remain unchanged.
-- The earlier research note is retained as a historical record, with a new pointer to this completed revision.
-- This is internally reviewed AI-assisted mathematics, not an external referee report or a formal proof-assistant certificate.
-- No CI run or local Codex was used. arXiv remains paused.
-
-## Reproduction
-
-Run the optional script with Python 3 and the standard library. Compile `main.tex` twice with pdflatex and shell escape disabled. These commands are given in the Chinese README.
-
-## Next acceptance gate
-
-Author review of the new missing-derivative proof and its scaling argument before promoting this revision to replace the archived public reading version. This is a publication/acceptance gate, not an unresolved lemma in the present draft.
+- No general-n Chow-rank equality, and no claim about `perm_5`, `perm_6`, or `perm_7` from this manuscript.
+- Internal review is not external peer review or formal proof-assistant certification.
+- The original computation-assisted manuscript and certificates remain preserved in `perm4/paper/` and `perm4/certificates/`.
+- No hosted CI run is required for this documentation/source synchronization; arXiv remains paused.
