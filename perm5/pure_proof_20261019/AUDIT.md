@@ -30,14 +30,24 @@ framework, or frozen release.
   exponent partition gives minima 1,2,4,7 for the numbers of distinct
   degree-two divisors. Rank cannot increase under specialization.
 
-## Remaining review items
-- Compile the revised TeX and check all references.
-- Run the released standard-library verifier as an optional regression check,
-  but do not cite its PASS as a proof premise.
-- Carefully check the derivative coefficient identities, the specialization
-  direction, and the use of the local estimate for all dependent-factor
-  cases.
-- Do not promote this draft to main or overwrite any frozen submission
-  until these checks are complete.
+## Checks completed in this revision
+- The revised source compiled twice with MiKTeX using shell escape disabled.
+  Output: 8-page PDF, 312,358 bytes. No undefined references or citation
+  warnings remain. The only warnings are the benign no-shell-escape
+  epstopdf warning and one underfull vertical box.
+- The coordinate symbol formula was checked against its six values
+  (d=0,\ldots,5); each nonzero triple column has a unique support.
+- The four derivative ranks were rechecked by coefficient comparison:
+  (7,7,9,10). In the (s=2) case the only relation among nonzero
+  derivatives is (H_{11}-H_{12}+H_{22}=0); the remaining independence
+  follows from the listed square monomials.
+- The positive-partition floors (1,2,4,7) were checked directly.
+
+## Remaining acceptance boundary
+The mathematical replacements and TeX build have passed this internal review.
+The full theorem has not been externally refereed or formally verified. The
+released verifier may still be run as a regression check, but its PASS is not
+needed as a proof premise. Do not promote this draft to main or overwrite any
+frozen submission without author review.
 
 No CI was dispatched. No historical release or certificate was modified.
