@@ -1,63 +1,55 @@
 # Chow Ranks of Small Permanents
 
-Public manuscripts and verification packages for the ordinary Chow ranks of small generic permanents over fields of characteristic zero.
+Research manuscripts and reproducible evidence for the **ordinary Chow rank** of generic permanent polynomials over characteristic-zero fields.
 
-## Papers and verification packages
+## Start here
 
-| Permanent | Ordinary Chow rank | Current manuscript | Complete LaTeX source | Exact verification |
-|---|---:|---|---|---|
-| n = 3 | 4 | [PDF](perm3/paper/perm3_chow_rank_4.pdf) | [Source](perm3/paper/source/) | [Certificates and programs](perm3/certificates/) |
-| n = 4 | 8 | [New computation-free PDF](perm4/pure_proof_20261019/main.pdf) · [LaTeX source](perm4/pure_proof_20261019/main.tex) | [Standalone source package](perm4/pure_proof_20261019/) | [Internal audit](perm4/pure_proof_20261019/AUDIT.md) · [Optional regression checks](perm4/pure_proof_20261019/verify_supplementary.py) |
-| n = 5 | 16 | [7-page PDF — 20261016-r2](dist/perm5_chow_rank_16_20261016-r2.pdf) | [Source tree](submissions/20261016-r2/perm5/) · [Standalone ZIP](dist/perm5_arxiv_20261016-r2.zip) | [Programs and exact data](submissions/20261016-r2/perm5/anc/) |
-| n = 6 | 32 | [11-page PDF — 20261016-r2](dist/perm6_chow_rank_32_20261016-r2.pdf) | [Source tree](submissions/20261016-r2/perm6/) · [Standalone ZIP](dist/perm6_arxiv_20261016-r2.zip) | [Programs and exact data](submissions/20261016-r2/perm6/anc/) |
+1. Read the current manuscript linked in the table below.
+2. Read the corresponding internal audit and scope notes before interpreting a result.
+3. Use the reproduction commands only for the checks they are documented to perform. A passing script is not a substitute for a mathematical proof or external peer review.
 
-For n = 4, the new standalone manuscript is the current computation-free proof revision. The older [PDF](perm4/paper/perm4_chow_rank_8.pdf), [source tree](perm4/paper/source/) and [certificate package](perm4/certificates/) are preserved as the historical computation-assisted release; they have not been overwritten. The seven-page PDF compiled from the new source is now included at `perm4/pure_proof_20261019/main.pdf`. The historical PDF remains the computation-assisted release.
+## Current results
 
-Each paper's package is independent. The current n = 5 and n = 6 releases are **20261016-r2**; use the links above for their current manuscripts. The original `perm5/` and `perm6/` directories and the [r1 submission release](submissions/20261016/) remain historical archives.
+| Polynomial | Claimed ordinary Chow rank | Current reading version | Source and review |
+|---|---:|---|---|
+| `perm_3` | 4 | [Manuscript PDF](perm3/paper/perm3_chow_rank_4.pdf) | [LaTeX source](perm3/paper/source/) · [Verification package](perm3/certificates/) |
+| `perm_4` | 8 | [**Computation-free PDF (2026-10-19)**](perm4/pure_proof_20261019/main.pdf) | [LaTeX source](perm4/pure_proof_20261019/main.tex) · [English overview](perm4/pure_proof_20261019/README.md) · [Internal audit](perm4/pure_proof_20261019/AUDIT.md) · [Optional checks](perm4/pure_proof_20261019/verify_supplementary.py) |
+| `perm_5` | 16 | [Manuscript PDF (20261016-r2)](dist/perm5_chow_rank_16_20261016-r2.pdf) | [Standalone source](submissions/20261016-r2/perm5/) · [Verification inputs](submissions/20261016-r2/perm5/anc/) |
+| `perm_6` | 32 | [Manuscript PDF (20261016-r2)](dist/perm6_chow_rank_32_20261016-r2.pdf) | [Standalone source](submissions/20261016-r2/perm6/) · [Verification inputs](submissions/20261016-r2/perm6/anc/) |
 
-The n = 5 and n = 6 results concern **ordinary Chow rank**, with no claim of border-rank equality or a general-n formula. The new n = 4 revision is internally reviewed AI-assisted mathematics; it has not received external peer review or formal proof-assistant certification.
+## `perm_4`: current version and historical archive
 
-## Reproduce n = 4 supplementary checks
+The current reading version is the seven-page computation-free revision in [`perm4/pure_proof_20261019/`](perm4/pure_proof_20261019/). Its proof replaces the earlier rank computations with explicit prolongation classifications, a missing-derivative lemma, row-column scaling, and a rank-specialization argument. The supplementary script is an optional regression check and is **not** a premise of the theorem.
 
-From the repository root, run:
+The earlier computation-assisted version remains preserved at [`perm4/paper/`](perm4/paper/) with its original certificates at [`perm4/certificates/`](perm4/certificates/). These files are historical evidence and are not the current reading version.
+
+To replay the optional checks from the repository root:
 
 ```sh
 python -B perm4/pure_proof_20261019/verify_supplementary.py
 ```
 
-These exact rational and finite-field regression checks are optional consistency checks, **not premises** of the written proof. To build the seven-page reading PDF, compile `perm4/pure_proof_20261019/main.tex` twice with `pdflatex -no-shell-escape -interaction=nonstopmode -halt-on-error`. The compilation itself has not been independently replayed in this repository update.
+To compile the new manuscript, change to `perm4/pure_proof_20261019/` and run twice:
 
-## Download and reproduce n = 5 and n = 6
+```sh
+pdflatex -no-shell-escape -interaction=nonstopmode -halt-on-error main.tex
+```
 
-Each standalone ZIP contains `main.tex`, an `anc/` directory with independent verification programs and exact inputs, and SHA-256 inventories. The n = 5 archive has 21 files, and the n = 6 archive has 16 files. The PDFs linked above were compiled locally; they are not arXiv-generated previews.
+## Reproduction and release records
 
-- [SHA-256 checksums for both source ZIPs and PDFs](dist/SHA256SUMS_20261016-r2)
-- [Reproduction instructions for all four results](REPRODUCING.md)
-- [R2 technical acceptance report](audit/20261016-r2/REPORT.md)
-- [R2 internal mathematical review](audit/20261016-r2/MATHEMATICAL_REVIEW.md)
+- [Reproduction guide](REPRODUCING.md)
+- [Current project handoff](HANDOFF.md)
+- [20261016-r2 source and PDF checksums](dist/SHA256SUMS_20261016-r2)
+- [20261016-r2 technical acceptance report](audit/20261016-r2/REPORT.md)
+- [20261016-r2 mathematical review](audit/20261016-r2/MATHEMATICAL_REVIEW.md)
 - [2026-10-18 package-integrity receipt](audit/20261018-submission/package_preflight.json)
 
-From the repository root:
+## Scope and status
 
-```sh
-python -B submissions/20261016-r2/perm5/anc/verify_submission.py
-python -B submissions/20261016-r2/perm6/anc/verify_submission.py
-```
+All four stated results concern **ordinary Chow rank**, not border Chow rank. No general formula for arbitrary matrix size is claimed. The `perm_4` revision has received an internal mathematical review; it has not received external peer review or formal proof-assistant certification.
 
-From either independently extracted ZIP:
+The `perm_5` and `perm_6` release packages are frozen at **20261016-r2**. The arXiv workflow is paused; the PDFs linked here are local reading copies, not arXiv-generated previews.
 
-```sh
-python -B anc/verify_submission.py
-pdflatex -no-shell-escape -interaction=nonstopmode -halt-on-error main.tex
-pdflatex -no-shell-escape -interaction=nonstopmode -halt-on-error main.tex
-```
+## Language and archive policy
 
-The verification programs use Python 3.11 or newer and the standard library. See the reproduction instructions for the versions actually used in acceptance.
-
-## Publication status — 2026-10-19
-
-The n = 4 computation-free proof source and supporting audit materials have been merged into the public repository at `perm4/pure_proof_20261019/`. The original n = 4 proof source and computation certificates remain unchanged. The new source's optional regression results are retained separately and are not invoked as proof premises.
-
-The n = 5 and n = 6 arXiv workflow remains paused. Neither manuscript was uploaded or publicly submitted by this workflow, and no arXiv-generated preview was produced. The frozen manuscripts, certificates and historical evidence for n = 5 and n = 6 remain unchanged.
-
-See the [current handoff](HANDOFF.md), the [n = 4 proof handoff](perm4/pure_proof_20261019/HANDOFF.md), the [n = 4 internal audit](perm4/pure_proof_20261019/AUDIT.md), and the [dated submission record](audit/20261018-submission/STATUS.md).
+Reader-facing documentation for the current release is maintained in English. Historical source files, manuscripts, and evidence packages are retained rather than silently rewritten. The repository's original computation-assisted `perm_4` files remain unchanged.
