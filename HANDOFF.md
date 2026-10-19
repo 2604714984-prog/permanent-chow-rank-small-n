@@ -177,35 +177,15 @@ of manuscript content, AI disclosure, and public submission before Submit Articl
 Do not treat the current endorsement blocker as a reason to rewrite the release
 or choose an unrelated category.
 
-## perm4 computation-free continuation — 2026-10-19
+## Current `perm_4` release — 2026-10-19
 
-The complete computation-free proof source, seven-page PDF, English overview,
-and review materials are published on `main` at `perm4/pure_proof_20261019/`.
+The computation-free proof is now the canonical release:
+- [Current PDF](perm4/paper/perm4_chow_rank_8.pdf)
+- [Complete LaTeX source](perm4/paper/source/main.tex)
+- [Reader guide](perm4/README.md)
+- [Internal audit](perm4/paper/AUDIT.md)
+- [Optional supplementary checks](perm4/paper/verify_supplementary.py)
 
-Read first:
-- [Complete LaTeX manuscript](perm4/pure_proof_20261019/main.tex)
-- [English overview](perm4/pure_proof_20261019/README.md)
-- [Internal audit](perm4/pure_proof_20261019/AUDIT.md)
-- [Focused handoff](perm4/pure_proof_20261019/HANDOFF.md)
-- [Optional supplementary checks](perm4/pure_proof_20261019/verify_supplementary.py)
-- [Frozen supplementary result receipt](perm4/pure_proof_20261019/supplementary_results.json)
+The earlier computation-assisted PDF, source files, certificate scripts and original manifest are preserved under `perm4/archive/computation-assisted/`. The root README links the current versions and explains the archive boundary.
 
-The missing-derivative lemma (P_{x_{00}}=D+Kx_{00}^3) proves the quotient
-kernel at a coordinate vector. Explicit row-column scaling with weights 0, 1
-and 2, followed by rank specialization, proves the uniform rank-99 lemma.
-Together with direct prolongation proofs of 560 and 92, this removes the
-computational dependencies from the ordinary rank-eight proof while retaining
-the 559 > 552 subtraction argument.
-
-The optional regression checks are not premises of the written proof. The
-standalone seven-page PDF is retained as a conversation/library artifact and
-has not yet been added to GitHub; therefore the repository's old PDF remains
-the historical computation-assisted reading version. The new LaTeX source is
-the current computation-free manuscript. No old source, PDF, certificate,
-frozen release or unrelated n package was overwritten.
-
-The internal audit found no unresolved step in the written argument. This is
-not external peer review or formal proof-assistant certification. The theorem
-concerns ordinary Chow rank only; no border-rank or general-n equality is
-claimed. arXiv remains paused. No hosted CI was run for this documentation and
-source synchronization.
+The proof establishes ordinary Chow rank eight in characteristic zero. It has received internal mathematical review, not external peer review or formal proof-assistant certification. No border-rank or general-n equality is claimed. The optional regression checks are not premises of the proof. arXiv remains paused; no hosted CI was run for this synchronization.
