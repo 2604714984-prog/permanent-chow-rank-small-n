@@ -1,39 +1,39 @@
 # Chow Ranks of Small Permanents
 
-Research manuscripts and reproducible evidence for the **ordinary Chow rank** of generic permanent polynomials over characteristic-zero fields.
+Research manuscripts and reproducible evidence for the **ordinary Chow rank** of generic permanent polynomials over fields of characteristic zero.
 
 ## Start here
 
-1. Read the current manuscript linked in the table below.
-2. Read the corresponding internal audit and scope notes before interpreting a result.
-3. Use the reproduction commands only for the checks they are documented to perform. A passing script is not a substitute for a mathematical proof or external peer review.
+Read the current manuscript first, then its scope notes and audit. Verification scripts check stated computations and artifacts; they do not replace mathematical proofs or external peer review.
 
 ## Current results
 
-| Polynomial | Claimed ordinary Chow rank | Current reading version | Source and review |
+| Polynomial | Ordinary Chow rank | Current reading version | Source and review |
 |---|---:|---|---|
 | `perm_3` | 4 | [Manuscript PDF](perm3/paper/perm3_chow_rank_4.pdf) | [LaTeX source](perm3/paper/source/) · [Verification package](perm3/certificates/) |
-| `perm_4` | 8 | [**Computation-free PDF (2026-10-19)**](perm4/pure_proof_20261019/main.pdf) | [LaTeX source](perm4/pure_proof_20261019/main.tex) · [English overview](perm4/pure_proof_20261019/README.md) · [Internal audit](perm4/pure_proof_20261019/AUDIT.md) · [Optional checks](perm4/pure_proof_20261019/verify_supplementary.py) |
+| `perm_4` | 8 | [**Current computation-free PDF**](perm4/paper/perm4_chow_rank_8.pdf) | [LaTeX source](perm4/paper/source/main.tex) · [Reader guide](perm4/README.md) · [Internal audit](perm4/paper/AUDIT.md) · [Optional checks](perm4/paper/verify_supplementary.py) |
 | `perm_5` | 16 | [Manuscript PDF (20261016-r2)](dist/perm5_chow_rank_16_20261016-r2.pdf) | [Standalone source](submissions/20261016-r2/perm5/) · [Verification inputs](submissions/20261016-r2/perm5/anc/) |
 | `perm_6` | 32 | [Manuscript PDF (20261016-r2)](dist/perm6_chow_rank_32_20261016-r2.pdf) | [Standalone source](submissions/20261016-r2/perm6/) · [Verification inputs](submissions/20261016-r2/perm6/anc/) |
 
-## `perm_4`: current version and historical archive
+## Current `perm_4` proof
 
-The current reading version is the seven-page computation-free revision in [`perm4/pure_proof_20261019/`](perm4/pure_proof_20261019/). Its proof replaces the earlier rank computations with explicit prolongation classifications, a missing-derivative lemma, row-column scaling, and a rank-specialization argument. The supplementary script is an optional regression check and is **not** a premise of the theorem.
+The canonical `perm_4` manuscript and PDF are now the computation-free revision dated October 19, 2026. The proof classifies the relevant cubic prolongations, proves the missing-derivative lemma, uses explicit row-column scaling and rank specialization, and closes the lower bound with `559 > 552`.
 
-The earlier computation-assisted version remains preserved at [`perm4/paper/`](perm4/paper/) with its original certificates at [`perm4/certificates/`](perm4/certificates/). These files are historical evidence and are not the current reading version.
+The earlier computation-assisted proof, source files, certificate scripts, and their original manifest are preserved under [`perm4/archive/computation-assisted/`](perm4/archive/computation-assisted/). They are historical material and are not the current reading version.
 
-To replay the optional checks from the repository root:
+Run the optional regression checks from the repository root:
 
 ```sh
-python -B perm4/pure_proof_20261019/verify_supplementary.py
+python -B perm4/paper/verify_supplementary.py
 ```
 
-To compile the new manuscript, change to `perm4/pure_proof_20261019/` and run twice:
+To rebuild the PDF, run twice from `perm4/paper/source/`:
 
 ```sh
 pdflatex -no-shell-escape -interaction=nonstopmode -halt-on-error main.tex
 ```
+
+The optional checks are not premises of the written proof.
 
 ## Reproduction and release records
 
@@ -46,10 +46,10 @@ pdflatex -no-shell-escape -interaction=nonstopmode -halt-on-error main.tex
 
 ## Scope and status
 
-All four stated results concern **ordinary Chow rank**, not border Chow rank. No general formula for arbitrary matrix size is claimed. The `perm_4` revision has received an internal mathematical review; it has not received external peer review or formal proof-assistant certification.
+All stated results concern **ordinary Chow rank**, not border Chow rank. No general formula for arbitrary matrix size is claimed. The current `perm_4` revision has received internal mathematical review; it has not received external peer review or formal proof-assistant certification.
 
-The `perm_5` and `perm_6` release packages are frozen at **20261016-r2**. The arXiv workflow is paused; the PDFs linked here are local reading copies, not arXiv-generated previews.
+The `perm_5` and `perm_6` release packages are frozen at **20261016-r2**. The arXiv workflow is paused; the PDFs linked here are reading copies, not arXiv-generated previews.
 
 ## Language and archive policy
 
-Reader-facing documentation for the current release is maintained in English. Historical source files, manuscripts, and evidence packages are retained rather than silently rewritten. The repository's original computation-assisted `perm_4` files remain unchanged.
+Reader-facing documentation for the current release is maintained in English. Historical source files, manuscripts, and evidence packages are retained rather than silently rewritten. The original computation-assisted `perm_4` files remain available in the archive.
