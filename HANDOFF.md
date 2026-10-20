@@ -227,3 +227,38 @@ packages are retained unchanged. Prior drafts remain in Git history. arXiv
 remains paused. No hosted CI, local Codex, new scheduler, or unrelated project
 operation was used. Internal review is not external peer review or a formal
 proof-assistant certificate.
+
+
+## perm6 computation-free completion — 2026-10-20
+
+The complete self-contained revision is in `perm6/pure_proof_20261020/`.
+Read `main.tex`, the named reading PDF, `READER_GUIDE.md`, `AUDIT.md`, and
+its focused `HANDOFF.md`. Ordinary Chow rank 32 is proved in characteristic
+zero; no border-rank or general-size equality is claimed.
+
+The new five-dimensional-factor argument uses an actual squarefree cubic
+subspace U0 and its codimension m in the ten-dimensional squarefree completion.
+Explicit derivatives and disjoint-variable product bounds give m <= (20-u)/2.
+A codimension-m source restriction loses at most m in rank, so the middle-rank
+defect covers the loss. This removes all five exact normal-form rank profiles
+from the proof. Direct four-cycle reasoning, surviving-triple counting, a
+cubic-divisor formula and algebraic bounds replace the other finite endpoints.
+The global proof retains actual derivative images and the projected factor-span
+filtration; its two inequalities cancel the full defect and force N>=32.
+
+The final mathematical source SHA-256 is
+`a13191fce613d530ebb1634b373597e178a8f843b15707f0d8f3d65bff1f4b40`.
+It compiles by itself to seven pages in both TeX Live and workstation MiKTeX,
+with shell escape disabled. Normal and optimized independent exact tests match
+across platforms. They include 528 rational and 2464 structured local examples,
+1454 kernel identities, and the actual Glynn global image sums. Negative
+controls retain the failures of invalid weakened hypotheses. Test outputs
+are not premises of the written proof. Build receipts distinguish PDF hashes.
+
+The frozen perm6 submission wrapper also completed successfully; its source,
+original computations, expected manifests and release archives were not changed.
+The other n packages are untouched. Root reading and reproduction links now
+point to this new version while preserving the historical versions. arXiv
+remains paused. No hosted CI, local Codex, WSL restart or new scheduler is used.
+Internal mathematical review found no unresolved step; external peer review
+and formal proof-assistant certification have not been performed.

@@ -1,0 +1,37 @@
+{
+  "base_main": "fb03220dda763c3dc859042853a1f9e12a8c3e3e",
+  "source_sha256": "a13191fce613d530ebb1634b373597e178a8f843b15707f0d8f3d65bff1f4b40",
+  "protected_git_objects": {
+    "submissions": "d2f1fcfcb1492edfcb1aa1520354fec07489a1ad",
+    "dist": "a237ca1cfeedadca8dab5211bcf9f77bb9b92579",
+    "perm3": "42903a288af98d9b4fc535bdac0b6037e2b1fc81",
+    "perm4": "e70eac57edd1fcca195d12de95f4aba384bb6565",
+    "perm5": "328bf9f5a5c32ee43329fdb3ae3c5dd010bde67c",
+    "perm6/paper": "6649f77e831b1281e756e9d0abe7f8085b320a31",
+    "perm6/computation": "8d9ad31a7df893a06eeb506d780625b083620b8b",
+    "perm6/MANIFEST.sha256": "eb4529e802f8b64c4da3669bbd1e89a20bf21f0d",
+    "perm6/README.md": "b12420fa3213ec2a4880636580d82b4441268f72",
+    "perm6/verify_all.py": "da9f403954a19a5ec71e42803a6c8a4d38c4dbe7"
+  },
+  "source_manifest_pass": true,
+  "staged_source_manifest_pass": true,
+  "changed_paths": [
+    "HANDOFF.md",
+    "README.md",
+    "REPRODUCING.md",
+    "perm6/pure_proof_20261020/.gitattributes",
+    "perm6/pure_proof_20261020/.gitignore",
+    "perm6/pure_proof_20261020/AUDIT.md",
+    "perm6/pure_proof_20261020/BUILD_ACCEPTANCE.json",
+    "perm6/pure_proof_20261020/HANDOFF.md",
+    "perm6/pure_proof_20261020/LOCAL_BUILD.json",
+    "perm6/pure_proof_20261020/READER_GUIDE.md",
+    "perm6/pure_proof_20261020/README.md",
+    "perm6/pure_proof_20261020/SOURCE_MANIFEST.sha256",
+    "perm6/pure_proof_20261020/main.tex",
+    "perm6/pure_proof_20261020/perm6_chow_rank_32_computation_free.pdf",
+    "perm6/pure_proof_20261020/verification_results.json",
+    "perm6/pure_proof_20261020/verify_optional.py"
+  ],
+  "status": "PRESERVATION_AND_STAGING_PASS"
+}

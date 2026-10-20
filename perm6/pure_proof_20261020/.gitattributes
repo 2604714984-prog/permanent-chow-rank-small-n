@@ -1,0 +1,6 @@
+*.tex text eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.sha256 text eol=lf
+*.pdf -text

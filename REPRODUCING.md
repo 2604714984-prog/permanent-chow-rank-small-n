@@ -1,5 +1,24 @@
 # Reproducing current manuscripts and archived proof packages
 
+## Current computation-free perm6 manuscript
+
+The current source is `perm6/pure_proof_20261020/main.tex`. Copy this file alone into an empty directory and compile twice with shell escape disabled:
+
+```sh
+pdflatex -no-shell-escape -interaction=nonstopmode -halt-on-error main.tex
+pdflatex -no-shell-escape -interaction=nonstopmode -halt-on-error main.tex
+```
+
+The result is a seven-page PDF. No ancillary data, proof program, included source, external figure or network service is required. Both local TeX Live and workstation MiKTeX builds were tested from source-only directories. `LOCAL_BUILD.json` and `BUILD_ACCEPTANCE.json` distinguish the two PDF byte streams; the mathematical source SHA-256 is identical.
+
+Optional independent checks require Python 3.11 or newer and its standard library:
+
+```sh
+python -B perm6/pure_proof_20261020/verify_optional.py --output /path/to/existing/temporary/fresh_results.json
+```
+
+Use an existing temporary output directory rather than overwriting the archived receipt. Normal and optimized runs matched across platforms. The program checks coordinate symbols, actual derivative spaces, rational and structured quotient examples, negative controls, and the actual Glynn image sums. These tests are not mathematical proof premises. The frozen perm6 submission wrapper was also replayed successfully without changing its expected hashes.
+
 ## Current computation-free perm5 manuscript
 
 The current reading version is `perm5/pure_proof_20261019/main.tex`, with its PDF, internal audit, reader guides, and source manifest in the same directory. It develops the October short proof and has no computer-generated proof premise.
@@ -41,7 +60,7 @@ its optional supplementary checks run with the standard library:
 python -B perm4/paper/verify_supplementary.py
 ```
 
-The current perm4 and perm5 proofs do not depend on their optional checks or the archived computational packages. The historical `perm5` and `perm6` verification programs use only the standard library.
+The current perm4, perm5 and perm6 proofs do not depend on their optional checks or the archived computational packages. The historical `perm5` and `perm6` verification programs use only the standard library.
 
 Every historical package retains its own `MANIFEST.sha256`.
 
