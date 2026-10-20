@@ -1,775 +1,516 @@
-\documentclass[11pt,reqno]{amsart}
-
-\usepackage{amsmath,amssymb,mathtools,mathrsfs}
-\usepackage{booktabs,array,tabularx,longtable}
-\usepackage{enumitem,microtype}
+\documentclass[11pt]{amsart}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,mathtools,microtype}
 \usepackage[hidelinks]{hyperref}
 \usepackage{xurl}
-\urlstyle{tt}
-\allowdisplaybreaks[2]
 \raggedbottom
 \emergencystretch=3em
-\setlist{nosep}
-
 \newtheorem{theorem}{Theorem}[section]
 \newtheorem{lemma}[theorem]{Lemma}
 \newtheorem{proposition}[theorem]{Proposition}
 \newtheorem{corollary}[theorem]{Corollary}
-\theoremstyle{definition}
-\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}
 \newtheorem{remark}[theorem]{Remark}
-
+\numberwithin{equation}{section}
 \newcommand{\K}{\mathbb K}
 \newcommand{\Q}{\mathbb Q}
-\newcommand{\F}{\mathbb F}
 \newcommand{\Sym}{\operatorname{Sym}}
-\newcommand{\rank}{\operatorname{rank}}
-\newcommand{\im}{\operatorname{im}}
 \newcommand{\Span}{\operatorname{span}}
-\newcommand{\ChowRank}{\operatorname{ChowRank}}
+\newcommand{\im}{\operatorname{im}}
+\newcommand{\rank}{\operatorname{rank}}
 \newcommand{\perm}{\operatorname{perm}}
-\newcommand{\Gr}{\operatorname{Gr}}
+\newcommand{\CR}{\operatorname{ChowRank}}
 \newcommand{\cD}{\mathcal D}
-
-\title{The Chow Rank of the Five-by-Five Permanent}
+\newcommand{\dd}{\partial}
+\title[A computation-free proof for the five-by-five permanent]{A computation-free proof of the Chow rank\\of the five-by-five permanent}
 \author{Rongyu Xu}
-\hypersetup{
-  pdftitle={The Chow Rank of the Five-by-Five Permanent},
-  pdfauthor={Rongyu Xu}}
-\date{September 1, 2026}
-\subjclass[2020]{Primary 15A69; Secondary 14N05, 05D05, 68V05}
-\keywords{permanent, Chow rank, product rank, Koszul flattening,
-computer-assisted proof, exact certificate}
-
+\date{October 19, 2026}
+\subjclass[2020]{Primary 15A69; Secondary 14N05, 68V05}
+\keywords{permanent, Chow rank, product rank, catalecticant}
+\hypersetup{pdftitle={A computation-free proof of the Chow rank of the five-by-five permanent},pdfauthor={Rongyu Xu}}
 \begin{document}
-
 \begin{abstract}
-Let \(\perm_5\) denote the permanent of a generic \(5\) by \(5\) matrix.
-Over every field of characteristic zero, we prove that its ordinary Chow rank
-is \(16\). This certificate-driven presentation separates the written
-geometric argument from four finite computational lemmas. Their inputs,
-exhaustive domains, arithmetic rings, expected outputs, and failure conditions
-are stated in the article. The largest endpoint exhausts \(886{,}464\)
-coordinate flags over each of \(\F_3,\F_5,\F_7\) and checks every extremum over
-\(\Q\); independent programs also verify Glynn's identity and all
-\(\binom{25}{5}\) coordinate five-planes. A deterministic fail-closed replay
-links these certificates to the written proof.
+We prove that the ordinary Chow rank of the permanent of a generic
+five-by-five matrix is sixteen over every field of characteristic zero.
+The proof combines a rectangular image-span inequality with a local
+polarization estimate for quintic products. A closed count of squarefree
+triples, a uniform monomial-divisor bound, and explicit derivatives in
+four variables establish the local estimate. No computer-generated rank,
+finite search, or stored certificate is a premise. In particular, the
+four normal-form catalecticant ranks need not be determined separately.
+The argument does not assert an equality for border Chow rank.
 \end{abstract}
-
 \maketitle
 
-\section{Introduction}
+\section{Statement and specialization conventions}
+Let \(\K\) initially be algebraically closed of characteristic zero. Write
+\([m]=\{1,\ldots,m\}\), and set
+\[
+ V=\Span_{\K}\{x_{ij}:i,j\in[5]\},\qquad
+ f=\perm_5=\sum_{\sigma\in S_5}\prod_{i=1}^5x_{i,\sigma(i)}.
+\]
+Thus \(\dim V=25\), and elements of \(V\) are linear forms on \(V^*\).
+The ordinary Chow rank, also called product rank, of a degree-\(m\) form
+is the least number of nonzero products of \(m\) linear forms summing to
+it; scalar coefficients may be absorbed into a factor.
+\begin{theorem}\label{thm:main}
+For every field \(\K\) of characteristic zero,
+\[
+ \CR_{\K}(\perm_5)=16.
+\]
+\end{theorem}
+The factors in a Chow term may involve all twenty-five variables. This
+is distinct from the tensor rank of the permanent in five separate row
+spaces. Han and Song prove that the latter rank is sixteen
+\cite{HanSong2026}; that lower bound is not used here. In fact, the
+component with degree one in each row of the single Chow term
+\(\prod_{j=1}^5(\sum_{i=1}^5x_{ij})\) is the permanent itself.
+For background on product rank, see \cite{IltenTeitler2016}.
 
-\subsection*{Notation and conventions}
+For a form \(h\in\Sym^mV\) let
+\[
+ \begin{gathered}
+ C_{a,m-a}(h):\Sym^aV^*\longrightarrow\Sym^{m-a}V,
+ \quad D\longmapsto D(h),\\
+ \cD_j(h)=\im C_{m-j,j}(h).
+ \end{gathered}
+\]
+All derivative spaces below are \emph{actual} images of these maps,
+not formal spans of factor products. For a space of forms \(G\),
+\(\dd G\) denotes the span of all first directional derivatives.
+The differential pairing between symmetric powers is perfect in
+characteristic zero. Under it \(C_{a,m-a}(h)^*=C_{m-a,a}(h)\), since
+\(D'D(h)=DD'(h)\). In particular these maps have the same rank.
 
-Throughout the paper, \(\K\) denotes a field of characteristic zero. For a
-positive integer \(n\), write \([n]=\{0,1,\ldots,n-1\}\), let \(S_n\) be the
-group of bijections of \([n]\), and let \(\binom{\Omega}{a}\) denote the set
-of all \(a\)-element subsets of a finite set \(\Omega\). If \(W\) is a
-finite-dimensional \(\K\)-vector space, then \(W^*\), \(\Sym^aW\),
-\(\Lambda^aW\), \(\Gr(a,W)\), and \(\mathbb P(W)\) denote its dual, its
-degree-\(a\) symmetric and exterior powers, the Grassmannian of
-\(a\)-dimensional subspaces, and the space of one-dimensional quotients,
-respectively. For \(L\subset W\), the annihilator is
-\(L^\perp=\{\lambda\in W^*: \lambda|_L=0\}\). We use \(\Span\), \(\im\),
-\(\ker\), \(\rank\), \(\dim\), and \(\operatorname{codim}\) with their usual
-linear-algebraic meanings. For a prime \(p\), \(\F_p\) is the field with
-\(p\) elements.
+We record precisely how specialization is used. For a polynomial matrix,
+rank at a special parameter value is no larger than rank for general
+values: every minor that vanishes identically still vanishes at the
+special value. Subspaces of a fixed dimension have limits under a diagonal
+one-parameter action. One can see existence by taking the least-weight
+nonzero term in their Pl\"ucker coordinates, after removing a common power
+of the parameter. The limit is fixed by the action. When the weights on
+the underlying basis vectors are distinct, every fixed subspace is a span
+of basis vectors, so the limit is coordinate. The same argument applies
+to several subspaces simultaneously. Locally on a Grassmannian, bases of
+the subspaces and their quotients give regular matrices; the minor
+criterion therefore applies to maps between these quotients as well.
+Thus an intersection or a kernel dimension can increase, but cannot
+decrease, at a special point. Only these elementary facts about limits
+are required below; no classification of algebraic-group orbits is used.
 
+\section{The permanent's derivative spaces}
+Put \(E_j=\cD_j(f)\).
+\begin{lemma}\label{lem:permanent}
+One has
+\[
+ \begin{gathered}
+ \dim E_2=\dim E_3=100,\qquad \dd E_2=V,\\
+ E_2^{(1)}:=\{g\in\Sym^3V:\dd g\subset E_2\}=E_3.
+ \end{gathered}
+\]
+Every nonzero quadratic in \(E_2\) has matrix rank at least four. For
+any \(L\subset V\) of dimension at most five,
+\begin{equation}\label{eq:intersection}
+ \dim(E_2\cap\Sym^2L)\le1.
+\end{equation}
+\end{lemma}
+\begin{proof}
+The quadratic and cubic subpermanents form bases of \(E_2\) and \(E_3\).
+Different row-set/column-set pairs have disjoint matching-monomial supports,
+and their numbers are \(\binom52^2=\binom53^2=100\).
+In particular,
+\[
+ E_2=\Span\{x_{ia}x_{jb}+x_{ib}x_{ja}:i<j,\ a<b\}.
+\]
+Differentiating a rectangle at one corner gives its opposite variable,
+so \(\dd E_2=V\).
+
+Suppose every first derivative of a cubic \(g\) belongs to \(E_2\).
+A cubic monomial with two factors in one row or column, including a
+repeated factor, is impossible: differentiation by the remaining factor
+produces a quadratic monomial forbidden in \(E_2\). For a fixed
+partial derivative and a fixed resulting monomial there is a unique
+source monomial, so its coefficient cannot be cancelled by a different
+source. Its derivative multiplicity is nonzero. Every surviving monomial
+is consequently a three-edge matching. For fixed three rows and three
+columns, swapping the assignments of two rows leaves the third factor
+unchanged. Differentiating by that common factor forces the two matching
+coefficients to agree. Transpositions connect all six permutations,
+so their coefficients all agree. This proves \(E_2^{(1)}=E_3\), including
+the immediate reverse inclusion.
+
+For the remaining assertions use the row-column scaling
+\begin{equation}\label{eq:row-column}
+ \tau_t(x_{ij})=t^{r_i+c_j}x_{ij},\qquad
+ r_i=2^{i-1},\quad c_j=2^{5+j-1},\quad t\ne0.
+\end{equation}
+The twenty-five variable weights are distinct. Both monomials of each
+rectangle acquire the same weight, and the one hundred rectangle weights
+are distinct, by uniqueness of binary expansion. Thus \(\tau_t\)
+preserves \(E_2\), and any nonzero \(q\in E_2\) has a projectively
+normalized limit equal to a nonzero rectangle. Invertible substitutions
+and nonzero scalar multiplication preserve quadratic rank; specialization
+cannot increase it. A rectangle is the sum of two products on four
+independent variables, with a nonsingular four-dimensional symmetric
+matrix. Its rank is four, proving the minimum-rank claim.
+
+For \(a=\dim L\le5\), take the coordinate limit \(L_0\) of
+\(\tau_tL\) in \(\operatorname{Gr}(a,V)\). The intersection in
+\eqref{eq:intersection} is the kernel of
+\(\Sym^2L\to\Sym^2V/E_2\). Because \(E_2\) is preserved and kernel
+dimension cannot decrease at the limit, it suffices to bound the
+intersection for \(L_0\). Let \(\Omega\subset[5]\times[5]\) be its
+set of \(a\) variables. Distinct rectangles have disjoint quadratic
+monomial supports, so \(E_2\cap\Sym^2L_0\) has as a basis precisely
+the rectangles whose four corners lie in \(\Omega\).
+Two different rectangles share at most two corners: three corners
+determine the fourth. They therefore require at least six variables.
+Since \(|\Omega|\le5\), at most one rectangle occurs.
+\end{proof}
+
+\section{Local polarization of a quintic product}
+Let \(T=\ell_1\cdots\ell_5\ne0\), and put
+\[
+ \begin{gathered}
+ L=\Span(\ell_1,\ldots,\ell_5),\quad \ell=\dim L,\\
+ F=\cD_2(T),\quad U=\cD_3(T),\quad u=\dim F=\dim U\le10.
+ \end{gathered}
+\]
+The equality uses the differential pairing. The upper bound follows
+because third derivatives are linear combinations of the ten pair
+products of the five factors. Also \(F\subset\Sym^2L\) and
+\(\dd U\subset F\). Let \(R=F\cap E_2\); by
+Lemma~\ref{lem:permanent}, \(\dim R\le1\), and every nonzero element
+of \(R\) has quadratic rank at least four.
+
+For a surjection \(P:L\to D\), set \(d=\dim D\),
+\(S=\ker P\), and \(k=\dim S=\ell-d\). Define
+\[
+ \delta:U\to L\otimes F,\qquad
+ \delta(g)=\sum_j y_j\otimes\dd_{y_j^*}g,
+ \qquad \beta=(P\otimes q_R)\delta,
+\]
+where \(q_R:F\to F/R\) is the quotient map. The displayed
+polarization is independent of the choice of basis \((y_j)\) of \(L\).
+It is injective, since multiplication of its two factors sends
+\(\delta(g)\) to \(3g\).
+
+\begin{lemma}[A small complementary span]\label{lem:kernel}
+If \(k\le2\), then
+\[
+ \ker\beta=U\cap\Sym^3S,\qquad
+ \rank\beta\ge u-\binom{k+2}{3}.
+\]
+\end{lemma}
+\begin{proof}
+Choose a basis of \(S\), extended by complementary variables
+\(z_1,\ldots,z_d\) in \(L\). For a kernel cubic the derivatives
+\(\dd_{z_j^*}g\) all lie in \(R\). If any is nonzero, a change of
+complementary coordinates makes these derivatives \(q,0,\ldots,0\)
+for some \(0\ne q\in R\), since \(\dim R\le1\). Vanishing of the
+last \(d-1\) derivatives implies that \(g\), and then \(q\), uses
+only \(S\) and \(z_1\). Hence \(\rank q\le k+1\le3\), a
+contradiction. All complementary derivatives must vanish, which is
+exactly \(g\in\Sym^3S\). The converse is immediate, and
+\(\dim\Sym^3S=\binom{k+2}{3}\).
+\end{proof}
+
+\begin{lemma}[A uniform divisor bound]\label{lem:floor}
+If \(1\le\ell\le4\), then
+\begin{equation}\label{eq:floor}
+ u\ge\binom{\ell}{2}+1.
+\end{equation}
+\end{lemma}
+\begin{proof}
+Choose \(\ell\) independent factors as coordinates \(y_1,\ldots,y_\ell\).
+Scale the coordinates with distinct weights and divide each factor by
+its own least power of the parameter. Each normalized factor tends to a
+nonzero coordinate multiple. For nonzero parameter their product is a
+scalar multiple of an invertible transform of \(T\). The limit is a
+nonzero monomial \(c\prod_i y_i^{\alpha_i}\), with \(\alpha_i\ge1\) and
+\(\sum_i\alpha_i=5\); the initially chosen coordinate factors ensure
+that none of the \(\ell\) variables is lost. Its nonzero second
+partials are indexed by its distinct degree-two divisors and yield
+distinct cubic monomials. The number of these divisors is
+\[
+ \binom{\ell}{2}+\#\{i:\alpha_i\ge2\}.
+\]
+Since \(5>\ell\), at least one exponent is at least two. Rank of
+the catalecticant cannot increase under specialization, giving
+\eqref{eq:floor}. No enumeration of positive partitions is involved.
+\end{proof}
+
+\begin{lemma}[Five independent factors]\label{lem:independent}
+If \(\ell=5\), then \(u=10\) and \(\rank\beta\ge2d\).
+\end{lemma}
+\begin{proof}
+Use the five factors as coordinates \(z_1,\ldots,z_5\). The spaces
+\(U\) and \(F\) are respectively the squarefree cubic and quadratic
+spaces. We prove the estimate for every subspace \(R\subset F\) of
+dimension at most one, without its minimum-rank condition.
+
+Replace \(P\) by the canonical quotient \(L\to L/S\), which does
+not change the rank. Simultaneously specialize \(S\) and \(R\) by the
+diagonal action with variable weights \(2^{i-1}\). The weights on
+variables and on squarefree quadratic monomials are distinct. Both limits
+are coordinate subspaces, and \(U,F\) are preserved throughout. By
+polarization equivariance the rank is constant for \(t\ne0\), and
+it cannot increase at the limit. For clarity, the kernel of the induced
+quotient map on \(L\otimes F\) is
+\(S\otimes F+L\otimes R\), of constant dimension
+\(10k+5\dim R-k\dim R\). The specialization comparison is therefore
+between fixed-rank subspace quotients, not between arbitrarily chosen
+bases of changing dimension. The limit of \(R\) need not retain
+quadratic rank four; our stronger statement does not require that.
+
+Write \(z_J=\prod_{j\in J}z_j\). At the limit let \(B\subset[5]\) index the basis of \(S\), and set
+\(b=|B|=5-d\). If \(R\ne0\), let \(e\in\binom{[5]}2\) be
+the edge with \(R=\Span(z_e)\). A source triple \(I\in\binom{[5]}3\)
+has components \(z_i\otimes z_{I\setminus\{i\}}\), for \(i\in I\).
+A component survives exactly when \(i\notin B\) and its complementary
+edge is not \(e\). Different triples have disjoint component supports,
+so the rank is the number of surviving columns. A column is zero if
+\(I\subset B\), or if it has exactly one vertex outside \(B\) and
+its complementary edge is \(e\subset B\). A triple with two or more
+vertices outside \(B\) cannot be killed by a single edge.
+Consequently the coordinate rank is exactly
+\begin{equation}\label{eq:triple-count}
+ 10-\binom b3-d\,\mathbf1_{\{R\ne0,\ e\subset B\}}.
+\end{equation}
+If \(b=0,1\), the indicator and binomial coefficient vanish, so this
+rank is ten, at least \(2d\). If \(2\le b\le5\), subtracting
+\(2d=2(5-b)\) from its lower bound gives
+\[
+ 10-\binom b3-(5-b)-2(5-b)
+ =\frac{(5-b)(b^2+2b-6)}6\ge0.
+\]
+This proves the assertion without a coordinate-case table.
+\end{proof}
+
+\begin{lemma}[One new direction in a four-dimensional factor span]
+\label{lem:four}
+If \(\ell=4\) and \(d=1\), then
+\[
+ \rank\beta+\frac{10-u}{2}\ge2.
+\]
+\end{lemma}
+\begin{proof}
+Choose four independent factors as coordinates. Up to a nonzero scalar,
+rescaling and permuting them makes the product
+\[
+ T_s=x_1x_2x_3x_4(x_1+\cdots+x_s),\qquad 1\le s\le4.
+\]
+Identify the one-dimensional target of \(P\) with \(\K\). Then
+\(\beta\) is differentiation in a nonzero direction
+\(\lambda=\sum_{j=1}^4a_j\dd_{x_j}\), followed by the quotient by \(R\).
+Write \(H_{ij}=\dd_{x_i}\dd_{x_j}T_s\).
+
+For \(s=1\), \(H_{22}=H_{33}=H_{44}=0\), so \(u\le7\).
+For \(s=2\), one has
+\[
+ H_{33}=H_{44}=0,\quad
+ H_{11}=2x_2x_3x_4,\quad H_{22}=2x_1x_3x_4,\quad
+ H_{12}=H_{11}+H_{22},
+\]
+so again \(u\le7\). In both cases \(U\) contains
+\(g_1=x_1x_3x_4\) and \(g_2=x_2x_3x_4\): for \(s=1\) use
+\(H_{12}/2,H_{11}/2\), and for \(s=2\) use \(H_{22}/2,H_{11}/2\).
+Their supports together contain all four variables. Directly,
+\(\dd_\lambda g_1=\dd_\lambda g_2=0\) forces all four \(a_j\) to
+vanish, by comparing their distinct pair monomials. Thus at least one
+of these derivatives is nonzero. It uses at most three variables and
+has quadratic rank at most three, so it cannot lie in \(R\).
+It follows that \(\rank\beta\ge1\), and
+\(\rank\beta+(10-u)/2\ge1+3/2>2\).
+
+For \(s=3\), the identities
+\(H_{jj}=2\prod_{i\ne j}x_i\), for \(j=1,2,3\), show that \(U\)
+contains \(x_1x_2x_4,x_1x_3x_4,x_2x_3x_4\).
+If \(a_4\ne0\), their derivatives modulo \(x_4L\) are nonzero
+multiples of three distinct pair monomials. Their derivative span has
+dimension at least three, so its quotient by the at-most-one-dimensional
+\(R\) has dimension at least two. If \(a_4=0\), relabel
+\(x_1,x_2,x_3\) so that \(a_1\ne0\). The derivatives of
+\(x_1x_2x_4,x_1x_3x_4\) are
+\[
+ x_4(a_1x_2+a_2x_1),\qquad x_4(a_1x_3+a_3x_1).
+\]
+They are independent. Every quadratic in their span is divisible by
+\(x_4\), hence has rank at most two, so the span meets \(R\) trivially.
+Again \(\rank\beta\ge2\).
+
+For \(s=4\), the same diagonal derivative identities show that \(U\)
+contains all four squarefree cubics. Choose \(a_j\ne0\). Differentiating
+the three cubics containing \(x_j\), and reducing modulo \(x_jL\),
+gives three independent pair monomials on the other three variables.
+Quotienting their derivative span by \(R\) leaves dimension at least two.
+For \(s=3,4\), \(u\le10\) now proves the asserted inequality.
+In particular, neither of their exact catalecticant ranks was needed.
+\end{proof}
+
+\begin{proposition}[The local half-defect estimate]\label{prop:local}
+For every nonzero quintic Chow term and every quotient \(P\) of its
+actual factor span,
+\begin{equation}\label{eq:local}
+ \boxed{\rank\beta+\frac{10-u}{2}\ge2d.}
+\end{equation}
+\end{proposition}
+\begin{proof}
+For \(d=0\) this is immediate, since \(u\le10\).
+If \(\ell=5\), use Lemma~\ref{lem:independent}.
+Suppose \(\ell\le4\) and \(d>0\). If \(k=\ell-d\le2\),
+Lemmas~\ref{lem:kernel} and \ref{lem:floor} give
+\begin{align*}
+ \rank\beta+\frac{10-u}{2}-2d
+ &\ge5+\frac{u}{2}-\binom{k+2}{3}-2(\ell-k)\\
+ &\ge\frac{(\ell-4)(\ell-5)+2}{4}
+       +2k-\binom{k+2}{3}\ge0.
+\end{align*}
+Indeed \((\ell-4)(\ell-5)\ge0\) for \(1\le\ell\le4\), and
+\(2k-\binom{k+2}{3}\) is respectively \(0,1,0\) for \(k=0,1,2\).
+The only remaining possibility is \(\ell=4,d=1,k=3\), covered by
+Lemma~\ref{lem:four}. Thus no integer-interval or partition table is
+required to complete the cases.
+\end{proof}
+
+\section{The global dimension contradiction}
+\begin{lemma}[Rectangular image spans]\label{lem:rectangular}
+For linear maps \(A_i:X^*\to Y\) of ranks \(u_i\), put
+\(D_Y=\dim\sum_i\im A_i\) and \(D_X=\dim\sum_i\im A_i^*\).
+Then
+\[
+ \rank\Bigl(\sum_iA_i\Bigr)\ge D_Y+D_X-\sum_i u_i.
+\]
+\end{lemma}
+\begin{proof}
+Factor \(A_i=B_iC_i\) through a vector space of dimension \(u_i\),
+with \(B_i\) injective and \(C_i\) surjective. The concatenated maps
+\(B:\bigoplus_i\K^{u_i}\to Y\) and
+\(C:X^*\to\bigoplus_i\K^{u_i}\) have ranks \(D_Y,D_X\), respectively,
+and \(BC=\sum_iA_i\). Here \(\im A_i^*=\im C_i^*\), since
+\(B_i^*\) is onto, justifying the rank of \(C\). Since
+\(\dim(\im C\cap\ker B)\le\dim\ker B=\sum_i u_i-D_Y\), the
+rank of \(BC\) is at least \(D_X+D_Y-\sum_i u_i\).
+\end{proof}
+
+Suppose an actual Chow decomposition \(f=\sum_{i=1}^N T_i\) is given.
 Let
 \[
- V=\Span_{\K}\{x_{ij}:(i,j)\in[5]\times[5]\},
- \qquad X=(x_{ij})_{i,j\in[5]}.
+ F_i=\cD_2(T_i),\quad U_i=\cD_3(T_i),\quad
+ u_i=\dim F_i=\dim U_i,\quad \Delta=\sum_i(10-u_i)\ge0,
 \]
-For subsets \(I,J\subset[5]\) of the same cardinality, \(X_{I,J}\) is the
-submatrix of \(X\) with row set \(I\) and column set \(J\), and
-\(\perm(X_{I,J})\) is its permanent, defined by the same permutation formula
-as below. Define
 \[
- \perm_5=\sum_{\sigma\in S_5}\prod_{i=0}^4x_{i,\sigma(i)}\in\Sym^5V.
+ F=\sum_iF_i,\quad U=\sum_iU_i,\qquad
+ \dim F=100+h_2,\quad\dim U=100+h_3.
 \]
-
-For \(f\in\Sym^mV\), \(0\le a\le m\), and
-\(\lambda_1,\ldots,\lambda_a\in V^*\), let
-\(\partial_{\lambda_1}\cdots\partial_{\lambda_a}f\) denote iterated
-directional differentiation. The order-\(a\) catalecticant and the remaining
-degree-\(j\) derivative space, where \(j=m-a\), are
-\[
- \begin{aligned}
- C_{a,j}(f)&:\Sym^aV^*\longrightarrow\Sym^jV,\\
- C_{a,j}(f)(\lambda_1\cdots\lambda_a)
-   &:=\partial_{\lambda_1}\cdots\partial_{\lambda_a}f,\\
- \cD_j(f)&:=\im C_{a,j}(f).
- \end{aligned}
-\]
-For a subspace \(G\subset\Sym^jV\), we write
-\(\partial G=\Span\{\partial_\lambda g:\lambda\in V^*,\ g\in G\}\).
-If \(q\in\Sym^2V\), then \(M(q)\) is the symmetric matrix of the associated
-bilinear form in the ordered basis \((x_{ij})\); the rank of \(q\) means
-\(\rank M(q)\).
-
-A quintic Chow term is a nonzero product of five members of \(V\), regarded
-as linear forms on \(V^*\). The ordinary Chow rank
-\(\ChowRank_{\K}(f)\) of \(f\in\Sym^5V\) is the least number of such terms
-whose sum is \(f\); we set \(\ChowRank_{\K}(0)=0\). Within this paper we
-abbreviate it to \(\ChowRank(f)\).
-This is
-also called product rank in the literature; see \cite{IltenTeitler2016}.
-
-\begin{theorem}[Main theorem]\label{thm:main}
-Over the field \(\K\),
-\[
- \boxed{\ChowRank_{\K}(\perm_5)=16.}
-\]
-\end{theorem}
-
-The proof is computer-assisted in a deliberately narrow sense. The geometric
-reductions, rank inequalities, degeneration arguments, and the passage from a
-hypothetical decomposition to a finite state space are written mathematical
-proofs. Exact programs verify finite endpoint tables obtained from those
-reductions. No random experiment, floating-point computation, SAT certificate,
-Groebner-basis computation, or unpublished data is used.
-
-The lower-bound argument has four stages. First, a Koszul flattening has rank
-\(2400\) on \(\perm_5\), whereas one Chow term contributes at most \(240\).
-Second, a low-rank classification gives a one-dimensional bound for the
-intersection of a Chow derivative space with the permanent quadratic
-derivative space. A projective incidence argument then reduces the unique
-one-intersection endpoint to coordinate flags. Third, six terms are fixed in a
-hypothetical decomposition of length at most fifteen. Petersen-product shadows
-and a double-quotient rank inequality leave exactly \(58\) integer states.
-Fourth, exact structural and finite arguments exclude all \(58\) states; the
-terminal numerical contradiction is \(2215>9\cdot245=2205\).
-
-Section~\ref{sec:foundations} develops the invariant linear algebra.
-Section~\ref{sec:flag} proves the one-intersection theorem. Sections
-\ref{sec:fixedsix} and \ref{sec:endpoints} carry out the fixed-six reduction
-and its terminal exclusions. Section~\ref{sec:upper} gives the upper bound,
-and Section~\ref{sec:replay} states the exact replay boundary.
-
-\section{Derivative spaces and Koszul flattenings}\label{sec:foundations}
-
-Write \(V=A\otimes B\), where \(A=\Span_{\K}\{a_0,\ldots,a_4\}\),
-\(B=\Span_{\K}\{b_0,\ldots,b_4\}\), and \(x_{ij}=a_i\otimes b_j\). Put
-\[
- E=\cD_2(\perm_5)=\im C_{3,2}(\perm_5),\qquad
- D=\cD_3(\perm_5)=\im C_{2,3}(\perm_5).
-\]
-Their standard bases are
-\begin{align}
- E&=\Span\{x_{ia}x_{jb}+x_{ib}x_{ja}:i<j,\ a<b\},\label{eq:E}\\
- D&=\Span\{\perm(X_{I,J}):|I|=|J|=3\}.
-\end{align}
-Distinct basis elements have distinct monomial supports, so
-\[
- \dim E=\binom52^2=100,\qquad \dim D=\binom53^2=100.
-\]
-
-For \(F\subset\Sym^2V\), define the first prolongation
-\[
- F^{(1)}=\{g\in\Sym^3V:\partial_\lambda g\in F
- \text{ for all }\lambda\in V^*\}.
-\]
-The Koszul differential
-\[
- \delta_F:V\otimes F\longrightarrow\Lambda^2V\otimes V,
- \qquad w\otimes uv\longmapsto
- u\wedge w\otimes v+v\wedge w\otimes u
-\]
-has kernel naturally isomorphic to \(F^{(1)}\). On a fixed set of three rows
-and three columns, transpositions connect the six perfect matchings.
-For \(f\in\Sym^5V\), define its quadratic Koszul flattening to be
-\(K(f)=\delta_{\cD_2(f)}\). Consequently \(E^{(1)}=D\), and therefore
-\begin{equation}\label{eq:Kperm}
- \rank K(\perm_5)=25\dim E-\dim E^{(1)}=2400.
+Linearity of catalecticants gives \(E_2\subset F\), \(E_3\subset U\),
+so \(h_2,h_3\ge0\). Apply Lemma~\ref{lem:rectangular} to
+\(A_i=C_{3,2}(T_i)\). Their adjoints have images \(U_i\), and their
+sum \(C_{3,2}(f)\) has rank one hundred. Hence
+\begin{equation}\label{eq:upper}
+ h_2+h_3\le10N-100-\Delta.
 \end{equation}
 
-If \(T=\ell_1\cdots\ell_5\) is a Chow term, its quadratic derivative space
-\(F_T:=\cD_2(T)\) is spanned by the ten two-factor products, and its first prolongation
-contains the ten three-factor products. Upper semicontinuity under degeneration
-gives
-\begin{equation}\label{eq:single}
- \dim F_T\le10,\qquad \rank K(T)\le25\cdot10-10=240.
+Let \(q:F\to F/E_2\) and use polarization to define
+\[
+ b:U\longrightarrow V\otimes(F/E_2),\qquad b(g)=(1_V\otimes q)\delta(g).
+\]
+Since \(\dd U\subset F\), this map is well defined. Its kernel is
+\(U\cap E_2^{(1)}=E_3\), by Lemma~\ref{lem:permanent} and
+\(E_3\subset U\). Therefore
+\begin{equation}\label{eq:image-h3}
+ \rank b=h_3.
 \end{equation}
 
-\subsection{Quadrics of rank at most five}
-
-\begin{lemma}[Low-rank classification]\label{lem:lowrank}
-If \(0\ne q\in E\) and \(\rank M(q)\le5\), then
+Order the terms arbitrarily. Put
+\(L_i=\Span\{\text{factors of }T_i\}\),
+\(W_i=L_1+\cdots+L_i\), \(W_0=0\), and
+\(d_i=\dim(W_i/W_{i-1})\). We have \(W_N=V\), because
+\(V=\dd E_2\subset\dd F\subset\sum_iL_i\). Thus \(\sum_i d_i=25\).
+Set \(Z_i=b(U_i)\) and \(H_i=Z_1+\cdots+Z_i\).
+As \(Z_j\subset L_j\otimes(F/E_2)\), projection to
+\((W_i/W_{i-1})\otimes(F/E_2)\) kills \(H_{i-1}\). It follows that
 \[
- M(q)=U\otimes W,\qquad \rank U=\rank W=2.
+ \dim H_i-\dim H_{i-1}\ge
+ \rank\bigl((P_i\otimes q|_{F_i})\delta|_{U_i}\bigr),
 \]
-Here \(U\) and \(W\) are symmetric \(5\) by \(5\) matrices, and
-\(\otimes\) denotes their Kronecker product.
-In particular, \(\rank M(q)=4\).
-\end{lemma}
-
-\begin{proof}
-Arrange \(M(q)\) as a \(5\) by \(5\) block matrix \((D_{ij})\) by rows of
-variables. Each \(D_{ij}\) is symmetric with zero diagonal, and \(D_{ii}=0\).
-Choose a nonzero block \(B_0\). The principal block
-\(\left[\begin{smallmatrix}0&B_0\\B_0&0\end{smallmatrix}\right]\) has rank
-\(2\rank B_0\). A nonzero symmetric zero-diagonal matrix cannot have rank one,
-so \(\rank B_0=2\). Any connecting block with nonzero image in the cokernel of
-this principal block would increase the total rank by at least two, contrary
-to the rank-five hypothesis. Hence every connecting block has image in
-\(\im B_0\).
-
-A rank-two symmetric zero-diagonal matrix is
-\(ab^{\mathsf T}+ba^{\mathsf T}\), with disjoint supports for \(a\) and
-\(b\). Inside the fixed image \(\Span\{a,b\}\), the symmetric zero-diagonal
-condition forces every block to be a scalar multiple of \(B_0\). Congruence
-Schur elimination on the first two block rows leaves a symmetric zero-diagonal
-complement of rank at most one, hence the complement is zero. Thus every block
-is proportional to \(B_0\), so \(M(q)=U\otimes B_0\). Multiplicativity of rank and
-the zero-diagonal condition give \(\rank U=\rank B_0=2\); take \(W=B_0\).
-\end{proof}
-
-\begin{corollary}[One-dimensional intersection]\label{cor:intersection}
-If \(L\subset V\) and \(\dim L\le5\), then
-\[
- \dim(E\cap\Sym^2L)\le1.
-\]
-Consequently \(\dim(E\cap F_T)\le1\) for every quintic Chow term \(T\).
-\end{corollary}
-
-\begin{proof}
-If the intersection contained a projective line, Lemma~\ref{lem:lowrank}
-would place that line in a Segre variety of rank-two tensor products. A line
-contained in a Segre variety fixes one tensor factor. Two nonproportional
-choices for the other factor have images spanning dimension at least three;
-the essential-variable space then has dimension at least \(2\cdot3=6\), a
-contradiction.
-\end{proof}
-
-\section{The one-intersection flag theorem}\label{sec:flag}
-
-Let \(Q=\Sym^2V/E\), and let \(\pi:\Sym^2V\twoheadrightarrow Q\) be the
-quotient map. For a subspace \(W\subset Q\), define its relative
-prolongation excess by
-\[
- p(W)=\dim\bigl(\pi^{-1}(W)^{(1)}\bigr)-\dim D.
-\]
-Thus no choice of a lift of \(W\) is involved.
-
-\begin{theorem}[One-intersection flag theorem]\label{thm:flag}
-Let \(T=\ell_1\cdots\ell_5\) be a Chow term satisfying
-\[
- \dim F_T=10,\qquad \dim(E\cap F_T)=1.
-\]
-If \(Z:=\pi(F_T)\) is the nine-dimensional image of \(F_T\) in \(Q\), and
-\[
- Z\subset W\subset Q,\qquad \dim W=10,
-\]
-then \(p(W)\le26\).
-\end{theorem}
-
-\begin{proof}
-Extend scalars to an algebraic closure. Put
-\(L_T=\Span\{\ell_1,\ldots,\ell_5\}\), with
-\(d=\dim L_T\in\{4,5\}\). Consider the incidence variety in
-\[
- \Gr(d,V)\times\Gr(10,\Sym^2V)\times\Gr(9,Q)
- \times\Gr(10,Q)\times\mathbb P(E)
-\]
-whose points \((L,F,Z',W',[q])\) satisfy
-\begin{equation}\label{eq:incidence}
- F\subset\Sym^2L,\quad q\in F,\quad
- F\subset\pi^{-1}(Z'),\quad Z'\subset W'.
-\end{equation}
-These are zero loci of maps of universal bundles; the incidence variety is
-therefore projective and stable under the row-column diagonal torus. The orbit
-closure of the point defined by \(T\) contains a torus-fixed point by the Borel
-fixed-point theorem \cite[Chapter~I, Theorem~4.7]{Borel1991}.
-Corollary~\ref{cor:intersection} preserves the
-one-dimensional intersection at the limit, while upper semicontinuity of
-kernel dimension shows that it suffices to bound the relative prolongation at
-the fixed point.
-
-The quotient \(Q\) is multiplicity-free for the row-column diagonal torus.
-Indeed, its one-dimensional weight spaces consist of the (25) square
-weights, the (50) same-row weights, the (50) same-column weights, and one
-quotient line for each of the (100) rectangles: in a rectangle the two
-matching monomials have the same weight and their sum spans the corresponding
-line of (E). Thus
-\[
- \dim Q=25+50+50+100=225,
-\]
-and all these quotient weights are distinct. Consequently, at a fixed point,
-\(L,F,Z',W'\), and \([q]\) are coordinate objects. The rank-four form \(q\)
-is a rectangle permanent. The finite endpoint is therefore a completely
-specified enumeration of coordinate four- and five-plane flags.
-For each flag the program constructs the divided-power integer matrix of the
-relative prolongation map. It checks
-\begin{align*}
- 21{,}600&\text{ four-plane flags},\\
- 432{,}432&\text{ attached five-plane flags},\\
- 432{,}432&\text{ external five-plane flags}.
-\end{align*}
-The maxima are respectively \(22,26,22\); exactly twenty attached flags attain
-\(26\). The entire enumeration is repeated over \(\F_3,\F_5,\F_7\), with
-identical histograms, and all twenty extrema are row-reduced over \(\Q\).
-For an integer matrix \(M\), \(\rank_{\F_p}M\le\rank_{\Q}M\), hence
-\(\dim\ker_{\Q}M\le\dim\ker_{\F_p}M\). Thus the finite-field computation is
-used only in the valid direction, as an upper bound on the characteristic-zero
-kernel. This proves \(p(W)\le26\).
-\end{proof}
-
-\begin{remark}
-The endpoint enumeration is a premise of the proof. It is independently
-implemented by
-\path{scripts/perm5_one_intersection_independent_multifield.py}; it neither
-imports the frozen generator nor reads the frozen result.
-\end{remark}
-
-\section{The fixed-six reduction}\label{sec:fixedsix}
-
-Equations~\eqref{eq:Kperm} and \eqref{eq:single} first give
-\(\ChowRank(\perm_5)\ge10\). Suppose, for contradiction, that a minimal
-decomposition has length \(r\le15\). Then \(10\le r\le15\). Keep six
-original nonzero terms fixed and repeatedly replace a remaining nonzero term
-\(T\) by \(\frac12T+\frac12T\). This produces
-\[
- \perm_5=T_1+\cdots+T_6+T_7+\cdots+T_{15},
-\]
-where the residual \(R=T_7+\cdots+T_{15}\) has exactly nine Chow terms. No
-separate lower bound of fifteen is used.
-
-Let \(C=T_1+\cdots+T_6\), and put
-\[
- J=\im C_{2,3}(C),\quad H=\im C_{3,2}(C),\quad
- S=D\cap J,\quad G=E\cap H,
-\]
-\[
- s=\dim S,\qquad t=\dim G,\qquad d=\dim(H/G),\qquad h=\dim H=t+d.
-\]
-For \(1\le i\le6\), set \(F_i:=\cD_2(T_i)\), and write
-\(U:=F_1+\cdots+F_6\).
-Only \(H\subset U\) is asserted; equality is reserved for the near-maximal
-states proved below.
-
-The bases of \(D\) and \(E\) are indexed by pairs of three-subsets and pairs
-of two-subsets. Complementation identifies the derivative shadow with the
-open neighborhood operator in the product of two Petersen graphs. Its exact
-minimum-shadow table is displayed below. The terminology follows classical
-shadow theory \cite{Kruskal1963,Katona1968}, although this table is a
-graph-specific exact computation.
-\begin{equation}\label{eq:shadow}
-\begin{array}{c|rrrrrrrrrrrr}
-q&0&1&2&3&4&5&6&7&8&9&10&11\\ \hline
-\mu_q&0&9&15&18&18&24&27&27&30&30&30&35\\[1mm]
-q&12&13&14&15&16&17&18&19&20&21&22&23\\ \hline
-\mu_q&35&36&36&36&36&42&45&45&48&48&48&52.
-\end{array}
-\end{equation}
-Here \(\mu_q\) is the minimum size of the open neighborhood of a
-\(q\)-vertex subset in the product graph. The dynamic recurrence uses only
-\[
- \nu(k)=(0,3,5,6,6,8,9,9,10,10,10),\qquad0\le k\le10,
-\]
-where \(\nu(k)\) is the corresponding minimum-neighborhood function for one
-Petersen graph. The recurrence is exact
-integer arithmetic and is reconstructed by the replay.
-
-Let \(\overline H:=\pi(H)=(E+H)/E\subset Q\), and set
-\(p_d:=p(\overline H)=\dim((E+H)^{(1)}/D)\); the subscript records
-\(d=\dim\overline H\). Since
-\(J\subset(E+H)^{(1)}\), \(D\cap J=S\), and \(\partial S\subset G\),
-\begin{equation}\label{eq:plower}
- p_d\ge t+d-s\ge \mu_s+d-s.
-\end{equation}
-Applying Sylvester's rank inequality to the two quadratic Koszul maps, and
-using \(\rank K(C)\le24h\), gives the central double-quotient inequality
-\begin{equation}\label{eq:double}
- \rank K(R)\ge2400+(25d-p_d)-(25s-\mu_s).
-\end{equation}
-Corollary~\ref{cor:intersection}, applied after lifting \(E\cap U\) to
-\(\bigoplus_iF_i\) and projecting to five blocks, gives
-\begin{equation}\label{eq:tbound}
- t\le\dim(E\cap U)\le5\cdot10+1=51.
-\end{equation}
-Since \(\mu_{23}=52\), we have \(s\le22\). The exact global prolongation bounds
-together with \eqref{eq:plower}--\eqref{eq:tbound} exclude \(s\le18\) and
-\(d\le8\). Thus
-\[
- 19\le s\le22,\qquad d\ge9,\qquad h\le60.
-\]
-For fixed \(s\), the possible \((t,d)\) form an integer triangle of side
-\(53-\mu_s\). Hence their number is exactly
-\[
- \binom82+3\binom52=58.
-\]
-
-\begin{lemma}[Near-maximal coupling]\label{lem:coupling}
-If a fixed-six state satisfies \(h\ge57\), then \(H=U\).
-\end{lemma}
-
-\begin{proof}
-Put
-\[
- e=60-\sum_i\dim F_i,\quad
- k=\sum_i\dim F_i-\dim U,\quad c=\dim U-h.
-\]
-Then \(e+k+c=60-h\le3\). If \(c>0\) and \(k=0\), differentiation of a
-cubic relation into the direct sum of the quadratic spaces, followed by
-Euler's identity, makes every component zero. If \(k=1\), the derivatives of
-a cubic relation lie in the unique quadratic relation; equality of mixed
-partials forces a pure cube, which cannot occur in a derivative space of
-quadratic dimension at least nine. If \(k=2\), either the same argument
-applies or all nonzero cubic components lie in \(\Sym^3L\) for one two-plane
-\(L\). A squarefree cubic space contains no nonzero binary cubic, while two
-remaining components force the common quadratic relation space to contain
-\(\Sym^2L\), of dimension three, contradicting \(k=2\). Finally, \(k\ge3\)
-is incompatible with \(e+k+c\le3\) and \(c>0\). Therefore \(c=0\).
-\end{proof}
-
-\section{Exclusion of the 58 states}\label{sec:endpoints}
-
-The states are partitioned by mutually exclusive integer conditions. The
-route count is \(1+38+1+2+1+1+5+9=58\).
-\begin{table}[ht]
-\centering
-\caption{Complete routing of the fixed-six states.}\label{tab:routes}
-\begin{tabular}{@{}lr@{}}
-\toprule
-Exclusion mechanism & Number of states\\ \midrule
-Petersen-triangle equality count at \((s,d,t)=(19,9,45)\) &1\\
-Global \(p_d\) bound and \eqref{eq:double} &38\\
-Equality geometry for \(d=9\) &1\\
-The bound \(p_{11}\le55\) &2\\
-The bound \(p_{12}\le80\) &1\\
-The sharpened bound \(p_{12}\le61\) &1\\
-Flag-annihilator rank gap for \(d=11,12\) &5\\
-Three-orbit exclusion for \(d=10\) &9\\ \midrule
-Total &58\\ \bottomrule
-\end{tabular}
-\end{table}
-
-For direct verification, the complete state list and its unique route assignment are
-included below. It is generated independently by
-\path{scripts/perm5_fixed_six_state_table.py}.
-\input{state_table.tex}
-
-\begin{proposition}[Non-\(d=10\) states]\label{prop:nondten}
-Every one of the forty-nine states outside the \(d=10\) row is impossible.
-\end{proposition}
-
-\begin{proof}
-The equality cases in the exact shadow computation underlying
-\eqref{eq:shadow} identify the unique \(22\mapsto48\) row-star or column-star
-flag; deleting one cubic basis vector recovers the \(21\mapsto48\) case by
-parent counting. These finite claims are reconstructed by the unified replay
-in Section~\ref{sec:replay}. For \(S\subset D\), \(G\subset E\),
-\(\partial S\subset G\), and a five-plane \(L\subset V\), set
-\[
- W_L=\Span\{\partial_\lambda s:s\in S,\ \lambda\in L^\perp\}.
-\]
-Here a subscript records dimension, so \(S_{22}\) and \(G_{48}\) denote the
-complete flag with \(\dim S_{22}=22\) and \(\dim G_{48}=48\). On this flag,
-\(\operatorname{codim}_{G_{48}}W_L\le4\); on the deleted-point flag the bound is
-seven. The failure locus is a projective closed incidence. After Borel
-degeneration of both the flag and \(L\), the seven row-occupancy partitions
-of five variables have maximal parent-functional counts
-\[
- 4,4,2,1,1,0,0.
-\]
-The independent program streams all \(\binom{25}{5}=53{,}130\) coordinate
-five-planes and reproduces the four relevant global maxima \(4,4,5,7\).
-
-For \(1\le i\le6\), let
-\(L_i:=\Span\{\ell:\ell\text{ is a factor of }T_i\}\subset V\). Define
-the addition map and its relation kernel by
-\[
- \mu_F:\bigoplus_{i=1}^6F_i\longrightarrow U,
- \qquad (f_1,\ldots,f_6)\longmapsto\sum_{i=1}^6f_i,
- \qquad K_F:=\ker\mu_F.
-\]
-If \(\operatorname{pr}_i\) is the \(i\)-th coordinate projection, put
-\(R_i:=\operatorname{pr}_i(K_F)\subset F_i\). For \(u\in U\), choose a lift
-\((f_1,\ldots,f_6)\in\bigoplus_iF_i\) and define
-\(\rho_i(u):=f_i+R_i\in F_i/R_i\). This is independent of the lift. Writing
-\(\rho=(\rho_1,\ldots,\rho_6)\), the six-block relation estimate is
-\[
- \rho:U\longrightarrow\bigoplus_iF_i/R_i,\qquad
- \dim\ker\rho\le5\dim K_F.
-\]
-The chain-map identity makes \(\rho_i|_G\) vanish on \(W_{L_i}\). The
-preceding codimension bounds and the strict comparisons, including \(43>42\)
-and \(48>42\), exclude the five relative \(d=11,12\) states. The Petersen
-equality count, the exact no-crossing bounds, and the global \(p_{11},p_{12}\)
-graph bounds exclude the remaining forty-four states. Each finite table is
-reconstructed from its displayed recurrence or graph and is covered by the
-unified replay described in Section~\ref{sec:replay}.
-\end{proof}
-
-The nine remaining states satisfy
-\begin{equation}\label{eq:dten}
- s\in\{20,21,22\},\quad d=10,\quad
- t\in\{48,49,50\},\quad h=t+10.
-\end{equation}
-Lemma~\ref{lem:coupling} gives \(H=U\). At least four of the six quadratic
-blocks have dimension ten. If one such block met \(E\) in dimension one,
-Theorem~\ref{thm:flag} would give \(p(W)\le26\), whereas
-\eqref{eq:plower} gives at least \(36\). Thus four saturated blocks may be
-chosen transverse to \(E\).
-
-Choose a twenty-plane in \(S\) and apply simultaneous row-column Borel
-compression to it and to a five-plane of variables. The coordinate limit is
-a pair
-\[
- \mathcal S\subset\binom{[5]}3\times\binom{[5]}3,\qquad
- \mathcal L\subset[5]\times[5],
-\]
-satisfying the following notation. For
-\(\mathcal A\subset[5]\times[5]\), define the restricted derivative shadow
-\[
- \partial_{\mathcal A}\mathcal S=
- \{(I\setminus\{i\},J\setminus\{j\}):
- (I,J)\in\mathcal S,\ (i,j)\in(I\times J)\cap\mathcal A\}.
-\]
-Write \(\partial\mathcal S:=\partial_{[5]\times[5]}\mathcal S\) and
-\(\mathcal L^c:=([5]\times[5])\setminus\mathcal L\). The coordinate pair
-satisfies
-\begin{equation}\label{eq:flagbounds}
- |\mathcal S|=20,\quad |\partial\mathcal S|\le50,\quad
- |\partial_{\mathcal L^c}\mathcal S|\le40,\quad |\mathcal L|=5.
-\end{equation}
-Simultaneous elementary compression cannot increase either shadow. The layer
-defect identity reduces \eqref{eq:flagbounds} to fourteen shifted profiles.
-Inverse compression and Petersen-fibre analysis divide the profiles into three
-terminal orbits, conventionally numbered \(0,1,13\).
-
-\begin{proposition}[Terminal orbit classification]\label{prop:terminal}
-For a coordinate subset \(\mathcal C\subset Q\), abbreviate
-\(p(\mathcal C):=p(\Span\mathcal C)\). The fourteen shifted profiles and every inverse-compression parent satisfying
-\eqref{eq:flagbounds} lie in exactly one of the terminal orbits \(0,1,13\).
-In orbit \(1\), the four critical quotients are three length-two local
-flag quotients and one same-row full-order quotient. Orbit \(13\)
-satisfies the uniform structural bound \(p(\mathcal C)\le3|\mathcal C|\), with every crossing
-marginal at most five. Orbit \(0\) reduces to a Petersen even-cycle identity
-and five slice formulas.
-\end{proposition}
-
-\begin{proof}
-The classification is finite but formula-driven. The orbit-\(1\) endpoint is
-enumerated by a five-vertex closed formula, ten nonzero M\"obius term families,
-and an eight-row table indexed by the complete graph \(K_4\) on four vertices.
-The three length-two quotients are excluded by their relative local rings, and
-the full-order quotient by the same-row valuation calculation. Both are
-reconstructed by the replay in Section~\ref{sec:replay}. The orbit-\(13\)
-estimate replaces the historical ten-subset
-classification. The orbit-\(0\) formulas replace the historical list of
-ninety-two forest edges. Integer programs independently reconstruct the
-shifted profiles, visible-shadow parents, fibre profiles, terminal gaps, and
-the orbit reductions. Their output is compared byte-for-byte with the frozen
-exact payloads before the result is accepted.
-\end{proof}
-
-\begin{proposition}[Terminal Koszul contradiction]\label{prop:terminalrank}
-For every \(d=10\) state, the residual polynomial
-\(R=\perm_5-(T_1+\cdots+T_6)\) has Koszul rank at least \(2215\). A sum of
-nine quintic Chow terms has Koszul rank at most \(2205\).
-\end{proposition}
-
-\begin{proof}
-In orbit \(0\), the exact tangent graph has \(4100\) vertices and kernel
-dimension eight. Linear reductivity upgrades the trivial cotangent action to
-the complete local ring. Boolean-Fourier character orthogonality gives the
-shortening identity and the constancy criterion required by the terminal
-symbol. Permutations of the three displayed slots generate the full
-\(S_4\)-symmetry; the resulting prolongation dimensions give
-\(\rank K(R)\ge2215\). The orbit-\(1\) and orbit-\(13\) terminals satisfy the
-same or a stronger bound by Proposition~\ref{prop:terminal} and their local
-symbol estimates.
-
-For a single residual Chow term, the relevant quadratic derivative space has
-dimension at most ten, and its prolongation kernel has dimension at least five.
-Hence its terminal Koszul rank is at most \(25\cdot10-5=245\). Nine terms
-therefore have total rank at most \(9\cdot245=2205<2215\), a contradiction.
-\end{proof}
-
-Propositions~\ref{prop:nondten} and \ref{prop:terminalrank} exclude all
-\(58\) fixed-six states. Consequently no decomposition of length at most
-fifteen exists, and
+where \(P_i:L_i\to L_i/(L_i\cap W_{i-1})\) has rank \(d_i\).
+The natural map \(F_i/(F_i\cap E_2)\hookrightarrow F/E_2\) is
+injective. Thus the rank on the right is exactly the local symbol rank
+in Proposition~\ref{prop:local}, not an assumed independence of the
+unprojected images \(Z_i\). Since \(H_N=b(U)\), summation yields
 \begin{equation}\label{eq:lower}
- \ChowRank(\perm_5)\ge16.
+ h_3\ge\sum_i\left(2d_i-\frac{10-u_i}{2}\right)
+      =50-\frac{\Delta}{2}.
 \end{equation}
+Combining \eqref{eq:upper} and \eqref{eq:lower}, we obtain
+\begin{equation}\label{eq:terminal}
+ \boxed{h_2+\frac{\Delta}{2}\le10N-150.}
+\end{equation}
+For \(N<15\) the right side is negative, impossible. If \(N=15\),
+nonnegativity forces \(h_2=\Delta=0\). Then \(F=E_2\), and every
+\(u_i=10\), because each \(10-u_i\) is nonnegative. Consequently
+\[
+ F_i\subset E_2\cap\Sym^2L_i,\qquad \dim F_i=10,
+\]
+contradicting \eqref{eq:intersection}, since \(\dim L_i\le5\).
+We conclude that \(N\ge16\).
 
-\section{The upper bound}\label{sec:upper}
-
+\section{The upper bound and the logical boundary}
 Glynn's identity \cite{Glynn2010} specializes to
 \begin{equation}\label{eq:glynn}
  \perm_5=\frac1{16}
- \sum_{\substack{\epsilon\in\{\pm1\}^5\\ \epsilon_0=1}}
- \left(\prod_{r=0}^4\epsilon_r\right)
- \prod_{c=0}^4\left(\sum_{r=0}^4\epsilon_rx_{rc}\right).
+ \sum_{\substack{\epsilon\in\{\pm1\}^5\\\epsilon_1=1}}
+ \left(\prod_{r=1}^5\epsilon_r\right)
+ \prod_{c=1}^5\left(\sum_{r=1}^5\epsilon_rx_{rc}\right).
 \end{equation}
-The right side has sixteen Chow terms. Walsh cancellation gives coefficient
-one on the \(120\) permutation monomials and zero on the other \(3005\)
-row-choice monomials. Thus \(\ChowRank(\perm_5)\le16\), which together with
-\eqref{eq:lower} proves Theorem~\ref{thm:main}. The supplied independent
-expansion checks all \(50{,}000\) column choices over the integers. Finally,
-a decomposition over a characteristic-zero field remains a decomposition over
-its algebraic closure, while \eqref{eq:glynn} is defined over the prime field.
-The algebraically closed lower bound and the displayed upper bound therefore
-give the asserted equality over every characteristic-zero field.
-
-\section{Computational lemmas and certificate contract}
-\label{sec:certificates}
-
-This section isolates every finite assertion on which the proof depends. A
-\emph{certificate contract} means a finite input class, an exact arithmetic
-domain, an asserted output, and a verifier that terminates with failure unless
-the asserted output is reproduced. Coordinate variables are ordered by
-\(v(i,j)=5i+j\), and subsets and pairs are ordered lexicographically. All
-matrix ranks below are computed by exact row reduction; no numerical
-tolerance occurs.
-
-\begin{lemma}[One-intersection endpoint certificate]
-\label{lem:certificate-one-intersection}
-For the coordinate fixed points arising in Theorem~\ref{thm:flag}, the
-relative prolongation maxima for four-plane, attached five-plane, and external
-five-plane flags are, respectively,
+Here is a direct coefficient proof. Every expansion monomial chooses a
+row in each of the five columns. Let \(m_r\) count its row-\(r\)
+choices. The coefficient of this monomial is
 \[
- 22,\qquad 26,\qquad 22.
+ \frac1{16}\prod_{r=2}^5\sum_{\epsilon_r=\pm1}\epsilon_r^{m_r+1}.
 \]
-The exhaustive domain has \(21{,}600+432{,}432+432{,}432=886{,}464\) flags,
-and exactly twenty attached flags attain the middle maximum.
-\end{lemma}
+It vanishes unless \(m_2,m_3,m_4,m_5\) are all odd. They are
+nonnegative integers whose total, together with \(m_1\), is five.
+The four odd counts must each be one, since making one at least three
+would require total at least six. Then \(m_1=1\). Precisely the
+permutation monomials survive, each with coefficient one. Equation
+\eqref{eq:glynn} has sixteen Chow terms and proves the upper bound.
+Together with the preceding section it proves Theorem~\ref{thm:main}
+over algebraically closed characteristic-zero fields. For any
+characteristic-zero field, scalar extension preserves a hypothetical
+shorter decomposition, giving the same lower bound over that field;
+the rational upper bound already holds there.
 
-\begin{proof}[Certificate proof]
-For each flag the verifier constructs the matrix of the divided-power cubic
-prolongation map in the lexicographically ordered coordinate bases. It scans
-the complete finite domain over each of \(\F_3,\F_5,\F_7\), compares the three
-histograms, and recomputes every extremal matrix over \(\Q\). The implementation
-in \path{scripts/perm5_one_intersection_independent_multifield.py} does not
-import a frozen producer or read its result. Since reduction modulo a prime
-cannot increase rank, the finite-field kernel dimensions bound their rational
-counterparts from above. Thus the certificate proves precisely the inequality
-used in Theorem~\ref{thm:flag}.
-\end{proof}
+\paragraph{Scope and disclosure.}
+Every estimate used above is proved in the text. The triple formula
+\eqref{eq:triple-count} replaces the coordinate scan,
+Lemma~\ref{lem:floor} replaces partitions, and Lemma~\ref{lem:four}
+uses explicit derivatives rather than four exact catalecticant ranks.
+Optional programs are regression checks, not proof premises. No border-rank
+equality or general-size formula is claimed.
 
-\begin{lemma}[Fixed-six state certificate]
-\label{lem:certificate-fixed-six}
-The integer triples \((s,d,t)\) allowed by
-\eqref{eq:plower}--\eqref{eq:tbound} comprise exactly fifty-eight states. The
-eight mutually exclusive routes in Table~\ref{tab:routes} contain
-\(1,38,1,2,1,1,5,9\) states and exhaust this set.
-\end{lemma}
-
-\begin{proof}[Certificate proof]
-The verifier reconstructs the Petersen-product neighborhood recurrence from
-the eleven-entry function \(\nu\), enumerates the resulting integer triangle,
-and evaluates the route predicates in their displayed order. It rejects an
-unrouted state, a multiply routed state, a route count different from the
-listed vector, or a total different from fifty-eight. The independent entry
-point is \path{scripts/perm5_fixed_six_state_table.py}; it also emits the
-human-readable table included in this article. The predicates are the
-finite inequalities and equality cases invoked in
-Propositions~\ref{prop:nondten} and~\ref{prop:terminal}.
-\end{proof}
-
-\begin{lemma}[Parent-table and terminal certificates]
-\label{lem:certificate-terminal}
-The coordinate five-plane parent maxima used in
-Proposition~\ref{prop:nondten} are \(4,4,5,7\). The shifted-profile,
-visible-shadow, and inverse-compression arguments in
-Proposition~\ref{prop:terminalrank} reduce the terminal calculation to orbit
-zero, where \(\rank K(R)\ge2215\).
-\end{lemma}
-
-\begin{proof}[Certificate proof]
-The independent parent-table verification streams, rather than stores, all
-\(\binom{25}{5}=53{,}130\) coordinate five-planes and recomputes the four
-maxima. The entry point
-\path{scripts/perm5_terminal_independent_verification.py} reconstructs the tangent
-graph and rational Fourier matrices directly from their definitions and
-checks the terminal rank gap. The exact finite inputs and outputs are listed in
-\path{docs/computational_lemmas.md}.
-\end{proof}
-
-\begin{lemma}[Upper-bound certificate]
-\label{lem:certificate-glynn}
-The right-hand side of \eqref{eq:glynn} has coefficient one on each of the
-\(120\) permutation monomials and coefficient zero on the other \(3005\)
-row-choice monomials.
-\end{lemma}
-
-\begin{proof}[Certificate proof]
-The independent integer program
-\path{scripts/perm5_glynn_upper_bound_independent.py} expands all
-\(16\cdot5^5=50{,}000\) column choices and compares the complete coefficient
-map with the permanent support. This is a direct verification of the displayed
-identity, not a probabilistic identity test.
-\end{proof}
-
-Lemmas~\ref{lem:certificate-one-intersection}--\ref{lem:certificate-glynn}
-are finite lemmas in the logical proof: their conclusions, not the existence
-of output files, are used in Sections~\ref{sec:flag}--\ref{sec:upper}.
-
-\section{Exact verification}\label{sec:replay}
-
-From the repository root, execute
-\begin{verbatim}
-python -B perm5/verify_all.py
-\end{verbatim}
-The command requires Python 3 and only its standard library. It performs five
-independent exact computations:
-
-\begin{enumerate}
-\item the \(886{,}464\)-flag scan over each of \(\F_3,\F_5,\F_7\), followed by
-rational checks of all twenty extrema;
-\item the reconstruction and unique route assignment of all fifty-eight
-fixed-six states;
-\item the streamed scan of all \(\binom{25}{5}=53{,}130\) coordinate
-five-planes, reproducing the parent-table maxima \(4,4,5,7\);
-\item the \(4{,}100\)-vertex tangent graph and rational Fourier computation,
-which give \(2215>2205\); and
-\item the \(50{,}000\)-choice integer expansion of Glynn's identity.
-\end{enumerate}
-The map from finite lemmas to programs and exact outputs is given in
-\path{docs/computational_lemmas.md}. The verifier fails on a missing file, a
-changed payload, or a nonzero computation exit. The theorem concerns ordinary
-Chow rank; it makes no border Chow-rank statement and no equality claim for
-general \(n\).
+This AI-assisted revision develops the author's October 16, 2026 short
+proof in \texttt{permanent-chow-rank-small-n},
+\path{submissions/20261016-r2/perm5/main.tex}; that frozen release is
+unchanged. ChatGPT assisted argument development, internal auditing,
+exposition, and verification materials. Internal review is not external
+peer review or formal proof-assistant certification. Responsibility for
+the final manuscript rests with the author.
 
 \begin{thebibliography}{9}
-
-\bibitem{Borel1991}
-A.~Borel,
-\emph{Linear algebraic groups}, second ed., Graduate Texts in Mathematics,
-vol.~126, Springer-Verlag, New York, 1991,
-\href{https://doi.org/10.1007/978-1-4612-0941-6}
-{doi:10.1007/978-1-4612-0941-6}.
-
+\bibitem{HanSong2026}
+J.~I.~Han and J.~Song, \emph{The rank of the \(5\times5\) permanent tensor
+is sixteen}, preprint, arXiv:2608.09708v2 (2026),
+\href{https://arxiv.org/abs/2608.09708}{arXiv:2608.09708}.
 \bibitem{Glynn2010}
-D.~G. Glynn,
-\emph{The permanent of a square matrix},
+D.~G.~Glynn, \emph{The permanent of a square matrix},
 European J. Combin. \textbf{31} (2010), no.~7, 1887--1891,
-\href{https://doi.org/10.1016/j.ejc.2010.01.010}
-{doi:10.1016/j.ejc.2010.01.010}.
-
+\href{https://doi.org/10.1016/j.ejc.2010.01.010}{doi:10.1016/j.ejc.2010.01.010}.
 \bibitem{IltenTeitler2016}
-N.~Ilten and Z.~Teitler,
-\emph{Product ranks of the \(3\times3\) determinant and permanent},
-Canad. Math. Bull. \textbf{59} (2016), no.~2, 311--319,
-\href{https://doi.org/10.4153/CMB-2015-076-1}
-{doi:10.4153/CMB-2015-076-1}.
-
-\bibitem{Katona1968}
-G.~O.~H. Katona,
-\emph{A theorem of finite sets}, in: Theory of Graphs (Proc. Colloq., Tihany,
-1966) (P.~Erd\H{o}s and G.~O.~H. Katona, eds.), Academic Press, New York;
-Akad\'emiai Kiad\'o, Budapest, 1968, pp.~187--207.
-
-\bibitem{Kruskal1963}
-J.~B. Kruskal,
-\emph{The number of simplices in a complex}, in: Mathematical Optimization
-Techniques (R.~Bellman, ed.), University of California Press, Berkeley, 1963,
-pp.~251--278,
-\href{https://doi.org/10.1525/9780520319875-014}
-{doi:10.1525/9780520319875-014}.
-
+N.~Ilten and Z.~Teitler, \emph{Product ranks of the \(3\times3\)
+determinant and permanent}, Canad. Math. Bull. \textbf{59} (2016),
+no.~2, 311--319,
+\href{https://doi.org/10.4153/CMB-2015-076-1}{doi:10.4153/CMB-2015-076-1}.
 \end{thebibliography}
-
 \end{document}

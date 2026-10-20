@@ -1,0 +1,30 @@
+{
+  "n": 5,
+  "source": "perm5/pure_proof_20261019/main.tex",
+  "source_sha256": "272fe8933808e7e58574a6588082005c0bd35a0dc6e1d1fc4b5939ccb47cd611",
+  "pdf_sha256": "daf7ce52f165619732a65a6e2def3fbe6d6ee8c70e9273b9f765f7d1237aead5",
+  "published_pdf_sha256": "57fdf1f7704ddb2fdca565676ba77f5d471c8fb2dab7b45a86aee1bce70a1005",
+  "pages": 8,
+  "engine": "MiKTeX-pdfTeX 4.23 (MiKTeX 25.12)",
+  "passes": [
+    {
+      "pass": 1,
+      "exit_code": 0
+    },
+    {
+      "pass": 2,
+      "exit_code": 0
+    }
+  ],
+  "layout_warnings": [],
+  "normalized_text_matches_published": true,
+  "source_only": true,
+  "shell_escape": false,
+  "canonical_source": "source/main.tex",
+  "canonical_pdf": "perm5_chow_rank_16.pdf",
+  "origin_commit": "0a6d651f0f1de8ebe711c183b41d71576a036248",
+  "origin_source": "perm5/pure_proof_20261019/main.tex",
+  "mathematical_source_unchanged": true,
+  "build_command": "pdflatex -no-shell-escape -interaction=nonstopmode -halt-on-error main.tex (two passes)",
+  "proof_uses_program_output": false
+}

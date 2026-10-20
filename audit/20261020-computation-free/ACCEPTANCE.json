@@ -1,0 +1,197 @@
+{
+  "utc_start": "2026-10-20T06:44:00.134200+00:00",
+  "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+  "proof_certification": false,
+  "tests": [
+    {
+      "name": "canonical_perm4_O0",
+      "exit_code": 0,
+      "seconds": 0.134,
+      "log_sha256": "38482822eeda80fbdc7dac8b4f105db717cde1854f40060f5c29d2acf6626ad7"
+    },
+    {
+      "name": "canonical_perm4_O1",
+      "exit_code": 0,
+      "seconds": 0.132,
+      "log_sha256": "b70a9e76830749945ad1b486cfb9454a7fb8a5b3cb2a70d3825aa233a0713d3d"
+    },
+    {
+      "name": "canonical_perm4_O2",
+      "exit_code": 0,
+      "seconds": 0.242,
+      "log_sha256": "40cf3fd9168ff475c7e29f6d2764849faa0cc789a1ea18f6c7c5dde2ec3ae949"
+    },
+    {
+      "name": "canonical_perm5_O0",
+      "exit_code": 0,
+      "seconds": 0.347,
+      "log_sha256": "be3400647e7e386ab5822f7655e71e4d7539bae485fb37a5ed3b6fa049b35314"
+    },
+    {
+      "name": "canonical_perm5_O1",
+      "exit_code": 0,
+      "seconds": 0.337,
+      "log_sha256": "1d0b240487b2d6ee519a7c774bad595d41cff01ad254fb432934fc7db40d49e0"
+    },
+    {
+      "name": "canonical_perm5_O2",
+      "exit_code": 0,
+      "seconds": 0.447,
+      "log_sha256": "be3400647e7e386ab5822f7655e71e4d7539bae485fb37a5ed3b6fa049b35314"
+    },
+    {
+      "name": "canonical_perm6_O0",
+      "exit_code": 0,
+      "seconds": 2.839,
+      "log_sha256": "627f70c35c418f8efaf7fa7d64c3a47d00006de42a2eb15eb6b8740b89e1f180"
+    },
+    {
+      "name": "canonical_perm6_O1",
+      "exit_code": 0,
+      "seconds": 2.935,
+      "log_sha256": "627f70c35c418f8efaf7fa7d64c3a47d00006de42a2eb15eb6b8740b89e1f180"
+    },
+    {
+      "name": "canonical_perm6_O2",
+      "exit_code": 0,
+      "seconds": 2.928,
+      "log_sha256": "627f70c35c418f8efaf7fa7d64c3a47d00006de42a2eb15eb6b8740b89e1f180"
+    },
+    {
+      "name": "current_and_archive_integrity",
+      "exit_code": 0,
+      "seconds": 0.051,
+      "log_sha256": "34f94609462bde4deff2a005f67485f6f0db557537fbfc3eaa71afe5278a4e6d"
+    },
+    {
+      "name": "current_and_archive_integrity_O2",
+      "exit_code": 0,
+      "seconds": 0.095,
+      "log_sha256": "34f94609462bde4deff2a005f67485f6f0db557537fbfc3eaa71afe5278a4e6d"
+    },
+    {
+      "name": "archived_perm4_replay",
+      "exit_code": 0,
+      "seconds": 3.693,
+      "log_sha256": "f8c604767d417ee0205f6a7fabcd955e90ee30587d2915ff7aa64f5c00a7ed5c"
+    },
+    {
+      "name": "archived_perm5_replay",
+      "exit_code": 0,
+      "seconds": 10.469,
+      "log_sha256": "77d9d118129ff62c2a006065b73fd251a4ffd9c90f20368995a34723835cd261"
+    },
+    {
+      "name": "archived_perm6_replay",
+      "exit_code": 0,
+      "seconds": 18.475,
+      "log_sha256": "69d47b9051f77f8fb759dd01e4241d558cf187c9af1fa60aded98283e8b23302"
+    },
+    {
+      "name": "frozen_r2_perm5_replay",
+      "exit_code": 0,
+      "seconds": 10.953,
+      "log_sha256": "4d352554eb4468fc90ea7aaadbe1b8358a22fe695c9d31737a67205e1706a437"
+    },
+    {
+      "name": "frozen_r2_perm6_replay",
+      "exit_code": 0,
+      "seconds": 19.148,
+      "log_sha256": "eae03aff80492a06e0a4b1be60fea4aa0e1b01b774b87cdacb3244203db7803d"
+    },
+    {
+      "name": "frozen_r2_zip_rebuild",
+      "exit_code": 0,
+      "seconds": 0.083,
+      "log_sha256": "196b0054d7f41898c2cc268410328f721fa9cbc07e23d902659a02940ce9d446"
+    },
+    {
+      "name": "published_independent_O0",
+      "exit_code": 0,
+      "seconds": 1.661,
+      "log_sha256": "b88f838eb9b8c6130fe7ccc01c046b79961df557207f2f75c2799a8c571f17d4"
+    },
+    {
+      "name": "published_independent_O2",
+      "exit_code": 0,
+      "seconds": 1.775,
+      "log_sha256": "ea13a3a7e7e45655769b617f5a3f49baade2b7abd4f254970094d40431bbf238"
+    }
+  ],
+  "current_pdfs": [
+    {
+      "n": 4,
+      "pages": 7,
+      "sha256": "e85dea32d170174fc7f646cf986f36ee9aca251ed5b25b12f58e96f63b5182f1",
+      "text_bounds_pass": true,
+      "fonts_embedded": true,
+      "cjk_characters": 0
+    },
+    {
+      "n": 5,
+      "pages": 8,
+      "sha256": "daf7ce52f165619732a65a6e2def3fbe6d6ee8c70e9273b9f765f7d1237aead5",
+      "text_bounds_pass": true,
+      "fonts_embedded": true,
+      "cjk_characters": 0
+    },
+    {
+      "n": 6,
+      "pages": 7,
+      "sha256": "79405a1c640c47b04790d1bb1227c7c4cace74262124f99960e02153e2ca795e",
+      "text_bounds_pass": true,
+      "fonts_embedded": true,
+      "cjk_characters": 0
+    }
+  ],
+  "integrity_negative_controls": [
+    {
+      "name": "negative_modified_source",
+      "exit_code": 1,
+      "seconds": 0.172,
+      "log_sha256": "210c0115f61863222d337d87ec3419a4edc7308759df2d8aebda2b8ebeac00de"
+    },
+    {
+      "name": "negative_missing_pdf",
+      "exit_code": 1,
+      "seconds": 0.147,
+      "log_sha256": "1acb45ee23b53ae3f2c2f2a17feaee24ed9849d8f641da2bb03ba30d1daa4a29"
+    },
+    {
+      "name": "negative_duplicate_entry",
+      "exit_code": 1,
+      "seconds": 0.167,
+      "log_sha256": "954dcea6ea2ade3ea2d53651dc1aab1c1558a81b0188a5238e4bb9326d4b5a0d"
+    },
+    {
+      "name": "negative_escaping_entry",
+      "exit_code": 1,
+      "seconds": 0.169,
+      "log_sha256": "128c79e8511dd4cafaa339a2a4e37fee28d2e454aa1469138ef00e3602497597"
+    }
+  ],
+  "protected_files_unchanged": 213,
+  "archived_moves_and_recovery_verified": 31,
+  "language_scan": {
+    "text_files": 359,
+    "pdf_files": 18,
+    "zip_members": 82,
+    "pdfs_without_extractable_text": [],
+    "violations": []
+  },
+  "navigation": {
+    "documents": 17,
+    "relative_links_checked": 113,
+    "broken": []
+  },
+  "hosted_ci_dispatched": false,
+  "visual_review": {
+    "canonical_pages_inspected": 22,
+    "clipping_or_overlap_observed": false,
+    "broken_glyphs_observed": false
+  },
+  "independent_script_sha256": "9e60b6482ff38ccad0bb1631b023ade4e7b59e03ba7437b0e8ef1412ccd520b4",
+  "independent_results_sha256": "699d069f8f98010b1b6f8ed7ae82d717b2ec3d62104a7698a57dd10a0c1a663e",
+  "utc_end": "2026-10-20T06:45:18.478563+00:00",
+  "status": "ACCEPTANCE_PASS"
+}

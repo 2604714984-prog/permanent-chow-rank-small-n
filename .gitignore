@@ -20,3 +20,6 @@ submissions/**/main.out
 submissions/**/main.pdf
 submissions/**/main.synctex.gz
 submissions/**/main.xdv
+
+# Local diagnostic outputs, not frozen evidence.
+*-checks.local.json

@@ -1,71 +1,48 @@
 # Chow Ranks of Small Permanents
 
-Research manuscripts and reproducible evidence for the **ordinary Chow rank** of generic permanent polynomials over fields of characteristic zero.
+Manuscripts on the ordinary Chow rank of generic permanent polynomials over characteristic-zero fields.
 
-## Start here
+## Read the papers
 
-Read the current manuscript first, then its scope notes and audit. Verification scripts check stated computations and artifacts; they do not replace mathematical proofs or external peer review.
-
-## Current results
-
-| Polynomial | Ordinary Chow rank | Current reading version | Source and review |
+| Permanent | Ordinary Chow rank | Current manuscript | Source and guide |
 |---|---:|---|---|
-| `perm_3` | 4 | [Manuscript PDF](perm3/paper/perm3_chow_rank_4.pdf) | [LaTeX source](perm3/paper/source/) · [Verification package](perm3/certificates/) |
-| `perm_4` | 8 | [**Current computation-free PDF**](perm4/paper/perm4_chow_rank_8.pdf) | [LaTeX source](perm4/paper/source/main.tex) · [Reader guide](perm4/README.md) · [Internal audit](perm4/paper/AUDIT.md) · [Optional checks](perm4/paper/verify_supplementary.py) |
-| `perm_5` | 16 | [**Current computation-free PDF**](perm5/pure_proof_20261019/perm5_chow_rank_16_computation_free.pdf) | [Self-contained source](perm5/pure_proof_20261019/main.tex) · [Reader guide](perm5/pure_proof_20261019/README.md) · [Internal audit](perm5/pure_proof_20261019/AUDIT.md) · [Optional checks](perm5/pure_proof_20261019/verify_optional.py) |
-| `perm_6` | 32 | [**Current computation-free PDF**](perm6/pure_proof_20261020/perm6_chow_rank_32_computation_free.pdf) | [Self-contained source](perm6/pure_proof_20261020/main.tex) · [Reader guide](perm6/pure_proof_20261020/READER_GUIDE.md) · [Internal audit](perm6/pure_proof_20261020/AUDIT.md) · [Optional checks](perm6/pure_proof_20261020/verify_optional.py) |
+| `perm_3` | 4 | [PDF](perm3/paper/perm3_chow_rank_4.pdf) | [Source](perm3/paper/source/) · [Original package](perm3/README.md) |
+| `perm_4` | 8 | [Computation-free proof · 7 pages](perm4/paper/perm4_chow_rank_8.pdf) | [LaTeX](perm4/paper/source/main.tex) · [Guide](perm4/README.md) |
+| `perm_5` | 16 | [Computation-free proof · 8 pages](perm5/paper/perm5_chow_rank_16.pdf) | [LaTeX](perm5/paper/source/main.tex) · [Guide](perm5/README.md) |
+| `perm_6` | 32 | [Computation-free proof · 7 pages](perm6/paper/perm6_chow_rank_32.pdf) | [LaTeX](perm6/paper/source/main.tex) · [Guide](perm6/README.md) |
 
-## Current `perm_6` proof
+The three computation-free manuscripts are the canonical current proofs. Each is self-contained: no program output, finite search table, or ancillary certificate is a premise. The PDF and its source live together under `permN/paper/`. Start with the PDF; optional checks and historical evidence are separate.
 
-The current reading version is the seven-page computation-free revision dated October 20, 2026, in [`perm6/pure_proof_20261020/`](perm6/pure_proof_20261020/). Direct four-cycle and surviving-triple arguments replace the graph and coordinate-symbol scans. A squarefree-completion argument bounds the loss from missing actual cubic directions by half the middle-rank defect, removing the need for all five exact normal-form rank profiles. Divisor counting and elementary inequalities replace the remaining finite tables.
+## What the proofs do
 
-The global inequalities are `120 - Delta/2 <= h <= 10*N - 200 - Delta/2`, so the defect cancels and `N >= 32`. Glynn's thirty-two-term upper bound is proved by sign cancellation. The source is self-contained, with no program output or ancillary data as a proof premise. [Internal audit](perm6/pure_proof_20261020/AUDIT.md), [exact test receipt](perm6/pure_proof_20261020/verification_results.json), [workstation acceptance](perm6/pure_proof_20261020/BUILD_ACCEPTANCE.json), and [handoff](perm6/pure_proof_20261020/HANDOFF.md) record the review and checks.
+**Four-by-four.** Classify cubic prolongations, recover the omitted derivative condition, and use row-column scaling to obtain a uniform quotient-kernel statement. A subtraction argument excludes seven terms.
 
-The frozen [20261016-r2 source](submissions/20261016-r2/perm6/) and [PDF](dist/perm6_chow_rank_32_20261016-r2.pdf), together with the earlier paper and computation package, remain unchanged. Internal review is not external peer review or formal certification.
+**Five-by-five.** A local polarization estimate for every actual factor span combines with a rectangular image-span inequality. The endpoint inequality excludes fifteen terms without the former state table or exact normal-form rank computations.
 
-## Current `perm_5` proof
+**Six-by-six.** Squarefree triple counting and an actual squarefree subspace replace the local computational endpoints. A middle-rank defect pays for missing cubic directions; two global inequalities cancel that defect and force thirty-two terms.
 
-The current reading version is the eight-page computation-free revision dated October 19, 2026, in [`perm5/pure_proof_20261019/`](perm5/pure_proof_20261019/). It develops the active October short proof, not the historical 58-state route. The local estimate is proved by a closed triple-column count, a uniform degree-two-divisor bound, and explicit derivatives; neither finite tables nor the four normal-form matrix ranks are premises.
+All three upper bounds are established directly by sign cancellation in Glynn's identity. The statements concern **ordinary Chow rank**, not border Chow rank or row-separated tensor rank.
 
-The global argument uses actual derivative images and gives `h2 + Delta/2 <= 10*N - 150`. Its endpoint excludes fifteen terms; the sixteen-term upper bound is proved by sign cancellation. The source builds by itself without programs or ancillary inputs. [Optional exact checks](perm5/pure_proof_20261019/verification_results.json), [workstation acceptance](perm5/pure_proof_20261019/BUILD_ACCEPTANCE.json), and [handoff](perm5/pure_proof_20261019/HANDOFF.md) record the completed internal review and technical checks; they are not formal or external peer certification.
+## Audit and reproduction
 
-The frozen [20261016-r2 source](submissions/20261016-r2/perm5/) and its [reading PDF](dist/perm5_chow_rank_16_20261016-r2.pdf), as well as the older computation-assisted packages, remain unchanged as historical releases.
+The [October 20 combined audit](audit/20261020-computation-free/REPORT.md) reviews all three complete arguments and records source identities. Internal review found no unresolved proof obligation. It is not external peer review or formal proof-assistant certification.
 
-## Current `perm_4` proof
-
-The canonical `perm_4` manuscript and PDF are now the computation-free revision dated October 19, 2026. The proof classifies the relevant cubic prolongations, proves the missing-derivative lemma, uses explicit row-column scaling and rank specialization, and closes the lower bound with `559 > 552`.
-
-The earlier computation-assisted proof, source files, certificate scripts, and their original manifest are preserved under [`perm4/archive/computation-assisted/`](perm4/archive/computation-assisted/). They are historical material and are not the current reading version.
-
-Run the optional regression checks from the repository root:
+[Reproduction instructions](REPRODUCING.md) distinguish source compilation, file-integrity checks, optional regression tests, and historical certificate replay. To check the current and archived inventories:
 
 ```sh
-python -B perm4/paper/verify_supplementary.py
+python -B scripts/check_current_releases.py
 ```
 
-To rebuild the PDF, run twice from `perm4/paper/source/`:
+The optional tests are error-detection tools, not prerequisites for reading or proving the theorems.
 
-```sh
-pdflatex -no-shell-escape -interaction=nonstopmode -halt-on-error main.tex
-```
+## Historical versions
 
-The optional checks are not premises of the written proof.
+The earlier computation-assisted packages are preserved with their original contents and expected hashes:
 
-## Reproduction and release records
+- [perm4 archive](perm4/archive/README.md)
+- [perm5 archive](perm5/archive/README.md)
+- [perm6 archive](perm6/archive/README.md)
 
-- [Reproduction guide](REPRODUCING.md)
-- [Current project handoff](HANDOFF.md)
-- [20261016-r2 source and PDF checksums](dist/SHA256SUMS_20261016-r2)
-- [20261016-r2 technical acceptance report](audit/20261016-r2/REPORT.md)
-- [20261016-r2 mathematical review](audit/20261016-r2/MATHEMATICAL_REVIEW.md)
-- [2026-10-18 package-integrity receipt](audit/20261018-submission/package_preflight.json)
+The separately frozen [October 16 r2 submissions](submissions/20261016-r2/) and [distributed artifacts](dist/) remain available as historical releases. They are not the current reading versions. Earlier research-directory snapshots remain in Git history; their old directory entrances now point to the canonical papers.
 
-## Scope and status
-
-All stated results concern **ordinary Chow rank**, not border Chow rank. No general formula for arbitrary matrix size is claimed. The current `perm_4`, `perm_5`, and `perm_6` revisions have received internal mathematical review; they have not received external peer review or formal proof-assistant certification.
-
-The historical `perm_5` and `perm_6` release packages remain frozen at **20261016-r2**. The current reading revisions are separately preserved in `perm5/pure_proof_20261019/` and `perm6/pure_proof_20261020/`. The arXiv workflow is paused; the PDFs linked here are reading copies, not arXiv-generated previews.
-
-## Language and archive policy
-
-Reader-facing documentation for the current release is maintained in English. Historical source files, manuscripts, and evidence packages are retained rather than silently rewritten. The original computation-assisted `perm_4` files remain available in the archive.
+Current reader-facing material is in English. The arXiv workflow remains paused. For maintenance state and accepted source hashes, see [HANDOFF.md](HANDOFF.md).

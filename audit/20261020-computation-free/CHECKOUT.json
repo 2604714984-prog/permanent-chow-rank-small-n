@@ -1,0 +1,41 @@
+{
+  "utc": "2026-10-20T06:53:42.747211+00:00",
+  "baseline_commit": "0a6d651f0f1de8ebe711c183b41d71576a036248",
+  "index_tree": "0799fc78960fb45c617a027de315729884a8ae6b",
+  "index_files": 303,
+  "exact_byte_bound_index_files": 293,
+  "unchanged_frozen_git_blobs": 213,
+  "changed_paths_in_scope": 98,
+  "checkout_core_autocrlf": true,
+  "fresh_checkout_bound_bytes_unchanged": true,
+  "tests": [
+    {
+      "name": "inventory",
+      "exit_code": 0,
+      "log_sha256": "34f94609462bde4deff2a005f67485f6f0db557537fbfc3eaa71afe5278a4e6d"
+    },
+    {
+      "name": "inventory_O2",
+      "exit_code": 0,
+      "log_sha256": "34f94609462bde4deff2a005f67485f6f0db557537fbfc3eaa71afe5278a4e6d"
+    },
+    {
+      "name": "perm4_optional",
+      "exit_code": 0,
+      "log_sha256": "d203bbad56d8276b33e2ba6bd02d8a7d5bf7b60709d5b310a1621e514746f348"
+    },
+    {
+      "name": "perm5_optional",
+      "exit_code": 0,
+      "log_sha256": "cfc6d9be43a30fa2a6ed4d0222a2dc3d9d80e59938d3df0947e9a27ed8dbe64d"
+    },
+    {
+      "name": "perm6_optional",
+      "exit_code": 0,
+      "log_sha256": "627f70c35c418f8efaf7fa7d64c3a47d00006de42a2eb15eb6b8740b89e1f180"
+    }
+  ],
+  "status": "PASS",
+  "whitespace_check": "Git diff checked with cr-at-eol enabled; CRLF is retained where inventories bind bytes.",
+  "limitation": "This receipt describes the staged tree before adding this receipt itself; it is not a recursive tree checksum."
+}

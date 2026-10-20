@@ -467,7 +467,7 @@ def main() -> None:
     for test in tests:
         print(f'RUN {test.__name__}', flush=True)
         results['tests'][test.__name__] = test()
-    source = Path(__file__).with_name('main.tex')
+    source = Path(__file__).resolve().parent / 'source' / 'main.tex'
     results.update(status='OPTIONAL_EXACT_CHECKS_PASS',
                    source_sha256=hashlib.sha256(source.read_bytes()).hexdigest(),
                    verifier_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),

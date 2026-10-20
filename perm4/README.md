@@ -1,39 +1,31 @@
 # The Chow Rank of the Four-by-Four Permanent
 
-The current reading version is the **computation-free revision dated October 19, 2026**.
+**Current proof: computation-free. Ordinary Chow rank: 8.**
 
-## Current computation-free proof
+[Read the paper](paper/perm4_chow_rank_8.pdf) | [LaTeX source](paper/source/main.tex) | [Audit](paper/AUDIT.md) | [Historical versions](archive/README.md)
 
-- [Seven-page PDF](pure_proof_20261019/main.pdf)
-- [Complete LaTeX source](pure_proof_20261019/main.tex)
-- [Reader's overview](pure_proof_20261019/README.md)
-- [Internal proof audit](pure_proof_20261019/AUDIT.md)
-- [Research handoff](pure_proof_20261019/HANDOFF.md)
-- [Optional exact regression checks](pure_proof_20261019/verify_supplementary.py)
+The current manuscript proves the ordinary Chow rank of the generic 4-by-4 permanent over every characteristic-zero field. The factors are arbitrary linear forms in all 16 variables; no tensor-rank or border-rank conclusion is substituted for this statement.
 
-The theorem proved is
+The entire argument is in `paper/source/main.tex`. No rank-program output, enumerated certificate or ancillary input is a premise. Internal mathematical review identified no unresolved proof obligation. This is not external peer review or proof-assistant certification.
 
-\[
-\operatorname{ChowRank}(\operatorname{perm}_4)=8.
-\]
+## Build and optional checks
 
-The proof is for ordinary Chow rank over characteristic-zero fields. It makes no claim about border Chow rank or a general formula for arbitrary matrix size. The manuscript has received internal review, not external peer review or formal proof-assistant certification.
-
-To run the optional regression checks from the repository root:
+From `perm4/paper/source/`, run twice:
 
 ```sh
-python -B perm4/pure_proof_20261019/verify_supplementary.py
+pdflatex -no-shell-escape -interaction=nonstopmode -halt-on-error main.tex
 ```
 
-These checks are not premises of the written proof.
+The repository PDF has 7 pages. [BUILD.json](paper/BUILD.json) binds the source and PDF hashes. Different TeX distributions or build timestamps may change PDF bytes.
 
-## Historical computation-assisted version
+From the repository root, the optional exact regression checks are:
 
-The original version is preserved unchanged:
+```sh
+python -B perm4/paper/verify_supplementary.py --output perm4-checks.local.json
+```
 
-- [Historical PDF](paper/perm4_chow_rank_8.pdf)
-- [Original LaTeX source](paper/source/)
-- [Original certificate and replay package](certificates/)
-- [Original file inventory](MANIFEST.sha256)
+These checks are error-detection tests, not an alternative proof. Use [MANIFEST.sha256](MANIFEST.sha256) and `python -B scripts/check_current_releases.py` for release integrity. The archived certificate computations belong to the previous proofs.
 
-The historical proof relies on exact computational certificates for selected matrix ranks. Do not confuse its PDF with the current computation-free manuscript.
+## Version boundary
+
+The mathematical source is unchanged from the latest computation-free draft audited on October 20, 2026. The predecessor is retained byte for byte under `archive/computation-assisted/`; frozen October 16 submissions and archives are retained separately. Current documentation is in English. See the [combined review](../audit/20261020-computation-free/REPORT.md) for exact source identities, mathematical checks, and publication checks.

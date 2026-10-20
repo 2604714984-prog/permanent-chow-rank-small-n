@@ -1,23 +1,31 @@
 # The Chow Rank of the Six-by-Six Permanent
 
-This directory contains the proof of the characteristic-zero theorem
+**Current proof: computation-free. Ordinary Chow rank: 32.**
 
-\[
-\operatorname{ChowRank}(\operatorname{perm}_6)=32.
-\]
+[Read the paper](paper/perm6_chow_rank_32.pdf) | [LaTeX source](paper/source/main.tex) | [Audit](paper/AUDIT.md) | [Historical versions](archive/README.md)
 
-- Manuscript: [`paper/perm6_chow_rank_32.pdf`](paper/perm6_chow_rank_32.pdf)
-- Complete LaTeX source: [`paper/source/`](paper/source/)
-- Exact data, verification programs, and tests: [`computation/`](computation/)
-- SHA-256 inventory: [`MANIFEST.sha256`](MANIFEST.sha256)
+The current manuscript proves the ordinary Chow rank of the generic 6-by-6 permanent over every characteristic-zero field. The factors are arbitrary linear forms in all 36 variables; no tensor-rank or border-rank conclusion is substituted for this statement.
 
-Python 3.11 or newer and only its standard library are required:
+The entire argument is in `paper/source/main.tex`. No rank-program output, enumerated certificate or ancillary input is a premise. Internal mathematical review identified no unresolved proof obligation. This is not external peer review or proof-assistant certification.
 
-```bash
-python -B perm6/verify_all.py
+## Build and optional checks
+
+From `perm6/paper/source/`, run twice:
+
+```sh
+pdflatex -no-shell-escape -interaction=nonstopmode -halt-on-error main.tex
 ```
 
-The command runs the primary exact payload check, nine focused tests, the
-independent finite-core enumeration (2,391,496 labelled bipartite graphs and
-45,696 coordinate symbol cases), and an independent rational reconstruction
-of all five dependent-factor normal forms.
+The repository PDF has 7 pages. [BUILD.json](paper/BUILD.json) binds the source and PDF hashes. Different TeX distributions or build timestamps may change PDF bytes.
+
+From the repository root, the optional exact regression checks are:
+
+```sh
+python -B perm6/paper/verify_supplementary.py --output perm6-checks.local.json
+```
+
+These checks are error-detection tests, not an alternative proof. Use [MANIFEST.sha256](MANIFEST.sha256) and `python -B scripts/check_current_releases.py` for release integrity. The archived certificate computations belong to the previous proofs.
+
+## Version boundary
+
+The mathematical source is unchanged from the latest computation-free draft audited on October 20, 2026. The predecessor is retained byte for byte under `archive/computation-assisted/`; frozen October 16 submissions and archives are retained separately. Current documentation is in English. See the [combined review](../audit/20261020-computation-free/REPORT.md) for exact source identities, mathematical checks, and publication checks.

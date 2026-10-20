@@ -1,0 +1,244 @@
+{
+  "proof_premise": false,
+  "implementation": "fresh exact sparse linear algebra over Q; no project imports",
+  "permanent_prolongations": [
+    {
+      "n": 4,
+      "cubic_monomials": 816,
+      "prolongation_dimension": 16,
+      "missing_coordinate_dimensions": [
+        17,
+        17,
+        17,
+        17,
+        17,
+        17,
+        17,
+        17,
+        17,
+        17,
+        17,
+        17,
+        17,
+        17,
+        17,
+        17
+      ]
+    },
+    {
+      "n": 5,
+      "cubic_monomials": 2925,
+      "prolongation_dimension": 100
+    },
+    {
+      "n": 6,
+      "cubic_monomials": 8436,
+      "prolongation_dimension": 400
+    }
+  ],
+  "actual_sextic_intersection": {
+    "actual_intersection_dimension": 3,
+    "quotient_cases": 232,
+    "minimum_ranks": {
+      "0": 0,
+      "1": 9,
+      "2": 14,
+      "3": 18,
+      "4": 20,
+      "5": 20,
+      "6": 20
+    },
+    "full_rank": 20
+  },
+  "quartic": {
+    "base_rank": 560,
+    "quotient_ranks": [
+      99,
+      99,
+      99,
+      99
+    ]
+  },
+  "squarefree": {
+    "5": {
+      "coordinate_cases": 352,
+      "minimum_ranks": {
+        "0": 0,
+        "1": 5,
+        "2": 7,
+        "3": 7,
+        "4": 10,
+        "5": 10
+      }
+    },
+    "6": {
+      "coordinate_cases": 36864,
+      "minimum_ranks": {
+        "0": 0,
+        "1": 7,
+        "2": 10,
+        "3": 10,
+        "4": 15,
+        "5": 17,
+        "6": 19
+      }
+    }
+  },
+  "negative_controls": {
+    "rank_two_line_kills_cubic_outside_kernel": true,
+    "actual_vs_formal_diagnostics": [
+      {
+        "degree": 5,
+        "support": 1,
+        "actual_cubic_dim": 7,
+        "formal_cubic_dim": 7
+      },
+      {
+        "degree": 5,
+        "support": 2,
+        "actual_cubic_dim": 7,
+        "formal_cubic_dim": 9
+      },
+      {
+        "degree": 5,
+        "support": 3,
+        "actual_cubic_dim": 9,
+        "formal_cubic_dim": 10
+      },
+      {
+        "degree": 5,
+        "support": 4,
+        "actual_cubic_dim": 10,
+        "formal_cubic_dim": 10
+      },
+      {
+        "degree": 6,
+        "support": 1,
+        "actual_cubic_dim": 14,
+        "formal_cubic_dim": 14
+      },
+      {
+        "degree": 6,
+        "support": 2,
+        "actual_cubic_dim": 14,
+        "formal_cubic_dim": 17
+      },
+      {
+        "degree": 6,
+        "support": 3,
+        "actual_cubic_dim": 18,
+        "formal_cubic_dim": 19
+      },
+      {
+        "degree": 6,
+        "support": 4,
+        "actual_cubic_dim": 20,
+        "formal_cubic_dim": 20
+      },
+      {
+        "degree": 6,
+        "support": 5,
+        "actual_cubic_dim": 20,
+        "formal_cubic_dim": 20
+      }
+    ]
+  },
+  "sextic_completion": [
+    {
+      "s": 1,
+      "actual_u": 14,
+      "chosen_squarefree_dim": 10,
+      "missing": 0
+    },
+    {
+      "s": 2,
+      "actual_u": 14,
+      "chosen_squarefree_dim": 7,
+      "missing": 3
+    },
+    {
+      "s": 3,
+      "actual_u": 18,
+      "chosen_squarefree_dim": 9,
+      "missing": 1
+    },
+    {
+      "s": 4,
+      "actual_u": 20,
+      "chosen_squarefree_dim": 10,
+      "missing": 0
+    },
+    {
+      "s": 5,
+      "actual_u": 20,
+      "chosen_squarefree_dim": 10,
+      "missing": 0
+    }
+  ],
+  "quintic_local": {
+    "products": 40,
+    "quotient_tests": 744,
+    "minimum_slack": "0",
+    "observed_middle_ranks": {
+      "1": [
+        1
+      ],
+      "2": [
+        2,
+        3
+      ],
+      "3": [
+        4,
+        5,
+        6
+      ],
+      "4": [
+        7,
+        9,
+        10
+      ],
+      "5": [
+        10
+      ]
+    }
+  },
+  "sextic_local": {
+    "products": 48,
+    "quotient_tests": 1080,
+    "minimum_slack": "0",
+    "observed_middle_ranks": {
+      "1": [
+        1
+      ],
+      "2": [
+        2,
+        3,
+        4
+      ],
+      "3": [
+        4,
+        6,
+        8,
+        9,
+        10
+      ],
+      "4": [
+        8,
+        10,
+        12,
+        14,
+        18
+      ],
+      "5": [
+        14,
+        18,
+        20
+      ],
+      "6": [
+        20
+      ]
+    }
+  },
+  "elapsed_seconds": 1.604,
+  "status": "PASS"
+}
